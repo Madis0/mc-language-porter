@@ -4,7 +4,7 @@ import json
 # File names and -paths
 jePath = input("File of the input translated Minecraft Java Edition language (e.g. ru_ru.json): ")
 bePath = input("File of the output bedrock Minecraft Bedrock language (e.g. ru_RU.lang): ")
-mapPath = "test/mappings.csv"
+mapPath = "mappings.csv"
 
 # Arrays to store data in (temporarily)
 jeDict = {}
