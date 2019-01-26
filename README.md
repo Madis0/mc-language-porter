@@ -1,3 +1,3 @@
-# MC language port
+# MC language mappings
 
-Ports a language based on mappings made in https://gitlab.com/Madis0/mc-language-map
+Creates mappings between Java Edition and Bedrock Edition strings to improve portability. Does not port the translations by itself.

@@ -1,0 +1,19 @@
+{
+    "description.one": "This must be a valid 2D JSON file",
+    "empty": "",
+    "unmatchingString": "This string does not have an equivalent",
+    "loremIpsum.one": "Lorem ipsum dolor sit amet",
+    "loremIpsum.two": "consectetur adipiscing elit",
+    "loremIpsum.three": "Maecenas et mauris nulla",
+    "loremIpsum.four": "Maecenas pretium mi ac eros euismod sagittis",
+    "loremIpsum.five": "Mauris nisi massa, luctus et blandit sit amet, feugiat et elit.",
+    "description.two": "The following are duplicates that must be matched:",
+    "duplicateWord.one": "Word",
+    "duplicateWord.two": "Word",
+    "duplicateWord.three": "Word",
+    "description.three": "Weird symbols must work too",
+    "escapedSymbol.one": "\"Quotes\"",
+    "escapedSymbol.two": "'Quotes'",
+    "specialSymbol.parameter": "%d %s %1$s",
+    "similar.text": "Hello word!"
+}

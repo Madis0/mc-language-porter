@@ -1,0 +1,27 @@
+## A .properties-like file that may contain comments and excessive newlines
+## Note, trailing spaces will NOT be trimmed. If you want room between the end of the string and the start of a
+## comment on the same line, use TABs.
+
+empty=
+
+lorem.ipsum.1=Lorem ipsum dolor sit amet
+lorem.ipsum.2=consectetur adipiscing elit
+lorem.ipsum.3=Maecenas et mauris nulla
+lorem.ipsum.4=Maecenas pretium mi ac eros euismod sagittis
+lorem.ipsum.5=Mauris nisi massa, luctus et blandit sit amet, feugiat et elit.
+
+## Duplicates, must match the first
+
+duplicate.word.1=Word
+duplicate.word.2=Word
+duplicate.word.3=Word
+
+## Weird symbols that must work too
+
+symbol.escaped.1="Quotes"
+symbol.escaped.2='Quotes'
+symbol.parameter=%d %s %1$s
+
+## Similar strings
+
+similar.text=Hello world!
