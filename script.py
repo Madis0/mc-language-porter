@@ -37,7 +37,10 @@ print("Writing to " + bePath + "...")
 beFile = open(bePath, 'w', encoding='utf-8')
 
 for beKey, jeKey in mapDict.items():
-    beFile.write(beKey + "=" + jeDict[jeKey] + "\n")
+    try:  # Skip lines that don't have a translation
+        beFile.write(beKey + "=" + jeDict[jeKey] + "\n")
+    except:
+        pass
 
 beFile.close()
 print("Matching translations have been ported to Bedrock Edition in file " + bePath + ".")
