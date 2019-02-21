@@ -1,0 +1,12 @@
+empty,empty
+lorem.ipsum.1,loremIpsum.one
+lorem.ipsum.2,loremIpsum.two
+lorem.ipsum.3,loremIpsum.three
+lorem.ipsum.4,loremIpsum.four
+lorem.ipsum.5,loremIpsum.five
+duplicate.word.1,duplicateWord.two
+duplicate.word.2,duplicateWord.two
+duplicate.word.3,duplicateWord.two
+symbol.escaped.1,escapedSymbol.one
+symbol.escaped.2,escapedSymbol.two
+symbol.parameter,specialSymbol.parameter

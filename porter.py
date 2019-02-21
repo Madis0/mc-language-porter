@@ -4,8 +4,9 @@ import json
 import sys
 
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
-includeJe = False
+includeJe = True
 includeRealms = True
+includeExtraMap = True  # Whether to use user-provided extra mappings
 translationLang = "et_EE"  # Used when launched without arguments
 
 # File names and -paths
@@ -13,6 +14,7 @@ jePath = translationLang.lower() + ".json"
 realmsPath = "realms-" + jePath
 bePath = translationLang + ".lang"
 mapPath = "mappings.csv"
+extraMapPath = "extra-" + mapPath
 
 if len(sys.argv) > 1:  # Use the language provided as an argument if available
     translationLang = sys.argv[1]
@@ -56,6 +58,10 @@ if includeRealms:
 
 print("Opening mapped strings..")
 parse_csv(mapPath, mapDict)
+
+if includeExtraMap:
+    print("Opening extra mapped strings..")
+    parse_csv(extraMapPath, mapDict)
 
 # Write to translation file
 print("Writing to " + bePath + "...")

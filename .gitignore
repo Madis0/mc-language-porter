@@ -202,6 +202,5 @@ dmypy.json
 .venv/
 
 # End of https://www.gitignore.io/api/python,pycharm
-*.csv
 *.json
 *.lang
