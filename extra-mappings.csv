@@ -3,6 +3,7 @@ accessibility.enableTTS,narrator.toast.enabled
 
 key.drop,key.drop
 options.autojump,options.autoJump
+options.enableChatTextToSpeech,options.narrator
 menu.returnToGame,menu.returnToGame
 
 potion.moveSpeed,effect.minecraft.speed
@@ -120,6 +121,7 @@ item.milk.name,item.minecraft.milk_bucket
 item.skull.char.name,block.minecraft.player_head
 
 item.writable_book.name,item.minecraft.writable_book
+howtoplay.bookAndQuill,item.minecraft.writable_book
 
 tile.light_weighted_pressure_plate.name,block.minecraft.light_weighted_pressure_plate
 tile.heavy_weighted_pressure_plate.name,block.minecraft.heavy_weighted_pressure_plate
@@ -153,3 +155,5 @@ tile.monster_egg.crackedbrick.name,block.minecraft.infested_cracked_stone_bricks
 tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 
 tile.turtle_egg.name,block.minecraft.turtle_egg
+
+howtoplay.eyeOfEnder,item.minecraft.ender_eye
