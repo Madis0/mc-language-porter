@@ -113,9 +113,11 @@ container.loom,container.loom
 container.minecart,entity.minecraft.minecart
 container.repair,container.repair
 container.repair.expensive,container.repair.expensive
+container.repairAndDisenchant,container.grindstone_title
 container.stonecutter,container.stonecutter
 container.stonecutter_block,container.stonecutter
 container.shulkerbox,container.shulkerBox
+container.barrel,container.barrel
 controller.buttonTip.back,gui.back
 controller.buttonTip.cancel,gui.cancel
 controller.buttonTip.edit,selectWorld.edit
@@ -303,6 +305,7 @@ disconnect.overflow,disconnect.overflow
 disconnect.quitting,disconnect.quitting
 disconnect.spam,disconnect.spam
 disconnect.timeout,disconnect.timeout
+effect.badOmen,effect.minecraft.bad_omen
 enchantment.arrowDamage,enchantment.minecraft.power
 enchantment.arrowFire,enchantment.minecraft.flame
 enchantment.arrowInfinite,enchantment.minecraft.infinity
@@ -385,6 +388,7 @@ entity.ghast.name,entity.minecraft.ghast
 entity.guardian.name,entity.minecraft.guardian
 entity.horse.name,entity.minecraft.horse
 entity.husk.name,entity.minecraft.husk
+entity.ravager.name,entity.minecraft.ravager
 entity.iron_golem.name,entity.minecraft.iron_golem
 entity.item.name,entity.minecraft.item
 entity.leash_knot.name,entity.minecraft.leash_knot
@@ -826,6 +830,7 @@ item.banner.half_vertical_right.red,block.minecraft.banner.half_vertical_right.r
 item.banner.half_vertical_right.silver,block.minecraft.banner.half_vertical_right.light_gray
 item.banner.half_vertical_right.white,block.minecraft.banner.half_vertical_right.white
 item.banner.half_vertical_right.yellow,block.minecraft.banner.half_vertical_right.yellow
+item.banner.illager_captain.name,block.minecraft.illager_banner
 item.banner.lightBlue.name,block.minecraft.light_blue_banner
 item.banner.lime.name,block.minecraft.lime_banner
 item.banner.magenta.name,block.minecraft.magenta_banner
@@ -2034,8 +2039,6 @@ tile.wool.white.name,block.minecraft.white_wool
 tile.wool.yellow.name,block.minecraft.yellow_wool
 tile.cobblestone_wall.mossy.name,block.minecraft.mossy_cobblestone_wall
 tile.cobblestone_wall.normal.name,block.minecraft.cobblestone_wall
-tile.cobblestone_wall.cobblestone.name,block.minecraft.cobblestone_wall
-tile.cobblestone_wall.mossy_cobblestone.name,block.minecraft.mossy_cobblestone_wall
 tile.cobblestone_wall.granite.name,block.minecraft.granite_wall
 tile.cobblestone_wall.diorite.name,block.minecraft.diorite_wall
 tile.cobblestone_wall.andesite.name,block.minecraft.andesite_wall
@@ -2271,7 +2274,6 @@ tile.double_stone_slab.stone.name,block.minecraft.stone_slab
 tile.stone_slab.name,block.minecraft.stone_slab
 tile.stone_slab.cobble.name,block.minecraft.cobblestone_slab
 tile.stone_slab.stone.name,block.minecraft.stone_slab
-tile.stone_slab.smoothStone.name,block.minecraft.smooth_stone_slab
 tile.stone_slab.nether_brick.name,block.minecraft.nether_brick_slab
 tile.stone_slab.quartz.name,block.minecraft.quartz_slab
 tile.stone_slab.sand.name,block.minecraft.sandstone_slab
