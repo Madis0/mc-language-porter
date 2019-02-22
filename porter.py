@@ -40,8 +40,9 @@ def parse_csv(path, toDict):
     file = open(path, 'r', encoding='utf-8')
 
     for row in file:
-        key1, key2 = row.strip().split(",")
-        toDict[key1] = key2
+        if row.strip() != "":
+            key1, key2 = row.strip().split(",")
+            toDict[key1] = key2
 
     file.close()
 
