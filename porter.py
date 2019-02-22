@@ -6,7 +6,8 @@ import sys
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
 includeJe = True
 includeRealms = True
-includeExtraMap = True  # Whether to use user-provided extra mappings
+includeExtraMappings = True  # Whether to use user-provided extra mappings
+includeExtraTranslations = True  # Whether to use user-provided extra translated phrases
 translationLang = "et_EE"  # Used when launched without arguments
 
 # File names and -paths
@@ -15,6 +16,7 @@ realmsPath = "realms-" + jePath
 bePath = translationLang + ".lang"
 mapPath = "mappings.csv"
 extraMapPath = "extra-" + mapPath
+extraLangPath = "extra-" + bePath
 
 if len(sys.argv) > 1:  # Use the language provided as an argument if available
     translationLang = sys.argv[1]
@@ -22,7 +24,7 @@ if len(sys.argv) > 1:  # Use the language provided as an argument if available
 # Arrays to store data in (temporarily)
 jeDict = {}
 mapDict = {}
-
+extraLangDict = {}
 
 # Parsing functions
 
@@ -47,8 +49,19 @@ def parse_csv(path, toDict):
     file.close()
 
 
-# Importing files
+def parse_lang(path, toDict):
+    file = open(path, 'r', encoding='utf-8')
 
+    for row in file:
+        if not row.strip().startswith("##"):
+            try:
+                key, value = row.strip().split("=")
+                toDict[key] = value
+            except:  # Parse the key even when value is None
+                pass
+
+
+# Importing files
 if includeJe:
     print("Opening Java Edition strings...")
     parse_json(jePath, jeDict)
@@ -57,12 +70,16 @@ if includeRealms:
     print("Opening Realms strings...")
     parse_json(realmsPath, jeDict)
 
-print("Opening mapped strings..")
+print("Opening mapped strings...")
 parse_csv(mapPath, mapDict)
 
-if includeExtraMap:
-    print("Opening extra mapped strings..")
+if includeExtraMappings:
+    print("Opening extra mapped strings...")
     parse_csv(extraMapPath, mapDict)
+
+if includeExtraTranslations:
+    print("Opening extra translations...")
+    parse_lang(extraLangPath, extraLangDict)
 
 # Write to translation file
 print("Writing to " + bePath + "...")
@@ -73,6 +90,13 @@ for beKey, jeKey in mapDict.items():
         beFile.write(beKey + "=" + jeDict[jeKey] + "\n")
     except:
         pass
+
+if includeExtraTranslations:
+    for key, value in extraLangDict.items():
+        try:  # Skip lines that don't have a translation
+            beFile.write(key + "=" + value + "\n")
+        except:
+            pass
 
 beFile.close()
 print("Matching translations have been ported to Bedrock Edition in file " + bePath + ".")
