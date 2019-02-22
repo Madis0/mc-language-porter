@@ -1,3 +1,10 @@
+accessibility.disableTTS,narrator.toast.disabled
+accessibility.enableTTS,narrator.toast.enabled
+
+key.drop,key.drop
+options.autojump,options.autoJump
+menu.returnToGame,menu.returnToGame
+
 potion.moveSpeed,effect.minecraft.speed
 
 item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
