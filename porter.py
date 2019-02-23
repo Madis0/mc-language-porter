@@ -1,6 +1,4 @@
 import json
-
-# File names and -paths
 import sys
 
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
