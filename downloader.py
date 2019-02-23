@@ -5,10 +5,10 @@ import urllib.request
 import sys
 
 # Choose what files to obtain with the script
-getJeOriginal = False
-getJeRealms = False
+getJeOriginal = True
+getJeRealms = True
 getJeTranslation = True
-getJeRealmsTranslation = False
+getJeRealmsTranslation = True
 translationLang = "et_ee"  # Used when launched without arguments
 getBeOriginal = True
 

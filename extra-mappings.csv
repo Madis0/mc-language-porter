@@ -4,6 +4,8 @@ accessibility.enableTTS,narrator.toast.enabled
 key.drop,key.drop
 options.autojump,options.autoJump
 options.enableChatTextToSpeech,options.narrator
+options.guiScale.optionName,options.guiScale
+options.sound,options.sound
 menu.returnToGame,menu.returnToGame
 
 potion.moveSpeed,effect.minecraft.speed
@@ -90,8 +92,8 @@ tile.wooden_slab.jungle.name,block.minecraft.jungle_slab
 tile.wooden_slab.oak.name,block.minecraft.oak_slab
 tile.wooden_slab.spruce.name,block.minecraft.spruce_slab
 
-tile.double_stone_slab.smoothStoneBrick.name,block.minecraft.stone_brick_slab
-tile.double_stone_slab.brick.name,block.minecraft.brick_slab
+tile.stone_slab.smoothStoneBrick.name,block.minecraft.stone_brick_slab
+tile.stone_slab.brick.name,block.minecraft.brick_slab
 tile.stone_slab2.prismarine.bricks.name,block.minecraft.prismarine_brick_slab
 
 tile.brick_block.name,block.minecraft.bricks
