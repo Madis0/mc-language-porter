@@ -1,0 +1,7 @@
+requests
+io
+zipfile
+urllib
+sys
+difflib
+json
