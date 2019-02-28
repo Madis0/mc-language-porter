@@ -137,6 +137,7 @@ menu.store=Pood
 menu.skins=Välimus
 menu.start=Alusta
 
+
 resourcePack.selected.title.packs=Aktiivsed pakid
 resourcePack.available.title.packs=Saadaolevad pakid
 
@@ -167,7 +168,7 @@ options.sounds=Heli
 options.language=Keel
 options.broadcast=Ülekandmine
 
-achievementScreen.achievements:=Saavutused:
+achievementScreen.achievements:=Saavutusi:
 achievementScreen.gamerscore:=Mänguskoor:
 achievementScreen.hour=%d tund
 achievementScreen.hours=%d tundi
@@ -194,6 +195,7 @@ hostOption.weather.rain=Vihmane
 hostOption.weather.thunderstorm=Tormine
 
 howtoplay.whatsNew=Mis on uut
+patchNotes.continue=Jätka
 howtoplay.category.basics=Algteadmised
 howtoplay.category.firstDay=Esimene päev
 howtoplay.category.optionsAndCheats=Valikud ja sohitegemine
