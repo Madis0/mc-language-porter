@@ -4,7 +4,7 @@ An open set of scripts designed to semi-automate the task of porting languages f
 
 ## The scripts
 
-* `runall.py` - Executes the main scripts one-by-one in required order. Coming soon.
+* `runall.py` - Executes the main scripts one-by-one in required order.
 * `downloader.py` - Extracts and downloads various language files from official sources, including Java Edition, Java Edition Realms and Bedrock Edition. The script downloads the beta/snapshot versions to get the latest language changes early.
 * `mapper.py` - Automatically creates CSV-formatted mappings by comparing Java Edition files with Bedrock Edition ones.
 * `porter.py` - Creates a Bedrock Edition-compatible language file using mappings, extra mappings, and/or extra translated phrases.
@@ -22,7 +22,7 @@ An open set of scripts designed to semi-automate the task of porting languages f
 
 1) [Download latest Python](https://www.python.org/downloads/)
 2) Download [any relevant requirements](https://gitlab.com/Madis0/mc-language-port/blob/master/requirements.txt) [using PIP](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi)
-3) Run scripts according to your needs or ~all at once using `runall.py`~ (soon).
+3) Run scripts according to your needs or all at once using `runall.py`.
 
 `downloader.py` and `porter.py` support command line arguments for defining the language, e.g. `py downloader.py ru_ru`. Other settings (e.g which files to download/use) can be set inside the scripts at the start, as booleans `True` or `False`.
 
