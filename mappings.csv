@@ -1,3 +1,9 @@
+accessibility.chat.tts.says,chat.type.text.narrate
+accessibility.loading.done,gui.done
+accessibility.saving.done,gui.done
+accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
+accessibility.tab.tts.title,key.keyboard.tab
+accessibility.play.editWorld,selectWorld.edit.title
 achievement.acquireIron,advancements.story.smelt_iron.title
 achievement.acquireIron.desc,advancements.story.smelt_iron.description
 achievement.blaze_rod,advancements.nether.obtain_blaze_rod.title
@@ -1538,6 +1544,7 @@ lanServer.start,lanServer.start
 lanServer.title,lanServer.title
 map.toolTip.scaling,filled_map.scale
 map.toolTip.unkown,filled_map.unknown
+map.toolTip.locked,filled_map.locked
 mcoServer.title,mcoServer.title
 menu.disconnect,menu.disconnect
 menu.generatingLevel,menu.generatingLevel
@@ -1747,6 +1754,7 @@ potion.wither,entity.minecraft.wither
 progressScreen.generating,menu.generatingLevel
 progressScreen.saving,menu.savingLevel
 progressScreen.message.building,menu.generatingTerrain
+raid.name,event.minecraft.raid
 recipeBook.setting.off,mco.configure.world.off
 record.nowPlaying,record.nowPlaying
 resourcePack.available.title,resourcePack.available.title
@@ -1760,7 +1768,6 @@ storageManager.delete.confirm,selectWorld.deleteButton
 storageManager.delete.cancel,gui.cancel
 storageManager.multiselectDelete,selectWorld.delete
 storageManager.miscellaneous,key.categories.misc
-resourcePack.vanilla.name,advancements.story.root.title
 resourcePack.MashupAdventureTime.description,selectWorld.gameMode.spectator.line2
 screenshot.failure,screenshot.failure
 screenshot.success,screenshot.success
@@ -2273,7 +2280,7 @@ tile.double_stone_slab.sand.name,block.minecraft.sandstone_slab
 tile.double_stone_slab.stone.name,block.minecraft.stone_slab
 tile.stone_slab.name,block.minecraft.stone_slab
 tile.stone_slab.cobble.name,block.minecraft.cobblestone_slab
-tile.stone_slab.stone.name,block.minecraft.stone_slab
+tile.stone_slab.stone.name,block.minecraft.smooth_stone_slab
 tile.stone_slab.nether_brick.name,block.minecraft.nether_brick_slab
 tile.stone_slab.quartz.name,block.minecraft.quartz_slab
 tile.stone_slab.sand.name,block.minecraft.sandstone_slab

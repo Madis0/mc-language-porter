@@ -159,6 +159,7 @@ options.editSettings=Muuda seadeid
 options.category.game=Mäng
 options.category.addons=Lisad
 
+options.accessibility=Ligipääsetavus
 options.keyboardAndMouse=Klaviatuur ja hiir
 options.controller=Mängupult
 options.touch=Puudutus
