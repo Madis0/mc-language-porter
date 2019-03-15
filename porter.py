@@ -5,7 +5,7 @@ import sys
 includeJe = True
 includeRealms = True
 includeExtraMappings = True  # Whether to use user-provided extra mappings
-includeExtraTranslations = True  # Whether to use user-provided extra translated phrases
+includeExtraTranslations = False  # Whether to use user-provided extra translated phrases
 translationLang = "et_EE"  # Used when launched without arguments
 
 # File names and -paths

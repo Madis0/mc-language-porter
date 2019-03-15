@@ -1,9 +1,5 @@
-accessibility.disableTTS,narrator.toast.disabled
-accessibility.enableTTS,narrator.toast.enabled
-
 key.drop,key.drop
 options.autojump,options.autoJump
-options.enableChatTextToSpeech,options.narrator
 options.guiScale.optionName,options.guiScale
 options.sound,options.sound
 menu.returnToGame,menu.returnToGame
