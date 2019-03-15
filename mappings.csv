@@ -192,8 +192,6 @@ createWorld.customize.custom.useOceanRuins,createWorld.customize.custom.useOcean
 createWorld.customize.custom.useVillages,createWorld.customize.custom.useVillages
 createWorld.customize.custom.useWaterLakes,createWorld.customize.custom.useWaterLakes
 createWorld.customize.custom.waterLakeChance,createWorld.customize.custom.waterLakeChance
-createWorld.customize.flat.addLayer,createWorld.customize.flat.addLayer
-createWorld.customize.flat.editLayer,createWorld.customize.flat.editLayer
 createWorld.customize.flat.height,createWorld.customize.flat.height
 createWorld.customize.flat.removeLayer,createWorld.customize.flat.removeLayer
 createWorld.customize.flat.tile,createWorld.customize.flat.tile
@@ -436,7 +434,7 @@ entity.squid.name,entity.minecraft.squid
 entity.thrown_trident.name,entity.minecraft.trident
 entity.turtle.name,entity.minecraft.turtle
 entity.vex.name,entity.minecraft.vex
-entity.villager.name,entity.minecraft.villager
+entity.villager.name,entity.minecraft.villager.none
 entity.villager.armor,entity.minecraft.villager.armorer
 entity.villager.butcher,entity.minecraft.villager.butcher
 entity.villager.cartographer,entity.minecraft.villager.cartographer
@@ -447,7 +445,7 @@ entity.villager.fletcher,entity.minecraft.villager.fletcher
 entity.villager.leather,entity.minecraft.villager.leatherworker
 entity.villager.librarian,entity.minecraft.villager.librarian
 entity.villager.shepherd,entity.minecraft.villager.shepherd
-entity.villager_v2.name,entity.minecraft.villager
+entity.villager_v2.name,entity.minecraft.villager.none
 entity.vindicator.name,entity.minecraft.vindicator
 entity.wandering_trader.name,entity.minecraft.wandering_trader
 entity.witch.name,entity.minecraft.witch
@@ -1561,7 +1559,6 @@ menu.respawning,menu.respawning
 menu.returnToMenu,menu.returnToMenu
 menu.shareToLan,menu.shareToLan
 menu.singleplayer,menu.singleplayer
-merchant.deprecated,merchant.deprecated
 mount.onboard,mount.onboard
 multiplayer.connect,multiplayer.connect
 multiplayer.ipinfo,multiplayer.ipinfo
@@ -1589,7 +1586,6 @@ options.chat.height.focused,options.chat.height.focused
 options.chat.height.unfocused,options.chat.height.unfocused
 options.chat.links,options.chat.links
 options.chat.links.prompt,options.chat.links.prompt
-options.chat.opacity,options.chat.opacity
 options.chat.scale,options.chat.scale
 options.chat.title,options.chat.title
 options.chat.visibility,options.chat.visibility
@@ -2526,3 +2522,8 @@ hbui.mainMenu.HelpModal.closeButton,mco.selectServer.close
 hbui.mainMenu.LoginModal.closeButton,mco.selectServer.close
 hbui.mainMenu.newWorld,mco.brokenworld.play
 hbui.mainMenu.settings,mco.configure.world.settings.title
+trade.level.1,merchant.level.1
+trade.level.2,merchant.level.2
+trade.level.3,merchant.level.3
+trade.level.4,merchant.level.4
+trade.level.5,merchant.level.5
