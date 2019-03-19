@@ -3,28 +3,28 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 ## Kuidas paigaldada?
 
-##### Windows, Mac, Linux (Java Edition)
+#### Windows, Mac, Linux (Java Edition)
 1. Vajuta avamenüüs ![gloobusega jutumullile](https://i.imgur.com/fzYkvEw.png)
 2. Vali **Eesti keel (Eesti)**
 3. Vajuta **Done**
 
-##### Android, iOS, Windows 10 (Bedrock Edition)
+#### Android, iOS, Windows 10 (Bedrock Edition)
 1. [Laadi pakk alla siit](https://gitlab.com/Madis0/mc-language-port/tags), vajutades kõige ülemisele `.mcpack` lingile
 2. Vajuta allalaaditud `.mcpack` failile (nt telefonis tekib teade)
 3. Mine **Settings** > **Global Resources** > **vajuta paki juures +**
 4. Välju seadetest, oota kuni pakk laeb
 5. Vali **Settings** > **Language** > **Eesti keel (Eesti)**
 
-Uuendamiseks:
+##### Uuendamiseks:
 
 1. Mine **Seaded** > **Mäluruum** > **Ressursipakid** > **Eesti keele pakk** > **Vajuta prügikastile** > **Kustuta**
 2. Järgi ülalolevat õpetust
 
-##### Oculus Rift, Gear VR, Amazon (Bedrock Edition)
+#### Oculus Rift, Gear VR, Amazon (Bedrock Edition)
 
 [Kasuta paki tööle saamiseks ametlikku õpetust](https://www.minecraft.net/en-us/addons/#js-select-addon-platform) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
-##### Xbox One (Bedrock Edition)
+#### Xbox One (Bedrock Edition)
 
 [Proovi paki tööle saamiseks seda õppevideot](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123) (inglise keeles), seejärel järgi keele aktiveerimiseks üleeelmist õpetust. Toimimist ei garanteeri.
 
