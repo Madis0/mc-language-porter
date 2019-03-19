@@ -2,7 +2,7 @@
   "header": {
     "pack_id": "51cac0a6-cc74-46e2-98f8-c324e9104d85",
     "name": "Eesti keele pakk",
-    "packs_version": "1.0.2",
+    "packs_version": "1.0.3",
     "description": "Eesti keelne tõlge Minecraftile | 1) Lisa pakk 2) Mine tagasi 3) Settings > Language 4) Vali eesti keel",
     "modules": [
       {
