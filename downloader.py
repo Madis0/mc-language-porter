@@ -11,6 +11,7 @@ getJeTranslation = True
 getJeRealmsTranslation = True
 translationLang = "et_ee"  # Used when launched without arguments
 getBeOriginal = True
+jeRealmsPathIndex = 25  # Needs to be changed if Realms changes it's position in JSON (user will be notified)
 
 # Paths and variables -  https://wiki.vg/Game_files
 if len(sys.argv) > 1:  # Use the language provided as an argument if available
@@ -64,8 +65,18 @@ if getJeOriginal:
 # Get latest JE Realms file URL
 if getJeRealms:
     print("Finding Realms JAR URL...")
-    jeLatestRealmsUrl = jeLatestJson['libraries'][29]['downloads']['artifact']['url']
-    print("Realms JAR URL obtained.")
+
+    if "realms" in jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']:
+        jeLatestRealmsUrl = jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']
+        print("Realms JAR URL obtained.")
+    else:
+        # Separate red error because stderr messages are not written in the same order as normal print
+        print("Error with Realms JAR, please read below.", file=sys.stderr)
+        print("ERROR: Realms JAR has changed its path index, therefore obtaining the en_US lang will be skipped!\n" +
+              "Please check, which node Realms JAR is in on the following JSON, then rerun the script:\n" +
+              jeLatestJsonUrl + "\n(adjust jeRealmsPathIndex in the script, it is currently "
+              + str(jeRealmsPathIndex) + ")")
+        getJeRealms = False
 
 # Get latest JE assets
 if getJeTranslation or getJeRealmsTranslation:
