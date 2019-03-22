@@ -1,4 +1,5 @@
 accessibility.chat.tts.says,chat.type.text.narrate
+accessibility.chat.tts.textboxTitle,options.accessibility.text_background.chat
 accessibility.loading.done,gui.done
 accessibility.saving.done,gui.done
 accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
@@ -1813,7 +1814,6 @@ selectWorld.mapType,selectWorld.mapType
 selectWorld.mapType.normal,selectWorld.mapType.normal
 selectWorld.moreWorldOptions,selectWorld.moreWorldOptions
 selectWorld.newWorld,selectWorld.newWorld
-selectWorld.newWorld.copyOf,selectWorld.newWorld.copyOf
 selectWorld.recreate,selectWorld.recreate
 selectWorld.resultFolder,selectWorld.resultFolder
 selectWorld.seedInfo,selectWorld.seedInfo
@@ -2299,6 +2299,8 @@ tile.stone_slab3.granite.smooth.name,block.minecraft.polished_granite_slab
 tile.stone_slab4.mossy_stone_brick.name,block.minecraft.mossy_stone_brick_slab
 tile.stone_slab4.smooth_quartz.name,block.minecraft.smooth_quartz_slab
 tile.stone_slab4.stone.name,block.minecraft.stone_slab
+tile.stone_slab4.cut_sandstone.name,block.minecraft.cut_sandstone_slab
+tile.stone_slab4.cut_red_sandstone.name,block.minecraft.cut_red_sandstone_slab
 tile.coral_block.blue.name,block.minecraft.tube_coral_block
 tile.coral_block.pink.name,block.minecraft.brain_coral_block
 tile.coral_block.purple.name,block.minecraft.bubble_coral_block
