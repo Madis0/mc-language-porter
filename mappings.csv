@@ -1,10 +1,11 @@
 accessibility.chat.tts.says,chat.type.text.narrate
 accessibility.chat.tts.textboxTitle,options.accessibility.text_background.chat
-accessibility.loading.done,gui.done
-accessibility.saving.done,gui.done
+accessibility.loading.done,narrator.loading.done
+accessibility.saving.done,narrator.loading.done
 accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
 accessibility.tab.tts.title,key.keyboard.tab
 accessibility.play.editWorld,selectWorld.edit.title
+accessibility.text.space,key.keyboard.space
 achievement.acquireIron,advancements.story.smelt_iron.title
 achievement.acquireIron.desc,advancements.story.smelt_iron.description
 achievement.blaze_rod,advancements.nether.obtain_blaze_rod.title
@@ -52,6 +53,7 @@ book.pageIndicator,book.pageIndicator
 book.signButton,book.signButton
 build.tooHigh,build.tooHigh
 chalkboardScreen.locked,filled_map.locked
+chalkboardScreen.unlocked,narrator.button.difficulty_lock.unlocked
 chat.cannotSend,chat.cannotSend
 chat.copy,chat.copy
 chat.link.confirm,chat.link.confirm
@@ -311,6 +313,7 @@ disconnect.quitting,disconnect.quitting
 disconnect.spam,disconnect.spam
 disconnect.timeout,disconnect.timeout
 effect.badOmen,effect.minecraft.bad_omen
+effect.villageHero,effect.minecraft.hero_of_the_village
 enchantment.arrowDamage,enchantment.minecraft.power
 enchantment.arrowFire,enchantment.minecraft.flame
 enchantment.arrowInfinite,enchantment.minecraft.infinity
@@ -1637,6 +1640,7 @@ options.guiScale.minimum,options.ao.min
 options.guiScale.normal,options.difficulty.normal
 options.hidden,options.hidden
 options.invertMouse,options.invertMouse
+options.language,narrator.button.language
 options.mipmapLevels,options.mipmapLevels
 options.modelPart.cape,options.modelPart.cape
 options.modelPart.hat,options.modelPart.hat
@@ -1668,6 +1672,7 @@ options.skinCustomisation,options.skinCustomisation
 options.skinCustomisation.title,options.skinCustomisation.title
 options.snooper,options.snooper
 options.snooper.view,options.snooper.view
+options.accessibility,narrator.button.accessibility
 options.stream.chat.enabled.always,team.collision.always
 options.stream.chat.enabled.never,team.collision.never
 options.title,options.title
@@ -1898,6 +1903,7 @@ store.menu.home,key.keyboard.home
 store.inventory.button,key.categories.inventory
 store.inventory.title,key.categories.inventory
 store.incompatible,resourcePack.incompatible
+store.unlocked,narrator.button.difficulty_lock.unlocked
 store.popup.xblRequired.button2,gui.cancel
 store.popup.download.button1,mco.brokenworld.download
 store.popup.download.button2,mco.create.world.skip
@@ -1952,6 +1958,7 @@ tile.carved_pumpkin.name,block.minecraft.carved_pumpkin
 tile.cauldron.name,item.minecraft.cauldron
 tile.chest.name,container.chest
 tile.ender_chest.name,container.enderchest
+tile.jigsaw.name,block.minecraft.jigsaw
 tile.trapped_chest.name,block.minecraft.trapped_chest
 tile.shulkerBoxWhite.name,block.minecraft.white_shulker_box
 tile.shulkerBoxOrange.name,block.minecraft.orange_shulker_box
