@@ -55,7 +55,7 @@ trade.trade=Kauple
 
 item.banner_pattern.bricks=Telliste täide
 item.banner_pattern.vines=Sakkidega poort
-item.bucketCustomFish.name=Ämber kalaga 
+item.bucketCustomFish.name=Ämber kalaga
 item.emptyLocatorMap.name=Tühi suunajaga kaart
 
 itemGroup.search=Otsi esemeid
@@ -68,7 +68,6 @@ itemGroup.name.door=Uksed
 itemGroup.name.glassPane=Klaaspaneelid
 itemGroup.name.slab=Plaadid
 itemGroup.name.stoneBrick=Dekoratiivne kivi
-itemGroup.name.sandstone=Sandstone
 itemGroup.name.wool=Vill
 itemGroup.name.woolCarpet=Villavaip
 itemGroup.name.concretePowder=Betoonipulber
@@ -102,7 +101,6 @@ itemGroup.name.arrow=Nooled
 itemGroup.name.potion=Võlujoogid
 itemGroup.name.splashPotion=Pritsitavad võlujoogid
 itemGroup.name.lingeringPotion=Pikaldased võlujoogid
-potion.wither=Närbumine
 itemGroup.name.bed=Voodid
 itemGroup.name.anvil=Alasid
 itemGroup.name.chest=Kirstud
@@ -125,6 +123,7 @@ itemGroup.name.sign=Sildid
 itemGroup.name.wood=Puidud
 itemGroup.name.banner_pattern=Plakatimustrid
 
+potion.wither=Närbumine
 potion.prefix.grenade=Pritsitav
 potion.prefix.linger=Pikaldane
 
@@ -151,7 +150,6 @@ menu.storageManagement=Mäluruum
 menu.behaviors=Käitumispakid
 menu.worldtemplates=Maailmamallid
 menu.store=Pood
-store.new.icon=Uus
 menu.start=Alusta
 
 menu.skins=Välimus
@@ -194,12 +192,14 @@ options.editSettings=Muuda seadeid
 options.category.game=Mäng
 options.category.addons=Lisad
 
+options.accessibility=Ligipääsetavus
 options.keyboardAndMouse=Klaviatuur ja hiir
 options.controller=Mängupult
 options.touch=Puudutus
 options.profile=Profiil
 options.video=Graafika
 options.sounds=Heli
+options.language=Keel
 options.broadcast=Ülekandmine
 
 chat.title=Vestlus
