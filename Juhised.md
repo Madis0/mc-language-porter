@@ -17,8 +17,10 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 ##### Uuendamiseks:
 
-1. Mine **Seaded** > **Mäluruum** > **Ressursipakid** > **Eesti keele pakk** > **Vajuta prügikastile** > **Kustuta**
-2. Järgi ülalolevat õpetust
+1. Laadi pakk uuesti alla
+2. Vajuta allalaaditud `.mcpack` failile
+3. Mine **Seaded** > **Mäluruum** > **Ressursipakid** > **Eesti keele pakk** (vali vanem versioon) > **vajuta prügikastile** > **Kustuta**
+4. Mine seadetest välja, keel laaditakse uuesti
 
 #### Oculus Rift, Gear VR, Amazon (Bedrock Edition)
 
