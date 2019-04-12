@@ -9,8 +9,8 @@ getJeOriginal = True
 getJeRealms = True
 getJeTranslation = True
 getJeRealmsTranslation = True
-translationLang = "et_ee"  # Used when launched without arguments
 getBeOriginal = True
+translationLang = "et_ee"  # Used when launched without arguments
 jeRealmsPathIndex = 25  # Needs to be changed if Realms changes it's position in JSON (user will be notified)
 
 # Paths and variables -  https://wiki.vg/Game_files

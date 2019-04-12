@@ -217,9 +217,11 @@ createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.serverSimDistanceFormat,options.chunks
 realmsInvitationScreen.backup,mco.brokenworld.download
 realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
+realmsSharingScreen.join,mco.configure.world.slot.tooltip.active
 realmsCreateScreen.purchasePrefix.create,mco.create.world
 realmsCreateScreen.purchasePrefix.renew,mco.selectServer.expiredRenew
 networkWorld.add_server,selectServer.add
+networkWorld.join,mco.configure.world.slot.tooltip.active
 realmsSettingsScreen.playRealmButton,mco.selectServer.play
 realmsSettingsScreen.worldSectionTitle,selectWorld.world
 realmsSettingsScreen.playersSectionTitle,mco.configure.world.players.title
@@ -838,7 +840,6 @@ item.banner.half_vertical_right.red,block.minecraft.banner.half_vertical_right.r
 item.banner.half_vertical_right.silver,block.minecraft.banner.half_vertical_right.light_gray
 item.banner.half_vertical_right.white,block.minecraft.banner.half_vertical_right.white
 item.banner.half_vertical_right.yellow,block.minecraft.banner.half_vertical_right.yellow
-item.banner.illager_captain.name,block.minecraft.illager_banner
 item.banner.lightBlue.name,block.minecraft.light_blue_banner
 item.banner.lime.name,block.minecraft.lime_banner
 item.banner.magenta.name,block.minecraft.magenta_banner
@@ -1756,6 +1757,7 @@ potion.wither,entity.minecraft.wither
 progressScreen.generating,menu.generatingLevel
 progressScreen.saving,menu.savingLevel
 progressScreen.message.building,menu.generatingTerrain
+progressScreen.dialog.button.join,mco.configure.world.slot.tooltip.active
 raid.name,event.minecraft.raid
 recipeBook.setting.off,mco.configure.world.off
 record.nowPlaying,record.nowPlaying
