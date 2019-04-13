@@ -42,6 +42,13 @@ Antud pakk tõlgib hetkel järgnevat:
 
 Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõlgitud 🙂
 
+## Kuidas tõlge on toetatud?
+
+Tõlget pakun ressursipaki kujul, mida plaanin uuendada vastavalt mängu uute versioonide väljalaskele. Pakki väljastan keskkondadesse [GitLab](https://gitlab.com/Madis0/mc-language-port/tags), [MCPEDL](https://mcpedl.com/estonian-language-pack/) (suunab Gitlabi) ning [Curseforge](https://minecraft.curseforge.com/projects/estonian-language-pack).
+
+Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
+
+
 ## Kuidas saan kaasa aidata?
 
 Kõige paremini saad tõlkele kaasa aidata otse allikast - [Minecrafti ametlik Crowdini leht](https://crowdin.com/project/minecraft). 
