@@ -321,6 +321,7 @@ options.texelAA=Tekstuuripikslite sakisilumine
 options.resetSettings=Vaikeseaded
 controllerLayoutScreen.resetAllBindings=Vaikeseaded
 
+createWorldScreen.defaultName=Minu maailm
 createWorldScreen.gameMode.default=Vaikimisi mängurežiim
 createWorldScreen.gameMode.personal=Isiklik mängurežiim
 createWorldScreen.worldPreferences=Maailma eelistused
@@ -343,6 +344,7 @@ createWorldScreen.mobLoot=Elukad kukutavad saaki
 createWorldScreen.naturalregeneration=Naturaalne taastumine
 createWorldScreen.tileDrops=Plokid kukutavad esemeid
 createWorldScreen.immediaterespawn=Kohene taassündimine
+createWorldScreen.respawnRadius=Taassünni raadius
 createWorldScreen.experimentalgameplay=Kasuta katselist mänguviisi
 selectWorld.cheats=Luba sohitegemine
 createWorldScreen.alwaysDay=Alati päev
@@ -368,3 +370,8 @@ content.import.succeeded="%s" edukalt imporditud
 content.import.succeeded_with_warnings="%s" edukalt hoiatustega imporditud
 content.import.succeeded_with_warnings.subtitle=Klõpsa rohkema teabe saamiseks
 content.import.started=Importimine alustatud...
+
+accessibility.chat.howtoopen=Vestluse avamiseks vajuta %s
+accessibility.key.gamepad=mängupuldi %s
+accessibility.list.or.two=%s või %
+accessibility.list.or.three_or_more.last= või %s
