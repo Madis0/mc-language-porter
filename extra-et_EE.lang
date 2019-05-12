@@ -61,7 +61,7 @@ map.position=Asukoht: %s, %s, %s
 
 itemGroup.search=Otsi esemeid
 itemGroup.name.planks=Lauad
-itemGroup.name.walls=Seinad
+itemGroup.name.walls=Müürid
 itemGroup.name.fence=Aiad
 itemGroup.name.fenceGate=Aiaväravad
 itemGroup.name.stairs=Trepid
@@ -150,7 +150,6 @@ menu.globalpacks=Üldressursid
 menu.storageManagement=Mäluruum
 menu.behaviors=Käitumispakid
 menu.worldtemplates=Maailmamallid
-menu.store=Pood
 menu.start=Alusta
 
 menu.skins=Välimus
@@ -282,7 +281,7 @@ howtoplay.dispensers=Jaoturid
 howtoplay.endCities=Endilinnad
 howtoplay.shulkerBoxes=Šulkerikastid
 howtoplay.servers=Serverid
-howtoplay.theStore=Pood
+howtoplay.theStore=Marketplace
 howtoplay.resourceAndBehaviorPacks=Ressursi- ja käitumispakid
 
 options.thirdperson=Kaamera perspektiiv
