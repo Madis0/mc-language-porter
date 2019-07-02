@@ -234,6 +234,9 @@ realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
+dayOneExperience.back,gui.back
+dayOneExperience.settings,mco.configure.world.settings.title
+dayOneExperience.worlds,mco.configure.worlds.title
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
 death.attack.arrow.item,death.attack.arrow.item
@@ -393,6 +396,7 @@ entity.falling_block.name,entity.minecraft.falling_block
 entity.fireball.name,entity.minecraft.fireball
 entity.fireworks_rocket.name,entity.minecraft.firework_rocket
 entity.fish.clownfish.name,entity.minecraft.tropical_fish.predefined.5
+entity.fox.name,entity.minecraft.fox
 entity.cod.name,entity.minecraft.cod
 entity.pufferfish.name,entity.minecraft.pufferfish
 entity.salmon.name,entity.minecraft.salmon
@@ -469,6 +473,7 @@ entity.zombie.name,entity.minecraft.zombie
 entity.zombie_horse.name,entity.minecraft.zombie_horse
 entity.zombie_pigman.name,entity.minecraft.zombie_pigman
 entity.zombie_villager.name,entity.minecraft.zombie_villager
+entity.zombie_villager_v2.name,entity.minecraft.zombie_villager
 addExternalServerScreen.addServer,selectServer.add
 addExternalServerScreen.nameTextBoxLabel,addServer.enterName
 addExternalServerScreen.ipTextBoxLabel,addServer.enterIp
@@ -1483,6 +1488,15 @@ itemGroup.name.sandstone,block.minecraft.sandstone
 itemGroup.name.stainedClay,block.minecraft.terracotta
 itemGroup.name.stone,block.minecraft.stone
 itemGroup.name.monsterStoneEgg,block.minecraft.infested_stone
+joincode.icon_text.null,mco.configure.world.slot.empty
+joincode.icon_text.3,block.minecraft.rail
+joincode.icon_text.5,item.minecraft.cookie
+joincode.icon_text.8,block.minecraft.cake
+joincode.icon_text.10,item.minecraft.water_bucket
+joincode.icon_text.12,item.minecraft.apple
+joincode.icon_text.13,item.minecraft.carrot
+joincode.icon_text.14,entity.minecraft.panda
+joincode.icon_text.15,book.signButton
 key.attack,key.attack
 key.back,key.back
 key.categories.gameplay,key.categories.gameplay
@@ -2508,8 +2522,7 @@ structure_block.mirror.none,gui.none
 3d_export.off,mco.configure.world.off
 3d_export.remove,mco.configure.world.invites.remove.tooltip
 3d_export.reset,controls.reset
-title.oldgl1,title.oldgl1
-title.oldgl2,title.oldgl2
+title.oldgl1,title.oldgl.deprecation.line1
 translation.test.args,translation.test.args
 translation.test.complex,translation.test.complex
 translation.test.escape,translation.test.escape
