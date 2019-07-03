@@ -53,7 +53,9 @@ if getJeOriginal or getJeRealms or getJeTranslation or getJeRealmsTranslation:
     print("Finding the Java Edition latest snapshot JSON...")
     jeGlobalJson = requests.get(jeGlobalJsonUrl).json()
     jeLatestJsonUrl = jeGlobalJson['versions'][0]['url']
+    jeLatestAltJsonUrl = jeGlobalJson['versions'][1]['url']
     jeLatestJson = requests.get(jeLatestJsonUrl).json()
+    jeLatestAltJson = requests.get(jeLatestAltJsonUrl).json()
     print("Latest snapshot JSON obtained.")
 
 # Get latest JE JAR url
@@ -68,14 +70,18 @@ if getJeRealms:
 
     if "realms" in jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']:
         jeLatestRealmsUrl = jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']
-        print("Realms JAR URL obtained.")
+        print("Realms JAR URL obtained from snapshot.")
+    elif "realms" in jeLatestAltJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']:
+        jeLatestRealmsUrl = jeLatestAltJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']
+        print("Realms JAR URL obtained from release.")
     else:
         # Separate red error because stderr messages are not written in the same order as normal print
         print("Error with Realms JAR, please read below.", file=sys.stderr)
         print("ERROR: Realms JAR has changed its path index, therefore obtaining the en_US lang will be skipped!\n" +
-              "Please check, which node Realms JAR is in on the following JSON, then rerun the script:\n" +
+              "Please check, which node Realms JAR is in on the snapshot JSON, then rerun the script:\n" +
               jeLatestJsonUrl + "\n(adjust jeRealmsPathIndex in the script, it is currently "
-              + str(jeRealmsPathIndex) + ")")
+              + str(jeRealmsPathIndex) + ")\n" +
+              "Alternatively look for it in the release JSON here:\n" + jeLatestAltJsonUrl)
         getJeRealms = False
 
 # Get latest JE assets
