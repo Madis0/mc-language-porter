@@ -56,5 +56,12 @@ Seal saad tõlgetele hääli anda ja uusi juurde pakkuda.
 
 ## Kuidas on see seotud äpiga "Tõlked Minecraftile"?
 
-Otseselt ei ole; tegu on väga hea äpiga, kuhu olen isegi tõlkeid panustanud. 
-Ainuke probleem ongi see, et seda pole pea aasta aega uuendatud, seega paljud tõlked on puudu, mistõttu tegin oma eraldiseisva paki.
+Tegu on väga hea äpiga, kuhu olen isegi tõlkeid panustanud. Ent kui seda pikka aega ei uuendatud, leidsin et on targem luua oma pakk. Järgnevalt on toodud erinevused:
+
+|            | Eesti keele pakk           | Tõlked Minecraftile             |
+|------------|----------------------------|---------------------------------|
+| Tõlked     | Java Edition + eritõlked   | Java Edition + kogukonna tõlked |
+| Uuendamine | katsetusversioonidega      | teadmata                        |
+| Levitamine | Gitlab, MCPEDL, Curseforge | Github, MCPEDL, Curseforge      |
+| Rakendus   | Android, iOS (MCPEDL)      | Android                         |
+| Keeled     | eesti                      | 117 keelt (rakenduses valitav)  |
