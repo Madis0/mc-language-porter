@@ -165,6 +165,8 @@ roaming.status_brief.no_restrictions=Kasutatav mitmel platvormil
 roaming.status_hover.limited_usage=Saadaval ainult valitud platvormidel.
 roaming.status_hover.no_restrictions=Saadaval igal Bedrocki platvormil!
 
+resourcePack.header.level=Nõua mängijatelt liitumiseks ressursipakkidega nõustumist
+resourcePack.description.default.level=Saad neid seadetest muuta.
 resourcePack.selected.title.packs=Aktiivsed pakid
 resourcePack.available.title.packs=Saadaolevad pakid
 
@@ -190,6 +192,8 @@ networkWorld.servers_label=Serverid
 selectWorld.tab.thirdParty=Serverid
 selectTemplate.myTemplates=Saadaolevad mallid
 selectTemplate.inventory=Minu Marketplace'i pakid
+selectTemplate.suggestedContent.title=Hangi rohkem malle
+selectTemplate.suggestedContent.button=Vaata rohkem malle
 
 options.editSettings=Muuda seadeid
 options.category.game=Mäng
@@ -223,6 +227,8 @@ options.fullKeyboardGameplay=Mängi ainult klaviatuuriga
 key.jump=Hüppa/lenda üles
 key.sneak=Hiili/lenda alla
 key.mobEffects=Mõjud
+key.menuTabLeft=Menüü vasakpoolne kaart
+key.menuTabRight=Menüü parempoolne kaart
 
 chat.title=Vestlus
 chat.title.cheats=Vestlus ja käsklused
@@ -243,6 +249,18 @@ hostOption.weather=Ilm
 hostOption.weather.clear=Selge
 hostOption.weather.rain=Vihmane
 hostOption.weather.thunderstorm=Tormine
+
+chat.settings=Vestluse seaded
+chat.settings.chatColor=Vestluse värv
+chat.settings.chatFont=Vestluse font
+chat.settings.color=Värv
+chat.settings.fontColor=Fondivärv
+chat.settings.fontSize=Suurus: %s
+chat.settings.fontSize.disabled=Suurus: saadaval fondiga %s
+chat.settings.lineSpacing=Reavahe
+chat.settings.mentions=Minu mainimised
+chat.settings.mentionsColor=Minu mainimiste värv
+chat.settings.muteAll=Vaigista kõik
 
 howtoplay.whatsNew=Mis on uut
 patchNotes.continue=Jätka
@@ -320,6 +338,7 @@ options.texelAA=Tekstuuripikslite sakisilumine
 options.resetSettings=Vaikeseaded
 controllerLayoutScreen.resetAllBindings=Vaikeseaded
 
+createWorldScreen.createOnRealms=Loo Realmsis
 createWorldScreen.defaultName=Minu maailm
 createWorldScreen.gameMode.default=Vaikimisi mängurežiim
 createWorldScreen.gameMode.personal=Isiklik mängurežiim
@@ -360,6 +379,14 @@ gui.exportWorldLong=Ekspordi maailm
 createWorldScreen.deleteWorld=Kustuta maailm
 gui.copyWorld=Kopeeri maailm
 
+options.turnOffAchievements=Lülitad saavutused välja?
+options.turnOffAchievements.message=Saavutused on saadaval ainult ellujäämisrežiimiga maailmates, kus on keelatud sohitegemine.  Jätkates ei teeni keegi selles maailmas mängides saavutusi, isegi kui lülitad antud valikud vahetult enne mängimist tagasi.
+options.achievementsDisabled=Selles maailmas ei saa saavutusi teenida.
+gui.continue=Jätka
+options.continue=Jätka
+gui.goBack=Mine tagasi
+options.goBack=Mine tagasi
+
 content.import.failed="%s" importimine ebaõnnestus
 content.import.failed.subtitle=Rohkema teabe saamiseks vaata väljundlogi
 content.import.failed.subtitle_duplicate=Tuvastati duplikaatpakk
@@ -372,5 +399,5 @@ content.import.started=Importimine alustatud...
 
 accessibility.chat.howtoopen=Vestluse avamiseks vajuta %s
 accessibility.key.gamepad=mängupuldi %s
-accessibility.list.or.two=%s või %
+accessibility.list.or.two=%s või %s
 accessibility.list.or.three_or_more.last= või %s
