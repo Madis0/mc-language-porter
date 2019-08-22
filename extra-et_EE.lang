@@ -251,6 +251,7 @@ hostOption.weather.rain=Vihmane
 hostOption.weather.thunderstorm=Tormine
 
 chat.settings=Vestluse seaded
+chat.settings.tts=Tekst kõneks vestluse jaoks
 chat.settings.chatColor=Vestluse värv
 chat.settings.chatFont=Vestluse font
 chat.settings.color=Värv
@@ -287,7 +288,7 @@ howtoplay.fishing=Kalastamine
 howtoplay.mounts=Ratsutamine
 howtoplay.pets=Lemmikloomad
 howtoplay.ranching=Karjatamine
-howtoplay.raids=Haarangud
+howtoplay.raids=Reidid
 howtoplay.trading=Külaelanikega kauplemine
 howtoplay.gameSettings=Mängu seaded
 howtoplay.commands=Käsklused
@@ -301,6 +302,10 @@ howtoplay.shulkerBoxes=Šulkerikastid
 howtoplay.servers=Serverid
 howtoplay.theStore=Marketplace
 howtoplay.resourceAndBehaviorPacks=Ressursi- ja käitumispakid
+
+options.enableChatTextToSpeech=Luba tekst kõneks vestluse jaoks
+options.enableUITextToSpeech=Luba liidese ekraanilugeja
+options.enableOpenChatMessage=Luba vestluse avamise sõnum
 
 options.thirdperson=Kaamera perspektiiv
 options.thirdperson.firstperson=Mängija silme läbi
