@@ -5,13 +5,13 @@ import urllib.request
 import sys
 
 # Choose what files to obtain with the script
-getJeOriginal = True
-getJeRealms = True
-getJeTranslation = True
-getJeRealmsTranslation = True
-getBeOriginal = True
-translationLang = "et_ee"  # Used when launched without arguments
-jeRealmsPathIndex = 25  # Needs to be changed if Realms changes it's position in JSON (user will be notified)
+# Original files have much larger download sizes as they download the whole archive to extract files from.
+getJeOriginal = False            # ~25 MB
+getJeRealms = False              # ~25 MB
+getJeTranslation = False         # ~0.2 MB
+getJeRealmsTranslation = False   # ~0.01 MB
+getBeOriginal = True            # ~47 MB
+translationLang = "et_ee"       # Used when launched without arguments
 
 # Paths and variables -  https://wiki.vg/Game_files
 if len(sys.argv) > 1:  # Use the language provided as an argument if available
@@ -53,41 +53,21 @@ if getJeOriginal or getJeRealms or getJeTranslation or getJeRealmsTranslation:
     print("Finding the Java Edition latest snapshot JSON...")
     jeGlobalJson = requests.get(jeGlobalJsonUrl).json()
     jeLatestJsonUrl = jeGlobalJson['versions'][0]['url']
-    jeLatestAltJsonUrl = jeGlobalJson['versions'][1]['url']
     jeLatestJson = requests.get(jeLatestJsonUrl).json()
-    jeLatestAltJson = requests.get(jeLatestAltJsonUrl).json()
     print("Latest snapshot JSON obtained.")
 
-# Get latest JE JAR url
-if getJeOriginal:
+# Get latest JE JAR url (includes Realms)
+if getJeOriginal or getJeRealms:
     print("Finding Java Edition JAR URL...")
     jeLatestJarUrl = jeLatestJson['downloads']['client']['url']
+    jeLatestJarSize = jeLatestJson['downloads']['client']['size']
     print("Java Edition JAR URL obtained.")
-
-# Get latest JE Realms file URL
-if getJeRealms:
-    print("Finding Realms JAR URL...")
-
-    if "realms" in jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']:
-        jeLatestRealmsUrl = jeLatestJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']
-        print("Realms JAR URL obtained from snapshot.")
-    elif "realms" in jeLatestAltJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']:
-        jeLatestRealmsUrl = jeLatestAltJson['libraries'][jeRealmsPathIndex]['downloads']['artifact']['url']
-        print("Realms JAR URL obtained from release.")
-    else:
-        # Separate red error because stderr messages are not written in the same order as normal print
-        print("Error with Realms JAR, please read below.", file=sys.stderr)
-        print("ERROR: Realms JAR has changed its path index, therefore obtaining the en_US lang will be skipped!\n" +
-              "Please check, which node Realms JAR is in on the snapshot JSON, then rerun the script:\n" +
-              jeLatestJsonUrl + "\n(adjust jeRealmsPathIndex in the script, it is currently "
-              + str(jeRealmsPathIndex) + ")\n" +
-              "Alternatively look for it in the release JSON here:\n" + jeLatestAltJsonUrl)
-        getJeRealms = False
 
 # Get latest JE assets
 if getJeTranslation or getJeRealmsTranslation:
     print("Finding JE assets JSON...")
     jeLatestAssetUrl = jeLatestJson['assetIndex']['url']
+    jeLatestAssetSize = jeLatestJson['assetIndex']['size']
     jeLatestAssetJson = requests.get(jeLatestAssetUrl).json()
     print("Assets JSON obtained.")
 
@@ -95,6 +75,7 @@ if getJeTranslation or getJeRealmsTranslation:
 if getJeTranslation:
     print("Finding JE translation file URL...")
     jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
+    jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
     jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
     print("Translation file URL obtained.")
 
@@ -102,6 +83,7 @@ if getJeTranslation:
 if getJeRealmsTranslation:
     print("Finding Realms translation file URL...")
     jeRealmsTranslationHash = jeLatestAssetJson['objects']['realms/lang/' + jeTranslationFile]['hash']
+    jeRealmsTranslationSize = jeLatestAssetJson['objects']['realms/lang/' + jeTranslationFile]['size']
     jeRealmsTranslationUrl = jeGlobalAssetUrl + jeRealmsTranslationHash[0:2] + "/" + jeRealmsTranslationHash
     print("Translation file URL obtained.")
 
@@ -125,26 +107,27 @@ def download_text(url, filename):
 
 # File obtaining
 if getJeOriginal:
-    print("Downloading and extracting " + jeLangFile + " from Java Edition JAR...")
+    print("Downloading and extracting " + jeLangFile + " (Minecraft) from Java Edition JAR... (" + str(jeLatestJarSize) + " bytes to download)")
     unpack_zip(jeLatestJarUrl, jeJarLangPath, jeLangFile)
     print(jeLangFile + " has been saved in the current directory.")
 
 if getJeRealms:
-    print("Downloading and extracting " + jeRealmsLangFile + " from Realms JAR...")
-    unpack_zip(jeLatestRealmsUrl, jeRealmsLangPath, jeRealmsLangFile)
+    print("Downloading and extracting " + jeLangFile + " (Realms) from Java Edition JAR... (" + str(jeLatestJarSize) + " bytes to download)")
+    unpack_zip(jeLatestJarUrl, jeRealmsLangPath, jeRealmsLangFile)
     print(jeRealmsLangFile + " has been saved in the current directory.")
 
 if getJeTranslation:
-    print("Downloading and saving " + jeTranslationFile + " from Java Edition assets...")
+    print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + str(jeTranslationSize) + " bytes to download)")
     download_text(jeTranslationUrl, jeTranslationFile)
     print(jeTranslationFile + " has been saved in the current directory.")
 
 if getJeRealmsTranslation:
-    print("Downloading and saving " + jeRealmsTranslationFile + " from Realms assets...")
+    print("Downloading and saving " + jeRealmsTranslationFile + " from Realms assets... (" + str(jeRealmsTranslationSize) + " bytes to download)")
     download_text(jeRealmsTranslationUrl, jeRealmsTranslationFile)
     print(jeRealmsTranslationFile + " has been saved in the current directory.")
 
 if getBeOriginal:
-    print("Downloading and extracting " + beLangFile + " from Bedrock Edition resources...")
+    beLangFileRequest = urllib.request.urlopen(beLatestZipUrl)  # https://stackoverflow.com/a/5935
+    print("Downloading and extracting " + beLangFile + " from Bedrock Edition resources... (" + str(beLangFileRequest.info()['Content-Length']) + " bytes to download)")
     unpack_zip(beLatestZipUrl, beZipLangPath, beLangFile)
     print(beLangFile + " has been saved in the current directory.")
