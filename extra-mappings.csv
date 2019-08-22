@@ -2,7 +2,9 @@ key.drop,key.drop
 options.autojump,options.autoJump
 options.guiScale.optionName,options.guiScale
 options.sound,options.sound
+
 menu.returnToGame,menu.returnToGame
+deathScreen.quit,deathScreen.titleScreen
 
 potion.moveSpeed,effect.minecraft.speed
 
@@ -67,6 +69,8 @@ item.spawn_egg.entity.zombie_pigman.name,item.minecraft.zombie_pigman_spawn_egg
 item.spawn_egg.entity.zombie_villager.name,item.minecraft.zombie_villager_spawn_egg
 item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spawn_egg
 
+item.banner.illager_captain.name,block.minecraft.ominous_banner
+
 tile.planks.acacia.name,block.minecraft.acacia_planks
 tile.planks.big_oak.name,block.minecraft.dark_oak_planks
 tile.planks.birch.name,block.minecraft.birch_planks
@@ -101,6 +105,8 @@ tile.nether_brick.name,block.minecraft.nether_bricks
 tile.red_nether_brick.name,block.minecraft.red_nether_bricks
 
 tile.clay.name,block.minecraft.clay
+
+item.redstone.name,item.minecraft.redstone
 
 item.chainmail_helmet.name,item.minecraft.chainmail_helmet
 item.chainmail_chestplate.name,item.minecraft.chainmail_chestplate
