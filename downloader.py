@@ -6,10 +6,10 @@ import sys
 
 # Choose what files to obtain with the script
 # Original files have much larger download sizes as they download the whole archive to extract files from.
-getJeOriginal = False            # ~25 MB
-getJeRealms = False              # ~25 MB
-getJeTranslation = False         # ~0.2 MB
-getJeRealmsTranslation = False   # ~0.01 MB
+getJeOriginal = True            # ~25 MB
+getJeRealms = True              # ~25 MB
+getJeTranslation = True         # ~0.2 MB
+getJeRealmsTranslation = True   # ~0.01 MB
 getBeOriginal = True            # ~47 MB
 translationLang = "et_ee"       # Used when launched without arguments
 

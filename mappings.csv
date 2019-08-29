@@ -75,6 +75,7 @@ craftingScreen.tab.survival,key.categories.inventory
 craftingScreen.tab.armor,attribute.name.generic.armor
 credits.skip,mco.create.world.skip
 cauldronScreen.header,item.minecraft.cauldron
+codeScreen.buttonTTS.restore,mco.backup.button.restore
 color.black,color.minecraft.black
 color.gray,color.minecraft.gray
 color.blue,color.minecraft.blue
@@ -218,6 +219,7 @@ createWorldScreen.gameMode.survival,selectWorld.gameMode.survival
 createWorldScreen.gameMode.serverDefault,generator.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.serverSimDistanceFormat,options.chunks
+createWorldScreen.clearPlayerData.cancel,gui.cancel
 realmsInvitationScreen.backup,mco.brokenworld.download
 realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
 realmsSharingScreen.join,mco.configure.world.slot.tooltip.active
@@ -234,9 +236,6 @@ realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
-dayOneExperience.back,gui.back
-dayOneExperience.settings,mco.configure.world.settings.title
-dayOneExperience.worlds,mco.configure.worlds.title
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
 death.attack.arrow.item,death.attack.arrow.item
@@ -282,8 +281,6 @@ death.fell.assist.item,death.fell.assist.item
 death.fell.finish,death.fell.finish
 death.fell.finish.item,death.fell.finish.item
 death.fell.killer,death.fell.killer
-deathScreen.deleteWorld,deathScreen.deleteWorld
-deathScreen.leaveServer,deathScreen.leaveServer
 deathScreen.message,deathScreen.title
 deathScreen.quit.confirm,deathScreen.quit.confirm
 deathScreen.respawn,deathScreen.respawn
@@ -320,6 +317,7 @@ disconnect.overflow,disconnect.overflow
 disconnect.quitting,disconnect.quitting
 disconnect.spam,disconnect.spam
 disconnect.timeout,disconnect.timeout
+edu.worlds_screen.new_world,selectWorld.newWorld
 effect.badOmen,effect.minecraft.bad_omen
 effect.villageHero,effect.minecraft.hero_of_the_village
 enchantment.arrowDamage,enchantment.minecraft.power
@@ -508,11 +506,14 @@ gui.cancel,gui.cancel
 gui.close,mco.selectServer.close
 gui.custom,item.minecraft.firework_star.custom_color
 gui.default,generator.default
+gui.delete,selectWorld.delete
 gui.done,gui.done
 gui.down,gui.down
+gui.edit,selectWorld.edit
 gui.no,gui.no
 gui.none,gui.none
 gui.select,mco.template.button.select
+gui.skip,mco.create.world.skip
 gui.stats,gui.stats
 gui.tab,key.keyboard.tab
 gui.toMenu,gui.toTitle
@@ -1477,6 +1478,7 @@ item.turtle_helmet.name,item.minecraft.turtle_helmet
 item.turtle_shell_piece.name,item.minecraft.scute
 item.phantom_membrane.name,item.minecraft.phantom_membrane
 item.sweet_berries.name,item.minecraft.sweet_berries
+item.suspicious_stew.name,item.minecraft.suspicious_stew
 item.banner_pattern.creeper,item.minecraft.creeper_banner_pattern.desc
 item.banner_pattern.flower,item.minecraft.flower_banner_pattern.desc
 item.banner_pattern.name,item.minecraft.skull_banner_pattern
@@ -1716,8 +1718,10 @@ hudScreen.tooltip.empty,mco.configure.world.slot.empty
 playscreen.header.local,mco.brokenworld.play
 playscreen.realmExpired,mco.configure.world.subscription.expired
 playscreen.worlds,mco.configure.worlds.title
+playscreen.delete.legacy.confirm,selectWorld.deleteButton
 permissions.level.operator,mco.configure.world.invites.ops.tooltip
 permissions.nocheats.cancel,gui.cancel
+permissions.operator,mco.configure.world.invites.ops.tooltip
 potion.absorption,effect.minecraft.absorption
 potion.blindness,effect.minecraft.blindness
 potion.conduitPower,effect.minecraft.conduit_power
@@ -2124,6 +2128,7 @@ tile.red_flower.tulipOrange.name,block.minecraft.orange_tulip
 tile.red_flower.tulipPink.name,block.minecraft.pink_tulip
 tile.red_flower.tulipRed.name,block.minecraft.red_tulip
 tile.red_flower.tulipWhite.name,block.minecraft.white_tulip
+tile.wither_rose.name,block.minecraft.wither_rose
 tile.furnace.name,container.furnace
 tile.glass.name,block.minecraft.glass
 tile.golden_rail.name,block.minecraft.powered_rail
@@ -2347,6 +2352,11 @@ tile.coral.pink.name,block.minecraft.brain_coral
 tile.coral.purple.name,block.minecraft.bubble_coral
 tile.coral.red.name,block.minecraft.fire_coral
 tile.coral.yellow.name,block.minecraft.horn_coral
+tile.coral.blue_dead.name,block.minecraft.dead_tube_coral
+tile.coral.pink_dead.name,block.minecraft.dead_brain_coral
+tile.coral.purple_dead.name,block.minecraft.dead_bubble_coral
+tile.coral.red_dead.name,block.minecraft.dead_fire_coral
+tile.coral.yellow_dead.name,block.minecraft.dead_horn_coral
 tile.coral_fan.blue_fan.name,block.minecraft.tube_coral_fan
 tile.coral_fan.pink_fan.name,block.minecraft.brain_coral_fan
 tile.coral_fan.purple_fan.name,block.minecraft.bubble_coral_fan
@@ -2559,3 +2569,8 @@ trade.level.3,merchant.level.3
 trade.level.4,merchant.level.4
 trade.level.5,merchant.level.5
 contentlog.history.copyToClipboard,chat.copy
+contentlog.delete.cancel,gui.cancel
+dr.right_side.category_title,disconnect.genericReason
+dr.body_size_label_text,createWorld.customize.flat.height
+dr.none_button_text,gui.none
+dr.default_piece_button_text,generator.default
