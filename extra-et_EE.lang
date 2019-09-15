@@ -167,8 +167,18 @@ roaming.status_hover.no_restrictions=Saadaval igal Bedrocki platvormil!
 
 resourcePack.header.level=Nõua mängijatelt liitumiseks ressursipakkidega nõustumist
 resourcePack.description.default.level=Saad neid seadetest muuta.
-resourcePack.selected.title.packs=Aktiivsed pakid
-resourcePack.available.title.packs=Saadaolevad pakid
+resourcePack.selected.title.packs=Aktiivsed
+resourcePack.available.title.packs=Minu pakid
+resourcePack.available.add=Aktiveeri
+resourcePack.selected.remove=Desaktiveeri
+resourcePack.description.store=Vt Marketplace'is
+resourcePack.suggestedContent.title=Hangi rohkem pakke
+resourcePack.suggestedContent.button.viewMore=Vaata rohkem pakke
+resourcePack.available.none.text=Sul pole ressursipakke
+resourcePack.available.none.store=Vaata Marketplace'i
+
+store.mashup.readMore=Loe rohkem
+store.mashup.readLess=Loe vähem
 
 storageManager.multiselect=Mitmikvalik
 storageManager.contentType.worldTemplates=Maailmamallid

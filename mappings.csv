@@ -1785,6 +1785,7 @@ record.nowPlaying,record.nowPlaying
 resourcePack.available.title,resourcePack.available.title
 resourcePack.folderInfo,resourcePack.folderInfo
 resourcePack.selected.title,resourcePack.selected.title
+resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
 storageManager.contentType.world,selectWorld.world

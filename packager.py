@@ -14,6 +14,7 @@ packName = "eesti"
 packExt = ".mcpack"
 
 # Obtains the version number from resource file (e.g. 1.13.0.1) and uses first two numbers as a prefix (e.g 1.13.x)
+# Also updates the min_engine_version as suggested by MC wiki
 useVersionAsPrefix = True
 versionUrl = "https://aka.ms/MinecraftBetaResources"
 versionRegex = "(\d+\.\d+)\.\d+\.\d+"
@@ -25,28 +26,32 @@ shutil.copyfile(langFile, packFolder + langFolder + langFile)
 # Increase version number by one in manifest
 def iterate_manifest(manifestFile):
     lines = open(manifestFile, 'r', encoding="utf-8")
-    versionJson = json.load(lines)
-    versionSegments = versionJson["header"]["packs_version"].split('.')
+    manifestJson = json.load(lines)
+    manifestVersion = manifestJson["header"]["packs_version"]
+    manifestEngine = manifestJson["header"]["min_engine_version"]
 
     if useVersionAsPrefix:
         request = requests.head(versionUrl, allow_redirects=True)
         versionPrefix = re.findall(versionRegex, request.url)[0]
 
-        if versionPrefix in versionJson["header"]["packs_version"]:
-            versionSegments[2] = str(int(versionSegments[2]) + 1)  # Append 1 to version's last number
-            versionJson["header"]["packs_version"] = '.'.join(versionSegments)  # Merge it back
+        if versionPrefix in '.'.join(map(str, manifestVersion)):
+            manifestVersion[2] = manifestVersion[2] + 1  # Append 1 to version's last number
         else:
-            versionJson["header"]["packs_version"] = versionPrefix + ".1"  # Create new version number
+            manifestVersion[0] = int(versionPrefix.split(".")[0])
+            manifestVersion[1] = int(versionPrefix.split(".")[1])
+            manifestVersion[2] = 1  # Create new version number
+
+            manifestEngine[0] = int(versionPrefix.split(".")[0])
+            manifestEngine[1] = int(versionPrefix.split(".")[1])
             print("New major version " + versionPrefix + "!")
 
     else:
-        versionSegments[2] = str(int(versionSegments[2]) + 1)  # Append 1 to version's last number
-        versionJson["header"]["packs_version"] = '.'.join(versionSegments)  # Merge it back
+        manifestVersion[2] = manifestVersion[2] + 1  # Append 1 to version's last number
 
-    print("Pack's version is now " + versionJson["header"]["packs_version"] + ".")
+    print("Pack's version is now " + '.'.join(map(str, manifestVersion)) + ".")
 
     with open(manifestFile, 'w') as outfile:
-        json.dump(versionJson, outfile)
+        json.dump(manifestJson, outfile)
 
 
 print("Increasing manifest version...")
