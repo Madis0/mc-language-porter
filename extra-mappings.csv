@@ -161,3 +161,8 @@ tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 tile.turtle_egg.name,block.minecraft.turtle_egg
 
 howtoplay.eyeOfEnder,item.minecraft.ender_eye
+
+dr.left_arm,options.modelPart.left_sleeve
+dr.right_arm,options.modelPart.right_sleeve
+dr.left_leg,options.modelPart.left_pants_leg
+dr.right_leg,options.modelPart.right_pants_leg
