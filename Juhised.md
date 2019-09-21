@@ -11,7 +11,7 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 #### Android, iOS, Windows 10 (Bedrock Edition)
 1. [Laadi pakk alla siit](https://gitlab.com/Madis0/mc-language-port/tags), vajutades kõige ülemisele `.mcpack` lingile
 2. Vajuta allalaaditud `.mcpack` failile (nt telefonis tekib teade)
-3. Mine **Settings** > **Global Resources** > **vajuta paki juures +**
+3. Mine **Settings** > **Global Resources** > **My Packs** > **vajuta paki juures Activate**
 4. Välju seadetest, oota kuni pakk laeb
 5. Vali **Settings** > **Language** > **Eesti keel (Eesti)**
 
@@ -56,12 +56,6 @@ Seal saad tõlgetele hääli anda ja uusi juurde pakkuda.
 
 ## Kuidas on see seotud äpiga "Tõlked Minecraftile"?
 
-Tegu on väga hea äpiga, kuhu olen isegi tõlkeid panustanud. Ent kui seda pikka aega ei uuendatud, leidsin et on targem luua oma pakk. Järgnevalt on toodud erinevused:
+Otseselt seotud pole aga tegu on väga hea äpiga mida olen oma tõlgetega toetanud ning toetan ka edaspidi. 
 
-|            | Eesti keele pakk           | Tõlked Minecraftile             |
-|------------|----------------------------|---------------------------------|
-| Tõlked     | Java Edition + eritõlked   | Java Edition + kogukonna tõlked |
-| Uuendamine | katsetusversioonidega      | teadmata                        |
-| Levitamine | Gitlab, MCPEDL, Curseforge | Github, MCPEDL, Curseforge      |
-| Rakendus   | Android, iOS (MCPEDL)      | Android                         |
-| Keeled     | eesti                      | 117 keelt (rakenduses valitav)  |
+Oma paki lõin seetõttu, et kogu protsessi paremini juhtida - tõlkeid kiiremini uuendada, võtta rohkem tõlkeid automaatselt üle, hoida paki mahtu minimaalsena (ainult eesti keel) jne.
