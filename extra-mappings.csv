@@ -9,6 +9,7 @@ deathScreen.quit,deathScreen.titleScreen
 potion.moveSpeed,effect.minecraft.speed
 
 item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
+item.spawn_egg.entity.bee.name,item.minecraft.bee_spawn_egg
 item.spawn_egg.entity.blaze.name,item.minecraft.blaze_spawn_egg
 item.spawn_egg.entity.cat.name,item.minecraft.cat_spawn_egg
 item.spawn_egg.entity.cave_spider.name,item.minecraft.cave_spider_spawn_egg
@@ -166,3 +167,5 @@ dr.left_arm,options.modelPart.left_sleeve
 dr.right_arm,options.modelPart.right_sleeve
 dr.left_leg,options.modelPart.left_pants_leg
 dr.right_leg,options.modelPart.right_pants_leg
+
+tile.bee_nest.name,block.minecraft.bee_nest

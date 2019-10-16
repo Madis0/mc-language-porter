@@ -5,6 +5,7 @@ accessibility.saving.done,narrator.loading.done
 accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
 accessibility.button.tts.title,mco.gui.button
 accessibility.tab.tts.title,key.keyboard.tab
+accessibility.toggle.tts.title,options.key.toggle
 accessibility.play.editWorld,selectWorld.edit.title
 accessibility.text.space,key.keyboard.space
 achievement.acquireIron,advancements.story.smelt_iron.title
@@ -370,6 +371,7 @@ entity.area_effect_cloud.name,entity.minecraft.area_effect_cloud
 entity.armor_stand.name,entity.minecraft.armor_stand
 entity.arrow.name,entity.minecraft.arrow
 entity.bat.name,entity.minecraft.bat
+entity.bee.name,entity.minecraft.bee
 entity.blaze.name,entity.minecraft.blaze
 entity.boat.name,entity.minecraft.boat
 entity.cat.name,entity.minecraft.cat
@@ -1362,6 +1364,8 @@ item.golden_hoe.name,item.minecraft.golden_hoe
 item.iron_hoe.name,item.minecraft.iron_hoe
 item.stone_hoe.name,item.minecraft.stone_hoe
 item.wooden_hoe.name,item.minecraft.wooden_hoe
+item.honey_bottle.name,item.minecraft.honey_bottle
+item.honeycomb.name,item.minecraft.honeycomb
 item.horsearmordiamond.name,item.minecraft.diamond_horse_armor
 item.horsearmoriron.name,item.minecraft.iron_horse_armor
 item.horsearmorleather.name,item.minecraft.leather_horse_armor
@@ -1659,6 +1663,7 @@ options.guiScale.maximum,options.ao.max
 options.guiScale.minimum,options.ao.min
 options.guiScale.normal,options.difficulty.normal
 options.hidden,options.hidden
+options.hold,options.key.hold
 options.invertMouse,options.invertMouse
 options.language,narrator.button.language
 options.mipmapLevels,options.mipmapLevels
@@ -1696,6 +1701,7 @@ options.accessibility,narrator.button.accessibility
 options.stream.chat.enabled.always,team.collision.always
 options.stream.chat.enabled.never,team.collision.never
 options.title,options.title
+options.toggle,options.key.toggle
 options.touchscreen,options.touchscreen
 options.vbo,options.vbo
 options.videoTitle,options.videoTitle
@@ -1948,6 +1954,7 @@ tile.barrier.name,block.minecraft.barrier
 tile.beacon.name,container.beacon
 tile.beacon.primary,block.minecraft.beacon.primary
 tile.beacon.secondary,block.minecraft.beacon.secondary
+tile.beehive.name,block.minecraft.beehive
 tile.bed.name,block.minecraft.bed
 tile.bed.notValid,block.minecraft.bed.not_valid
 tile.bed.occupied,block.minecraft.bed.occupied
@@ -1983,6 +1990,8 @@ tile.cauldron.name,item.minecraft.cauldron
 tile.chest.name,container.chest
 tile.ender_chest.name,container.enderchest
 tile.jigsaw.name,block.minecraft.jigsaw
+tile.honey_block.name,block.minecraft.honey_block
+tile.honeycomb_block.name,block.minecraft.honeycomb_block
 tile.trapped_chest.name,block.minecraft.trapped_chest
 tile.shulkerBoxWhite.name,block.minecraft.white_shulker_box
 tile.shulkerBoxOrange.name,block.minecraft.orange_shulker_box
