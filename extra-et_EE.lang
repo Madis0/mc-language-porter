@@ -193,6 +193,9 @@ dr.categories.footwear=Jalatsid
 dr.categories.back_item=Seljaese
 dr.categories.face_item=Näoese
 dr.categories.capes=Keebid
+skins.picker.custom.button=Vali uus välimus
+dr.classic_skins.choose_custom_skin=Vali uus välimus
+dr.classic_skins.right_side.featured_title=Esiletoodud ja soovitatud välimusepakid
 
 resourcePack.header.level=Nõua mängijatelt liitumiseks ressursipakkidega nõustumist
 resourcePack.description.default.level=Saad neid seadetest muuta.
