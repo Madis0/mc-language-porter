@@ -72,6 +72,10 @@ item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spa
 
 item.banner.illager_captain.name,block.minecraft.ominous_banner
 
+entity.villager.mason,entity.minecraft.villager.mason
+entity.villager.tool,entity.minecraft.villager.toolsmith
+entity.villager.weapon,entity.minecraft.villager.weaponsmith
+
 tile.planks.acacia.name,block.minecraft.acacia_planks
 tile.planks.big_oak.name,block.minecraft.dark_oak_planks
 tile.planks.birch.name,block.minecraft.birch_planks
@@ -167,5 +171,3 @@ dr.left_arm,options.modelPart.left_sleeve
 dr.right_arm,options.modelPart.right_sleeve
 dr.left_leg,options.modelPart.left_pants_leg
 dr.right_leg,options.modelPart.right_pants_leg
-
-tile.bee_nest.name,block.minecraft.bee_nest
