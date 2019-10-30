@@ -1,16 +1,17 @@
 import requests
 from io import BytesIO
 from zipfile import ZipFile
+from hurry.filesize import size, alternative
 import urllib.request
 import sys
 
 # Choose what files to obtain with the script
 # Original files have much larger download sizes as they download the whole archive to extract files from.
-getJeOriginal = True            # ~25 MB
-getJeRealms = True              # ~25 MB
-getJeTranslation = True         # ~0.2 MB
-getJeRealmsTranslation = True   # ~0.01 MB
-getBeOriginal = True            # ~47 MB
+getJeOriginal = True            # ~24 MB
+getJeRealms = True              # ~24 MB
+getJeTranslation = True         # ~286 KB
+getJeRealmsTranslation = True   # ~15 KB
+getBeOriginal = True            # ~44 MB
 translationLang = "et_ee"       # Used when launched without arguments
 
 # Paths and variables -  https://wiki.vg/Game_files
@@ -107,27 +108,27 @@ def download_text(url, filename):
 
 # File obtaining
 if getJeOriginal:
-    print("Downloading and extracting " + jeLangFile + " (Minecraft) from Java Edition JAR... (" + str(jeLatestJarSize) + " bytes to download)")
+    print("Downloading and extracting " + jeLangFile + " (Minecraft) from Java Edition JAR... (" + size(jeLatestJarSize, system=alternative) + " to download)")
     unpack_zip(jeLatestJarUrl, jeJarLangPath, jeLangFile)
     print(jeLangFile + " has been saved in the current directory.")
 
 if getJeRealms:
-    print("Downloading and extracting " + jeLangFile + " (Realms) from Java Edition JAR... (" + str(jeLatestJarSize) + " bytes to download)")
+    print("Downloading and extracting " + jeLangFile + " (Realms) from Java Edition JAR... (" + size(jeLatestJarSize, system=alternative) + " to download)")
     unpack_zip(jeLatestJarUrl, jeRealmsLangPath, jeRealmsLangFile)
     print(jeRealmsLangFile + " has been saved in the current directory.")
 
 if getJeTranslation:
-    print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + str(jeTranslationSize) + " bytes to download)")
+    print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + size(jeTranslationSize, system=alternative) + " to download)")
     download_text(jeTranslationUrl, jeTranslationFile)
     print(jeTranslationFile + " has been saved in the current directory.")
 
 if getJeRealmsTranslation:
-    print("Downloading and saving " + jeRealmsTranslationFile + " from Realms assets... (" + str(jeRealmsTranslationSize) + " bytes to download)")
+    print("Downloading and saving " + jeRealmsTranslationFile + " from Realms assets... (" + size(jeRealmsTranslationSize, system=alternative) + " to download)")
     download_text(jeRealmsTranslationUrl, jeRealmsTranslationFile)
     print(jeRealmsTranslationFile + " has been saved in the current directory.")
 
 if getBeOriginal:
     beLangFileRequest = urllib.request.urlopen(beLatestZipUrl)  # https://stackoverflow.com/a/5935
-    print("Downloading and extracting " + beLangFile + " from Bedrock Edition resources... (" + str(beLangFileRequest.info()['Content-Length']) + " bytes to download)")
+    print("Downloading and extracting " + beLangFile + " from Bedrock Edition resources... (" + size(int(beLangFileRequest.info()['Content-Length']), system=alternative) + " to download)")
     unpack_zip(beLatestZipUrl, beZipLangPath, beLangFile)
     print(beLangFile + " has been saved in the current directory.")

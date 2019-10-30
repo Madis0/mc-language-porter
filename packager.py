@@ -27,8 +27,9 @@ shutil.copyfile(langFile, packFolder + langFolder + langFile)
 def iterate_manifest(manifestFile):
     lines = open(manifestFile, 'r', encoding="utf-8")
     manifestJson = json.load(lines)
-    manifestVersion = manifestJson["header"]["packs_version"]
+    manifestVersion = manifestJson["header"]["version"]
     manifestEngine = manifestJson["header"]["min_engine_version"]
+    manifestVanilla = manifestJson["header"]["vanilla"]
 
     if useVersionAsPrefix:
         request = requests.head(versionUrl, allow_redirects=True)
@@ -43,6 +44,9 @@ def iterate_manifest(manifestFile):
 
             manifestEngine[0] = int(versionPrefix.split(".")[0])
             manifestEngine[1] = int(versionPrefix.split(".")[1])
+
+            manifestVanilla[0] = int(versionPrefix.split(".")[0])
+            manifestVanilla[1] = int(versionPrefix.split(".")[1])
             print("New major version " + versionPrefix + "!")
 
     else:
