@@ -1955,6 +1955,7 @@ tile.beacon.name,container.beacon
 tile.beacon.primary,block.minecraft.beacon.primary
 tile.beacon.secondary,block.minecraft.beacon.secondary
 tile.beehive.name,block.minecraft.beehive
+tile.bee_nest.name,block.minecraft.bee_nest
 tile.bed.name,block.minecraft.bed
 tile.bed.notValid,block.minecraft.bed.not_valid
 tile.bed.occupied,block.minecraft.bed.occupied
