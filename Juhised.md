@@ -30,6 +30,10 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 [Proovi paki tööle saamiseks seda õppevideot](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123) (inglise keeles), seejärel järgi keele aktiveerimiseks üleeelmist õpetust. Toimimist ei garanteeri.
 
+#### Nintendo Switch (Bedrock Edition)
+
+[Proovi paki tööle saamiseks seda õppevideot](https://www.youtube.com/watch?v=qNwvtSXQH2A) (inglise keeles), seejärel järgi keele aktiveerimiseks ülemist õpetust. Toimimist ei garanteeri.
+
 ## Mis on tõlgitud?
 
 Antud pakk tõlgib hetkel järgnevat:
