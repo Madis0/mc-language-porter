@@ -1503,6 +1503,9 @@ joincode.icon_text.12,item.minecraft.apple
 joincode.icon_text.13,item.minecraft.carrot
 joincode.icon_text.14,entity.minecraft.panda
 joincode.icon_text.15,book.signButton
+joincode.icon_text.16,entity.minecraft.potion
+joincode.icon_text.17,item.minecraft.filled_map
+joincode.icon_text.18,entity.minecraft.llama
 key.attack,key.attack
 key.back,key.back
 key.categories.gameplay,key.categories.gameplay
@@ -1959,6 +1962,7 @@ tile.bee_nest.name,block.minecraft.bee_nest
 tile.bed.name,block.minecraft.bed
 tile.bed.notValid,block.minecraft.bed.not_valid
 tile.bed.occupied,block.minecraft.bed.occupied
+tile.bed.respawnSet,block.minecraft.bed.set_spawn
 tile.bedrock.name,block.minecraft.bedrock
 tile.bell.name,block.minecraft.bell
 tile.conduit.name,block.minecraft.conduit

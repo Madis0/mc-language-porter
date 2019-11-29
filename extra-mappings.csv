@@ -171,3 +171,7 @@ dr.left_arm,options.modelPart.left_sleeve
 dr.right_arm,options.modelPart.right_sleeve
 dr.left_leg,options.modelPart.left_pants_leg
 dr.right_leg,options.modelPart.right_pants_leg
+
+tile.bed.notSafe,block.minecraft.bed.not_safe
+tile.bed.noSleep,block.minecraft.bed.no_sleep
+tile.bed.tooFar,block.minecraft.bed.too_far_away
