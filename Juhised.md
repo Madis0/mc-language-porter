@@ -9,7 +9,7 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 3. Vajuta **Done**
 
 #### Android, iOS, Windows 10 (Bedrock Edition)
-1. [Laadi pakk alla siit](https://gitlab.com/Madis0/mc-language-port/tags), vajutades kõige ülemisele `.mcpack` lingile
+1. [Laadi pakk alla siit](https://minecraft.curseforge.com/projects/estonian-language-pack/files), vajutades kõige ülemisele `.mcpack` lingile
 2. Vajuta allalaaditud `.mcpack` failile (nt telefonis tekib teade)
 3. Mine **Settings** > **Global Resources** > **My Packs** > **vajuta paki juures Activate**
 4. Välju seadetest, oota kuni pakk laeb
@@ -48,9 +48,11 @@ Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõl
 
 ## Kuidas tõlge on toetatud?
 
-Tõlget pakun ressursipaki kujul, mida plaanin uuendada vastavalt mängu uute versioonide väljalaskele. Pakki väljastan keskkondadesse [GitLab](https://gitlab.com/Madis0/mc-language-port/tags), [MCPEDL](https://mcpedl.com/estonian-language-pack/) (suunab Gitlabi) ning [Curseforge](https://minecraft.curseforge.com/projects/estonian-language-pack).
-
+Plaanin uuendada ressursipakki iga kord, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
+
+Pakki saab mugavalt alla laadida [Curseforgest](https://minecraft.curseforge.com/projects/estonian-language-pack/files).
+
 
 
 ## Kuidas saan kaasa aidata?
