@@ -26,9 +26,11 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 [Kasuta paki tööle saamiseks ametlikku õpetust](https://www.minecraft.net/en-us/addons/#js-select-addon-platform) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
-#### Konsoolid (Bedrock Edition)
+#### Xbox One, Nintendo Switch, PlayStation 4 (Bedrock Edition)
 
-Konsoolides pole kohandatud ressursipakid ametlikult toetatud ning ka teatud keelefraasid on erinevad, seega kõik ei pruugi toimida nagu oodatud. Siiski võib proovida järgnevaid õppevideoid: [Xbox One](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123), [Nintendo Switch](https://www.youtube.com/watch?v=qNwvtSXQH2A), [PlayStation 4](https://www.youtube.com/watch?v=Y08IUPJM1Tw).
+Konsoolides pole kohandatud ressursipakid ametlikult toetatud ning ka teatud keelefraasid on erinevad, seega kõik ei pruugi toimida nagu oodatud. 
+
+Siiski võib proovida järgnevaid õppevideoid: [Xbox One](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123), [Nintendo Switch](https://www.youtube.com/watch?v=qNwvtSXQH2A), [PlayStation 4](https://www.youtube.com/watch?v=Y08IUPJM1Tw). Keele aktiveerimiseks vaata ülemist õpetust.
 
 ## Mis on tõlgitud?
 
@@ -47,7 +49,7 @@ Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõl
 Plaanin uuendada ressursipakki iga kord, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
 
-Pakki saab mugavalt alla laadida [Curseforgest](https://minecraft.curseforge.com/projects/estonian-language-pack/files).
+Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://minecraft.curseforge.com/projects/estonian-language-pack/files). Kõik versioonid leiab [Gitlabist](https://gitlab.com/Madis0/mc-language-port/-/tags).
 
 
 
