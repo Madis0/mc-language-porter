@@ -26,13 +26,9 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 [Kasuta paki tööle saamiseks ametlikku õpetust](https://www.minecraft.net/en-us/addons/#js-select-addon-platform) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
-#### Xbox One (Bedrock Edition)
+#### Konsoolid (Bedrock Edition)
 
-[Proovi paki tööle saamiseks seda õppevideot](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123) (inglise keeles), seejärel järgi keele aktiveerimiseks üleeelmist õpetust. Toimimist ei garanteeri.
-
-#### Nintendo Switch (Bedrock Edition)
-
-[Proovi paki tööle saamiseks seda õppevideot](https://www.youtube.com/watch?v=qNwvtSXQH2A) (inglise keeles), seejärel järgi keele aktiveerimiseks ülemist õpetust. Toimimist ei garanteeri.
+Konsoolides pole kohandatud ressursipakid ametlikult toetatud ning ka teatud keelefraasid on erinevad, seega kõik ei pruugi toimida nagu oodatud. Siiski võib proovida järgnevaid õppevideoid: [Xbox One](https://www.youtube.com/watch?v=MFKO1HdwTlE&t=123), [Nintendo Switch](https://www.youtube.com/watch?v=qNwvtSXQH2A), [PlayStation 4](https://www.youtube.com/watch?v=Y08IUPJM1Tw).
 
 ## Mis on tõlgitud?
 

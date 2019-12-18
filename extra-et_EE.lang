@@ -137,9 +137,11 @@ craftingScreen.tab.items=Esemed
 craftingScreen.tab.survival=Seljakott
 craftingScreen.tab.armor=Rüü
 
-menu.achievements=Saavutused
 gui.achievements=Saavutused
+menu.achievements=Saavutused
 menu.disconnect=Lahku
+menu.educatorResources=Õpetaja ressursid
+menu.editions=Väljalasked
 menu.beta=Beeta!!!
 menu.game=Mängumenüü
 menu.howToPlay=Kuidas mängida
@@ -152,6 +154,7 @@ menu.storageManagement=Mäluruum
 menu.behaviors=Käitumispakid
 menu.worldtemplates=Maailmamallid
 menu.start=Alusta
+gui.warning.exitGameWarning=Kas soovid Minecraftist väljuda?
 
 options.profile=Profiil
 profileScreen.header=Profiil
@@ -237,6 +240,16 @@ selectTemplate.inventory=Minu Marketplace'i pakid
 selectTemplate.suggestedContent.title=Hangi rohkem malle
 selectTemplate.suggestedContent.button=Vaata rohkem malle
 
+store.free=Tasuta
+store.redeem=Hangi
+store.incompatible=Ühildumatu
+store.incompatibleOnDevice=Ei ühildu seadmega
+store.owned=Olemas
+store.owned.legacy=Olemas (vana)
+store.unlocked=Lahti lukustatud
+store.mypacks=%s pakid
+store.new.icon=Uus
+
 options.editSettings=Muuda seadeid
 options.category.game=Mäng
 options.category.addons=Lisad
@@ -253,6 +266,7 @@ options.controller=Mängupult
 options.touch=Puudutus
 options.profile=Profiil
 options.video=Graafika
+options.viewSubscriptions=Tellimused
 options.sounds=Heli
 options.language=Keel
 options.broadcast=Ülekandmine
@@ -271,6 +285,20 @@ key.sneak=Hiili/lenda alla
 key.mobEffects=Mõjud
 key.menuTabLeft=Menüü vasakpoolne kaart
 key.menuTabRight=Menüü parempoolne kaart
+
+options.hidetooltips=Peida mängupuldi vihjed
+options.hidegamepadcursor=Peida mängupuldi kursor
+options.swapJumpAndSneak=Vaheta hüpe ja hiilimine
+options.swapGamepadAB=Vaheta A ja B nupud
+options.swapGamepadXY=Vaheta X ja Y nupud
+options.usetouchscreen=Mängi puutega
+options.gamepadcursorsensitivity=Mängupuldi kursori tundlikkus
+options.controllerLayout=Mängupuldi paigutus
+key.cycleItemLeft=Liigu plokiribal vasakule
+key.cycleItemRight=Liigu plokiribal paremale
+key.flyDownSlow=Lenda aeglaselt alla
+key.flyUpSlow=Lenda aeglaselt üles
+key.interactwithtoast=Ava teade
 
 chat.title=Vestlus
 chat.title.cheats=Vestlus ja käsklused
