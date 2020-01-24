@@ -60,7 +60,6 @@ chat.cannotSend,chat.cannotSend
 chat.copy,chat.copy
 chat.link.confirm,chat.link.confirm
 chat.link.confirmTrusted,chat.link.confirmTrusted
-chat.link.open,chat.link.open
 chat.link.warning,chat.link.warning
 chat.title,options.chat.visibility
 chat.type.admin,chat.type.admin
