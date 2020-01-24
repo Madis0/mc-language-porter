@@ -2,6 +2,7 @@ key.drop,key.drop
 options.autojump,options.autoJump
 options.guiScale.optionName,options.guiScale
 options.sound,options.sound
+chat.link.open,chat.link.open
 
 menu.returnToGame,menu.returnToGame
 deathScreen.quit,deathScreen.titleScreen
