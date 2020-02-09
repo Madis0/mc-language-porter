@@ -2,11 +2,7 @@
 See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid Minecrafti platvormilt Java Edition.
 
 ## Kuidas paigaldada?
-
-<figure class="video_container">
-  <iframe src="https://www.youtube-nocookie.com/embed/S5XjRKKHB3Q" frameborder="0" allowfullscreen="true"> </iframe>
-</figure>
-
+[![Videoõpetus](https://img.youtube.com/vi/S5XjRKKHB3Q/0.jpg)](https://www.youtube.com/watch?v=S5XjRKKHB3Q "Videoõpetus")
 #### Windows, Mac, Linux (Java Edition)
 1. Vajuta avamenüüs ![gloobusega jutumullile](https://i.imgur.com/fzYkvEw.png)
 2. Vali **Eesti keel (Eesti)**
