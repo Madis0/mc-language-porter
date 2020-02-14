@@ -93,6 +93,7 @@ commandBlockScreen.redstone.always_on,advMode.mode.autoexec.bat
 commandBlockScreen.hideOutputMode,enchantment.level.10
 commandBlockScreen.title,block.minecraft.command_block
 commandBlock.genericName,block.minecraft.command_block
+commands.bossbar.list.none,commands.bossbar.list.bars.none
 commands.debug.start,commands.debug.started
 commands.players.list.names,createWorld.customize.flat.layer
 commands.publish.failed,commands.publish.failed
@@ -206,7 +207,6 @@ createWorld.customize.flat.title,createWorld.customize.flat.title
 createWorld.customize.presets,createWorld.customize.presets
 createWorld.customize.presets.list,createWorld.customize.presets.list
 createWorld.customize.presets.select,createWorld.customize.presets.select
-createWorld.customize.presets.share,createWorld.customize.presets.share
 createWorld.customize.presets.title,createWorld.customize.presets.title
 createWorldUpsell.button.world,selectWorld.newWorld
 createWorldScreen.cheatSettings,selectWorld.cheats
@@ -225,6 +225,7 @@ realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
 realmsSharingScreen.join,mco.configure.world.slot.tooltip.active
 realmsCreateScreen.purchasePrefix.create,mco.create.world
 realmsCreateScreen.purchasePrefix.renew,mco.selectServer.expiredRenew
+realmsCreateScreen.purchaseConfirmation.cancel,gui.cancel
 networkWorld.add_server,selectServer.add
 networkWorld.join,mco.configure.world.slot.tooltip.active
 realmsSettingsScreen.playRealmButton,mco.selectServer.play
@@ -288,7 +289,6 @@ deathScreen.score,deathScreen.score
 deathScreen.title,deathScreen.title
 deathScreen.title.hardcore,deathScreen.title.hardcore
 deathScreen.titleScreen,deathScreen.titleScreen
-demo.day.1,demo.day.1
 demo.day.2,demo.day.2
 demo.day.3,demo.day.3
 demo.day.4,demo.day.4
@@ -300,7 +300,6 @@ demo.help.later,demo.help.later
 demo.help.movementMouse,demo.help.movementMouse
 demo.help.title,demo.help.title
 demo.remainingTime,demo.remainingTime
-demo.reminder,demo.reminder
 difficulty.lock.question,difficulty.lock.question
 difficulty.lock.title,difficulty.lock.title
 dimension.dimensionName0,createWorld.customize.preset.overworld
@@ -493,12 +492,11 @@ gameMode.hardcore,gameMode.hardcore
 gameMode.spectator,gameMode.spectator
 gameMode.survival,gameMode.survival
 generator.amplified,generator.amplified
-generator.amplified.info,generator.amplified.info
 generator.customized,generator.customized
 generator.debug_all_block_states,generator.debug_all_block_states
 generator.default,generator.default
 generator.largeBiomes,generator.largeBiomes
-generator.nether,biome.minecraft.nether
+generator.nether,advancements.nether.root.title
 generator.old,multiplayer.status.old
 gui.accept,mco.invites.button.accept
 gui.all,gui.all
@@ -532,7 +530,7 @@ howtoplay.armor,attribute.name.generic.armor
 howtoplay.armor.header.1,container.crafting
 howtoplay.armor.header.2,item.minecraft.shield
 howtoplay.armorStand,item.minecraft.armor_stand
-howtoplay.blocks,stat.blocksButton
+howtoplay.blocks,soundCategory.block
 howtoplay.brewingStand,container.brewing
 howtoplay.cauldron,item.minecraft.cauldron
 howtoplay.chat,options.chat.visibility
@@ -1253,7 +1251,7 @@ item.chorus_fruit_popped.name,item.minecraft.popped_chorus_fruit
 item.cooked_chicken.name,item.minecraft.cooked_chicken
 item.cooked_porkchop.name,item.minecraft.cooked_porkchop
 item.chicken.name,item.minecraft.chicken
-item.clay_ball.name,item.minecraft.clay_ball
+item.clay_ball.name,block.minecraft.clay
 item.clock.name,item.minecraft.clock
 item.coal.name,item.minecraft.coal
 item.comparator.name,block.minecraft.comparator
@@ -1452,12 +1450,12 @@ item.birch_sign.name,block.minecraft.birch_sign
 item.jungle_sign.name,block.minecraft.jungle_sign
 item.acacia_sign.name,block.minecraft.acacia_sign
 item.darkoak_sign.name,block.minecraft.dark_oak_sign
-item.skull.creeper.name,item.minecraft.creeper_head
-item.skull.dragon.name,item.minecraft.dragon_head
+item.skull.creeper.name,block.minecraft.creeper_head
+item.skull.dragon.name,block.minecraft.dragon_head
 item.skull.player.name,block.minecraft.player_head.named
-item.skull.skeleton.name,item.minecraft.skeleton_skull
-item.skull.wither.name,item.minecraft.wither_skeleton_skull
-item.skull.zombie.name,item.minecraft.zombie_head
+item.skull.skeleton.name,block.minecraft.skeleton_skull
+item.skull.wither.name,block.minecraft.wither_skeleton_skull
+item.skull.zombie.name,block.minecraft.zombie_head
 item.slime_ball.name,item.minecraft.slime_ball
 item.snowball.name,item.minecraft.snowball
 item.spider_eye.name,item.minecraft.spider_eye
@@ -1573,7 +1571,6 @@ lanServer.title,lanServer.title
 map.toolTip.scaling,filled_map.scale
 map.toolTip.unkown,filled_map.unknown
 map.toolTip.locked,filled_map.locked
-mcoServer.title,mcoServer.title
 menu.disconnect,menu.disconnect
 menu.generatingLevel,menu.generatingLevel
 menu.generatingTerrain,menu.generatingTerrain
@@ -1590,8 +1587,6 @@ menu.returnToMenu,menu.returnToMenu
 menu.shareToLan,menu.shareToLan
 menu.singleplayer,menu.singleplayer
 mount.onboard,mount.onboard
-multiplayer.connect,multiplayer.connect
-multiplayer.ipinfo,multiplayer.ipinfo
 multiplayer.player.joined,multiplayer.player.joined
 multiplayer.player.joined.renamed,multiplayer.player.joined.renamed
 multiplayer.player.left,multiplayer.player.left
@@ -1603,12 +1598,10 @@ multiplayer.inBedOpenChat,key.chat
 npcscreen.name,mco.configure.world.invite.profile.name
 offer.category.worldtemplate,mco.configure.worlds.title
 offer.navigationTab.worlds,mco.configure.worlds.title
-options.anaglyph,options.anaglyph
 options.ao,options.ao
 options.ao.max,options.ao.max
 options.ao.min,options.ao.min
 options.ao.off,options.ao.off
-options.category.audio,options.sound
 options.category.graphics,options.graphics
 options.category.input,controls.title
 options.chat.color,options.chat.color
@@ -1616,7 +1609,6 @@ options.chat.height.focused,options.chat.height.focused
 options.chat.height.unfocused,options.chat.height.unfocused
 options.chat.links,options.chat.links
 options.chat.links.prompt,options.chat.links.prompt
-options.chat.scale,options.chat.scale
 options.chat.title,options.chat.title
 options.chat.visibility,options.chat.visibility
 options.chat.visibility.full,options.chat.visibility.full
@@ -1656,7 +1648,6 @@ options.graphics.fancy,options.graphics.fancy
 options.graphics.fast,options.graphics.fast
 options.renderingProfile,options.graphics
 options.renderingProfile.fancy,options.graphics.fancy
-options.group.audio,options.sound
 options.group.graphics,options.graphics
 options.group.input,controls.title
 options.group.multiplayer,menu.multiplayer
@@ -1677,7 +1668,7 @@ options.modelPart.left_sleeve,options.modelPart.left_sleeve
 options.modelPart.right_pants_leg,options.modelPart.right_pants_leg
 options.modelPart.right_sleeve,options.modelPart.right_sleeve
 options.multiplayer.title,options.multiplayer.title
-options.music,options.music
+options.music,soundCategory.music
 options.name,mco.configure.world.invite.profile.name
 options.off,options.off
 options.on,options.on
@@ -1809,9 +1800,7 @@ selectServer.defaultName,selectServer.defaultName
 selectServer.delete,selectServer.delete
 selectServer.deleteButton,selectServer.deleteButton
 selectServer.deleteQuestion,selectServer.deleteQuestion
-selectServer.direct,selectServer.direct
 selectServer.edit,selectServer.edit
-selectServer.empty,selectServer.empty
 selectServer.hiddenAddress,selectServer.hiddenAddress
 selectServer.refresh,selectServer.refresh
 selectServer.select,selectServer.select
@@ -1825,28 +1814,23 @@ selectWorld.customizeType,selectWorld.customizeType
 selectWorld.delete,selectWorld.delete
 selectWorld.deleteButton,selectWorld.deleteButton
 selectWorld.deleteQuestion,selectWorld.deleteQuestion
-selectWorld.empty,selectWorld.empty
 selectWorld.enterName,selectWorld.enterName
 selectWorld.gameMode,selectWorld.gameMode
 selectWorld.gameMode.adventure,selectWorld.gameMode.adventure
-selectWorld.gameMode.adventure.line1,selectWorld.gameMode.adventure.line1
 selectWorld.gameMode.adventure.line2,selectWorld.gameMode.adventure.line2
 selectWorld.gameMode.creative,selectWorld.gameMode.creative
 selectWorld.gameMode.creative.line1,selectWorld.gameMode.creative.line1
 selectWorld.gameMode.creative.line2,selectWorld.gameMode.creative.line2
 selectWorld.gameMode.hardcore,selectWorld.gameMode.hardcore
-selectWorld.gameMode.hardcore.line1,selectWorld.gameMode.hardcore.line1
 selectWorld.gameMode.hardcore.line2,selectWorld.gameMode.hardcore.line2
 selectWorld.gameMode.spectator,selectWorld.gameMode.spectator
 selectWorld.gameMode.spectator.line1,selectWorld.gameMode.spectator.line1
 selectWorld.gameMode.spectator.line2,selectWorld.gameMode.spectator.line2
 selectWorld.gameMode.survival,selectWorld.gameMode.survival
-selectWorld.gameMode.survival.line1,selectWorld.gameMode.survival.line1
 selectWorld.gameMode.survival.line2,selectWorld.gameMode.survival.line2
 selectWorld.hardcoreMode,selectWorld.hardcoreMode
 selectWorld.hardcoreMode.info,selectWorld.hardcoreMode.info
 selectWorld.mapFeatures,selectWorld.mapFeatures
-selectWorld.mapFeatures.info,selectWorld.mapFeatures.info
 selectWorld.mapType,selectWorld.mapType
 selectWorld.mapType.normal,selectWorld.mapType.normal
 selectWorld.moreWorldOptions,selectWorld.moreWorldOptions
@@ -1884,7 +1868,7 @@ stat.animalsBred,stat.minecraft.animals_bred
 stat.armorCleaned,stat.minecraft.clean_armor
 stat.bannerCleaned,stat.minecraft.clean_banner
 stat.beaconInteraction,stat.minecraft.interact_with_beacon
-stat.blocksButton,stat.blocksButton
+stat.blocksButton,soundCategory.block
 stat.boatOneCm,stat.minecraft.boat_one_cm
 stat.brewingstandInteraction,stat.minecraft.interact_with_brewingstand
 stat.cakeSlicesEaten,stat.minecraft.eat_cake_slice
@@ -1923,7 +1907,6 @@ stat.playerKills,stat.minecraft.player_kills
 stat.sprintOneCm,stat.minecraft.sprint_one_cm
 stat.swimOneCm,stat.minecraft.swim_one_cm
 stat.talkedToVillager,stat.minecraft.talked_to_villager
-stat.timeSinceDeath,stat.minecraft.time_since_death
 stat.tradedWithVillager,stat.minecraft.traded_with_villager
 stat.trappedChestTriggered,stat.minecraft.trigger_trapped_chest
 stat.treasureFished,stat.minecraft.treasure_fished
@@ -1958,7 +1941,6 @@ tile.beacon.primary,block.minecraft.beacon.primary
 tile.beacon.secondary,block.minecraft.beacon.secondary
 tile.beehive.name,block.minecraft.beehive
 tile.bee_nest.name,block.minecraft.bee_nest
-tile.bed.name,block.minecraft.bed
 tile.bed.notValid,block.minecraft.bed.not_valid
 tile.bed.occupied,block.minecraft.bed.occupied
 tile.bed.respawnSet,block.minecraft.bed.set_spawn
@@ -2218,6 +2200,7 @@ tile.pumpkin.name,block.minecraft.pumpkin
 tile.pumpkin_stem.name,block.minecraft.pumpkin_stem
 tile.quartz_block.chiseled.name,block.minecraft.chiseled_quartz_block
 tile.quartz_block.default.name,block.minecraft.quartz_block
+tile.quartz_block.smooth.name,block.minecraft.smooth_quartz
 tile.quartz_block.name,block.minecraft.quartz_block
 tile.rail.name,block.minecraft.rail
 tile.red_sandstone.chiseled.name,block.minecraft.chiseled_red_sandstone
@@ -2289,13 +2272,11 @@ tile.standing_banner.green.name,block.minecraft.green_banner
 tile.standing_banner.lightBlue.name,block.minecraft.light_blue_banner
 tile.standing_banner.lime.name,block.minecraft.lime_banner
 tile.standing_banner.magenta.name,block.minecraft.magenta_banner
-tile.standing_banner.name,block.minecraft.banner
 tile.standing_banner.orange.name,block.minecraft.orange_banner
 tile.standing_banner.pink.name,block.minecraft.pink_banner
 tile.standing_banner.purple.name,block.minecraft.purple_banner
 tile.standing_banner.red.name,block.minecraft.red_banner
 tile.standing_banner.silver.name,block.minecraft.light_gray_banner
-tile.standing_banner.white.name,block.minecraft.banner
 tile.standing_banner.yellow.name,block.minecraft.yellow_banner
 tile.stone.andesite.name,block.minecraft.andesite
 tile.stone.andesiteSmooth.name,block.minecraft.polished_andesite
@@ -2511,7 +2492,6 @@ tile.wood.stripped.jungle.name,block.minecraft.stripped_jungle_wood
 tile.wood.stripped.acacia.name,block.minecraft.stripped_acacia_wood
 tile.wood.stripped.dark_oak.name,block.minecraft.stripped_dark_oak_wood
 tipped_arrow.effect.empty,item.minecraft.tipped_arrow.effect.thick
-tipped_arrow.effect.water,item.minecraft.tipped_arrow.effect.water
 tipped_arrow.effect.mundane,item.minecraft.tipped_arrow.effect.mundane
 tipped_arrow.effect.thick,item.minecraft.tipped_arrow.effect.thick
 tipped_arrow.effect.awkward,item.minecraft.tipped_arrow.effect.awkward
@@ -2521,6 +2501,7 @@ tipped_arrow.effect.jump,item.minecraft.tipped_arrow.effect.leaping
 tipped_arrow.effect.fireResistance,item.minecraft.tipped_arrow.effect.fire_resistance
 tipped_arrow.effect.moveSpeed,item.minecraft.tipped_arrow.effect.swiftness
 tipped_arrow.effect.moveSlowdown,item.minecraft.tipped_arrow.effect.slowness
+tipped_arrow.effect.water,item.minecraft.tipped_arrow.effect.water
 tipped_arrow.effect.waterBreathing,item.minecraft.tipped_arrow.effect.water_breathing
 tipped_arrow.effect.heal,item.minecraft.tipped_arrow.effect.healing
 tipped_arrow.effect.harm,item.minecraft.tipped_arrow.effect.harming
@@ -2539,6 +2520,7 @@ structure_block.mode.load,structure_block.mode.load
 structure_block.mode.corner,structure_block.mode.corner
 structure_block.mode.data,structure_block.mode.data
 structure_block.off,mco.configure.world.off
+structure_block.corner,structure_block.mode.corner
 structure_block.reset,controls.reset
 structure_block.save,structure_block.mode.save
 structure_block.load,structure_block.mode.load
@@ -2569,14 +2551,7 @@ addServer.resourcePack.prompt,addServer.resourcePack.prompt
 addServer.title,addServer.title
 externalServerScreen.serverName,mco.configure.world.invite.profile.name
 externalServerScreen.serverNameInput,addServer.enterName
-hbui.Help.closeButton,mco.selectServer.close
-hbui.MainMenu.newWorld,mco.brokenworld.play
-hbui.MainMenu.settings,mco.configure.world.settings.title
-hbui.MainMenu.survival,selectWorld.gameMode.survival
-hbui.MainMenu.creative,selectWorld.gameMode.creative
-hbui.Settings.trueLabel,mco.configure.world.on
-hbui.Settings.falseLabel,mco.configure.world.off
-hbui.Settings.sensitivity,options.sensitivity
+hbui.Achievement.locked,filled_map.locked
 trade.level.1,merchant.level.1
 trade.level.2,merchant.level.2
 trade.level.3,merchant.level.3
@@ -2588,3 +2563,4 @@ dr.right_side.category_title,disconnect.genericReason
 dr.body_size_label_text,createWorld.customize.flat.height
 dr.none_button_text,gui.none
 dr.default_piece_button_text,generator.default
+dr.color.salmon,entity.minecraft.salmon
