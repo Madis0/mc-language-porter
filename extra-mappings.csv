@@ -7,6 +7,7 @@ chat.link.open,chat.link.open
 menu.returnToGame,menu.returnToGame
 deathScreen.quit,deathScreen.titleScreen
 
+item.cooked_beef.name,item.minecraft.cooked_beef
 potion.moveSpeed,effect.minecraft.speed
 
 item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
@@ -105,12 +106,12 @@ tile.stone_slab2.prismarine.bricks.name,block.minecraft.prismarine_brick_slab
 tile.brick_block.name,block.minecraft.bricks
 
 tile.quartz_block.lines.name,block.minecraft.quartz_pillar
-tile.quartz_block.smooth.name,block.minecraft.smooth_quartz
 
 tile.nether_brick.name,block.minecraft.nether_bricks
 tile.red_nether_brick.name,block.minecraft.red_nether_bricks
 
 tile.clay.name,block.minecraft.clay
+item.clay_ball.name,item.minecraft.clay_ball
 
 item.redstone.name,item.minecraft.redstone
 
