@@ -35,14 +35,14 @@ advMode.notEnabled,advMode.notEnabled
 advMode.previousOutput,advMode.previousOutput
 advMode.setCommand,advMode.setCommand
 advMode.setCommand.success,advMode.setCommand.success
-attribute.name.minecraft:attack_damage,attribute.name.generic.attackDamage
-attribute.name.minecraft:follow_range,attribute.name.generic.followRange
-attribute.name.minecraft:knockback_resistance,attribute.name.generic.knockbackResistance
-attribute.name.generic.maxHealth,attribute.name.generic.maxHealth
-attribute.name.generic.attackDamage,attribute.name.generic.attackDamage
-attribute.name.minecraft:movement,attribute.name.generic.movementSpeed
-attribute.name.horse.jumpStrength,attribute.name.horse.jumpStrength
-attribute.name.zombie.spawnReinforcements,attribute.name.zombie.spawnReinforcements
+attribute.name.minecraft:attack_damage,attribute.name.generic.attack_damage
+attribute.name.minecraft:follow_range,attribute.name.generic.follow_range
+attribute.name.minecraft:knockback_resistance,attribute.name.generic.knockback_resistance
+attribute.name.generic.maxHealth,attribute.name.generic.max_health
+attribute.name.generic.attackDamage,attribute.name.generic.attack_damage
+attribute.name.minecraft:movement,attribute.name.generic.movement_speed
+attribute.name.horse.jumpStrength,attribute.name.horse.jump_strength
+attribute.name.zombie.spawnReinforcements,attribute.name.zombie.spawn_reinforcements
 eula.acceptButton,mco.invites.button.accept
 book.editTitle,book.editTitle
 book.finalizeButton,book.finalizeButton
@@ -61,6 +61,7 @@ chat.copy,chat.copy
 chat.link.confirm,chat.link.confirm
 chat.link.confirmTrusted,chat.link.confirmTrusted
 chat.link.warning,chat.link.warning
+chat.settings.lineSpacing,options.chat.line_spacing
 chat.title,options.chat.visibility
 chat.type.admin,chat.type.admin
 chat.type.announcement,chat.type.announcement
@@ -84,7 +85,7 @@ color.red,color.minecraft.red
 color.yellow,color.minecraft.yellow
 color.white,color.minecraft.white
 commandBlockScreen.blockType.impulse,advMode.mode.redstone
-commandBlockScreen.blockType.chain,advMode.mode.sequence
+commandBlockScreen.blockType.chain,block.minecraft.chain
 commandBlockScreen.blockType.repeat,advMode.mode.auto
 commandBlockScreen.condition.conditional,advMode.mode.conditional
 commandBlockScreen.condition.unconditional,advMode.mode.unconditional
@@ -220,6 +221,7 @@ createWorldScreen.gameMode.serverDefault,generator.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.clearPlayerData.cancel,gui.cancel
+realmsInvitationScreen.generate,jigsaw_block.generate
 realmsInvitationScreen.backup,mco.brokenworld.download
 realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
 realmsSharingScreen.join,mco.configure.world.slot.tooltip.active
@@ -276,7 +278,6 @@ death.attack.wither,death.attack.wither
 death.fell.accident.generic,death.fell.accident.generic
 death.fell.accident.ladder,death.fell.accident.ladder
 death.fell.accident.vines,death.fell.accident.vines
-death.fell.accident.water,death.fell.accident.water
 death.fell.assist,death.fell.assist
 death.fell.assist.item,death.fell.assist.item
 death.fell.finish,death.fell.finish
@@ -469,7 +470,6 @@ entity.xp_orb.name,entity.minecraft.experience_orb
 entity.xp_bottle.name,item.minecraft.experience_bottle
 entity.zombie.name,entity.minecraft.zombie
 entity.zombie_horse.name,entity.minecraft.zombie_horse
-entity.zombie_pigman.name,entity.minecraft.zombie_pigman
 entity.zombie_villager.name,entity.minecraft.zombie_villager
 entity.zombie_villager_v2.name,entity.minecraft.zombie_villager
 addExternalServerScreen.addServer,selectServer.add
@@ -1749,7 +1749,7 @@ potion.moveSlowdown,effect.minecraft.slowness
 potion.moveSlowdown.postfix,item.minecraft.potion.effect.slowness
 potion.slowFalling,effect.minecraft.slow_falling
 potion.slowFalling.postfix,item.minecraft.potion.effect.slow_falling
-potion.moveSpeed,attribute.name.generic.movementSpeed
+potion.moveSpeed,attribute.name.generic.movement_speed
 potion.moveSpeed.postfix,item.minecraft.potion.effect.swiftness
 potion.nightVision,effect.minecraft.night_vision
 potion.nightVision.postfix,item.minecraft.potion.effect.night_vision
@@ -1929,6 +1929,7 @@ store.mashup.title.skinPack,commands.scoreboard.players.list.entity.entry
 store.3pserverItem.fetchingCancel,gui.cancel
 store.xbl.disconnected,multiplayer.disconnect.generic
 store.search.filter.worldTemplates,mco.configure.worlds.title
+stream.unavailable.not_supported.mac.okay,container.upgrade
 tile.acaciaFence.name,block.minecraft.acacia_fence
 tile.acacia_fence_gate.name,block.minecraft.acacia_fence_gate
 tile.activator_rail.name,block.minecraft.activator_rail
@@ -1941,9 +1942,8 @@ tile.beacon.primary,block.minecraft.beacon.primary
 tile.beacon.secondary,block.minecraft.beacon.secondary
 tile.beehive.name,block.minecraft.beehive
 tile.bee_nest.name,block.minecraft.bee_nest
-tile.bed.notValid,block.minecraft.bed.not_valid
 tile.bed.occupied,block.minecraft.bed.occupied
-tile.bed.respawnSet,block.minecraft.bed.set_spawn
+tile.bed.respawnSet,block.minecraft.set_spawn
 tile.bedrock.name,block.minecraft.bedrock
 tile.bell.name,block.minecraft.bell
 tile.conduit.name,block.minecraft.conduit

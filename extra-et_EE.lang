@@ -123,6 +123,7 @@ itemGroup.name.buttons=Nupud
 itemGroup.name.sign=Sildid
 itemGroup.name.wood=Puidud
 itemGroup.name.banner_pattern=Plakatimustrid
+itemGroup.name.nether_warts=Nethertüükad
 
 potion.wither=Närbumine
 potion.prefix.grenade=Pritsitav
@@ -207,6 +208,7 @@ resourcePack.available.title.packs=Minu pakid
 resourcePack.available.add=Aktiveeri
 resourcePack.selected.remove=Desaktiveeri
 resourcePack.description.store=Vt Marketplace'is
+selectTemplate.realmsPlus=Esiletoodud Realms Plus mallid
 resourcePack.suggestedContent.title=Hangi rohkem pakke
 resourcePack.suggestedContent.button.viewMore=Vaata rohkem pakke
 resourcePack.available.none.text=Sul pole ressursipakke
@@ -231,12 +233,22 @@ pauseScreen.quit=Salvesta ja lahku
 
 selectWorld.createNew=Loo uus
 selectWorld.tab.friends=Sõbrad
+selectWorld.tab.thirdParty=Serverid
+
+localWorld.no_local_world_label=Sa pole veel ühtegi maailma loonud.
+localWorld.no_local_worlds_present=Kas su maailmad haihtusid? Proovi muuta oma salvestuskohta:
+options.filelocation.title=Failide salvestuskoht
+options.filelocation.external=Väline mäluseade
+options.filelocation.appdata=Rakendusesisene
+
 networkWorld.add_friend=Lisa sõber
 networkWorld.joinByCode=Liitu realmiga
+playscreen.joinableRealms=Realmiga liitumine
+playscreen.noFriendsRealms=Sa ei ole hetkel ühegi realmi liige.
 networkWorld.joinable_friends_label=Sõpradega liitumine
 networkWorld.no_joinable_friends_label=Sinu sõbrad ei mängi hetkel Minecrafti.
+networkWorld.lan_label=LAN-mängud
 networkWorld.servers_label=Serverid
-selectWorld.tab.thirdParty=Serverid
 thirdPartyWorld.Featured=Esiletoodud serverid
 networkWorld.more_servers=Rohkem servereid
 progressScreen.message.locating=Serveri otsimine
@@ -273,7 +285,7 @@ options.touch=Puudutus
 options.profile=Profiil
 options.video=Graafika
 options.viewSubscriptions=Tellimused
-options.sounds=Heli
+options.sound=Helide helitugevus
 options.language=Keel
 options.broadcast=Ülekandmine
 
@@ -421,7 +433,8 @@ options.texelAA=Tekstuuripikslite sakisilumine
 options.resetSettings=Vaikeseaded
 controllerLayoutScreen.resetAllBindings=Vaikeseaded
 
-createWorldScreen.createOnRealms=Loo Realmsis
+realmsWorld.newRealm=Uus realm
+createWorldScreen.createOnRealms=Loo realm
 createWorldScreen.defaultName=Minu maailm
 createWorldScreen.gameMode.default=Vaikimisi mängurežiim
 createWorldScreen.gameMode.personal=Isiklik mängurežiim
