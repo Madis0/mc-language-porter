@@ -28,6 +28,7 @@ item.spawn_egg.entity.evocation_illager.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.fox.name,item.minecraft.fox_spawn_egg
 item.spawn_egg.entity.ghast.name,item.minecraft.ghast_spawn_egg
 item.spawn_egg.entity.guardian.name,item.minecraft.guardian_spawn_egg
+item.spawn_egg.entity.hoglin.name,item.minecraft.hoglin_spawn_egg
 item.spawn_egg.entity.horse.name,item.minecraft.horse_spawn_egg
 item.spawn_egg.entity.husk.name,item.minecraft.husk_spawn_egg
 item.spawn_egg.entity.ravager.name,item.minecraft.ravager_spawn_egg
@@ -40,6 +41,7 @@ item.spawn_egg.entity.panda.name,item.minecraft.panda_spawn_egg
 item.spawn_egg.entity.parrot.name,item.minecraft.parrot_spawn_egg
 item.spawn_egg.entity.phantom.name,item.minecraft.phantom_spawn_egg
 item.spawn_egg.entity.pig.name,item.minecraft.pig_spawn_egg
+item.spawn_egg.entity.piglin.name,item.minecraft.piglin_spawn_egg
 item.spawn_egg.entity.pillager.name,item.minecraft.pillager_spawn_egg
 item.spawn_egg.entity.polar_bear.name,item.minecraft.polar_bear_spawn_egg
 item.spawn_egg.entity.pufferfish.name,item.minecraft.pufferfish_spawn_egg
@@ -51,10 +53,10 @@ item.spawn_egg.entity.silverfish.name,item.minecraft.silverfish_spawn_egg
 item.spawn_egg.entity.skeleton.name,item.minecraft.skeleton_spawn_egg
 item.spawn_egg.entity.skeleton_horse.name,item.minecraft.skeleton_horse_spawn_egg
 item.spawn_egg.entity.slime.name,item.minecraft.slime_spawn_egg
-item.spawn_egg.entity.snow_golem.name,item.minecraft.spider_spawn_egg
-item.spawn_egg.entity.spider.name,item.minecraft.squid_spawn_egg
-item.spawn_egg.entity.squid.name,item.minecraft.stray_spawn_egg
-item.spawn_egg.entity.stray.name,item.minecraft.trader_llama_spawn_egg
+item.spawn_egg.entity.spider.name,item.minecraft.spider_spawn_egg
+item.spawn_egg.entity.squid.name,item.minecraft.squid_spawn_egg
+item.spawn_egg.entity.stray.name,item.minecraft.stray_spawn_egg
+item.spawn_egg.entity.strider.name,item.minecraft.strider_spawn_egg
 item.spawn_egg.entity.tropicalfish.name,item.minecraft.tropical_fish_spawn_egg
 item.spawn_egg.entity.turtle.name,item.minecraft.turtle_spawn_egg
 item.spawn_egg.entity.vex.name,item.minecraft.vex_spawn_egg
@@ -65,9 +67,10 @@ item.spawn_egg.entity.wandering_trader.name,item.minecraft.wandering_trader_spaw
 item.spawn_egg.entity.witch.name,item.minecraft.witch_spawn_egg
 item.spawn_egg.entity.wither_skeleton.name,item.minecraft.wither_skeleton_spawn_egg
 item.spawn_egg.entity.wolf.name,item.minecraft.wolf_spawn_egg
+item.spawn_egg.entity.zoglin.name,item.minecraft.zoglin_spawn_egg
 item.spawn_egg.entity.zombie.name,item.minecraft.zombie_spawn_egg
 item.spawn_egg.entity.zombie_horse.name,item.minecraft.zombie_horse_spawn_egg
-item.spawn_egg.entity.zombie_pigman.name,item.minecraft.zombie_pigman_spawn_egg
+item.spawn_egg.entity.zombie_pigman.name,item.minecraft.zombified_piglin_spawn_egg
 item.spawn_egg.entity.zombie_villager.name,item.minecraft.zombie_villager_spawn_egg
 item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spawn_egg
 
@@ -149,11 +152,7 @@ tile.double_plant.grass.name,block.minecraft.tall_grass
 
 tile.snow_layer.name,block.minecraft.snow
 
-tile.red_mushroom.name,block.minecraft.red_mushroom
-tile.brown_mushroom.name,block.minecraft.brown_mushroom
-tile.red_mushroom_block.name,block.minecraft.red_mushroom_block
-tile.brown_mushroom_block.name,block.minecraft.brown_mushroom_block
-tile.mushroom.name,block.minecraft.mushroom_stem
+tile.brown_mushroom_block.mushroom.name,block.minecraft.brown_mushroom
 
 item.reeds.name,block.minecraft.sugar_cane
 
@@ -178,3 +177,18 @@ tile.bed.noSleep,block.minecraft.bed.no_sleep
 tile.bed.tooFar,block.minecraft.bed.too_far_away
 
 commandBlockScreen.blockType.chain,advMode.mode.sequence
+
+createWorldScreen.worldSettings,gamerule.category.updates
+createWorldScreen.fireSpreads,gamerule.doFireTick
+createWorldScreen.mobLoot,gamerule.doMobLoot
+createWorldScreen.naturalregeneration,gamerule.naturalRegeneration
+createWorldScreen.tileDrops,gamerule.doTileDrops
+createWorldScreen.immediaterespawn,gamerule.doImmediateRespawn
+createWorldScreen.respawnRadius,gamerule.spawnRadius
+createWorldScreen.daylightcycle,gamerule.doDaylightCycle
+createWorldScreen.keepInventory,gamerule.keepInventory
+createWorldScreen.mobSpawn,gamerule.doMobSpawning
+createWorldScreen.mobgriefing,gamerule.mobGriefing
+createWorldScreen.entitiesdroploot,gamerule.doEntityDrops
+createWorldScreen.weathercycle,gamerule.doWeatherCycle
+createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
