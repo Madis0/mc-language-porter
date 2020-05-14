@@ -243,6 +243,8 @@ realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
+realmsSettingsScreen.dev_next_page_label,debug.gamemodes.select_next
+dayOneExperience.next,debug.gamemodes.select_next
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
 death.attack.arrow.item,death.attack.arrow.item
@@ -492,6 +494,7 @@ feature.ruins,createWorld.customize.custom.useOceanRuins
 feed.edit,selectWorld.edit
 feed.return,key.keyboard.menu
 feed.cancel,gui.cancel
+feed.next,debug.gamemodes.select_next
 feed.delete,selectWorld.delete
 furnaceScreen.header,container.furnace
 gameMode.adventure,gameMode.adventure
@@ -518,6 +521,7 @@ gui.delete,selectWorld.delete
 gui.done,gui.done
 gui.down,gui.down
 gui.edit,selectWorld.edit
+gui.next,debug.gamemodes.select_next
 gui.no,gui.no
 gui.none,gui.none
 gui.select,mco.template.button.select
@@ -530,6 +534,7 @@ gui.yes,gui.yes
 gui.resourcepacks,options.resourcepack
 hostOption.time.day,mco.configure.world.subscription.day
 hostOption.weather,soundCategory.weather
+howtoplay.next,debug.gamemodes.select_next
 howtoplay.category.crafting,container.crafting
 howtoplay.category.play,mco.brokenworld.play
 howtoplay.category.theEnd,biome.minecraft.the_end
@@ -1470,6 +1475,7 @@ item.record_stal.desc,item.minecraft.music_disc_stal.desc
 item.record_strad.desc,item.minecraft.music_disc_strad.desc
 item.record_wait.desc,item.minecraft.music_disc_wait.desc
 item.record_ward.desc,item.minecraft.music_disc_ward.desc
+item.record_pigstep.desc,item.minecraft.music_disc_pigstep.desc
 item.redstone.name,itemGroup.redstone
 item.kelp.name,block.minecraft.kelp
 item.dried_kelp.name,item.minecraft.dried_kelp
@@ -1525,7 +1531,7 @@ item.suspicious_stew.name,item.minecraft.suspicious_stew
 item.banner_pattern.creeper,item.minecraft.creeper_banner_pattern.desc
 item.banner_pattern.flower,item.minecraft.flower_banner_pattern.desc
 item.banner_pattern.name,item.minecraft.skull_banner_pattern
-item.banner_pattern.piglin,entity.minecraft.piglin
+item.banner_pattern.piglin,item.minecraft.piglin_banner_pattern.desc
 item.banner_pattern.skull,item.minecraft.skull_banner_pattern.desc
 item.banner_pattern.thing,item.minecraft.mojang_banner_pattern.desc
 itemGroup.search,itemGroup.search
@@ -1996,7 +2002,7 @@ tile.beacon.primary,block.minecraft.beacon.primary
 tile.beacon.secondary,block.minecraft.beacon.secondary
 tile.beehive.name,block.minecraft.beehive
 tile.bee_nest.name,block.minecraft.bee_nest
-tile.target_block.name,block.minecraft.target
+tile.target.name,block.minecraft.target
 tile.bed.occupied,block.minecraft.bed.occupied
 tile.bed.respawnSet,block.minecraft.set_spawn
 tile.bedrock.name,block.minecraft.bedrock
@@ -2070,11 +2076,11 @@ tile.crimson_slab.name,block.minecraft.crimson_slab
 tile.warped_slab.name,block.minecraft.warped_slab
 tile.crimson_double_slab.name,block.minecraft.crimson_slab
 tile.warped_double_slab.name,block.minecraft.warped_slab
-tile.shroomlight_block.name,block.minecraft.shroomlight
+tile.shroomlight.name,block.minecraft.shroomlight
 tile.crimson_nylium.name,block.minecraft.crimson_nylium
 tile.warped_nylium.name,block.minecraft.warped_nylium
-tile.basalt_block.name,block.minecraft.basalt
-tile.polished_basalt_block.name,block.minecraft.polished_basalt
+tile.basalt.name,block.minecraft.basalt
+tile.polished_basalt.name,block.minecraft.polished_basalt
 tile.blackstone.name,block.minecraft.blackstone
 tile.polished_blackstone_bricks.name,block.minecraft.polished_blackstone_bricks
 tile.cracked_polished_blackstone_bricks.name,block.minecraft.cracked_polished_blackstone_bricks
@@ -2087,7 +2093,8 @@ tile.gilded_blackstone.name,block.minecraft.gilded_blackstone
 tile.blackstone_slab.name,block.minecraft.blackstone_slab
 tile.polished_blackstone_brick_slab.name,block.minecraft.polished_blackstone_brick_slab
 tile.chain.name,block.minecraft.chain
-tile.soul_soil_block.name,block.minecraft.soul_soil
+tile.soul_soil.name,block.minecraft.soul_soil
+tile.soul_fire.name,block.minecraft.soul_fire
 tile.polished_blackstone.name,block.minecraft.polished_blackstone
 tile.polished_blackstone_stairs.name,block.minecraft.polished_blackstone_stairs
 tile.polished_blackstone_slab.name,block.minecraft.polished_blackstone_slab
@@ -2294,7 +2301,7 @@ tile.nether_brick_fence.name,block.minecraft.nether_brick_fence
 tile.quartz_ore.name,block.minecraft.nether_quartz_ore
 tile.nether_wart.name,item.minecraft.nether_wart
 tile.nether_wart_block.name,block.minecraft.nether_wart_block
-tile.blue_nether_wart_block.name,block.minecraft.warped_wart_block
+tile.warped_wart_block.name,block.minecraft.warped_wart_block
 tile.unlit_redstone_torch.name,block.minecraft.redstone_torch
 tile.redstone_torch.name,block.minecraft.redstone_torch
 tile.soul_torch.name,block.minecraft.soul_torch
@@ -2502,7 +2509,7 @@ tile.spruce_trapdoor.name,block.minecraft.spruce_trapdoor
 tile.tripWire.name,block.minecraft.tripwire
 tile.tripwire_hook.name,block.minecraft.tripwire_hook
 tile.vine.name,block.minecraft.vine
-tile.weeping_vines_block.name,block.minecraft.weeping_vines
+tile.weeping_vines.name,block.minecraft.weeping_vines
 tile.twisting_vines_block.name,block.minecraft.twisting_vines
 tile.flowing_water.name,block.minecraft.water
 tile.water.name,block.minecraft.water
