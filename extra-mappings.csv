@@ -192,3 +192,5 @@ createWorldScreen.mobgriefing,gamerule.mobGriefing
 createWorldScreen.entitiesdroploot,gamerule.doEntityDrops
 createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
+
+tile.crimson_trapdoor.name,block.minecraft.crimson_trapdoor
