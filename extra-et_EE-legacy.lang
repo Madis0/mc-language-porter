@@ -1,0 +1,114 @@
+achievement.acquireIron=Omanda raudvara
+achievement.acquireIron.desc=Sulata raud kangiks
+achievement.bakeCake=Vale
+achievement.bakeCake.desc=Nisu, suhkur, piim ja munad!
+achievement.blazeRod=Tulle
+achievement.blazeRod.desc=Vabasta lõõm tema vardast
+achievement.bookcase=Raamatukoguhoidja
+achievement.bookcase.desc=Ehita oma loitsimislaua edendamiseks raamaturiiuleid
+achievement.breedCow=Taasasustamine
+achievement.breedCow.desc=Paarita kahte lehma nisuga
+achievement.buildBetterPickaxe=Täienduse saamine
+achievement.buildBetterPickaxe.desc=Konstrueeri endale parem kirka
+achievement.buildFurnace=Kuum teema
+achievement.buildFurnace.desc=Konstrueeri kaheksast munakiviplokist ahi
+achievement.buildHoe=Aeg põllutöödeks!
+achievement.buildHoe.desc=Kasuta laudu ja pulki kõpla valmistamiseks
+achievement.buildPickaxe=Aeg kaevandamiseks!
+achievement.buildPickaxe.desc=Kasuta laudu ja pulki kirka valmistamiseks
+achievement.buildSword=Aeg rünnata!
+achievement.buildSword.desc=Tee laudadest ja pulkadest mõõk
+achievement.buildWorkBench=Jõuproov
+achievement.buildWorkBench.desc=Valmista neljast lauaplokist meisterduslaud
+achievement.cookFish=Hõrk kala
+achievement.cookFish.desc=Püüa ja küpseta kala!
+achievement.diamonds=TEEMANDID!
+achievement.diamonds.desc=Kaevanda teemante oma rauast tööriistadega
+achievement.diamondsToYou=Teemandid sulle!
+achievement.diamondsToYou.desc=Viska teemante teisele mängijale
+achievement.enchantments=Loitsija
+achievement.enchantments.desc=Kasuta raamatut, obsidiaani ja teemante, et konstrueerida loitsimislaud
+achievement.exploreAllBiomes=Aeg seikluseks
+achievement.exploreAllBiomes.desc=Avasta kõik bioomid
+achievement.flyPig=Kui sead lendavad
+achievement.flyPig.desc=Lenda seaga kaljult alla
+achievement.fullBeacon=Majakavaht
+achievement.fullBeacon.desc=Ehita täielik majakas
+achievement.get=Saavutus käes!
+achievement.ghast=Tagastada saatjale
+achievement.ghast.desc=Tapa üks ghast tulekeraga
+achievement.killCow=Lehmakukutaja
+achievement.killCow.desc=Korja lehmalt nahka
+achievement.killEnemy=Koletisekütt
+achievement.killEnemy.desc=Ründa ja tapa üks koletis
+achievement.killWither=Algus.
+achievement.killWither.desc=Tapa wither
+achievement.makeBread=Küpseta leiba
+achievement.makeBread.desc=Tee nisust leiba
+achievement.mineWood=Puidu saamine
+achievement.mineWood.desc=Ründa puud, kuni tükk puuhalgu välja tuleb
+achievement.onARail=Raudteel
+achievement.onARail.desc=Reisi kaevanduskäruga sõidu algpunktist vähemalt 1 km kaugusele
+achievement.openInventory=Inventuuri läbiviimine
+achievement.openInventory.desc=Vajuta "%1$s" oma seljakoti avamiseks
+achievement.overkill=Ülepingutus
+achievement.overkill.desc=Põhjusta ühe löögiga üheksa südame eest vigastusi
+achievement.overpowered=Jõujuurikas
+achievement.overpowered.desc=Söö üks loitsitud kuldõun
+achievement.portal=Me peame sügavamale minema
+achievement.portal.desc=Ehita portaal Netherisse
+achievement.potion=Kohalik pruulikoda
+achievement.potion.desc=Pruuli üks võlujook
+achievement.requires=Vajab saavutust "%1$s"
+achievement.snipeSkeleton=Snaiprite duell
+achievement.snipeSkeleton.desc=Tapa üks luukere vähemalt 50 meetri kauguselt lastud noolega
+achievement.spawnWither=Algus?
+achievement.spawnWither.desc=Tekita wither
+achievement.taken=Tehtud!
+achievement.theEnd=Lõpp?
+achievement.theEnd.desc=Leia üles End
+achievement.theEnd2=Lõpp.
+achievement.theEnd2.desc=Võida enderdraakonit
+achievement.unknown=???
+
+item.redstone.name=Redstone-tolm
+entity.PigZombie.name=Zombistunud piglin
+tile.pumpkin.name=Nikerdatud kõrvits
+item.skull.char.name=Mängija pea
+
+stat.noteblockPlayed=Noodiplokke mängitud
+stat.noteblockTuned=Noodiplokke häälestatud
+stat.flowerPotted=Taimi istutatud
+stat.recordPlayed=Muusikaplaate mängitud
+
+options.anaglyph=3D-anaglüüf
+options.guiScale.small=1
+options.guiScale.normal=2
+options.guiScale.large=3
+
+options.snooper=Andmete saatmine
+options.snooper.desc=See oli varem Nuuskija - anonüümne viis Mojangile sinu arvuti tehniliste andmete saatmiseks, et nad saaksid optimeerida Minecrafti inimeste enim kasutatud riistvarale. Siis aga tuli uus seadus nimega GDPR ning nad pidid selle funktsiooni mängust eemaldama. Kuna sa aga kasutad aegunud versiooni, on see funktsioon siin veel alles, ressursside säästmiseks soovitame andmete saatmise välja lülitada.
+options.snooper.title=Tehnilised andmed
+options.snooper.view=Tehnilised andmed...
+
+title.oldgl1=Vana graafikakaart avastatud (OpenGL vanem kui 2.0);
+title.oldgl2=kahjuks saad sa mängida vaid kuni Minecraft 1.14.
+
+menu.online=Sinu mäng on aegunud
+
+key.categories.stream=Aegunud mäng
+key.streamStartStop=Tuleta uuendamist meelde
+key.streamCommercial=Kasutu nupp
+key.streamPauseUnpause=Kasutu nupp
+key.streamToggleMic=Kasutu nupp
+
+options.stream=Sinu mäng on aegunud
+options.realmsNotifications=Kasutu funktsioon
+stream.unavailable.title=Sinu mäng on aegunud
+stream.unavailable.library_failure=Parima mängukogemuse saamiseks uuenda Minecrafti uusimale versioonile.
+stream.unavailable.report_to_mojang=Minecrafti vigade loetelu
+
+selectServer.defaultName=Aegunud server
+multiplayer.disconnect.outdated_client=Palun uuenda oma Minecrafti!
+
+options.languageWarning=Tõlked pärinevad 1.16st, lisatud mõned täiendused
