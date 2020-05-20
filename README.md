@@ -31,6 +31,8 @@ An open set of scripts designed to semi-automate the task of porting languages f
 
 `downloader.py` and `porter.py` support command line arguments for defining the language, e.g. `py downloader.py ru_ru`. Other settings (e.g which files to download/use) can be set inside the scripts at the start, as booleans `True` or `False`.
 
+Tip: you can also use this tool for backporting new languages or language changes from latest Java Edition version to an older Java Edition version (such as 1.8). For that you just need to get the en_US.lang from the old JAR, map it (`mapper.py`) and port it (`porter.py`). Then you can create a resource pack and use the file there.
+
 ## Goals
 
 * Sustainability - the script must do its best to continue working with any new language strings using the same code.
@@ -43,4 +45,4 @@ This repository does not and will not host any official assets of the game in ei
 
 ---
 
-Not an official Minecraft product. Not accociated with or endorsed by Mojang AB or Microsoft. "Minecraft" is a trademark of Mojang Synergies AB.
+Not an official Minecraft product. Not accociated with or endorsed by Mojang Studios or Microsoft. "Minecraft" is a trademark of Mojang Studios.
