@@ -132,6 +132,7 @@ container.stonecutter,container.stonecutter
 container.stonecutter_block,container.stonecutter
 container.smithing_table,block.minecraft.smithing_table
 container.smithing_table_block,block.minecraft.smithing_table
+container.smithing_table.upgrade,container.upgrade
 container.shulkerbox,container.shulkerBox
 container.barrel,container.barrel
 controller.buttonTip.back,gui.back
@@ -504,10 +505,9 @@ gameMode.hardcore,gameMode.hardcore
 gameMode.spectator,gameMode.spectator
 gameMode.survival,gameMode.survival
 generator.amplified,generator.amplified
-generator.customized,generator.customized
 generator.debug_all_block_states,generator.debug_all_block_states
 generator.default,generator.default
-generator.largeBiomes,generator.largeBiomes
+generator.largeBiomes,generator.large_biomes
 generator.nether,advancements.nether.root.title
 generator.old,multiplayer.status.old
 gui.accept,mco.invites.button.accept
@@ -515,7 +515,7 @@ gui.all,gui.all
 gui.back,gui.back
 gui.cancel,gui.cancel
 gui.close,mco.selectServer.close
-gui.custom,item.minecraft.firework_star.custom_color
+gui.custom,generator.custom
 gui.default,generator.default
 gui.delete,selectWorld.delete
 gui.done,gui.done
@@ -1716,6 +1716,7 @@ options.guiScale.maximum,options.ao.max
 options.guiScale.minimum,options.ao.min
 options.guiScale.normal,options.difficulty.normal
 options.hidden,options.hidden
+options.textBackgroundOpacity,options.accessibility.text_background_opacity
 options.hold,options.key.hold
 options.invertMouse,options.invertMouse
 options.language,narrator.button.language
@@ -1909,7 +1910,7 @@ selectTemplate.deleteTemplateDone,mco.configure.world.buttons.done
 selectTemplate.delete,selectServer.delete
 selectTemplate.download,mco.brokenworld.download
 sign.edit,sign.edit
-skin.Standard.Custom,item.minecraft.firework_star.custom_color
+skin.Standard.Custom,generator.custom
 skin.Standard.CustomSlim,item.minecraft.firework_star.custom_color
 skin.Standard.Dummy,item.minecraft.firework_star.custom_color
 skins.buy.cancelButton,gui.cancel
@@ -2043,7 +2044,7 @@ tile.ender_chest.name,container.enderchest
 tile.jigsaw.name,block.minecraft.jigsaw
 tile.honey_block.name,block.minecraft.honey_block
 tile.honeycomb_block.name,block.minecraft.honeycomb_block
-tile.lodestone_block.name,block.minecraft.lodestone
+tile.lodestone.name,block.minecraft.lodestone
 tile.nether_sprouts.name,block.minecraft.nether_sprouts
 tile.crimson_stem.name,block.minecraft.crimson_stem
 tile.warped_stem.name,block.minecraft.warped_stem
@@ -2057,6 +2058,7 @@ tile.crimson_planks.name,block.minecraft.crimson_planks
 tile.warped_planks.name,block.minecraft.warped_planks
 tile.crimson_door.name,block.minecraft.crimson_door
 tile.warped_door.name,block.minecraft.warped_door
+tile.crimson_trapdoor.name,block.minecraft.crimson_trapdoor
 tile.warped_trapdoor.name,block.minecraft.warped_trapdoor
 tile.crimson_standing_sign.name,block.minecraft.crimson_sign
 tile.warped_standing_sign.name,block.minecraft.warped_sign
@@ -2086,8 +2088,8 @@ tile.polished_blackstone_bricks.name,block.minecraft.polished_blackstone_bricks
 tile.cracked_polished_blackstone_bricks.name,block.minecraft.cracked_polished_blackstone_bricks
 tile.polished_blackstone_brick_stairs.name,block.minecraft.polished_blackstone_brick_stairs
 tile.blackstone_stairs.name,block.minecraft.blackstone_stairs
-tile.blackstone_wall.normal.name,block.minecraft.blackstone_wall
-tile.polished_blackstone_brick_wall.normal.name,block.minecraft.polished_blackstone_brick_wall
+tile.blackstone_wall.name,block.minecraft.blackstone_wall
+tile.polished_blackstone_brick_wall.name,block.minecraft.polished_blackstone_brick_wall
 tile.chiseled_polished_blackstone.name,block.minecraft.chiseled_polished_blackstone
 tile.gilded_blackstone.name,block.minecraft.gilded_blackstone
 tile.blackstone_slab.name,block.minecraft.blackstone_slab
@@ -2100,7 +2102,7 @@ tile.polished_blackstone_stairs.name,block.minecraft.polished_blackstone_stairs
 tile.polished_blackstone_slab.name,block.minecraft.polished_blackstone_slab
 tile.polished_blackstone_pressure_plate.name,block.minecraft.polished_blackstone_pressure_plate
 tile.polished_blackstone_button.name,block.minecraft.polished_blackstone_button
-tile.polished_blackstone_wall.normal.name,block.minecraft.polished_blackstone_wall
+tile.polished_blackstone_wall.name,block.minecraft.polished_blackstone_wall
 tile.soul_campfire.name,block.minecraft.soul_campfire
 tile.chiseled_nether_bricks.name,block.minecraft.chiseled_nether_bricks
 tile.cracked_nether_bricks.name,block.minecraft.cracked_nether_bricks
@@ -2510,7 +2512,7 @@ tile.tripWire.name,block.minecraft.tripwire
 tile.tripwire_hook.name,block.minecraft.tripwire_hook
 tile.vine.name,block.minecraft.vine
 tile.weeping_vines.name,block.minecraft.weeping_vines
-tile.twisting_vines_block.name,block.minecraft.twisting_vines
+tile.twisting_vines.name,block.minecraft.twisting_vines
 tile.flowing_water.name,block.minecraft.water
 tile.water.name,block.minecraft.water
 tile.waterlily.name,block.minecraft.lily_pad
