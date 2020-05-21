@@ -85,6 +85,7 @@ options.anaglyph=3D-anaglüüf
 options.guiScale.small=1
 options.guiScale.normal=2
 options.guiScale.large=3
+gui.all=kõik
 
 options.snooper=Andmete saatmine
 options.snooper.desc=See oli varem Nuuskija - anonüümne viis Mojangile sinu arvuti tehniliste andmete saatmiseks, et nad saaksid optimeerida Minecrafti inimeste enim kasutatud riistvarale. Siis aga tuli uus seadus nimega GDPR ning nad pidid selle funktsiooni mängust eemaldama. Kuna sa aga kasutad aegunud versiooni, on see funktsioon siin veel alles, ressursside säästmiseks soovitame andmete saatmise välja lülitada.
@@ -104,8 +105,8 @@ key.streamToggleMic=Kasutu nupp
 
 options.stream=Sinu mäng on aegunud
 options.realmsNotifications=Kasutu funktsioon
-stream.unavailable.title=Sinu mäng on aegunud
-stream.unavailable.library_failure=Parima mängukogemuse saamiseks uuenda Minecrafti uusimale versioonile.
+stream.unavailable.title=§cSinu mäng on aegunud
+stream.unavailable.library_failure=§fParima mängukogemuse saamiseks palun uuenda Minecrafti uusimale versioonile.
 stream.unavailable.report_to_mojang=Minecrafti vigade loetelu
 
 selectServer.defaultName=Aegunud server
