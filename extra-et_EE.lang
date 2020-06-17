@@ -249,6 +249,13 @@ networkWorld.joinable_friends_label=Sõpradega liitumine
 networkWorld.no_joinable_friends_label=Sinu sõbrad ei mängi hetkel Minecrafti.
 networkWorld.lan_label=LAN-mängud
 networkWorld.servers_label=Serverid
+networkWorld.available_games=Saadaolevad mängud:
+networkWorld.online=Võrgus:
+networkWorld.current_ping=Praegune ping:
+networkWorld.description=Kirjeldus:
+networkWorld.news=Uudised:
+networkWorld.screenshots=Kuvatõmmised:
+
 thirdPartyWorld.Featured=Esiletoodud serverid
 thirdPartyWorld.Additional=Lisaserverid
 progressScreen.message.locating=Serveri otsimine
