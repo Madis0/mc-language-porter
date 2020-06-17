@@ -44,6 +44,7 @@ attribute.name.generic.knockbackResistance,attribute.name.generic.knockback_resi
 attribute.name.minecraft:movement,attribute.name.generic.movement_speed
 attribute.name.horse.jumpStrength,attribute.name.horse.jump_strength
 attribute.name.zombie.spawnReinforcements,attribute.name.zombie.spawn_reinforcements
+attribution.goBack,dataPack.validation.back
 eula.acceptButton,mco.invites.button.accept
 book.editTitle,book.editTitle
 book.finalizeButton,book.finalizeButton
@@ -231,6 +232,7 @@ realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
 realmsSharingScreen.join,mco.configure.world.slot.tooltip.active
 realmsCreateScreen.purchasePrefix.create,mco.create.world
 realmsCreateScreen.purchasePrefix.renew,mco.selectServer.expiredRenew
+realmsCreateScreen.goBack,dataPack.validation.back
 realmsCreateScreen.purchaseConfirmation.cancel,gui.cancel
 networkWorld.add_server,selectServer.add
 networkWorld.join_server,selectServer.select
@@ -244,8 +246,7 @@ realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
-realmsSettingsScreen.dev_next_page_label,debug.gamemodes.select_next
-dayOneExperience.next,debug.gamemodes.select_next
+realmsSettingsScreen.searchBox,gui.recipebook.search_hint
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
 death.attack.arrow.item,death.attack.arrow.item
@@ -495,7 +496,6 @@ feature.ruins,createWorld.customize.custom.useOceanRuins
 feed.edit,selectWorld.edit
 feed.return,key.keyboard.menu
 feed.cancel,gui.cancel
-feed.next,debug.gamemodes.select_next
 feed.delete,selectWorld.delete
 furnaceScreen.header,container.furnace
 gameMode.adventure,gameMode.adventure
@@ -521,7 +521,7 @@ gui.delete,selectWorld.delete
 gui.done,gui.done
 gui.down,gui.down
 gui.edit,selectWorld.edit
-gui.next,debug.gamemodes.select_next
+gui.goBack,dataPack.validation.back
 gui.no,gui.no
 gui.none,gui.none
 gui.select,mco.template.button.select
@@ -534,7 +534,6 @@ gui.yes,gui.yes
 gui.resourcepacks,options.resourcepack
 hostOption.time.day,mco.configure.world.subscription.day
 hostOption.weather,soundCategory.weather
-howtoplay.next,debug.gamemodes.select_next
 howtoplay.category.crafting,container.crafting
 howtoplay.category.play,mco.brokenworld.play
 howtoplay.category.theEnd,biome.minecraft.the_end
@@ -1627,6 +1626,7 @@ lanServer.otherPlayers,lanServer.otherPlayers
 lanServer.scanning,lanServer.scanning
 lanServer.start,lanServer.start
 lanServer.title,lanServer.title
+licensed_content.goBack,dataPack.validation.back
 map.toolTip.scaling,filled_map.scale
 map.toolTip.unkown,filled_map.unknown
 map.toolTip.locked,filled_map.locked
@@ -1720,6 +1720,7 @@ options.textBackgroundOpacity,options.accessibility.text_background_opacity
 options.hold,options.key.hold
 options.invertMouse,options.invertMouse
 options.language,narrator.button.language
+options.languageGuiScaleCompatibility.cancel,dataPack.validation.back
 options.mipmapLevels,options.mipmapLevels
 options.modelPart.cape,options.modelPart.cape
 options.modelPart.hat,options.modelPart.hat
@@ -1741,6 +1742,7 @@ options.reducedDebugInfo,options.reducedDebugInfo
 options.renderClouds,options.renderClouds
 options.renderDistance,options.renderDistance
 options.renderDistanceFormat,options.chunks
+options.resetSettings,dataPack.validation.reset
 options.renderDistance.normal,options.difficulty.normal
 options.saturation,effect.minecraft.saturation
 options.sensitivity,options.sensitivity
@@ -1764,6 +1766,7 @@ options.visible,options.visible
 options.vsync,options.vsync
 options.autoUpdateMode.off,mco.configure.world.off
 options.edit,selectWorld.edit
+options.goBack,dataPack.validation.back
 pauseScreen.back,menu.returnToGame
 pauseScreen.header,menu.game
 pauseScreen.options,options.title
@@ -1779,6 +1782,7 @@ playscreen.header.local,mco.brokenworld.play
 playscreen.realmExpired,mco.configure.world.subscription.expired
 playscreen.worlds,mco.configure.worlds.title
 playscreen.delete.legacy.confirm,selectWorld.deleteButton
+permissions.GoBack,dataPack.validation.back
 permissions.level.operator,mco.configure.world.invites.ops.tooltip
 permissions.nocheats.cancel,gui.cancel
 permissions.operator,mco.configure.world.invites.ops.tooltip
@@ -1842,9 +1846,6 @@ progressScreen.dialog.button.join,mco.configure.world.slot.tooltip.active
 raid.name,event.minecraft.raid
 recipeBook.setting.off,mco.configure.world.off
 record.nowPlaying,record.nowPlaying
-resourcePack.available.title,resourcePack.available.title
-resourcePack.folderInfo,resourcePack.folderInfo
-resourcePack.selected.title,resourcePack.selected.title
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
@@ -1909,7 +1910,6 @@ selectTemplate.templateDescription,mco.template.name
 selectTemplate.deleteTemplateDone,mco.configure.world.buttons.done
 selectTemplate.delete,selectServer.delete
 selectTemplate.download,mco.brokenworld.download
-sign.edit,sign.edit
 skin.Standard.Custom,generator.custom
 skin.Standard.CustomSlim,item.minecraft.firework_star.custom_color
 skin.Standard.Dummy,item.minecraft.firework_star.custom_color
@@ -1979,18 +1979,23 @@ store.menu.home,key.keyboard.home
 store.inventory.button,key.categories.inventory
 store.inventory.title,key.categories.inventory
 store.inventory.dropdown.current,options.fullscreen.current
-store.incompatible,resourcePack.incompatible
+store.incompatible,pack.incompatible
 store.unlocked,narrator.button.difficulty_lock.unlocked
+store.popup.goBack,dataPack.validation.back
 store.popup.xblRequired.button2,gui.cancel
 store.popup.download.button1,mco.brokenworld.download
 store.popup.download.button2,mco.create.world.skip
+store.popup.download.back,dataPack.validation.back
 store.popup.update.button2,mco.create.world.skip
+store.popup.update.back,dataPack.validation.back
 store.content.download,mco.brokenworld.download
 store.mashup.world,selectWorld.world
 store.mashup.title.skinPack,commands.scoreboard.players.list.entity.entry
 store.3pserverItem.fetchingCancel,gui.cancel
 store.xbl.disconnected,multiplayer.disconnect.generic
+store.showalloffers.list.back,dataPack.validation.back
 store.search.filter.worldTemplates,mco.configure.worlds.title
+terms_and_conditions.goBack,dataPack.validation.back
 tile.acaciaFence.name,block.minecraft.acacia_fence
 tile.acacia_fence_gate.name,block.minecraft.acacia_fence_gate
 tile.activator_rail.name,block.minecraft.activator_rail
@@ -2684,6 +2689,7 @@ translation.test.world,translation.test.world
 xbox.signin.error.pocket.line2,selectWorld.gameMode.spectator.line2
 manifestvalidation.delete,selectWorld.delete
 manifestvalidation.delete.confirm_delete,selectWorld.deleteButton
+manifestvalidation.delete.confirm_goBack,dataPack.validation.back
 addServer.add,addServer.add
 externalServerScreen.addServer,selectServer.add
 addServer.enterIp,addServer.enterIp
