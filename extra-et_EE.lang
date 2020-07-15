@@ -313,7 +313,6 @@ key.mobEffects=Mõjud
 key.emote=Liigutus
 key.menuTabLeft=Menüü vasakpoolne kaart
 key.menuTabRight=Menüü parempoolne kaart
-
 options.hidetooltips=Peida mängupuldi vihjed
 options.hidegamepadcursor=Peida mängupuldi kursor
 options.swapJumpAndSneak=Vaheta hüpe ja hiilimine
@@ -328,6 +327,25 @@ key.flyDownSlow=Lenda aeglaselt alla
 key.flyUpSlow=Lenda aeglaselt üles
 key.interactwithtoast=Ava teade
 key.mobeffectsandinteractwithtoast=Ava teade/mõjud
+
+options.gamertag=Mängijasilt:
+options.changeGamertag=Muuda mängijasilti
+options.manageAccount=Halda kontot
+options.xboxLive.privacyControl=Halda, kes saab sulle kutseid saata
+options.autoUpdateEnabled=Uuenda lahti lukustatud pakke automaatselt
+options.autoUpdateMode=Uuenda lahti lukustatud pakke automaatselt
+options.websocketEncryption=Nõua krüpteeritud WebSocketeid
+options.onlyTrustedSkinsAllowed=Luba ainult usaldatud välimused
+
+options.credits=Tiitrid
+options.attribution=Kasutatud tehnoloogiad
+options.licensed_content=Litsenseeritud sisu
+contentlog.settingsSectionName=Sisulogi seaded
+options.content_log_file=Luba sisulogi fail
+options.content_log_gui=Luba sisulogi liides
+contentlog.history.title=Sisulogi ajalugu
+contentlog.clear_files=Kustuta vanad sisulogid
+contentlog.logLocationSectionName=Sisulogi asukoht:
 
 chat.title=Vestlus
 chat.title.cheats=Vestlus ja käsklused

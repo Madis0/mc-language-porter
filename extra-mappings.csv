@@ -42,6 +42,7 @@ item.spawn_egg.entity.parrot.name,item.minecraft.parrot_spawn_egg
 item.spawn_egg.entity.phantom.name,item.minecraft.phantom_spawn_egg
 item.spawn_egg.entity.pig.name,item.minecraft.pig_spawn_egg
 item.spawn_egg.entity.piglin.name,item.minecraft.piglin_spawn_egg
+item.spawn_egg.entity.piglin_brute.name,item.minecraft.piglin_brute_spawn_egg
 item.spawn_egg.entity.pillager.name,item.minecraft.pillager_spawn_egg
 item.spawn_egg.entity.polar_bear.name,item.minecraft.polar_bear_spawn_egg
 item.spawn_egg.entity.pufferfish.name,item.minecraft.pufferfish_spawn_egg
