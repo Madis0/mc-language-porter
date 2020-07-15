@@ -216,6 +216,7 @@ createWorld.customize.presets.select,createWorld.customize.presets.select
 createWorld.customize.presets.title,createWorld.customize.presets.title
 createWorldUpsell.button.world,selectWorld.newWorld
 createWorldScreen.cheatSettings,selectWorld.cheats
+createWorldScreen.bonusChest,selectWorld.bonusItems
 createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
 createWorldScreen.gameMode,selectWorld.gameMode
@@ -409,6 +410,7 @@ entity.pufferfish.name,entity.minecraft.pufferfish
 entity.salmon.name,entity.minecraft.salmon
 entity.tropicalfish.name,entity.minecraft.tropical_fish
 entity.ghast.name,entity.minecraft.ghast
+entity.piglin_brute.name,entity.minecraft.piglin_brute
 entity.guardian.name,entity.minecraft.guardian
 entity.hoglin.name,entity.minecraft.hoglin
 entity.horse.name,entity.minecraft.horse
@@ -1692,7 +1694,6 @@ options.entityShadows,options.entityShadows
 options.forceUnicodeFont,options.forceUnicodeFont
 options.fov,options.fov
 options.default.format,disconnect.genericReason
-options.percent.format,options.entityDistancePercent
 options.fov.max,options.fov.max
 options.fov.min,options.fov.min
 options.hudOpacity.max,options.difficulty.normal
@@ -1748,7 +1749,7 @@ options.saturation,effect.minecraft.saturation
 options.sensitivity,options.sensitivity
 options.sensitivity.max,options.sensitivity.max
 options.sensitivity.min,options.sensitivity.min
-options.sliderLabelFormat,commands.scoreboard.players.list.entity.entry
+options.sliderLabelFormat,options.generic_value
 options.skinCustomisation,options.skinCustomisation
 options.skinCustomisation.title,options.skinCustomisation.title
 options.snooper,options.snooper
@@ -1867,8 +1868,6 @@ selectServer.hiddenAddress,selectServer.hiddenAddress
 selectServer.refresh,selectServer.refresh
 selectServer.select,selectServer.select
 selectServer.title,selectServer.title
-selectWorld.allowCommands,selectWorld.allowCommands
-selectWorld.bonusItems,selectWorld.bonusItems
 selectWorld.conversion,selectWorld.conversion
 selectWorld.create,selectWorld.create
 selectWorld.createDemo,selectWorld.createDemo
@@ -1890,9 +1889,6 @@ selectWorld.gameMode.spectator.line1,selectWorld.gameMode.spectator.line1
 selectWorld.gameMode.spectator.line2,selectWorld.gameMode.spectator.line2
 selectWorld.gameMode.survival,selectWorld.gameMode.survival
 selectWorld.gameMode.survival.line2,selectWorld.gameMode.survival.line2
-selectWorld.hardcoreMode,selectWorld.hardcoreMode
-selectWorld.hardcoreMode.info,selectWorld.hardcoreMode.info
-selectWorld.mapFeatures,selectWorld.mapFeatures
 selectWorld.mapType,selectWorld.mapType
 selectWorld.mapType.normal,selectWorld.mapType.normal
 selectWorld.moreWorldOptions,selectWorld.moreWorldOptions
