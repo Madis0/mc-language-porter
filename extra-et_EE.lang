@@ -339,7 +339,8 @@ options.onlyTrustedSkinsAllowed=Luba ainult usaldatud välimused
 
 options.credits=Tiitrid
 options.attribution=Kasutatud tehnoloogiad
-options.licensed_content=Litsenseeritud sisu
+options.licensed_content=Litsentsitud sisu
+options.font_license=Fondi litsents
 contentlog.settingsSectionName=Sisulogi seaded
 options.content_log_file=Luba sisulogi fail
 options.content_log_gui=Luba sisulogi liides
