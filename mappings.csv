@@ -2689,6 +2689,7 @@ addServer.title,addServer.title
 externalServerScreen.serverName,mco.configure.world.invite.profile.name
 externalServerScreen.serverNameInput,addServer.enterName
 hbui.AchievementDetails.locked,filled_map.locked
+hbui.AchievementDetails.yes,gui.yes
 hbui.AchievementListItem.locked,filled_map.locked
 hbui.Achievements.all,gui.all
 hbui.Achievements.locked,filled_map.locked
