@@ -4,6 +4,26 @@ achievementScreen.hour=%d tund
 achievementScreen.hours=%d tundi
 achievementScreen.timeplayed:=Mängitud aeg:
 achievementScreen.fetchingAchievements=Saavutuste hankimine...
+achievementScreen.reward=Auhind
+
+hbui.Achievements.title=Saavutused
+hbui.Achievements.all=Kõik
+hbui.Achievements.completed=Tehtud
+hbui.Achievements.inProgress=Tegemisel
+hbui.AchievementsSummary.percentage=%1$s/%2$s tehtud
+hbui.AchievementsSummary.progress=Tegemisel
+hbui.AchievementsSummary.gamerscore=Mänguriskoor
+hbui.AchievementsSummary.rewards=Auhinnad
+hbui.AchievementsSummary.time=Mängitud aeg
+hbui.AchievementsSummary.hoursPlayed=%1$s tundi
+hbui.AchievementDetails.gamerscore=Mänguriskoor
+hbui.AchievementDetailsRoute.reward=Auhind
+hbui.AchievementDetailsRoute.viewReward=Vaata auhinda
+hbui.AchievementListItem.view=Vaata
+hbui.AchievementListItem.viewReward=Vaata auhinda
+hbui.AchievementReward.reward=Auhind
+hbui.AchievementReward.view=Vaata
+hbui.AchievementReward.viewReward=Vaata auhinda
 
 action.hint.exit.boat=Paadist lahkumiseks hüppa
 action.hint.exit.minecart=Kaevanduskärust lahkumiseks hüppa
@@ -232,6 +252,8 @@ pauseScreen.invite=Kutsu mängu
 pauseScreen.quit=Salvesta ja lahku
 
 selectWorld.createNew=Loo uus
+playscreen.beta_worlds=Beetamaailmad
+playscreen.beta_legacy_worlds=Vanad beetamaailmad
 selectWorld.tab.friends=Sõbrad
 selectWorld.tab.thirdParty=Serverid
 
