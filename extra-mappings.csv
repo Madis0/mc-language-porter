@@ -4,6 +4,7 @@ options.guiScale.optionName,options.guiScale
 chat.link.open,chat.link.open
 
 menu.returnToGame,menu.returnToGame
+deathScreen.message,deathScreen.title
 deathScreen.quit,deathScreen.titleScreen
 
 item.cooked_beef.name,item.minecraft.cooked_beef

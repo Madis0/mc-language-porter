@@ -448,6 +448,7 @@ options.enableAutoPlatformTextToSpeech=Luba tekst kõneks seadme seadete järgi
 options.enableChatTextToSpeech=Luba tekst kõneks vestluse jaoks
 options.enableUITextToSpeech=Luba liidese ekraanilugeja
 options.enableOpenChatMessage=Luba vestluse avamise sõnum
+options.screenShake=Ekraani rappumine
 
 options.thirdperson=Kaamera perspektiiv
 options.thirdperson.firstperson=Mängija silme läbi
@@ -505,7 +506,7 @@ createWorldScreen.worldSettings=Maailmavalikud
 createWorldScreen.pvp=Kaaslaste löömine
 createWorldScreen.showCoordinates=Koordinaatide kuvamine
 createWorldScreen.tntexplodes=Dünamiit plahvatab
-createWorldScreen.experimentalgameplay=Kasuta katselist mänguviisi
+createWorldScreen.experimentalgameplay=Katsetused
 selectWorld.cheats=Sohitegemise lubamine
 createWorldScreen.alwaysDay=Alati päev
 createWorldScreen.commandblocksenabled=Käsuplokid lubatud
