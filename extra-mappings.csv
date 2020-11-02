@@ -195,4 +195,4 @@ createWorldScreen.entitiesdroploot,gamerule.doEntityDrops
 createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
 
-tile.crimson_trapdoor.name,block.minecraft.crimson_trapdoor
+tile.grass_path.name,block.minecraft.grass_path
