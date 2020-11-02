@@ -7,7 +7,6 @@ achievementScreen.fetchingAchievements=Saavutuste hankimine...
 achievementScreen.reward=Auhind
 
 hbui.Achievements.title=Saavutused
-hbui.Achievements.all=Kõik
 hbui.Achievements.completed=Tehtud
 hbui.Achievements.inProgress=Tegemisel
 hbui.AchievementsSummary.percentage=%1$s/%2$s tehtud
@@ -149,7 +148,6 @@ potion.wither=Närbumine
 potion.prefix.grenade=Pritsitav
 potion.prefix.linger=Pikaldane
 
-craftingScreen.tab.search=Kõik
 craftingScreen.tab.search.filter=Meisterdatavad
 craftingScreen.tab.construction=Ehitus
 craftingScreen.tab.nature=Loodus
@@ -480,7 +478,6 @@ options.fov.toggle=Mäng võib vaatevälja muuta
 options.uiprofile=Kasutajaliidese kuju
 options.uiprofile.classic=Klassikaline
 options.uiprofile.pocket=Taskuversioon
-options.particleRenderDistance=Osakeste nähtavuskaugus
 options.msaa=Sakisilumine
 options.texelAA=Tekstuuripikslite sakisilumine
 options.resetSettings=Vaikeseaded

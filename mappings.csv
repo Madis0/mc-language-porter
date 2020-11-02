@@ -72,7 +72,7 @@ chat.type.text,chat.type.text
 chestScreen.header.large,container.chestDouble
 chestScreen.header.player,container.inventory
 chestScreen.header.small,container.chest
-craftingScreen.tab.search,options.particles.all
+craftingScreen.tab.search,gui.socialInteractions.tab_all
 craftingScreen.tab.items,stat.itemsButton
 craftingScreen.tab.survival,key.categories.inventory
 craftingScreen.tab.armor,attribute.name.generic.armor
@@ -227,6 +227,7 @@ createWorldScreen.gameMode.serverDefault,generator.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.clearPlayerData.cancel,gui.cancel
+realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
 realmsInvitationScreen.generate,jigsaw_block.generate
 realmsInvitationScreen.backup,mco.brokenworld.download
 realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
@@ -247,7 +248,7 @@ realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
-realmsSettingsScreen.searchBox,gui.recipebook.search_hint
+realmsSettingsScreen.searchBox,gui.socialInteractions.search_hint
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
 death.attack.arrow.item,death.attack.arrow.item
@@ -2250,7 +2251,6 @@ tile.furnace.name,container.furnace
 tile.glass.name,block.minecraft.glass
 tile.golden_rail.name,block.minecraft.powered_rail
 tile.grass.name,block.minecraft.grass_block
-tile.grass_path.name,block.minecraft.grass_path
 tile.gravel.name,block.minecraft.gravel
 tile.hay_block.name,block.minecraft.hay_block
 tile.netherrack.name,block.minecraft.netherrack
@@ -2691,7 +2691,7 @@ externalServerScreen.serverNameInput,addServer.enterName
 hbui.AchievementDetails.locked,filled_map.locked
 hbui.AchievementDetails.yes,gui.yes
 hbui.AchievementListItem.locked,filled_map.locked
-hbui.Achievements.all,gui.all
+hbui.Achievements.all,gui.socialInteractions.tab_all
 hbui.Achievements.locked,filled_map.locked
 hbui.BackButton.back,gui.back
 hbui.MenuButton.menu,key.keyboard.menu
@@ -2707,6 +2707,7 @@ dr.right_side.category_title,disconnect.genericReason
 dr.body_size_label_text,createWorld.customize.flat.height
 dr.none_button_text,gui.none
 dr.default_piece_button_text,generator.default
+gfxDriverOutdated.close,mco.selectServer.close
 onlinePlay.doNotShowAgain,multiplayerWarning.check
 onlinePlay.proceed,gui.proceed
 onlinePlay.Back,gui.back
