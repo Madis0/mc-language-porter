@@ -225,6 +225,7 @@ createWorldScreen.gameMode.creative,selectWorld.gameMode.creative
 createWorldScreen.gameMode.survival,selectWorld.gameMode.survival
 createWorldScreen.gameMode.serverDefault,generator.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
+createWorldScreen.worldType,selectWorld.mapType
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.clearPlayerData.cancel,gui.cancel
 realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
@@ -1669,8 +1670,6 @@ options.chat.visibility.system,options.chat.visibility.system
 options.chat.width,options.chat.width
 options.controls,options.controls
 options.customizeTitle,options.customizeTitle
-options.dev_enableDebugHudOverlay.off,options.screenEffectScale.off
-options.dev_render_attach_pos.none,options.screenEffectScale.off
 options.dev_render_attach_pos.all,options.particles.all
 options.dev_connection_quality.no_limit,options.framerateLimit.max
 options.difficulty,options.difficulty
@@ -1731,6 +1730,7 @@ options.particles.minimal,options.particles.minimal
 options.reducedDebugInfo,options.reducedDebugInfo
 options.renderClouds,options.renderClouds
 options.renderDistance,options.renderDistance
+options.raytracing.renderDistanceFormat,options.chunks
 options.renderDistanceFormat,options.chunks
 options.resetSettings,dataPack.validation.reset
 options.renderDistance.normal,options.difficulty.normal
@@ -1749,12 +1749,10 @@ options.stream.chat.enabled.never,team.collision.never
 options.title,options.title
 options.toggle,options.key.toggle
 options.touchscreen,options.touchscreen
-options.vbo,options.vbo
+options.viewSubscriptions.button.price,disconnect.genericReason
 options.videoTitle,options.videoTitle
 options.viewBobbing,options.viewBobbing
 options.visible,options.visible
-options.vsync,options.vsync
-options.autoUpdateMode.off,options.fovEffectScale.off
 options.edit,selectWorld.edit
 options.goBack,dataPack.validation.back
 sunsetting.store.incompatible,pack.incompatible
@@ -1836,7 +1834,6 @@ progressScreen.saving,menu.savingLevel
 progressScreen.message.building,menu.generatingTerrain
 progressScreen.dialog.button.join,mco.configure.world.slot.tooltip.active
 raid.name,event.minecraft.raid
-recipeBook.setting.off,options.fovEffectScale.off
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
@@ -1846,6 +1843,7 @@ storageManager.delete.confirm,selectWorld.deleteButton
 storageManager.delete.cancel,gui.cancel
 storageManager.multiselectDelete,selectWorld.delete
 storageManager.miscellaneous,key.categories.misc
+storageManager.groupType,advMode.type
 resourcePack.MashupAdventureTime.description,selectWorld.gameMode.spectator.line2
 screenshot.failure,screenshot.failure
 screenshot.success,screenshot.success
@@ -1879,7 +1877,6 @@ selectWorld.gameMode.spectator.line1,selectWorld.gameMode.spectator.line1
 selectWorld.gameMode.spectator.line2,selectWorld.gameMode.spectator.line2
 selectWorld.gameMode.survival,selectWorld.gameMode.survival
 selectWorld.gameMode.survival.line2,selectWorld.gameMode.survival.line2
-selectWorld.mapType,selectWorld.mapType
 selectWorld.mapType.normal,selectWorld.mapType.normal
 selectWorld.moreWorldOptions,selectWorld.moreWorldOptions
 selectWorld.newWorld,selectWorld.newWorld
@@ -1906,10 +1903,10 @@ skins.picker.default,generator.default
 soundCategory.ambient,soundCategory.ambient
 soundCategory.block,soundCategory.block
 soundCategory.hostile,soundCategory.hostile
-soundCategory.master,soundCategory.master
 soundCategory.music,soundCategory.music
 soundCategory.neutral,soundCategory.neutral
 soundCategory.player,soundCategory.player
+soundCategory.record,soundCategory.record
 soundCategory.weather,soundCategory.weather
 stat.animalsBred,stat.minecraft.animals_bred
 stat.armorCleaned,stat.minecraft.clean_armor
@@ -1975,6 +1972,7 @@ store.popup.download.back,dataPack.validation.back
 store.popup.update.button2,mco.create.world.skip
 store.popup.update.back,dataPack.validation.back
 store.content.download,mco.brokenworld.download
+store.mashup.bundle,item.minecraft.bundle
 store.mashup.world,selectWorld.world
 store.mashup.title.skinPack,commands.scoreboard.players.list.entity.entry
 store.3pserverItem.fetchingCancel,gui.cancel
@@ -2010,7 +2008,6 @@ tile.diamond_block.name,block.minecraft.diamond_block
 tile.emerald_block.name,block.minecraft.emerald_block
 tile.gold_block.name,block.minecraft.gold_block
 tile.iron_block.name,block.minecraft.iron_block
-tile.lapis_block.name,block.minecraft.lapis_block
 tile.redstone_block.name,block.minecraft.redstone_block
 tile.bookshelf.name,block.minecraft.bookshelf
 tile.brown_mushroom.name,block.minecraft.brown_mushroom
@@ -2251,6 +2248,7 @@ tile.furnace.name,container.furnace
 tile.glass.name,block.minecraft.glass
 tile.golden_rail.name,block.minecraft.powered_rail
 tile.grass.name,block.minecraft.grass_block
+tile.grass_path.name,block.minecraft.dirt_path
 tile.gravel.name,block.minecraft.gravel
 tile.hay_block.name,block.minecraft.hay_block
 tile.netherrack.name,block.minecraft.netherrack
@@ -2655,13 +2653,11 @@ structure_block.mode.load,structure_block.mode.load
 structure_block.mode.corner,structure_block.mode.corner
 structure_block.mode.data,structure_block.mode.data
 structure_block.show_bounding_box,structure_block.show_boundingbox
-structure_block.off,mco.configure.world.off
 structure_block.corner,structure_block.mode.corner
 structure_block.reset,controls.reset
 structure_block.save,structure_block.mode.save
 structure_block.load,structure_block.mode.load
 structure_block.mirror.none,gui.none
-3d_export.off,mco.configure.world.off
 3d_export.remove,mco.configure.world.invites.remove.tooltip
 3d_export.reset,controls.reset
 title.oldgl1,title.oldgl.deprecation.line1
