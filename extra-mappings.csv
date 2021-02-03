@@ -196,3 +196,4 @@ createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
 
 soundCategory.master,soundCategory.master
+soundCategory.texttospeech,options.narrator
