@@ -390,7 +390,7 @@ hostOption.weather.rain=Vihmane
 hostOption.weather.thunderstorm=Tormine
 
 chat.settings=Vestluse seaded
-chat.settings.tts=Tekst kõneks vestluse jaoks
+chat.settings.tts=Jutustaja vestluse jaoks
 chat.settings.chatColor=Vestluse värv
 chat.settings.chatFont=Vestluse font
 chat.settings.color=Värv
@@ -443,9 +443,9 @@ howtoplay.servers=Serverid
 howtoplay.theStore=Marketplace
 howtoplay.resourceAndBehaviorPacks=Ressursi- ja käitumispakid
 
-options.enableAutoPlatformTextToSpeech=Luba tekst kõneks seadme seadete järgi
-options.enableChatTextToSpeech=Luba tekst kõneks vestluse jaoks
-options.enableUITextToSpeech=Luba liidese ekraanilugeja
+options.enableAutoPlatformTextToSpeech=Jutustaja seadme seadete järgi
+options.enableChatTextToSpeech=Jutustaja vestluse jaoks
+options.enableUITextToSpeech=Jutustaja liidese jaoks
 options.enableOpenChatMessage=Luba vestluse avamise sõnum
 options.screenShake=Ekraani rappumine
 

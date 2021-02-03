@@ -146,7 +146,6 @@ controller.buttonTip.tab,key.keyboard.tab
 controllerLayoutScreen.button,mco.gui.button
 controllerLayoutScreen.cancel,gui.cancel
 controllerLayoutScreen.save,structure_block.mode.save
-controllerLayoutScreen.toggleLivingroom,key.togglePerspective
 controls.reset,controls.reset
 controls.resetAll,controls.resetAll
 controls.title,controls.title
@@ -317,7 +316,6 @@ disconnect.closed,disconnect.closed
 disconnect.disconnected,disconnect.disconnected
 disconnect.endOfStream,disconnect.endOfStream
 disconnect.genericReason,disconnect.genericReason
-disconnect.loginFailedInfo.serversUnavailable,disconnect.loginFailedInfo.serversUnavailable
 disconnect.lost,disconnect.lost
 disconnect.overflow,disconnect.overflow
 disconnect.quitting,disconnect.quitting
@@ -1473,7 +1471,7 @@ item.record_strad.desc,item.minecraft.music_disc_strad.desc
 item.record_wait.desc,item.minecraft.music_disc_wait.desc
 item.record_ward.desc,item.minecraft.music_disc_ward.desc
 item.record_pigstep.desc,item.minecraft.music_disc_pigstep.desc
-item.redstone.name,itemGroup.redstone
+item.redstone.name,item.minecraft.redstone
 item.kelp.name,block.minecraft.kelp
 item.dried_kelp.name,item.minecraft.dried_kelp
 item.rotten_flesh.name,item.minecraft.rotten_flesh
@@ -1590,7 +1588,6 @@ key.sprint,key.sprint
 key.togglePerspective,key.togglePerspective
 key.use,key.use
 key.pause,key.keyboard.pause
-key.toggleLivingroom,key.togglePerspective
 keyboard.keyName.i,enchantment.level.1
 keyboard.keyName.v,enchantment.level.5
 keyboard.keyName.x,enchantment.level.10
@@ -2273,6 +2270,7 @@ tile.leaves.oak.name,block.minecraft.oak_leaves
 tile.leaves.spruce.name,block.minecraft.spruce_leaves
 tile.lever.name,block.minecraft.lever
 tile.glowstone.name,block.minecraft.glowstone
+tile.lightning_rod.name,block.minecraft.lightning_rod
 tile.lit_pumpkin.name,block.minecraft.jack_o_lantern
 tile.log.acacia.name,block.minecraft.acacia_log
 tile.log.big_oak.name,block.minecraft.dark_oak_log
@@ -2301,6 +2299,7 @@ tile.diamond_ore.name,block.minecraft.diamond_ore
 tile.emerald_ore.name,block.minecraft.emerald_ore
 tile.gold_ore.name,block.minecraft.gold_ore
 tile.iron_ore.name,block.minecraft.iron_ore
+tile.copper_ore.name,block.minecraft.copper_ore
 tile.lapis_ore.name,block.minecraft.lapis_ore
 tile.redstone_ore.name,block.minecraft.redstone_ore
 tile.observer.name,block.minecraft.observer
@@ -2703,8 +2702,8 @@ dr.right_side.category_title,disconnect.genericReason
 dr.body_size_label_text,createWorld.customize.flat.height
 dr.none_button_text,gui.none
 dr.default_piece_button_text,generator.default
-gfxDriverOutdated.close,mco.selectServer.close
 onlinePlay.doNotShowAgain,multiplayerWarning.check
 onlinePlay.proceed,gui.proceed
 onlinePlay.Back,gui.back
+dr.color.muddy_waters,block.minecraft.polished_granite
 dr.color.salmon,entity.minecraft.salmon
