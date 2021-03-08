@@ -2,7 +2,7 @@
 
 An open set of scripts designed to semi-automate the task of porting languages from Minecraft: Java Edition to Minecraft: Bedrock Edition.
 
-[Otsid eesti keele pakki? Vaata siit.](https://gitlab.com/Madis0/mc-language-port/blob/master/Juhised.md)
+[Otsid eesti keele pakki? Vaata siit.](/Juhised.md)
 
 ## Scripts
 
@@ -26,7 +26,7 @@ An open set of scripts designed to semi-automate the task of porting languages f
 ## How to use
 
 1) [Download latest Python](https://www.python.org/downloads/)
-2) Download [any relevant requirements](https://gitlab.com/Madis0/mc-language-port/blob/master/requirements.txt) [using PIP](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi)
+2) Download [any relevant requirements](/requirements.txt) [using PIP](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi)
 3) Run scripts according to your needs or all at once using `runall.py`.
 
 `downloader.py` and `porter.py` support command line arguments for defining the language, e.g. `py downloader.py ru_ru`. Other settings (e.g which files to download/use) can be set inside the scripts at the start, as booleans `True` or `False`.
