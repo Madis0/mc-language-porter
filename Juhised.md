@@ -2,7 +2,6 @@
 See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid Minecrafti platvormilt Java Edition.
 
 ## Kuidas paigaldada?
-[![Videoõpetus](https://img.youtube.com/vi/S5XjRKKHB3Q/0.jpg)](https://www.youtube.com/watch?v=S5XjRKKHB3Q "Videoõpetus")
 #### Windows, Mac, Linux (Java Edition)
 1. Vajuta avamenüüs ![gloobusega jutumullile](https://i.imgur.com/fzYkvEw.png)
 2. Vali **Eesti keel (Eesti)**
@@ -49,9 +48,7 @@ Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõl
 Plaanin uuendada ressursipakki iga kord, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
 
-Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), kõik versioonid leiab [Gitlabist](https://gitlab.com/Madis0/mc-language-port/-/releases).
-
-
+Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), kõik versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/tags).
 
 ## Kuidas saan kaasa aidata?
 
@@ -60,6 +57,10 @@ Seal saad tõlgetele hääli anda ja uusi juurde pakkuda.
 
 ## Kuidas on see seotud äpiga "Tõlked Minecraftile"?
 
-Otseselt seotud pole aga tegu on väga hea äpiga mida olen oma tõlgetega toetanud ning toetan ka edaspidi. 
+Esialgu püüdsingi ma seda äppi tõlgetega toetada, siis aga leidsin, et see uueneb veidi liiga aeglaselt ning tõlkeid portiv skript on suletud lähtekoodiga (s.t. keegi peale omaniku ei saa seda kasutada). See inspireeris mind sõbra abiga looma oma skripti ning pakki. 
 
-Oma paki lõin seetõttu, et kogu protsessi paremini juhtida - tõlkeid kiiremini uuendada, võtta rohkem tõlkeid automaatselt üle, hoida paki mahtu minimaalsena (ainult eesti keel) jne.
+Eraldiseisev skript võimaldab muuhulgas:
+
+* tõlkeid kiiremini uuendada
+* võtta rohkem tõlkeid automaatselt üle
+* hoida paki mahtu minimaalsena (ainult eesti keel) 
