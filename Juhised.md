@@ -48,7 +48,7 @@ Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõl
 Plaanin uuendada ressursipakki iga kord, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
 
-Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), kõik versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/tags).
+Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), uuemad versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/tags).
 
 ## Kuidas saan kaasa aidata?
 
