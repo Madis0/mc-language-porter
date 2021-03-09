@@ -240,6 +240,7 @@ storageManager.contentType.worldTemplates=Maailmamallid
 storageManager.contentType.resourcePacks=Ressursipakid
 storageManager.contentType.behaviorPacks=Käitumispakid
 storageManager.contentType.skinPacks=Välimuse pakid
+storageManager.contentType.cachedData=Vahemälus andmed
 
 gui.signIn=Logi sisse
 xbox.signin=Logi sisse
@@ -511,7 +512,7 @@ createWorldScreen.experimentalgameplay=Katsetused
 selectWorld.cheats=Sohitegemise lubamine
 createWorldScreen.alwaysDay=Alati päev
 createWorldScreen.commandblocksenabled=Käsuplokid lubatud
-createWorldScreen.randomtickspeed.reset=Lähtesta juhusliku tiksu kiirus
+createWorldScreen.randomtickspeed.reset=Lähtesta juhuslik tiksukiirus
 gui.exportWorldLong=Ekspordi maailm
 createWorldScreen.deleteWorld=Kustuta maailm
 gui.copyWorld=Kopeeri maailm

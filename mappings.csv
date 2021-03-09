@@ -2689,8 +2689,11 @@ hbui.AchievementListItem.locked,filled_map.locked
 hbui.Achievements.all,gui.socialInteractions.tab_all
 hbui.Achievements.locked,filled_map.locked
 hbui.BackButton.back,gui.back
+hbui.CreateNewWorld.cheats.title,selectWorld.cheats
 hbui.MenuButton.menu,key.keyboard.menu
+hbui.Switch.toggle,options.key.toggle
 hbui.TextField.select,mco.template.button.select
+hbui.Toggle.select,mco.template.button.select
 trade.level.1,merchant.level.1
 trade.level.2,merchant.level.2
 trade.level.3,merchant.level.3
