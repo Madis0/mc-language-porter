@@ -55,7 +55,6 @@ book.generation.2,book.generation.2
 book.generation.3,book.generation.3
 book.pageIndicator,book.pageIndicator
 book.signButton,book.signButton
-build.tooHigh,build.tooHigh
 chalkboardScreen.locked,filled_map.locked
 chalkboardScreen.unlocked,narrator.button.difficulty_lock.unlocked
 chat.cannotSend,chat.cannotSend
@@ -1529,6 +1528,7 @@ item.banner_pattern.name,item.minecraft.skull_banner_pattern
 item.banner_pattern.piglin,item.minecraft.piglin_banner_pattern.desc
 item.banner_pattern.skull,item.minecraft.skull_banner_pattern.desc
 item.banner_pattern.thing,item.minecraft.mojang_banner_pattern.desc
+item.bucketPowderSnow.name,item.minecraft.powder_snow_bucket
 itemGroup.search,itemGroup.search
 itemGroup.name.glass,block.minecraft.glass
 itemGroup.name.sandstone,block.minecraft.sandstone
@@ -2270,6 +2270,7 @@ tile.leaves.oak.name,block.minecraft.oak_leaves
 tile.leaves.spruce.name,block.minecraft.spruce_leaves
 tile.lever.name,block.minecraft.lever
 tile.glowstone.name,block.minecraft.glowstone
+tile.glow_lichen.name,block.minecraft.glow_lichen
 tile.lightning_rod.name,block.minecraft.lightning_rod
 tile.lit_pumpkin.name,block.minecraft.jack_o_lantern
 tile.log.acacia.name,block.minecraft.acacia_log
@@ -2623,6 +2624,7 @@ tile.ancient_debris.name,block.minecraft.ancient_debris
 tile.nether_gold_ore.name,block.minecraft.nether_gold_ore
 tile.respawn_anchor.name,block.minecraft.respawn_anchor
 tile.crying_obsidian.name,block.minecraft.crying_obsidian
+tile.powder_snow.name,block.minecraft.powder_snow
 tipped_arrow.effect.empty,item.minecraft.tipped_arrow.effect.thick
 tipped_arrow.effect.mundane,item.minecraft.tipped_arrow.effect.mundane
 tipped_arrow.effect.thick,item.minecraft.tipped_arrow.effect.thick
@@ -2652,6 +2654,7 @@ structure_block.mode.load,structure_block.mode.load
 structure_block.mode.corner,structure_block.mode.corner
 structure_block.mode.data,structure_block.mode.data
 structure_block.show_bounding_box,structure_block.show_boundingbox
+structure_block.place_by_none,gui.none
 structure_block.corner,structure_block.mode.corner
 structure_block.reset,controls.reset
 structure_block.save,structure_block.mode.save
@@ -2689,7 +2692,16 @@ hbui.AchievementListItem.locked,filled_map.locked
 hbui.Achievements.all,gui.socialInteractions.tab_all
 hbui.Achievements.locked,filled_map.locked
 hbui.BackButton.back,gui.back
+hbui.BaseTextField.select,mco.template.button.select
+hbui.CreateNewWorld.cheats.commandBlocksTitle,mco.configure.world.commandBlocks
+hbui.CreateNewWorld.cheats.daylightCycleNormalLabel,selectWorld.mapType.normal
 hbui.CreateNewWorld.cheats.title,selectWorld.cheats
+hbui.CreateNewWorld.general.difficultyEasyTitle,options.difficulty.easy
+hbui.CreateNewWorld.general.difficultyHardTitle,options.difficulty.hard
+hbui.CreateNewWorld.general.difficultyNormalTitle,options.difficulty.normal
+hbui.CreateNewWorld.general.difficultyPeacefulTitle,options.difficulty.peaceful
+hbui.CreateNewWorldSideMenu.create,mco.create.world
+hbui.CreateNewWorldSideMenu.selectTab,mco.template.button.select
 hbui.MenuButton.menu,key.keyboard.menu
 hbui.Switch.toggle,options.key.toggle
 hbui.TextField.select,mco.template.button.select
