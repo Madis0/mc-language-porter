@@ -10,6 +10,7 @@ deathScreen.quit,deathScreen.titleScreen
 item.cooked_beef.name,item.minecraft.cooked_beef
 potion.moveSpeed,effect.minecraft.speed
 
+item.spawn_egg.entity.axolotl.name,item.minecraft.axolotl_spawn_egg
 item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
 item.spawn_egg.entity.bee.name,item.minecraft.bee_spawn_egg
 item.spawn_egg.entity.blaze.name,item.minecraft.blaze_spawn_egg
@@ -27,6 +28,8 @@ item.spawn_egg.entity.enderman.name,item.minecraft.enderman_spawn_egg
 item.spawn_egg.entity.endermite.name,item.minecraft.endermite_spawn_egg
 item.spawn_egg.entity.evocation_illager.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.fox.name,item.minecraft.fox_spawn_egg
+item.spawn_egg.entity.goat.name,item.minecraft.goat_spawn_egg
+item.spawn_egg.entity.glow_squid.name,item.minecraft.glow_squid_spawn_egg
 item.spawn_egg.entity.ghast.name,item.minecraft.ghast_spawn_egg
 item.spawn_egg.entity.guardian.name,item.minecraft.guardian_spawn_egg
 item.spawn_egg.entity.hoglin.name,item.minecraft.hoglin_spawn_egg
@@ -77,6 +80,8 @@ item.spawn_egg.entity.zombie_villager.name,item.minecraft.zombie_villager_spawn_
 item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spawn_egg
 
 item.banner.illager_captain.name,block.minecraft.ominous_banner
+tile.lapis_block.name,block.minecraft.lapis_block
+tile.amethyst_block.name,block.minecraft.amethyst_block
 
 entity.villager.mason,entity.minecraft.villager.mason
 entity.villager.tool,entity.minecraft.villager.toolsmith

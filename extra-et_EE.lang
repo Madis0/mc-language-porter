@@ -88,6 +88,7 @@ itemGroup.name.door=Uksed
 itemGroup.name.glassPane=Klaaspaneelid
 itemGroup.name.slab=Plaadid
 itemGroup.name.stoneBrick=Dekoratiivne kivi
+itemGroup.name.copper=Vask
 itemGroup.name.wool=Vill
 itemGroup.name.woolCarpet=Villavaip
 itemGroup.name.concretePowder=Betoonipulber
@@ -320,6 +321,7 @@ options.group.audio=Helid
 options.language=Keel
 options.broadcast=Ülekandmine
 
+options.spyglassdampen=Pikksilma suurendus
 options.invertYAxis=Pööratud Y-telg
 options.destroyvibration=Vibreeri ploki lõhkumisel
 options.usetouchpad=Eraldatud juhtnupud
