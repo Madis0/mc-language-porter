@@ -2652,6 +2652,7 @@ tile.respawn_anchor.name,block.minecraft.respawn_anchor
 tile.crying_obsidian.name,block.minecraft.crying_obsidian
 tile.powder_snow.name,block.minecraft.powder_snow
 tile.deepslate.name,block.minecraft.deepslate
+tile.infested_deepslate.name,block.minecraft.infested_deepslate
 tile.cobbled_deepslate.name,block.minecraft.cobbled_deepslate
 tile.dripstone_block.name,block.minecraft.dripstone_block
 tile.pointed_dripstone.name,block.minecraft.pointed_dripstone
@@ -2801,10 +2802,19 @@ hbui.BaseTextField.select,mco.template.button.select
 hbui.CreateNewWorld.cheats.commandBlocksTitle,mco.configure.world.commandBlocks
 hbui.CreateNewWorld.cheats.daylightCycleNormalLabel,selectWorld.mapType.normal
 hbui.CreateNewWorld.cheats.title,selectWorld.cheats
+hbui.CreateNewWorld.general.difficultyEasyLabel,options.difficulty.easy
 hbui.CreateNewWorld.general.difficultyEasyTitle,options.difficulty.easy
+hbui.CreateNewWorld.general.difficultyHardLabel,options.difficulty.hard
 hbui.CreateNewWorld.general.difficultyHardTitle,options.difficulty.hard
+hbui.CreateNewWorld.general.difficultyNormalLabel,options.difficulty.normal
 hbui.CreateNewWorld.general.difficultyNormalTitle,options.difficulty.normal
+hbui.CreateNewWorld.general.difficultyPeacefulLabel,options.difficulty.peaceful
 hbui.CreateNewWorld.general.difficultyPeacefulTitle,options.difficulty.peaceful
+hbui.CreateNewWorld.general.difficultyTitle,options.difficulty
+hbui.CreateNewWorld.general.gameModeCreativeLabel,selectWorld.gameMode.creative
+hbui.CreateNewWorld.general.gameModeSurvivalLabel,selectWorld.gameMode.survival
+hbui.CreateNewWorld.general.worldNamePlaceholder,mco.configure.world.edit.slot.name
+hbui.CreateNewWorld.general.worldNameTitle,mco.configure.world.edit.slot.name
 hbui.CreateNewWorldSideMenu.create,mco.create.world
 hbui.CreateNewWorldSideMenu.selectTab,mco.template.button.select
 hbui.MenuButton.menu,key.keyboard.menu

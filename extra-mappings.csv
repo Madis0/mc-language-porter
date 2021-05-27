@@ -122,8 +122,6 @@ tile.red_nether_brick.name,block.minecraft.red_nether_bricks
 tile.clay.name,block.minecraft.clay
 item.clay_ball.name,item.minecraft.clay_ball
 
-item.redstone.name,item.minecraft.redstone
-
 item.chainmail_helmet.name,item.minecraft.chainmail_helmet
 item.chainmail_chestplate.name,item.minecraft.chainmail_chestplate
 item.chainmail_leggings.name,item.minecraft.chainmail_leggings
@@ -185,6 +183,7 @@ tile.bed.tooFar,block.minecraft.bed.too_far_away
 
 commandBlockScreen.blockType.chain,advMode.mode.sequence
 
+hbui.CreateNewWorld.cheats.title,selectWorld.allowCommands
 createWorldScreen.worldSettings,gamerule.category.updates
 createWorldScreen.fireSpreads,gamerule.doFireTick
 createWorldScreen.mobLoot,gamerule.doMobLoot
@@ -199,6 +198,7 @@ createWorldScreen.mobgriefing,gamerule.mobGriefing
 createWorldScreen.entitiesdroploot,gamerule.doEntityDrops
 createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
+options.loadWorldAnyway,selectWorld.backupJoinSkipButton
 
 soundCategory.master,soundCategory.master
 soundCategory.texttospeech,options.narrator
