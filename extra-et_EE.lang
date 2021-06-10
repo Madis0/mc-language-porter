@@ -306,7 +306,7 @@ options.xboxliveBroadcast.friendsOnly=Ainult sõbrad
 options.xboxliveBroadcast.friendsOfFriends=Sõprade sõbrad
 options.servervisible=Nähtav LANi mängijatele
 
-options.accessibility=Ligipääsetavus
+options.accessibility=Hõlbustus
 options.keyboardAndMouse=Klaviatuur ja hiir
 options.controller=Mängupult
 options.touch=Puudutus
