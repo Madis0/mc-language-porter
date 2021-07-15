@@ -460,6 +460,7 @@ entity.squid.name,entity.minecraft.squid
 entity.strider.name,entity.minecraft.strider
 entity.thrown_trident.name,entity.minecraft.trident
 entity.turtle.name,entity.minecraft.turtle
+entity.unknown.name,mco.configure.world.subscription.unknown
 entity.vex.name,entity.minecraft.vex
 entity.villager.name,entity.minecraft.villager.none
 entity.villager.armor,entity.minecraft.villager.armorer
@@ -1770,6 +1771,7 @@ pauseScreen.header,menu.game
 pauseScreen.options,options.title
 pauseScreen.title,menu.paused
 hudScreen.tooltip.basic.back,gui.back
+hudScreen.tooltip.basic.chat,options.accessibility.text_background.chat
 hudScreen.tooltip.basic.jump,key.jump
 hudScreen.tooltip.basic.left,options.mainHand.left
 hudScreen.tooltip.basic.right,options.mainHand.right
@@ -1992,6 +1994,7 @@ tile.acaciaFence.name,block.minecraft.acacia_fence
 tile.acacia_fence_gate.name,block.minecraft.acacia_fence_gate
 tile.activator_rail.name,block.minecraft.activator_rail
 tile.air.name,block.minecraft.air
+tile.unknown.name,mco.configure.world.subscription.unknown
 tile.anvil.intact.name,block.minecraft.anvil
 tile.anvil.name,block.minecraft.anvil
 tile.barrier.name,block.minecraft.barrier
@@ -2672,6 +2675,7 @@ tile.deepslate_brick_slab.name,block.minecraft.deepslate_brick_slab
 tile.deepslate_brick_stairs.name,block.minecraft.deepslate_brick_stairs
 tile.deepslate_brick_wall.name,block.minecraft.deepslate_brick_wall
 tile.chiseled_deepslate.name,block.minecraft.chiseled_deepslate
+tile.deepslate_lapis_ore.name,block.minecraft.deepslate_lapis_ore
 tile.deepslate_iron_ore.name,block.minecraft.deepslate_iron_ore
 tile.deepslate_gold_ore.name,block.minecraft.deepslate_gold_ore
 tile.deepslate_redstone_ore.name,block.minecraft.deepslate_redstone_ore
@@ -2813,6 +2817,7 @@ translation.test.invalid2,translation.test.invalid2
 translation.test.none,translation.test.none
 translation.test.world,translation.test.world
 xbox.signin.error.pocket.line2,selectWorld.gameMode.spectator.line2
+pack.authors.none,mco.configure.world.subscription.unknown
 manifestvalidation.delete,selectWorld.delete
 manifestvalidation.delete.confirm_delete,selectWorld.deleteButton
 manifestvalidation.delete.confirm_goBack,dataPack.validation.back
@@ -2835,8 +2840,11 @@ hbui.Achievements.all,gui.socialInteractions.tab_all
 hbui.Achievements.locked,filled_map.locked
 hbui.BackButton.back,gui.back
 hbui.BaseTextField.select,mco.template.button.select
+hbui.CreateNewWorld.betaFeatures.acivateBetaConfirmationCancelInputLegend,gui.cancel
+hbui.CreateNewWorld.betaFeatures.gameplayTitle,key.categories.gameplay
 hbui.CreateNewWorld.cheats.commandBlocksTitle,mco.configure.world.commandBlocks
 hbui.CreateNewWorld.cheats.daylightCycleNormalLabel,selectWorld.mapType.normal
+hbui.CreateNewWorld.cheats.tickSpeedReset,mco.brokenworld.reset
 hbui.CreateNewWorld.cheats.title,selectWorld.cheats
 hbui.CreateNewWorld.general.difficultyEasyLabel,options.difficulty.easy
 hbui.CreateNewWorld.general.difficultyEasyTitle,options.difficulty.easy
@@ -2849,7 +2857,6 @@ hbui.CreateNewWorld.general.difficultyPeacefulTitle,options.difficulty.peaceful
 hbui.CreateNewWorld.general.difficultyTitle,options.difficulty
 hbui.CreateNewWorld.general.gameModeCreativeLabel,selectWorld.gameMode.creative
 hbui.CreateNewWorld.general.gameModeSurvivalLabel,selectWorld.gameMode.survival
-hbui.CreateNewWorld.general.worldNamePlaceholder,mco.configure.world.edit.slot.name
 hbui.CreateNewWorld.general.worldNameTitle,mco.configure.world.edit.slot.name
 hbui.CreateNewWorldSideMenu.create,mco.create.world
 hbui.CreateNewWorldSideMenu.selectTab,mco.template.button.select

@@ -32,6 +32,17 @@ action.hint.exit.donkey=Maha hüppamiseks kükita
 action.hint.exit.mule=Maha hüppamiseks kükita
 action.hint.exit.llama=Maha hüppamiseks kükita
 action.hint.exit.skeleton_horse=Maha hüppamiseks kükita
+
+action.hint.exit.console.boat=Paadist lahkumiseks hüppa
+action.hint.exit.console.minecart=Kaevanduskärust lahkumiseks hüppa
+action.hint.exit.console.pig=Maha hüppamiseks kükita
+action.hint.exit.console.horse=Maha hüppamiseks kükita
+action.hint.exit.console.strider=Maha hüppamiseks kükita
+action.hint.exit.console.donkey=Maha hüppamiseks kükita
+action.hint.exit.console.mule=Maha hüppamiseks kükita
+action.hint.exit.console.llama=Maha hüppamiseks kükita
+action.hint.exit.console.skeleton_horse=Maha hüppamiseks kükita
+
 action.interact.creeper=Süüta
 action.interact.edit=Muuda
 action.interact.exit.boat=Lahku paadist
@@ -509,6 +520,7 @@ createWorldScreen.worldSettings=Maailmavalikud
 createWorldScreen.pvp=Kaaslaste löömine
 createWorldScreen.showCoordinates=Koordinaatide kuvamine
 createWorldScreen.tntexplodes=Dünamiit plahvatab
+createWorldScreen.respawnblocksexplode=Taastekkeankrud plahvatavad
 createWorldScreen.experimentalgameplay=Katsetused
 createWorldScreen.experimentalgameplayinfo=§7Proovi arendusjärgus funktsioone. Pärast maailma loomist neid välja lülitada ei saa.
 selectWorld.cheats=Sohitegemise lubamine

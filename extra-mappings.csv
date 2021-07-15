@@ -79,6 +79,8 @@ item.spawn_egg.entity.zombie_pigman.name,item.minecraft.zombified_piglin_spawn_e
 item.spawn_egg.entity.zombie_villager.name,item.minecraft.zombie_villager_spawn_egg
 item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spawn_egg
 
+mount.onboard,mount.onboard
+
 item.banner.illager_captain.name,block.minecraft.ominous_banner
 tile.lapis_block.name,block.minecraft.lapis_block
 tile.amethyst_block.name,block.minecraft.amethyst_block
