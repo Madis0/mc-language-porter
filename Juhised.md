@@ -8,7 +8,7 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 3. Vajuta **Done**
 
 #### Android, iOS, Windows 10 (Bedrock Edition)
-1. [Laadi pakk alla siit](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), vajutades kõige ülemisele `Download` nupule
+1. [Laadi pakk alla siit](https://www.curseforge.com/minecraft-bedrock/addons/estonian-language-pack/files), vajutades kõige ülemisele `Download` nupule
 2. Vajuta allalaaditud `.mcpack` failile (nt telefonis tekib teade)
 3. Mine **Settings** > **Global Resources** > **My Packs** > **vajuta paki juures Activate**
 4. Välju seadetest, oota kuni pakk laeb
