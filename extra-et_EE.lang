@@ -6,6 +6,7 @@ achievementScreen.timeplayed:=Mängitud aeg:
 achievementScreen.fetchingAchievements=Saavutuste hankimine...
 achievementScreen.reward=Auhind
 
+profileScreen.header=Profiil
 hbui.Achievements.title=Saavutused
 hbui.Achievements.completed=Tehtud
 hbui.Achievements.inProgress=Tegemisel
@@ -349,6 +350,7 @@ key.menuTabLeft=Menüü vasakpoolne kaart
 key.menuTabRight=Menüü parempoolne kaart
 options.hidetooltips=Peida mängupuldi vihjed
 options.hidegamepadcursor=Peida mängupuldi kursor
+options.clearhotbar=Tühjenda plokiriba
 options.swapJumpAndSneak=Vaheta hüpe ja hiilimine
 options.swapGamepadAB=Vaheta A ja B nupud
 options.swapGamepadXY=Vaheta X ja Y nupud

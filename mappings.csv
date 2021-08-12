@@ -78,6 +78,7 @@ craftingScreen.tab.armor,attribute.name.generic.armor
 credits.skip,mco.create.world.skip
 cauldronScreen.header,item.minecraft.cauldron
 codeScreen.buttonTTS.restore,mco.backup.button.restore
+codeScreen.buttonTTS.home,key.keyboard.home
 color.black,color.minecraft.black
 color.gray,color.minecraft.gray
 color.blue,color.minecraft.blue
@@ -1847,6 +1848,9 @@ raid.name,event.minecraft.raid
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
+sidebar.adventure,selectWorld.gameMode.adventure
+sidebar.survival,selectWorld.gameMode.survival
+sidebar.worlds,mco.configure.worlds.title
 storageManager.contentType.world,selectWorld.world
 storageManager.contentType.worlds,mco.configure.worlds.title
 storageManager.delete.confirm,selectWorld.deleteButton
@@ -1969,8 +1973,6 @@ stat.walkOneCm,stat.minecraft.walk_one_cm
 stat.workbenchInteraction,stat.minecraft.interact_with_crafting_table
 stats.tooltip.type.statistic,stats.tooltip.type.statistic
 store.menu.home,key.keyboard.home
-store.inventory.button,key.categories.inventory
-store.inventory.title,key.categories.inventory
 store.inventory.dropdown.current,options.fullscreen.current
 store.incompatible,pack.incompatible
 store.unlocked,narrator.button.difficulty_lock.unlocked
@@ -2858,6 +2860,8 @@ hbui.CreateNewWorld.general.difficultyTitle,options.difficulty
 hbui.CreateNewWorld.general.gameModeCreativeLabel,selectWorld.gameMode.creative
 hbui.CreateNewWorld.general.gameModeSurvivalLabel,selectWorld.gameMode.survival
 hbui.CreateNewWorld.general.worldNameTitle,mco.configure.world.edit.slot.name
+hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel,mco.configure.world.invites.ops.tooltip
+hbui.CreateNewWorld.multiplayer.settingsTitle,mco.configure.world.settings.title
 hbui.CreateNewWorldSideMenu.create,mco.create.world
 hbui.CreateNewWorldSideMenu.selectTab,mco.template.button.select
 hbui.MenuButton.menu,key.keyboard.menu
