@@ -6,7 +6,7 @@ achievementScreen.timeplayed:=Mängitud aeg:
 achievementScreen.fetchingAchievements=Saavutuste hankimine...
 achievementScreen.reward=Auhind
 
-profileScreen.header=Profiil
+profileScreen.header=Riietusruum
 hbui.Achievements.title=Saavutused
 hbui.Achievements.completed=Tehtud
 hbui.Achievements.inProgress=Tegemisel
