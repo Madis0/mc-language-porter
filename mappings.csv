@@ -221,9 +221,10 @@ createWorldScreen.gameMode,selectWorld.gameMode
 createWorldScreen.gameMode.adventure,selectWorld.gameMode.adventure
 createWorldScreen.gameMode.creative,selectWorld.gameMode.creative
 createWorldScreen.gameMode.survival,selectWorld.gameMode.survival
-createWorldScreen.gameMode.serverDefault,generator.default
+createWorldScreen.gameMode.serverDefault,options.gamma.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.worldType,selectWorld.mapType
+createWorldScreen.serverSimDistance,options.simulationDistance
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.clearPlayerData.cancel,gui.cancel
 realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
@@ -1434,6 +1435,7 @@ item.map.name,item.minecraft.filled_map
 item.map.exploration.mansion.name,filled_map.mansion
 item.map.exploration.monument.name,filled_map.monument
 item.melon.name,block.minecraft.melon
+tile.sculk_sensor.name,block.minecraft.sculk_sensor
 item.minecart.name,item.minecraft.minecart
 item.chest_minecart.name,item.minecraft.chest_minecart
 item.command_block_minecart.name,item.minecraft.command_block_minecart
@@ -1653,6 +1655,7 @@ multiplayer.player.joined,multiplayer.player.joined
 multiplayer.player.joined.renamed,multiplayer.player.joined.renamed
 multiplayer.player.left,multiplayer.player.left
 multiplayer.stopSleeping,multiplayer.stopSleeping
+multiplayer.playersSleeping,sleep.players_sleeping
 multiplayer.texturePrompt.line1,multiplayer.texturePrompt.line1
 multiplayer.texturePrompt.line2,multiplayer.texturePrompt.line2
 multiplayer.title,multiplayer.title
@@ -1945,7 +1948,7 @@ skin.Standard.Dummy,item.minecraft.firework_star.custom_color
 skins.buy.cancelButton,gui.cancel
 skins.restore.button,mco.backup.button.restore
 skins.show.restorePurchaseButton,mco.backup.button.restore
-skins.picker.default,generator.default
+skins.picker.default,options.gamma.default
 soundCategory.ambient,soundCategory.ambient
 soundCategory.block,soundCategory.block
 soundCategory.hostile,soundCategory.hostile
@@ -2874,6 +2877,7 @@ hbui.Achievements.all,gui.socialInteractions.tab_all
 hbui.Achievements.locked,filled_map.locked
 hbui.BackButton.back,gui.back
 hbui.BaseTextField.select,mco.template.button.select
+hbui.Checkbox.toggle,options.key.toggle
 hbui.CreateNewWorld.betaFeatures.acivateBetaConfirmationCancelInputLegend,gui.cancel
 hbui.CreateNewWorld.betaFeatures.gameplayTitle,key.categories.gameplay
 hbui.CreateNewWorld.cheats.commandBlocksTitle,mco.configure.world.commandBlocks
@@ -2896,8 +2900,10 @@ hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel,mco.configure.wor
 hbui.CreateNewWorld.multiplayer.settingsTitle,mco.configure.world.settings.title
 hbui.CreateNewWorldSideMenu.create,mco.create.world
 hbui.CreateNewWorldSideMenu.selectTab,mco.template.button.select
-hbui.Item.select,mco.template.button.select
+hbui.DropdownItem.select,mco.template.button.select
 hbui.MenuButton.menu,key.keyboard.menu
+hbui.Modal.back,gui.back
+hbui.Modal.close,mco.selectServer.close
 hbui.Switch.toggle,options.key.toggle
 hbui.Toggle.select,mco.template.button.select
 trade.level.1,merchant.level.1

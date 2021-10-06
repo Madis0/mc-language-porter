@@ -517,7 +517,6 @@ createWorldScreen.worldType=Maailmatüüp
 generator.flat=Ülitasane
 generator.infinite=Lõpmatu
 createWorldScreen.levelSeed=Seeme
-createWorldScreen.serverSimDistance=Simuleerimiskaugus
 createWorldScreen.worldSettings=Maailmavalikud
 createWorldScreen.pvp=Kaaslaste löömine
 createWorldScreen.showCoordinates=Koordinaatide kuvamine
