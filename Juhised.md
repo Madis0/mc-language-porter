@@ -7,7 +7,7 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 2. Vali **Eesti keel (Eesti)**
 3. Vajuta **Done**
 
-#### Android, iOS, Windows 10 (Bedrock Edition)
+#### Android, iOS, Windows 10/11 (Bedrock Edition)
 1. [Laadi pakk alla siit](https://www.curseforge.com/minecraft-bedrock/addons/estonian-language-pack/files), vajutades kõige ülemisele `Download` nupule
 2. Vajuta allalaaditud `.mcpack` failile (nt telefonis tekib teade)
 3. Mine **Settings** > **Global Resources** > **My Packs** > **vajuta paki juures Activate**
@@ -21,9 +21,9 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 3. Mine **Seaded** > **Mäluruum** > **Ressursipakid** > **Eesti keele pakk** (vali vanem versioon) > **vajuta prügikastile** > **Kustuta**
 4. Mine seadetest välja, keel laaditakse uuesti
 
-#### Oculus Rift, Gear VR, Amazon (Bedrock Edition)
+#### Oculus Rift (Bedrock Edition)
 
-[Kasuta paki tööle saamiseks ametlikku õpetust](https://www.minecraft.net/en-us/addons/#js-select-addon-platform) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
+[Kasuta paki tööle saamiseks ametlikku õpetust](https://docs.microsoft.com/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
 #### Xbox One, Nintendo Switch, PlayStation 4 (Bedrock Edition)
 
@@ -48,7 +48,7 @@ Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõl
 Plaanin uuendada ressursipakki iga kord, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
 
-Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft/mc-addons/estonian-language-pack/files), uuemad versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/tags).
+Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft-bedrock/addons/estonian-language-pack/filess), uuemad versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/releases).
 
 ## Kuidas saan kaasa aidata?
 
