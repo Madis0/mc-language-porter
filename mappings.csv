@@ -1878,6 +1878,8 @@ progressScreen.saving,menu.savingLevel
 progressScreen.message.building,menu.generatingTerrain
 progressScreen.dialog.button.join,mco.configure.world.slot.tooltip.active
 raid.name,event.minecraft.raid
+raid.victory,event.minecraft.raid.victory
+raid.defeat,event.minecraft.raid.defeat
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
@@ -2020,6 +2022,7 @@ store.content.download,mco.brokenworld.download
 store.mashup.bundle,item.minecraft.bundle
 store.mashup.world,selectWorld.world
 store.mashup.title.skinPack,commands.scoreboard.players.list.entity.entry
+playercount.multiplayer,menu.multiplayer
 store.3pserverItem.fetchingCancel,gui.cancel
 store.xbl.disconnected,multiplayer.disconnect.generic
 store.showalloffers.list.back,dataPack.validation.back
@@ -2868,6 +2871,7 @@ addServer.resourcePack.prompt,addServer.resourcePack.prompt
 addServer.title,addServer.title
 externalServerScreen.serverName,mco.configure.world.invite.profile.name
 externalServerScreen.serverNameInput,addServer.enterName
+hbui.Accordion.closeInputLegend,mco.selectServer.close
 hbui.AchievementDetails.locked,filled_map.locked
 hbui.AchievementDetails.yes,gui.yes
 hbui.AchievementListItem.locked,filled_map.locked
@@ -2897,6 +2901,9 @@ hbui.CreateNewWorld.general.gameModeSurvivalLabel,selectWorld.gameMode.survival
 hbui.CreateNewWorld.general.worldNameTitle,mco.configure.world.edit.slot.name
 hbui.CreateNewWorld.multiplayer.playerPermissionsOperatorLabel,mco.configure.world.invites.ops.tooltip
 hbui.CreateNewWorld.multiplayer.settingsTitle,mco.configure.world.settings.title
+hbui.CreateNewWorld.packDownloadModal.confirmationCancelButton,gui.cancel
+hbui.CreateNewWorld.packDownloadModal.downloadingProgressLabel,mco.download.downloading
+hbui.CreateNewWorld.resourcePacks.availableTabButtonLabel,pack.available.title
 hbui.CreateNewWorldSideMenu.cheatsTabLabel,selectWorld.cheats
 hbui.CreateNewWorldSideMenu.create,mco.create.world
 hbui.CreateNewWorldSideMenu.generalTabLabel,stat.generalButton
@@ -2906,6 +2913,7 @@ hbui.DropdownItem.select,mco.template.button.select
 hbui.MenuButton.menu,key.keyboard.menu
 hbui.Modal.back,gui.back
 hbui.Modal.close,mco.selectServer.close
+hbui.PackListItem.removeButtonText,mco.configure.world.invites.remove.tooltip
 hbui.Switch.toggle,options.key.toggle
 hbui.Toggle.select,mco.template.button.select
 trade.level.1,merchant.level.1
