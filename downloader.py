@@ -55,14 +55,14 @@ if getJeOriginal or getJeRealms or getJeTranslation or getJeRealmsTranslation:
     jeGlobalJson = requests.get(jeGlobalJsonUrl).json()
     jeLatestJsonUrl = jeGlobalJson['versions'][0]['url']
     jeLatestJson = requests.get(jeLatestJsonUrl).json()
-    print("Latest snapshot JSON obtained.")
+    print("Latest snapshot JSON obtained: " + jeLatestJsonUrl)
 
 # Get latest JE JAR url (includes Realms)
 if getJeOriginal or getJeRealms:
     print("Finding Java Edition JAR URL...")
     jeLatestJarUrl = jeLatestJson['downloads']['client']['url']
     jeLatestJarSize = jeLatestJson['downloads']['client']['size']
-    print("Java Edition JAR URL obtained.")
+    print("Java Edition JAR URL obtained: " + jeLatestJarUrl)
 
 # Get latest JE assets
 if getJeTranslation or getJeRealmsTranslation:
@@ -70,7 +70,7 @@ if getJeTranslation or getJeRealmsTranslation:
     jeLatestAssetUrl = jeLatestJson['assetIndex']['url']
     jeLatestAssetSize = jeLatestJson['assetIndex']['size']
     jeLatestAssetJson = requests.get(jeLatestAssetUrl).json()
-    print("Assets JSON obtained.")
+    print("Assets JSON obtained: " + jeLatestAssetUrl)
 
 # Get latest JE translation file URL
 if getJeTranslation:
@@ -78,7 +78,7 @@ if getJeTranslation:
     jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
     jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
     jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
-    print("Translation file URL obtained.")
+    print("Translation file URL obtained: " + jeTranslationUrl)
 
 # Get latest Realms translation file URL
 if getJeRealmsTranslation:
@@ -86,7 +86,7 @@ if getJeRealmsTranslation:
     jeRealmsTranslationHash = jeLatestAssetJson['objects']['realms/lang/' + jeTranslationFile]['hash']
     jeRealmsTranslationSize = jeLatestAssetJson['objects']['realms/lang/' + jeTranslationFile]['size']
     jeRealmsTranslationUrl = jeGlobalAssetUrl + jeRealmsTranslationHash[0:2] + "/" + jeRealmsTranslationHash
-    print("Translation file URL obtained.")
+    print("Translation file URL obtained: " + jeRealmsTranslationUrl)
 
 
 # Obtaining functions

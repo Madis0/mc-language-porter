@@ -42,6 +42,7 @@ Antud pakk tõlgib hetkel järgnevat:
 * Vestlus ja mõned süsteemisõnumid
 
 Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõlgitud 🙂
+Katsetusjärgus funktsioonide väljendeid Microsoft ei jaga, seega need saab üle viia alles siis, kui need vastavas beeta/eelvaade kõigile kasutuseks väljas on.
 
 ## Kuidas tõlge on toetatud?
 
