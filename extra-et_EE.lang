@@ -332,6 +332,7 @@ options.group.audio=Helid
 options.language=Keel
 options.broadcast=Ülekandmine
 
+options.enableNewTouchControlSchemes=Uued puute-juhtnupud
 options.spyglassdampen=Pikksilma suurendus
 options.invertYAxis=Pööratud Y-telg
 options.destroyvibration=Vibreeri ploki lõhkumisel
@@ -459,8 +460,6 @@ howtoplay.theStore=Marketplace
 howtoplay.resourceAndBehaviorPacks=Ressursi- ja käitumispakid
 
 options.enableAutoPlatformTextToSpeech=Jutustaja seadme seadete järgi
-options.enableChatTextToSpeech=Jutustaja vestluse jaoks
-options.enableUITextToSpeech=Jutustaja liidese jaoks
 options.enableOpenChatMessage=Luba vestluse avamise sõnum
 options.screenShake=Ekraani rappumine
 
@@ -497,6 +496,8 @@ options.uiprofile.pocket=Taskuversioon
 options.upscaling=Peenendus
 options.raytracing=Kiirtejälitus
 options.raytracing.renderDistance=Kiirtejälituse nähtavuskaugus
+options.renderDistance.warning=See kõrge renderduskaugus võib põhjustada madalat kaadrisagedust, krahhe või muud ootamatut käitumist
+options.raytracing.renderdistance.warning=See valik võib põhjustada mängimisel jõudlusprobleeme.
 options.msaa=Sakisilumine
 options.texelAA=Tekstuuripikslite sakisilumine
 options.resetSettings=Vaikeseaded

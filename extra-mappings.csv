@@ -10,6 +10,7 @@ deathScreen.quit,deathScreen.titleScreen
 item.cooked_beef.name,item.minecraft.cooked_beef
 potion.moveSpeed,effect.minecraft.speed
 
+item.spawn_egg.entity.allay.name,item.minecraft.allay_spawn_egg
 item.spawn_egg.entity.axolotl.name,item.minecraft.axolotl_spawn_egg
 item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
 item.spawn_egg.entity.bee.name,item.minecraft.bee_spawn_egg
@@ -172,6 +173,13 @@ tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 
 tile.turtle_egg.name,block.minecraft.turtle_egg
 
+tile.frog_spawn.name,block.minecraft.frogspawn
+
+options.enableChatTextToSpeech,options.narrator.chat
+options.enableUITextToSpeech,options.narrator.system
+options.darknessEffectModifier,options.darknessEffectScale
+options.darknessEffectModifier.message,options.darknessEffectScale.tooltip
+
 howtoplay.eyeOfEnder,item.minecraft.ender_eye
 
 dr.left_arm,options.modelPart.left_sleeve
@@ -202,5 +210,5 @@ createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
 options.loadWorldAnyway,selectWorld.backupJoinSkipButton
 
-soundCategory.master,soundCategory.master
+soundCategory.main,soundCategory.master
 soundCategory.texttospeech,options.narrator
