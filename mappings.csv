@@ -9,12 +9,10 @@ accessibility.toggle.tts.title,options.key.toggle
 accessibility.play.editWorld,selectWorld.edit.title
 accessibility.text.space,key.keyboard.space
 achievement.acquireIron,advancements.story.smelt_iron.title
-achievement.acquireIron.desc,advancements.story.smelt_iron.description
 achievement.blaze_rod,advancements.nether.obtain_blaze_rod.title
 achievement.blaze_rod.desc,advancements.nether.obtain_blaze_rod.description
 achievement.bookcase,entity.minecraft.villager.librarian
 achievement.buildBetterPickaxe,advancements.story.upgrade_tools.title
-achievement.buildBetterPickaxe.desc,advancements.story.upgrade_tools.description
 achievement.enchantments,advancements.story.enchant_item.title
 achievement.exploreAllBiomes,advancements.adventure.adventuring_time.title
 achievement.fullBeacon,advancements.nether.create_full_beacon.title
@@ -23,7 +21,6 @@ achievement.ghast.desc,advancements.nether.return_to_sender.description
 achievement.killEnemy,advancements.adventure.kill_a_mob.title
 achievement.portal,advancements.story.enter_the_nether.title
 achievement.potion,advancements.nether.brew_potion.title
-achievement.potion.desc,advancements.nether.brew_potion.description
 achievement.snipeSkeleton,advancements.adventure.sniper_duel.title
 achievement.theEnd,advancements.story.enter_the_end.title
 achievement.unknown,flat_world_preset.unknown
@@ -368,6 +365,7 @@ enchantment.protect.fall,enchantment.minecraft.feather_falling
 enchantment.protect.fire,enchantment.minecraft.fire_protection
 enchantment.protect.projectile,enchantment.minecraft.projectile_protection
 enchantment.soul_speed,enchantment.minecraft.soul_speed
+enchantment.swift_sneak,enchantment.minecraft.swift_sneak
 enchantment.thorns,enchantment.minecraft.thorns
 enchantment.untouching,enchantment.minecraft.silk_touch
 enchantment.waterWalker,enchantment.minecraft.depth_strider
@@ -1921,6 +1919,7 @@ entity.warden.name,entity.minecraft.warden
 entity.allay.name,entity.minecraft.allay
 action.interact.allay,entity.minecraft.allay
 item.bucketTadpole.name,item.minecraft.tadpole_bucket
+tile.frog_spawn.name,block.minecraft.frogspawn
 tile.pearlescent_froglight.name,block.minecraft.pearlescent_froglight
 tile.verdant_froglight.name,block.minecraft.verdant_froglight
 tile.ochre_froglight.name,block.minecraft.ochre_froglight
@@ -1956,6 +1955,8 @@ tile.mangrove_trapdoor.name,block.minecraft.mangrove_trapdoor
 tile.mangrove_wood.name,block.minecraft.mangrove_wood
 tile.stripped_mangrove_wood.name,block.minecraft.stripped_mangrove_wood
 item.boat.mangrove.name,item.minecraft.mangrove_boat
+item.echo_shard.name,item.minecraft.echo_shard
+item.recovery_compass.name,item.minecraft.recovery_compass
 entity.chest_boat.name,entity.minecraft.chest_boat
 storageManager.delete.confirm,selectWorld.deleteButton
 storageManager.delete.cancel,gui.cancel
