@@ -212,6 +212,7 @@ createWorld.customize.presets.title,createWorld.customize.presets.title
 createWorldUpsell.button.world,selectWorld.newWorld
 createWorldScreen.cheatSettings,selectWorld.cheats
 createWorldScreen.bonusChest,selectWorld.bonusItems
+createWorldScreen.spectatorMode,gameMode.spectator
 createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
 createWorldScreen.gameMode,selectWorld.gameMode
@@ -285,6 +286,8 @@ death.attack.thrown,death.attack.thrown
 death.attack.thrown.item,death.attack.thrown.item
 death.attack.wither,death.attack.wither
 death.attack.freeze,death.attack.freeze
+death.attack.sonicBoom,death.attack.sonic_boom
+death.attack.sonicBoom.player,death.attack.sonic_boom.player
 death.attack.stalactite,death.attack.fallingStalactite
 death.attack.stalagmite,death.attack.stalagmite
 death.fell.accident.generic,death.fell.accident.generic
@@ -1492,7 +1495,7 @@ item.record_chirp.desc,item.minecraft.music_disc_chirp.desc
 item.record_far.desc,item.minecraft.music_disc_far.desc
 item.record_mall.desc,item.minecraft.music_disc_mall.desc
 item.record_mellohi.desc,item.minecraft.music_disc_mellohi.desc
-item.record.name,item.minecraft.music_disc_13
+item.record.name,item.minecraft.music_disc_5
 item.record_stal.desc,item.minecraft.music_disc_stal.desc
 item.record_strad.desc,item.minecraft.music_disc_strad.desc
 item.record_wait.desc,item.minecraft.music_disc_wait.desc
@@ -1559,6 +1562,14 @@ item.banner_pattern.piglin,item.minecraft.piglin_banner_pattern.desc
 item.banner_pattern.skull,item.minecraft.skull_banner_pattern.desc
 item.banner_pattern.thing,item.minecraft.mojang_banner_pattern.desc
 item.bucketPowderSnow.name,item.minecraft.powder_snow_bucket
+item.goat_horn.name,item.minecraft.goat_horn
+item.minecraft.goat_horn.sound.0,item.minecraft.goat_horn.sound.0
+item.minecraft.goat_horn.sound.1,item.minecraft.goat_horn.sound.1
+item.minecraft.goat_horn.sound.2,item.minecraft.goat_horn.sound.2
+item.minecraft.goat_horn.sound.3,item.minecraft.goat_horn.sound.3
+item.minecraft.goat_horn.sound.4,item.minecraft.goat_horn.sound.4
+item.minecraft.goat_horn.sound.5,item.minecraft.goat_horn.sound.5
+item.minecraft.goat_horn.sound.6,item.minecraft.goat_horn.sound.6
 itemGroup.search,itemGroup.search
 itemGroup.name.glass,block.minecraft.glass
 itemGroup.name.sandstone,block.minecraft.sandstone
@@ -1917,7 +1928,6 @@ entity.frog.name,entity.minecraft.frog
 entity.tadpole.name,entity.minecraft.tadpole
 entity.warden.name,entity.minecraft.warden
 entity.allay.name,entity.minecraft.allay
-action.interact.allay,entity.minecraft.allay
 item.bucketTadpole.name,item.minecraft.tadpole_bucket
 tile.frog_spawn.name,block.minecraft.frogspawn
 tile.pearlescent_froglight.name,block.minecraft.pearlescent_froglight
@@ -1957,6 +1967,9 @@ tile.stripped_mangrove_wood.name,block.minecraft.stripped_mangrove_wood
 item.boat.mangrove.name,item.minecraft.mangrove_boat
 item.echo_shard.name,item.minecraft.echo_shard
 item.recovery_compass.name,item.minecraft.recovery_compass
+item.disc_fragment.name,item.minecraft.disc_fragment_5
+item.disc_fragment_5.desc,item.minecraft.disc_fragment_5.desc
+item.record_5.desc,item.minecraft.music_disc_5.desc
 entity.chest_boat.name,entity.minecraft.chest_boat
 storageManager.delete.confirm,selectWorld.deleteButton
 storageManager.delete.cancel,gui.cancel

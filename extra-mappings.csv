@@ -208,5 +208,8 @@ createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
 options.loadWorldAnyway,selectWorld.backupJoinSkipButton
 
+onlinePlay.notRated,multiplayerWarning.header
+onlinePlay.message,multiplayerWarning.message
+
 soundCategory.main,soundCategory.master
 soundCategory.texttospeech,options.narrator
