@@ -462,6 +462,11 @@ howtoplay.resourceAndBehaviorPacks=Ressursi- ja käitumispakid
 options.enableAutoPlatformTextToSpeech=Jutustaja seadme seadete järgi
 options.enableOpenChatMessage=Luba vestluse avamise sõnum
 options.screenShake=Ekraani rappumine
+options.notificationDuration=Teavituse kestus
+options.notificationDuration.message=Määra, kui kaua kuvatakse sõnumeid, nagu mängukutsed ja Marketplace'i pakkumised
+options.notificationDuration.ThreeSec=3 sekundit (vaikimisi)
+options.notificationDuration.TenSec=10 sekundit
+options.notificationDuration.ThirtySec=30 sekundit
 
 options.thirdperson=Kaamera perspektiiv
 options.thirdperson.firstperson=Mängija silme läbi
