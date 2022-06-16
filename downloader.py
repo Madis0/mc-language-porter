@@ -18,7 +18,7 @@ translationLang = "et_ee"       # Used when launched without arguments
 if len(sys.argv) > 1:  # Use the language provided as an argument if available
     translationLang = sys.argv[1].lower()
 
-jeGlobalJsonUrl = "https://launchermeta.mojang.com/mc/game/version_manifest.json"
+jeGlobalJsonUrl = "https://piston-meta.mojang.com/mc/game/version_manifest.json"
 jeGlobalJson = None
 
 jeLatestJsonUrl = ""
