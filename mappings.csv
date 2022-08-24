@@ -94,6 +94,8 @@ commandBlockScreen.hideOutputMode,enchantment.level.10
 commandBlockScreen.title,block.minecraft.command_block
 commandBlock.genericName,block.minecraft.command_block
 commands.bossbar.list.none,commands.bossbar.list.bars.none
+commands.itemswithtag.success.list.items,createWorld.customize.flat.layer
+commands.tagsfromitem.success.list.tags,createWorld.customize.flat.layer
 commands.players.list.names,createWorld.customize.flat.layer
 commands.publish.failed,commands.publish.failed
 commands.setblock.success,subtitles.block.generic.place
@@ -1712,6 +1714,7 @@ options.chat.visibility.system,options.chat.visibility.system
 options.chat.width,options.chat.width
 options.controls,options.controls
 options.customizeTitle,options.customizeTitle
+options.delete_account.confirm.button,selectWorld.deleteButton
 options.dev_render_attach_pos.all,options.particles.all
 options.dev_connection_quality.no_limit,options.framerateLimit.max
 options.dev_realms_sku.default,options.gamma.default
@@ -2374,7 +2377,7 @@ tile.double_plant.syringa.name,block.minecraft.lilac
 tile.dragon_egg.name,block.minecraft.dragon_egg
 tile.dropper.name,container.dropper
 tile.enderChest.name,container.enderchest
-tile.end_portal_frame.name,block.minecraft.end_portal
+tile.end_portal_frame.name,block.minecraft.end_portal_frame
 tile.farmland.name,block.minecraft.farmland
 tile.fletching_table.name,block.minecraft.fletching_table
 tile.fence.name,block.minecraft.oak_fence
@@ -2528,6 +2531,12 @@ tile.sandstone_stairs.name,block.minecraft.sandstone_stairs
 tile.stone_stairs.name,block.minecraft.cobblestone_stairs
 tile.normal_stone_stairs.name,block.minecraft.stone_stairs
 tile.stone_brick_stairs.name,block.minecraft.stone_brick_stairs
+tile.oak_stairs.name,block.minecraft.oak_stairs
+tile.acacia_stairs.name,block.minecraft.acacia_stairs
+tile.birch_stairs.name,block.minecraft.birch_stairs
+tile.dark_oak_stairs.name,block.minecraft.dark_oak_stairs
+tile.jungle_stairs.name,block.minecraft.jungle_stairs
+tile.spruce_stairs.name,block.minecraft.spruce_stairs
 tile.purpur_stairs.name,block.minecraft.purpur_stairs
 tile.prismarine_stairs.name,block.minecraft.prismarine_stairs
 tile.dark_prismarine_stairs.name,block.minecraft.dark_prismarine_stairs
@@ -2664,6 +2673,18 @@ tile.waterlily.name,block.minecraft.lily_pad
 tile.web.name,block.minecraft.cobweb
 tile.end_stone.name,block.minecraft.end_stone
 tile.end_bricks.name,block.minecraft.end_stone_bricks
+tile.planks.acacia.name,block.minecraft.acacia_planks
+tile.planks.big_oak.name,block.minecraft.dark_oak_planks
+tile.planks.birch.name,block.minecraft.birch_planks
+tile.planks.jungle.name,block.minecraft.jungle_planks
+tile.planks.oak.name,block.minecraft.oak_planks
+tile.planks.spruce.name,block.minecraft.spruce_planks
+tile.wooden_slab.acacia.name,block.minecraft.acacia_slab
+tile.wooden_slab.big_oak.name,block.minecraft.dark_oak_slab
+tile.wooden_slab.birch.name,block.minecraft.birch_slab
+tile.wooden_slab.jungle.name,block.minecraft.jungle_slab
+tile.wooden_slab.oak.name,block.minecraft.oak_slab
+tile.wooden_slab.spruce.name,block.minecraft.spruce_slab
 tile.carpet.black.name,block.minecraft.black_carpet
 tile.carpet.blue.name,block.minecraft.blue_carpet
 tile.carpet.brown.name,block.minecraft.brown_carpet
@@ -2890,6 +2911,7 @@ tile.red_candle_cake.name,block.minecraft.red_candle_cake
 tile.black_candle_cake.name,block.minecraft.black_candle_cake
 item.spyglass.name,item.minecraft.spyglass
 item.amethyst_shard.name,item.minecraft.amethyst_shard
+tile.amethyst_block.name,block.minecraft.amethyst_block
 tile.budding_amethyst.name,block.minecraft.budding_amethyst
 tile.amethyst_cluster.name,block.minecraft.amethyst_cluster
 tile.large_amethyst_bud.name,block.minecraft.large_amethyst_bud
@@ -2949,7 +2971,6 @@ xbox.report.area.gameplay,key.categories.gameplay
 xbox.report.hateSpeech,gui.abuseReport.reason.hate_speech
 xbox.report.terrorismOrViolentExtremism,gui.abuseReport.reason.terrorism_or_violent_extremism
 xbox.report.childSexualExploitationOrAbuse,gui.abuseReport.reason.child_sexual_exploitation_or_abuse
-xbox.report.profanity,gui.abuseReport.reason.profanity
 compliance.playtime.greaterThan24Hours,compliance.playtime.greaterThan24Hours
 compliance.playtime.message,compliance.playtime.message
 pack.authors.none,mco.configure.world.subscription.unknown
