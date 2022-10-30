@@ -545,7 +545,7 @@ gui.up,gui.up
 gui.yes,gui.yes
 gui.resourcepacks,options.resourcepack
 hostOption.weather,soundCategory.weather
-howtoplay.category.crafting,container.crafting
+howtoplay.category.crafting,itemGroup.crafting
 howtoplay.category.play,mco.brokenworld.play
 howtoplay.category.theEnd,biome.minecraft.the_end
 howtoplay.adventureMode,gameMode.adventure
@@ -560,7 +560,7 @@ howtoplay.cauldron,item.minecraft.cauldron
 howtoplay.chat,gamerule.category.chat
 howtoplay.controls,controls.title
 howtoplay.controls.header.1,key.categories.movement
-howtoplay.crafting,container.crafting
+howtoplay.crafting,itemGroup.crafting
 howtoplay.craftingTable,block.minecraft.crafting_table
 howtoplay.creativeMode,gameMode.creative
 howtoplay.difficulty,options.difficulty
@@ -575,15 +575,11 @@ howtoplay.fireworks.header.1,item.minecraft.firework_rocket
 howtoplay.furnace,container.furnace
 howtoplay.inventory,container.inventory
 howtoplay.jukebox,block.minecraft.jukebox
-howtoplay.jukebox.header.2,itemGroup.redstone
 howtoplay.loom,container.loom
 howtoplay.multiplayer,menu.multiplayer
 howtoplay.netherPortals,block.minecraft.nether_portal
-howtoplay.redstone,itemGroup.redstone
 howtoplay.scaffolding,block.minecraft.scaffolding
 howtoplay.theEnd,biome.minecraft.the_end
-howtoplay.tools,itemGroup.tools
-howtoplay.transportation,itemGroup.transportation
 howtoplay.weapons.header.2,item.minecraft.bow
 howtoplay.weapons.header.3,item.minecraft.crossbow
 howtoplay.weapons.header.4,entity.minecraft.trident
@@ -1713,6 +1709,7 @@ options.chat.visibility.hidden,options.chat.visibility.hidden
 options.chat.visibility.system,options.chat.visibility.system
 options.chat.width,options.chat.width
 options.controls,options.controls
+options.crouch,key.sneak
 options.customizeTitle,options.customizeTitle
 options.delete_account.confirm.button,selectWorld.deleteButton
 options.dev_render_attach_pos.all,options.particles.all
@@ -1744,6 +1741,7 @@ options.graphics.fast,options.graphics.fast
 options.renderingProfile,options.graphics
 options.renderingProfile.fancy,options.graphics.fancy
 options.group.graphics,options.graphics
+options.group.graphics.experimental,selectWorld.experimental
 options.group.input,controls.title
 options.group.multiplayer,menu.multiplayer
 options.guiScale.auto,options.guiScale.auto
@@ -1774,6 +1772,7 @@ options.particles,options.particles
 options.particles.all,options.particles.all
 options.particles.decreased,options.particles.decreased
 options.particles.minimal,options.particles.minimal
+options.general,stat.generalButton
 options.reducedDebugInfo,options.reducedDebugInfo
 options.renderClouds,options.renderClouds
 options.renderDistance,options.renderDistance
@@ -2019,6 +2018,7 @@ selectWorld.gameMode.survival.line2,selectWorld.gameMode.survival.line2
 selectWorld.mapType.normal,selectWorld.mapType.normal
 selectWorld.moreWorldOptions,selectWorld.moreWorldOptions
 selectWorld.newWorld,selectWorld.newWorld
+selectWorld.worldTags.experimental,selectWorld.experimental
 selectWorld.recreate,selectWorld.recreate
 selectWorld.resultFolder,selectWorld.resultFolder
 selectWorld.seedInfo,selectWorld.seedInfo
@@ -2098,6 +2098,7 @@ stat.walkOneCm,stat.minecraft.walk_one_cm
 stat.workbenchInteraction,stat.minecraft.interact_with_crafting_table
 stats.tooltip.type.statistic,stats.tooltip.type.statistic
 store.menu.home,key.keyboard.home
+store.itemDetail.back,selectWorld.experimental.details
 store.inventory.dropdown.current,options.fullscreen.current
 store.incompatible,pack.incompatible
 store.unlocked,narrator.button.difficulty_lock.unlocked
@@ -3005,5 +3006,5 @@ dr.default_piece_button_text,options.gamma.default
 onlinePlay.doNotShowAgain,multiplayerWarning.check
 onlinePlay.proceed,gui.proceed
 onlinePlay.Back,gui.back
-dr.color.muddy_waters,block.minecraft.polished_granite
-dr.color.salmon,entity.minecraft.salmon
+dr.color.light_gray,color.minecraft.light_gray
+dr.color.white,color.minecraft.white
