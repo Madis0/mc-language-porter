@@ -15,7 +15,7 @@ packExt = ".mcpack"
 
 # Obtains the version number from resource file (e.g. 1.13.0.1) and uses first two numbers as a prefix (e.g 1.13.x)
 # Also updates the min_engine_version as suggested by MC wiki
-useVersionAsPrefix = True
+useVersionAsPrefix = False # TODO: fix
 versionUrl = "https://aka.ms/MinecraftBetaResources"
 versionRegex = "(\d+\.\d+)\.\d+\.\d+"
 
