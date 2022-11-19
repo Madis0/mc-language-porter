@@ -221,6 +221,7 @@ createWorldScreen.gameMode,selectWorld.gameMode
 createWorldScreen.gameMode.adventure,selectWorld.gameMode.adventure
 createWorldScreen.gameMode.creative,selectWorld.gameMode.creative
 createWorldScreen.gameMode.survival,selectWorld.gameMode.survival
+createWorldScreen.gameMode.spectator,selectWorld.gameMode.spectator
 createWorldScreen.gameMode.serverDefault,options.gamma.default
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.worldType,selectWorld.mapType
@@ -247,7 +248,7 @@ realmsSettingsScreen.worldSectionTitle,selectWorld.world
 realmsSettingsScreen.playersSectionTitle,mco.configure.world.players.title
 realmsSettingsScreen.subscriptionSectionTitle,mco.configure.world.buttons.subscription
 realmsSettingsScreen.difficultyOptionLabelFormat,attribute.modifier.equals.0
-realmsSettingsScreen.gameModeOptionLabel,selectWorld.gameMode
+realmsSettingsScreen.gameModeOptionLabel,telemetry.property.game_mode.title
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
@@ -278,6 +279,7 @@ death.attack.lava.player,death.attack.lava.player
 death.attack.lightningBolt,death.attack.lightningBolt
 death.attack.magic,death.attack.magic
 death.attack.mob,death.attack.mob
+death.attack.mob.item,death.attack.mob.item
 death.attack.onFire,death.attack.onFire
 death.attack.onFire.player,death.attack.onFire.player
 death.attack.outOfWorld,death.attack.outOfWorld
@@ -506,6 +508,7 @@ addExternalServerScreen.playButtonLabel,mco.selectServer.play
 addExternalServerScreen.removeButtonLabel,mco.configure.world.invites.remove.tooltip
 addExternalServerScreen.removeConfirmation,selectServer.deleteQuestion
 feature.ruins,createWorld.customize.custom.useOceanRuins
+feed.comments,gui.chatReport.comments
 feed.edit,selectWorld.edit
 feed.return,key.keyboard.menu
 feed.cancel,gui.cancel
@@ -1774,7 +1777,6 @@ options.particles.decreased,options.particles.decreased
 options.particles.minimal,options.particles.minimal
 options.general,stat.generalButton
 options.reducedDebugInfo,options.reducedDebugInfo
-options.renderClouds,options.renderClouds
 options.renderDistance,options.renderDistance
 options.raytracing.renderDistanceFormat,options.chunks
 options.renderDistanceFormat,options.chunks
@@ -2442,6 +2444,7 @@ tile.log.oak.name,block.minecraft.oak_log
 tile.log.spruce.name,block.minecraft.spruce_log
 tile.magma.name,block.minecraft.magma_block
 tile.melon_block.name,block.minecraft.melon
+tile.mob_spawner.name,block.minecraft.spawner
 tile.monster_egg.cobble.name,block.minecraft.infested_cobblestone
 tile.monster_egg.name,block.minecraft.infested_stone
 tile.monster_egg.stone.name,block.minecraft.infested_stone
