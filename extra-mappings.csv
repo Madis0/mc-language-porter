@@ -219,3 +219,7 @@ soundCategory.main,soundCategory.master
 soundCategory.texttospeech,options.narrator
 
 options.maxFramerate,options.framerateLimit
+
+tile.fire.name,painting.minecraft.fire.title
+tile.flowing_water.name,painting.minecraft.water.title
+tile.water.name,painting.minecraft.water.title

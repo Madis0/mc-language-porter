@@ -6,6 +6,8 @@ accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
 accessibility.button.tts.title,mco.gui.button
 accessibility.tab.tts.title,key.keyboard.tab
 accessibility.toggle.tts.title,options.key.toggle
+accessibility.button.navigateLeft,key.keyboard.left
+accessibility.button.navigateRight,key.keyboard.right
 accessibility.play.editWorld,selectWorld.edit.title
 accessibility.text.space,key.keyboard.space
 achievement.acquireIron,advancements.story.smelt_iron.title
@@ -95,6 +97,7 @@ commandBlockScreen.title,block.minecraft.command_block
 commandBlock.genericName,block.minecraft.command_block
 commands.bossbar.list.none,commands.bossbar.list.bars.none
 commands.itemswithtag.success.list.items,createWorld.customize.flat.layer
+commands.selector.error.moreThanOne,argument.entity.toomany
 commands.tagsfromitem.success.list.tags,createWorld.customize.flat.layer
 commands.players.list.names,createWorld.customize.flat.layer
 commands.publish.failed,commands.publish.failed
@@ -147,6 +150,7 @@ controllerLayoutScreen.save,structure_block.mode.save
 controls.reset,controls.reset
 controls.resetAll,controls.resetAll
 controls.title,controls.title
+course.edu.continueButton,gui.continue
 course.edu.join,mco.configure.world.slot.tooltip.active
 createWorld.customize.custom.baseSize,createWorld.customize.custom.baseSize
 createWorld.customize.custom.biomeDepthOffset,createWorld.customize.custom.biomeDepthOffset
@@ -214,6 +218,7 @@ createWorld.customize.presets.title,createWorld.customize.presets.title
 createWorldUpsell.button.world,selectWorld.newWorld
 createWorldScreen.cheatSettings,selectWorld.cheats
 createWorldScreen.bonusChest,selectWorld.bonusItems
+createWorldScreen.experimentalgameplay,selectWorld.experiments
 createWorldScreen.spectatorMode,gameMode.spectator
 createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
@@ -228,6 +233,7 @@ createWorldScreen.worldType,selectWorld.mapType
 createWorldScreen.serverSimDistance,options.simulationDistance
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.clearPlayerData.cancel,gui.cancel
+realmsInvitationScreen.continue,gui.continue
 realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
 realmsInvitationScreen.generate,jigsaw_block.generate
 realmsInvitationScreen.backup,mco.brokenworld.download
@@ -237,6 +243,7 @@ realmsCreateScreen.purchasePrefix.create,mco.create.world
 realmsCreateScreen.purchasePrefix.renew,mco.selectServer.expiredRenew
 realmsCreateScreen.goBack,dataPack.validation.back
 realmsCreateScreen.purchaseConfirmation.cancel,gui.cancel
+realmsPlusUpgradeNotice.continue,gui.continue
 networkWorld.add_server,selectServer.add
 networkWorld.join_server,selectServer.select
 networkWorld.description,gui.abuseReport.reason.description
@@ -244,7 +251,7 @@ networkWorld.join,mco.configure.world.slot.tooltip.active
 realmsSlotsScreen.new,selectWorld.newWorld
 realmsSlotsScreen.editWorld,selectWorld.edit.title
 realmsSettingsScreen.playRealmButton,mco.selectServer.play
-realmsSettingsScreen.worldSectionTitle,selectWorld.world
+realmsSettingsScreen.worldSectionTitle,createWorld.tab.world.title
 realmsSettingsScreen.playersSectionTitle,mco.configure.world.players.title
 realmsSettingsScreen.subscriptionSectionTitle,mco.configure.world.buttons.subscription
 realmsSettingsScreen.difficultyOptionLabelFormat,attribute.modifier.equals.0
@@ -540,6 +547,7 @@ gui.edit,selectWorld.edit
 gui.goBack,dataPack.validation.back
 gui.no,gui.no
 gui.none,gui.none
+gui.continue,gui.continue
 gui.select,mco.template.button.select
 gui.skip,mco.create.world.skip
 gui.stats,gui.stats
@@ -569,6 +577,7 @@ howtoplay.creativeMode,gameMode.creative
 howtoplay.difficulty,options.difficulty
 howtoplay.difficulty.header.1,options.difficulty.peaceful
 howtoplay.difficulty.header.2,options.difficulty.easy
+howtoplay.difficulty.text.3,options.difficulty.easy.info
 howtoplay.difficulty.header.3,options.difficulty.normal
 howtoplay.difficulty.header.4,options.difficulty.hard
 howtoplay.elytra,item.minecraft.elytra
@@ -1608,7 +1617,6 @@ key.categories.misc,key.categories.misc
 key.categories.movement,key.categories.movement
 key.categories.multiplayer,key.categories.multiplayer
 key.categories.ui,key.categories.ui
-key.chat,key.chat
 key.command,key.command
 key.forward,key.forward
 key.fullscreen,key.fullscreen
@@ -1698,6 +1706,7 @@ options.ao,options.ao
 options.ao.max,options.ao.max
 options.ao.min,options.ao.min
 options.ao.off,options.ao.off
+options.category.game,createWorld.tab.game.title
 options.category.graphics,options.graphics
 options.category.input,controls.title
 options.chat.color,options.chat.color
@@ -1743,6 +1752,7 @@ options.graphics.fancy,options.graphics.fancy
 options.graphics.fast,options.graphics.fast
 options.renderingProfile,options.graphics
 options.renderingProfile.fancy,options.graphics.fancy
+options.group.game,createWorld.tab.game.title
 options.group.graphics,options.graphics
 options.group.graphics.experimental,selectWorld.experimental
 options.group.input,controls.title
@@ -1799,8 +1809,10 @@ options.viewSubscriptions.button.price,disconnect.genericReason
 options.videoTitle,options.videoTitle
 options.viewBobbing,options.viewBobbing
 options.visible,options.visible
+options.continue,gui.continue
 options.edit,selectWorld.edit
 options.goBack,dataPack.validation.back
+patchNotes.continue,gui.continue
 sunsetting.store.incompatible,pack.incompatible
 pauseScreen.back,menu.returnToGame
 pauseScreen.header,menu.game
@@ -1820,6 +1832,7 @@ playscreen.realmExpired,mco.configure.world.subscription.expired
 playscreen.worlds,mco.configure.worlds.title
 playscreen.delete.legacy.confirm,selectWorld.deleteButton
 permissions.GoBack,dataPack.validation.back
+permissions.Continue,gui.continue
 permissions.level.operator,mco.configure.world.invites.ops.tooltip
 permissions.nocheats.cancel,gui.cancel
 permissions.operator,mco.configure.world.invites.ops.tooltip
@@ -1981,6 +1994,7 @@ item.record_5.desc,item.minecraft.music_disc_5.desc
 entity.chest_boat.name,entity.minecraft.chest_boat
 storageManager.delete.confirm,selectWorld.deleteButton
 storageManager.delete.cancel,gui.cancel
+storageManager.dependency.continue,gui.continue
 storageManager.multiselectDelete,selectWorld.delete
 storageManager.miscellaneous,key.categories.misc
 storageManager.groupType,advMode.type
@@ -2113,12 +2127,15 @@ store.popup.update.button2,mco.create.world.skip
 store.popup.update.back,dataPack.validation.back
 store.content.download,mco.brokenworld.download
 store.mashup.bundle,item.minecraft.bundle
+store.mashup.continue,gui.continue
 store.mashup.world,selectWorld.world
 store.mashup.title.skinPack,gui.abuseReport.reason.narration
 playercount.multiplayer,menu.multiplayer
 store.3pserverItem.fetchingCancel,gui.cancel
 store.xbl.disconnected,multiplayer.disconnect.generic
 store.showalloffers.list.back,dataPack.validation.back
+store.search.filters.bundles,dataPack.bundle.name
+store.search.filter.offer_type.bundles,dataPack.bundle.name
 store.search.filter.worldTemplates,mco.configure.worlds.title
 terms_and_conditions.goBack,dataPack.validation.back
 tile.acaciaFence.name,block.minecraft.acacia_fence
@@ -2182,7 +2199,7 @@ tile.stone_button.name,block.minecraft.stone_button
 tile.cactus.name,block.minecraft.cactus
 tile.cake.name,block.minecraft.cake
 tile.dried_kelp_block.name,block.minecraft.dried_kelp_block
-tile.carrot.name,block.minecraft.carrots
+tile.carrots.name,block.minecraft.carrots
 tile.carved_pumpkin.name,block.minecraft.carved_pumpkin
 tile.cauldron.name,item.minecraft.cauldron
 tile.chest.name,container.chest
@@ -2386,7 +2403,7 @@ tile.fletching_table.name,block.minecraft.fletching_table
 tile.fence.name,block.minecraft.oak_fence
 tile.fence_gate.name,block.minecraft.oak_fence_gate
 tile.iron_bars.name,block.minecraft.iron_bars
-tile.fire.name,block.minecraft.fire
+tile.fire.name,painting.minecraft.fire.title
 tile.yellow_flower.dandelion.name,block.minecraft.dandelion
 tile.crimson_roots.crimsonRoots.name,block.minecraft.crimson_roots
 tile.warped_roots.warpedRoots.name,block.minecraft.warped_roots
@@ -2671,8 +2688,8 @@ tile.tripwire_hook.name,block.minecraft.tripwire_hook
 tile.vine.name,block.minecraft.vine
 tile.weeping_vines.name,block.minecraft.weeping_vines
 tile.twisting_vines.name,block.minecraft.twisting_vines
-tile.flowing_water.name,block.minecraft.water
-tile.water.name,block.minecraft.water
+tile.flowing_water.name,painting.minecraft.water.title
+tile.water.name,painting.minecraft.water.title
 tile.waterlily.name,block.minecraft.lily_pad
 tile.web.name,block.minecraft.cobweb
 tile.end_stone.name,block.minecraft.end_stone
@@ -2993,6 +3010,7 @@ addServer.resourcePack.prompt,addServer.resourcePack.prompt
 addServer.title,addServer.title
 externalServerScreen.serverName,mco.configure.world.invite.profile.name
 externalServerScreen.serverNameInput,addServer.enterName
+storage_migration.button.continue,gui.continue
 trade.level.1,merchant.level.1
 trade.level.2,merchant.level.2
 trade.level.3,merchant.level.3
