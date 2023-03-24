@@ -96,6 +96,7 @@ commandBlockScreen.hideOutputMode,enchantment.level.10
 commandBlockScreen.title,block.minecraft.command_block
 commandBlock.genericName,block.minecraft.command_block
 commands.bossbar.list.none,commands.bossbar.list.bars.none
+commands.inputpermission.movement,key.categories.movement
 commands.itemswithtag.success.list.items,createWorld.customize.flat.layer
 commands.selector.error.moreThanOne,argument.entity.toomany
 commands.tagsfromitem.success.list.tags,createWorld.customize.flat.layer
@@ -220,6 +221,7 @@ createWorldScreen.cheatSettings,selectWorld.cheats
 createWorldScreen.bonusChest,selectWorld.bonusItems
 createWorldScreen.experimentalgameplay,selectWorld.experiments
 createWorldScreen.spectatorMode,gameMode.spectator
+createWorldScreen.experimentalSnifferFeature,entity.minecraft.sniffer
 createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
 createWorldScreen.gameMode,selectWorld.gameMode
@@ -1702,6 +1704,7 @@ multiplayer.inBedOpenChat,key.chat
 npcscreen.name,mco.configure.world.invite.profile.name
 offer.category.worldtemplate,mco.configure.worlds.title
 offer.navigationTab.worlds,mco.configure.worlds.title
+options.attribution,credits_and_attribution.button.attribution
 options.ao,options.ao
 options.ao.max,options.ao.max
 options.ao.min,options.ao.min
@@ -1721,6 +1724,7 @@ options.chat.visibility.hidden,options.chat.visibility.hidden
 options.chat.visibility.system,options.chat.visibility.system
 options.chat.width,options.chat.width
 options.controls,options.controls
+options.credits,credits_and_attribution.button.credits
 options.crouch,key.sneak
 options.customizeTitle,options.customizeTitle
 options.delete_account.confirm.button,selectWorld.deleteButton
@@ -1736,6 +1740,7 @@ options.difficulty.peaceful,options.difficulty.peaceful
 options.entityShadows,options.entityShadows
 options.forceUnicodeFont,options.forceUnicodeFont
 options.fov,options.fov
+options.licenses,credits_and_attribution.button.licenses
 options.default.format,disconnect.genericReason
 options.fov.max,options.fov.max
 options.fov.min,options.fov.min
@@ -1929,6 +1934,7 @@ progressScreen.dialog.button.join,mco.configure.world.slot.tooltip.active
 raid.name,event.minecraft.raid
 raid.victory,event.minecraft.raid.victory
 raid.defeat,event.minecraft.raid.defeat
+recipeToast.newUnlock.descriptionRecipeBook,recipe.toast.description
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
