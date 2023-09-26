@@ -23,7 +23,7 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 #### Oculus Rift (Bedrock Edition)
 
-[Kasuta paki tööle saamiseks ametlikku õpetust](https://docs.microsoft.com/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift) (inglise keeles), seejärel vaata keele aktiveerimiseks eelmist õpetust.
+[Kasuta paki tööle saamiseks ametlikku õpetust](https://learn-microsoft-com.translate.goog/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift&_x_tr_sl=et&_x_tr_tl=da&_x_tr_hl=et&_x_tr_pto=wapp) [(inglise keeles)](https://learn.microsoft.com/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
 #### Xbox One, Nintendo Switch, PlayStation 4 (Bedrock Edition)
 
