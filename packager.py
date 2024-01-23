@@ -50,15 +50,17 @@ def iterate_manifest(manifest_file, version_prefix=None):
         manifest_version[1] = major_version
         manifest_engine[1] = major_version
         manifest_vanilla[1] = major_version
-        print(f"Updated to major version: {major_version}")
+        print(f"Updated to major version: 1.{major_version}")
     else:
         manifest_version[2] += 1
 
     with open(manifest_file, 'w', encoding="utf-8") as file:
-        json.dump(manifest_json, file, indent=4)
+        json.dump(manifest_json, file)
 
     print("Pack's version is now " + '.'.join(map(str, manifest_version)) + ".")
 
+# Updated regex to match the second part of the version (e.g., '20' in 'v1.20.10.23')
+version_regex = "v\d+\.(\d+)\.\d+\.\d+"
 
 if useVersionAsPrefix:
     version_prefix = fetch_version(versionUrl, version_regex)
