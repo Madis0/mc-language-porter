@@ -75,7 +75,11 @@ for beKey, beValue in enumerate(list(beDict.values())):
     # Append matches per-string to variable valueMatchingKeys
     valueMatchingKeys = []
     for jeKey, jeValue in enumerate(list(jeDict.values())):
-        if beValue == jeValue:  # Identical match
+        # Check for identical match (including capitalization)
+        if beValue == jeValue:
+            valueMatchingKeys.append(list(jeDict.keys())[jeKey])
+        # If no identical match found, check for case-insensitive match
+        elif not valueMatchingKeys and beValue.lower() == jeValue.lower():
             valueMatchingKeys.append(list(jeDict.keys())[jeKey])
 
     # If there are multiple key matches, use the best one (minimum 10% similarity)
