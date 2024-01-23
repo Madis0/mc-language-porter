@@ -28,10 +28,11 @@ def find_new_spawn_eggs(json_data, existing_mappings):
     return new_mappings
 
 def append_new_mappings(new_mappings):
-    with open(extra_mappings_file, 'a', encoding='utf-8') as file:
-        file.write('\n')  # Always add a newline before appending
-        for mapping in new_mappings:
-            file.write(mapping + "\n")
+    if new_mappings:  # Check if there are new mappings to add
+        with open(extra_mappings_file, 'a', encoding='utf-8') as file:
+            file.write('\n')  # Add a newline before appending new mappings
+            for mapping in new_mappings:
+                file.write(mapping + "\n")
 
 # Main process
 json_data = read_json(en_us_json_file)
