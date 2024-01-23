@@ -1,10 +1,8 @@
 key.drop,key.drop
 options.autojump,options.autoJump
 options.guiScale.optionName,options.guiScale
-chat.link.open,chat.link.open
 
 menu.returnToGame,menu.returnToGame
-deathScreen.message,deathScreen.title
 deathScreen.quit,deathScreen.titleScreen
 
 item.cooked_beef.name,item.minecraft.cooked_beef
@@ -86,36 +84,11 @@ item.spawn_egg.entity.zombie_pigman.name,item.minecraft.zombified_piglin_spawn_e
 item.spawn_egg.entity.zombie_villager.name,item.minecraft.zombie_villager_spawn_egg
 item.spawn_egg.entity.zombie_villager_v2.name,item.minecraft.zombie_villager_spawn_egg
 
-mount.onboard,mount.onboard
-
 item.banner.illager_captain.name,block.minecraft.ominous_banner
-tile.lapis_block.name,block.minecraft.lapis_block
-tile.amethyst_block.name,block.minecraft.amethyst_block
 
 entity.villager.mason,entity.minecraft.villager.mason
 entity.villager.tool,entity.minecraft.villager.toolsmith
 entity.villager.weapon,entity.minecraft.villager.weaponsmith
-
-tile.planks.acacia.name,block.minecraft.acacia_planks
-tile.planks.big_oak.name,block.minecraft.dark_oak_planks
-tile.planks.birch.name,block.minecraft.birch_planks
-tile.planks.jungle.name,block.minecraft.jungle_planks
-tile.planks.oak.name,block.minecraft.oak_planks
-tile.planks.spruce.name,block.minecraft.spruce_planks
-
-tile.oak_stairs.name,block.minecraft.oak_stairs
-tile.acacia_stairs.name,block.minecraft.acacia_stairs
-tile.birch_stairs.name,block.minecraft.birch_stairs
-tile.dark_oak_stairs.name,block.minecraft.dark_oak_stairs
-tile.jungle_stairs.name,block.minecraft.jungle_stairs
-tile.spruce_stairs.name,block.minecraft.spruce_stairs
-
-tile.wooden_slab.acacia.name,block.minecraft.acacia_slab
-tile.wooden_slab.big_oak.name,block.minecraft.dark_oak_slab
-tile.wooden_slab.birch.name,block.minecraft.birch_slab
-tile.wooden_slab.jungle.name,block.minecraft.jungle_slab
-tile.wooden_slab.oak.name,block.minecraft.oak_slab
-tile.wooden_slab.spruce.name,block.minecraft.spruce_slab
 
 tile.stone_slab.smoothStoneBrick.name,block.minecraft.stone_brick_slab
 tile.stone_slab.brick.name,block.minecraft.brick_slab
@@ -220,6 +193,4 @@ soundCategory.texttospeech,options.narrator
 
 options.maxFramerate,options.framerateLimit
 
-tile.fire.name,painting.minecraft.fire.title
-tile.flowing_water.name,painting.minecraft.water.title
 tile.water.name,painting.minecraft.water.title
