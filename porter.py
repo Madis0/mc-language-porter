@@ -51,10 +51,13 @@ def parse_lang(path, toDict):
     file = open(path, 'r', encoding='utf-8')
 
     for row in file:
-        if not row.strip().startswith("##"):
+        if not row.startswith("##"):
             try:
-                key, value = row.strip().split("=")
-                toDict[key] = value
+                # Splitting on the first equals sign only
+                parts = row.split("=", 1)
+                if len(parts) == 2:
+                    key, value = parts
+                    toDict[key.strip()] = value.rstrip('\n')  # Preserving trailing spaces, removing only newline
             except:  # Parse the key even when value is None
                 pass
 
