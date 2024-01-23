@@ -15,51 +15,60 @@ packExt = ".mcpack"
 
 # Obtains the version number from resource file (e.g. 1.13.0.1) and uses first two numbers as a prefix (e.g 1.13.x)
 # Also updates the min_engine_version as suggested by MC wiki
-useVersionAsPrefix = False # TODO: fix
-versionUrl = "https://aka.ms/MinecraftBetaResources"
-versionRegex = "(\d+\.\d+)\.\d+\.\d+"
+useVersionAsPrefix = True
+versionUrl = "https://api.github.com/repos/Mojang/bedrock-samples/releases"
+version_regex = "v(\d+)\.\d+\.\d+\.\d+"
 
 print("Copying language file to pack folder...")
 shutil.copyfile(langFile, packFolder + langFolder + langFile)
 
+def fetch_version(version_url, version_regex):
+    try:
+        response = requests.get(version_url)
+        response.raise_for_status()
+        version_match = re.search(version_regex, response.text)
+        if version_match:
+            return version_match.group(1)
+        else:
+            print("Version prefix not found in the URL content.")
+            return None
+    except requests.RequestException as e:
+        print(f"Error fetching version: {e}")
+        return None
 
 # Increase version number by one in manifest
-def iterate_manifest(manifestFile):
-    lines = open(manifestFile, 'r', encoding="utf-8")
-    manifestJson = json.load(lines)
-    manifestVersion = manifestJson["header"]["version"]
-    manifestEngine = manifestJson["header"]["min_engine_version"]
-    manifestVanilla = manifestJson["header"]["vanilla"]
+def iterate_manifest(manifest_file, version_prefix=None):
+    with open(manifest_file, 'r', encoding="utf-8") as file:
+        manifest_json = json.load(file)
 
-    if useVersionAsPrefix:
-        request = requests.head(versionUrl, allow_redirects=True)
-        versionPrefix = re.findall(versionRegex, request.url)[0]
+    manifest_version = manifest_json["header"]["version"]
+    manifest_engine = manifest_json["header"]["min_engine_version"]
+    manifest_vanilla = manifest_json["header"]["vanilla"]
 
-        if versionPrefix in '.'.join(map(str, manifestVersion)):
-            manifestVersion[2] = manifestVersion[2] + 1  # Append 1 to version's last number
-        else:
-            manifestVersion[0] = int(versionPrefix.split(".")[0])
-            manifestVersion[1] = int(versionPrefix.split(".")[1])
-            manifestVersion[2] = 1  # Create new version number
-
-            manifestEngine[0] = int(versionPrefix.split(".")[0])
-            manifestEngine[1] = int(versionPrefix.split(".")[1])
-
-            manifestVanilla[0] = int(versionPrefix.split(".")[0])
-            manifestVanilla[1] = int(versionPrefix.split(".")[1])
-            print("New major version " + versionPrefix + "!")
-
+    if version_prefix:
+        major_version = int(version_prefix)
+        manifest_version[1] = major_version
+        manifest_engine[1] = major_version
+        manifest_vanilla[1] = major_version
+        print(f"Updated to major version: {major_version}")
     else:
-        manifestVersion[2] = manifestVersion[2] + 1  # Append 1 to version's last number
+        manifest_version[2] += 1
 
-    print("Pack's version is now " + '.'.join(map(str, manifestVersion)) + ".")
+    with open(manifest_file, 'w', encoding="utf-8") as file:
+        json.dump(manifest_json, file, indent=4)
 
-    with open(manifestFile, 'w') as outfile:
-        json.dump(manifestJson, outfile)
+    print("Pack's version is now " + '.'.join(map(str, manifest_version)) + ".")
 
+
+if useVersionAsPrefix:
+    version_prefix = fetch_version(versionUrl, version_regex)
+    if version_prefix is None:
+        print("Falling back to default version increment.")
+else:
+    version_prefix = None
 
 print("Increasing manifest version...")
-iterate_manifest(packFolder + manifest)
+iterate_manifest(packFolder + manifest, version_prefix)
 
 print("Packaging files to a ZIP...")
 shutil.make_archive(packName, 'zip', packFolder)
