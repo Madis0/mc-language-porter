@@ -10,7 +10,11 @@ if useDownloader:
 
 print("Now executing the mapper script...")
 subprocess.call(["python", "mapper.py"])
-print("Mapper script completed.\n\nNow executing the porting script...")
+print("Mapper script completed.\n\nNow executing the spawn egg adding script...")
+subprocess.call(["python", "spawn-egg-adder.py"])
+print("Spawn egg adding script completed.\n\nNow executing the extra mapping cleanup...")
+subprocess.call(["python", "clean-extra-mappings.py"])
+print("Extra mapping cleanup completed.\n\nNow executing the porting script...")
 subprocess.call(["python", "porter.py", translationLang])
 print("Porting script completed.")
 
