@@ -2,6 +2,7 @@ import subprocess
 translationLang = "et_EE"
 useDownloader = True
 usePackager = False
+extraSteps = True
 
 if useDownloader:
     print("Executing the downloader script...")
