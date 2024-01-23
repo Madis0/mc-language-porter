@@ -119,11 +119,6 @@ options.maxFramerate,options.framerateLimit
 
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
-item.spawn_egg.entity.ender_dragon.name,item.minecraft.ender_dragon_spawn_egg
-item.spawn_egg.entity.iron_golem.name,item.minecraft.iron_golem_spawn_egg
-item.spawn_egg.entity.snow_golem.name,item.minecraft.snow_golem_spawn_egg
-item.spawn_egg.entity.wither.name,item.minecraft.wither_spawn_egg
-
 item.spawn_egg.entity.allay.name,item.minecraft.allay_spawn_egg
 item.spawn_egg.entity.armadillo.name,item.minecraft.armadillo_spawn_egg
 item.spawn_egg.entity.axolotl.name,item.minecraft.axolotl_spawn_egg
@@ -131,8 +126,8 @@ item.spawn_egg.entity.bat.name,item.minecraft.bat_spawn_egg
 item.spawn_egg.entity.bee.name,item.minecraft.bee_spawn_egg
 item.spawn_egg.entity.blaze.name,item.minecraft.blaze_spawn_egg
 item.spawn_egg.entity.breeze.name,item.minecraft.breeze_spawn_egg
-item.spawn_egg.entity.cat.name,item.minecraft.cat_spawn_egg
 item.spawn_egg.entity.camel.name,item.minecraft.camel_spawn_egg
+item.spawn_egg.entity.cat.name,item.minecraft.cat_spawn_egg
 item.spawn_egg.entity.cave_spider.name,item.minecraft.cave_spider_spawn_egg
 item.spawn_egg.entity.chicken.name,item.minecraft.chicken_spawn_egg
 item.spawn_egg.entity.cod.name,item.minecraft.cod_spawn_egg
@@ -142,19 +137,20 @@ item.spawn_egg.entity.dolphin.name,item.minecraft.dolphin_spawn_egg
 item.spawn_egg.entity.donkey.name,item.minecraft.donkey_spawn_egg
 item.spawn_egg.entity.drowned.name,item.minecraft.drowned_spawn_egg
 item.spawn_egg.entity.elder_guardian.name,item.minecraft.elder_guardian_spawn_egg
+item.spawn_egg.entity.ender_dragon.name,item.minecraft.ender_dragon_spawn_egg
 item.spawn_egg.entity.enderman.name,item.minecraft.enderman_spawn_egg
 item.spawn_egg.entity.endermite.name,item.minecraft.endermite_spawn_egg
 item.spawn_egg.entity.evocation_illager.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.fox.name,item.minecraft.fox_spawn_egg
 item.spawn_egg.entity.frog.name,item.minecraft.frog_spawn_egg
-item.spawn_egg.entity.goat.name,item.minecraft.goat_spawn_egg
-item.spawn_egg.entity.glow_squid.name,item.minecraft.glow_squid_spawn_egg
 item.spawn_egg.entity.ghast.name,item.minecraft.ghast_spawn_egg
+item.spawn_egg.entity.glow_squid.name,item.minecraft.glow_squid_spawn_egg
+item.spawn_egg.entity.goat.name,item.minecraft.goat_spawn_egg
 item.spawn_egg.entity.guardian.name,item.minecraft.guardian_spawn_egg
 item.spawn_egg.entity.hoglin.name,item.minecraft.hoglin_spawn_egg
 item.spawn_egg.entity.horse.name,item.minecraft.horse_spawn_egg
 item.spawn_egg.entity.husk.name,item.minecraft.husk_spawn_egg
-item.spawn_egg.entity.ravager.name,item.minecraft.ravager_spawn_egg
+item.spawn_egg.entity.iron_golem.name,item.minecraft.iron_golem_spawn_egg
 item.spawn_egg.entity.llama.name,item.minecraft.llama_spawn_egg
 item.spawn_egg.entity.magma_cube.name,item.minecraft.magma_cube_spawn_egg
 item.spawn_egg.entity.mooshroom.name,item.minecraft.mooshroom_spawn_egg
@@ -170,14 +166,16 @@ item.spawn_egg.entity.pillager.name,item.minecraft.pillager_spawn_egg
 item.spawn_egg.entity.polar_bear.name,item.minecraft.polar_bear_spawn_egg
 item.spawn_egg.entity.pufferfish.name,item.minecraft.pufferfish_spawn_egg
 item.spawn_egg.entity.rabbit.name,item.minecraft.rabbit_spawn_egg
+item.spawn_egg.entity.ravager.name,item.minecraft.ravager_spawn_egg
 item.spawn_egg.entity.salmon.name,item.minecraft.salmon_spawn_egg
 item.spawn_egg.entity.sheep.name,item.minecraft.sheep_spawn_egg
 item.spawn_egg.entity.shulker.name,item.minecraft.shulker_spawn_egg
-item.spawn_egg.entity.sniffer.name,item.minecraft.sniffer_spawn_egg
 item.spawn_egg.entity.silverfish.name,item.minecraft.silverfish_spawn_egg
 item.spawn_egg.entity.skeleton.name,item.minecraft.skeleton_spawn_egg
 item.spawn_egg.entity.skeleton_horse.name,item.minecraft.skeleton_horse_spawn_egg
 item.spawn_egg.entity.slime.name,item.minecraft.slime_spawn_egg
+item.spawn_egg.entity.sniffer.name,item.minecraft.sniffer_spawn_egg
+item.spawn_egg.entity.snow_golem.name,item.minecraft.snow_golem_spawn_egg
 item.spawn_egg.entity.spider.name,item.minecraft.spider_spawn_egg
 item.spawn_egg.entity.squid.name,item.minecraft.squid_spawn_egg
 item.spawn_egg.entity.stray.name,item.minecraft.stray_spawn_egg
@@ -193,6 +191,7 @@ item.spawn_egg.entity.vindicator.name,item.minecraft.vindicator_spawn_egg
 item.spawn_egg.entity.wandering_trader.name,item.minecraft.wandering_trader_spawn_egg
 item.spawn_egg.entity.warden.name,item.minecraft.warden_spawn_egg
 item.spawn_egg.entity.witch.name,item.minecraft.witch_spawn_egg
+item.spawn_egg.entity.wither.name,item.minecraft.wither_spawn_egg
 item.spawn_egg.entity.wither_skeleton.name,item.minecraft.wither_skeleton_spawn_egg
 item.spawn_egg.entity.wolf.name,item.minecraft.wolf_spawn_egg
 item.spawn_egg.entity.zoglin.name,item.minecraft.zoglin_spawn_egg
