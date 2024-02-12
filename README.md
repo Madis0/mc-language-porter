@@ -29,7 +29,10 @@ An open set of scripts designed to semi-automate the task of porting languages f
 
 1) [Download latest Python](https://www.python.org/downloads/)
 2) Download [any relevant requirements](/requirements.txt) [using PIP](https://packaging.python.org/tutorials/installing-packages/#installing-from-pypi)
-3) Run scripts according to your needs or all at once using `runall.py`.
+3) Open `runall.py` and edit the target language/parameters to what you need (at the top of the script)
+4) Run `runall.py`
+5) Test the output pack in-game
+6) Optionally do changes and run the script again, or run other scripts
 
 `downloader.py` and `porter.py` support command line arguments for defining the language, e.g. `py downloader.py ru_ru`. Other settings (e.g which files to download/use) can be set inside the scripts at the start, as booleans `True` or `False`.
 
