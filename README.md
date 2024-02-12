@@ -11,6 +11,8 @@ An open set of scripts designed to semi-automate the task of porting languages f
 * `mapper.py` - Automatically creates CSV-formatted mappings by comparing Java Edition files with Bedrock Edition ones.
 * `porter.py` - Creates a Bedrock Edition-compatible language file using mappings, extra mappings, and/or extra translated phrases.
 * `packager.py` - Packages the files to a proper MCPack. Disabled by default in `runall.py` as it uses the Estonian language pack files and format.
+* `clean-extra-mappings.py` - Removes mappings from `extra-mappings.csv` that alrady exist in `mappings.csv`
+* `spawn-egg-adder.py` - Automatically adds new spawn egg names to `extra-mappings.csv`
 
 ## Files
 
