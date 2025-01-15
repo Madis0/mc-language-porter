@@ -5,74 +5,39 @@ options.guiScale.optionName,options.guiScale
 menu.returnToGame,menu.returnToGame
 deathScreen.quit,deathScreen.titleScreen
 
-item.cooked_beef.name,item.minecraft.cooked_beef
 potion.moveSpeed,effect.minecraft.speed
 
-item.banner.illager_captain.name,block.minecraft.ominous_banner
 
-entity.villager.mason,entity.minecraft.villager.mason
 entity.villager.tool,entity.minecraft.villager.toolsmith
 entity.villager.weapon,entity.minecraft.villager.weaponsmith
 
-tile.stone_slab.smoothStoneBrick.name,block.minecraft.stone_brick_slab
-tile.stone_slab.brick.name,block.minecraft.brick_slab
-tile.stone_slab2.prismarine.bricks.name,block.minecraft.prismarine_brick_slab
 
-tile.brick_block.name,block.minecraft.bricks
 
-tile.quartz_block.lines.name,block.minecraft.quartz_pillar
 
-tile.nether_brick.name,block.minecraft.nether_bricks
-tile.red_nether_brick.name,block.minecraft.red_nether_bricks
 
-tile.clay.name,block.minecraft.clay
-item.clay_ball.name,item.minecraft.clay_ball
 
-item.chainmail_helmet.name,item.minecraft.chainmail_helmet
-item.chainmail_chestplate.name,item.minecraft.chainmail_chestplate
-item.chainmail_leggings.name,item.minecraft.chainmail_leggings
-item.chainmail_boots.name,item.minecraft.chainmail_boots
 
 item.horsearmorgold.name,item.minecraft.golden_horse_armor
 
-tile.anvil.slightlyDamaged.name,block.minecraft.chipped_anvil
-tile.anvil.veryDamaged.name,block.minecraft.damaged_anvil
 
-tile.enchanting_table.name,block.minecraft.enchanting_table
 
-item.milk.name,item.minecraft.milk_bucket
 
-item.skull.char.name,block.minecraft.player_head
 
-item.writable_book.name,item.minecraft.writable_book
-howtoplay.bookAndQuill,item.minecraft.writable_book
 
-tile.light_weighted_pressure_plate.name,block.minecraft.light_weighted_pressure_plate
-tile.heavy_weighted_pressure_plate.name,block.minecraft.heavy_weighted_pressure_plate
 
-tile.daylight_detector.name,block.minecraft.daylight_detector
 
-item.wheat_seeds.name,item.minecraft.wheat_seeds
 
-item.appleEnchanted.name,item.minecraft.enchanted_golden_apple
 
-item.melon.name,item.minecraft.melon_slice
-item.speckled_melon.name,item.minecraft.glistering_melon_slice
 
-tile.double_plant.grass.name,block.minecraft.tall_grass
 
-tile.snow_layer.name,block.minecraft.snow
 
 tile.brown_mushroom_block.mushroom.name,block.minecraft.brown_mushroom
 
-item.reeds.name,block.minecraft.sugar_cane
 
-tile.monster_egg.brick.name,block.minecraft.infested_stone_bricks
 tile.monster_egg.chiseledbrick.name,block.minecraft.infested_chiseled_stone_bricks
 tile.monster_egg.crackedbrick.name,block.minecraft.infested_cracked_stone_bricks
 tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 
-tile.turtle_egg.name,block.minecraft.turtle_egg
 
 options.enableChatTextToSpeech,options.narrator.chat
 options.enableUITextToSpeech,options.narrator.system
@@ -119,4 +84,8 @@ options.maxFramerate,options.framerateLimit
 
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
-item.spawn_egg.entity.turtle.name,item.minecraft.turtle_spawn_egg
+
+item.spawn_egg.entity.evoker.name,item.minecraft.evoker_spawn_egg
+item.spawn_egg.entity.tropical_fish.name,item.minecraft.tropical_fish_spawn_egg
+item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spawn_egg
+

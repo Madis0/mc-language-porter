@@ -23,9 +23,9 @@ See pakk muudab Minecrafti eestikeelseks, kasutades juba olemasolevaid tõlkeid 
 
 #### Oculus Rift (Bedrock Edition)
 
-[Kasuta paki tööle saamiseks ametlikku õpetust](https://learn-microsoft-com.translate.goog/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift&_x_tr_sl=et&_x_tr_tl=da&_x_tr_hl=et&_x_tr_pto=wapp) [(inglise keeles)](https://learn.microsoft.com/en-us/minecraft/creator/documents/addonpackinstallation?tabs=oculusrift), seejärel vaata keele aktiveerimiseks eelmist õpetust.
+[Kasuta paki tööle saamiseks ametlikku õpetust](https://learn-microsoft-com.translate.goog/en-us/minecraft/creator/documents/gettingstarted?view=minecraft-bedrock-stable&tabs=oculusrift&_x_tr_sl=auto&_x_tr_tl=et&_x_tr_hl=et&_x_tr_pto=wapp#installing-add-on-instructions) [(inglise keeles)](https://learn.microsoft.com/en-us/minecraft/creator/documents/gettingstarted?view=minecraft-bedrock-stable&tabs=oculusrift#installing-add-on-instructions), seejärel vaata keele aktiveerimiseks eelmist õpetust.
 
-#### Xbox One, Nintendo Switch, PlayStation 4 (Bedrock Edition)
+#### Konsoolid (Bedrock Edition)
 
 Konsoolides pole kohandatud ressursipakid ametlikult toetatud ning ka teatud keelefraasid on erinevad, seega kõik ei pruugi toimida nagu oodatud. 
 
@@ -35,14 +35,13 @@ Siiski võib proovida järgnevaid õppevideoid: [Xbox One](https://www.youtube.c
 
 Antud pakk tõlgib hetkel järgnevat:
 
-* Plokid ja esemed
+* Plokid, esemed, elukad
 * Loomingurežiimi seljakott
 * Olulisemad menüüd
 * Olulisemad seaded
 * Vestlus ja mõned süsteemisõnumid
 
-Java Editionis on eesti keel ametlikult toetatud, seega seal on terve mäng tõlgitud 🙂
-Katsetusjärgus funktsioonide väljendeid Microsoft ei jaga, seega need saab üle viia alles siis, kui need vastavas beeta/eelvaade kõigile kasutuseks väljas on.
+Paki versiooni 1.21.1 seisuga tõlgib see pakk mängu 39.1% ulatuses. Java Editionis on eesti keel ametlikult toetatud, seega seal on mäng 100% tõlgitud 🙂
 
 ## Kuidas tõlge on toetatud?
 
@@ -53,8 +52,10 @@ Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https:
 
 ## Kuidas saan kaasa aidata?
 
-Kõige paremini saad tõlkele kaasa aidata otse allikast - [Minecrafti ametlik Crowdini leht](https://crowdin.com/project/minecraft). 
+Kõige paremini saad tõlkele kaasa aidata [Java Editioni kogukonnatõlke platvormil](https://crowdin.com/project/minecraft). 
 Seal saad tõlgetele hääli anda ja uusi juurde pakkuda.
+
+Kui aga on konkreetne soov Bedrocki tõlget täiendada, siis tee siia pull request failile [extra-et_EE.lang](/extra-et_EE.lang) [(originaalväljendid saad siit)](https://raw.githubusercontent.com/Mojang/bedrock-samples/preview/resource_pack/texts/en_US.lang).
 
 ## Kuidas on see seotud äpiga "Tõlked Minecraftile"?
 
