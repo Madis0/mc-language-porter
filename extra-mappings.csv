@@ -1,4 +1,9 @@
 key.drop,key.drop
+key.attack,key.attack
+key.use,key.use
+key.chat,key.chat
+key.back,key.back
+key.forward,key.forward
 options.autojump,options.autoJump
 options.guiScale.optionName,options.guiScale
 
@@ -7,42 +12,32 @@ deathScreen.quit,deathScreen.titleScreen
 
 potion.moveSpeed,effect.minecraft.speed
 
-
 entity.villager.tool,entity.minecraft.villager.toolsmith
 entity.villager.weapon,entity.minecraft.villager.weaponsmith
 
-
-
-
-
-
-
-item.horsearmorgold.name,item.minecraft.golden_horse_armor
-
-
-
-
-
-
-
-
-
-
-
-
-
 tile.brown_mushroom_block.mushroom.name,block.minecraft.brown_mushroom
-
 
 tile.monster_egg.chiseledbrick.name,block.minecraft.infested_chiseled_stone_bricks
 tile.monster_egg.crackedbrick.name,block.minecraft.infested_cracked_stone_bricks
 tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 
-
 options.enableChatTextToSpeech,options.narrator.chat
 options.enableUITextToSpeech,options.narrator.system
 options.darknessEffectModifier,options.darknessEffectScale
 options.darknessEffectModifier.message,options.darknessEffectScale.tooltip
+options.textBackgroundOpacity,options.accessibility.text_background_opacity
+options.glintStrength.message,options.glintStrength.tooltip
+options.glintSpeed.message,options.glintSpeed.tooltip
+options.notificationDuration.Toast,options.notifications.display_time
+options.notificationDuration.ToastMessage,options.notifications.display_time.tooltip
+options.notificationDuration.ToastMessage.edu,options.notifications.display_time.tooltip
+
+options.sensitivity,options.sensitivity
+options.graphicsMode,options.graphics
+options.graphicsMode.simple,options.graphics.fast
+
+soundCategory.ambient,soundCategory.ambient
+soundCategory.player,soundCategory.player
 
 howtoplay.eyeOfEnder,item.minecraft.ender_eye
 
@@ -81,7 +76,6 @@ soundCategory.main,soundCategory.master
 soundCategory.texttospeech,options.narrator
 
 options.maxFramerate,options.framerateLimit
-
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
 

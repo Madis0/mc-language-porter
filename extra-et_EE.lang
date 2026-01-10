@@ -255,6 +255,7 @@ storageManager.contentType.cachedData=Vahemälus andmed
 gui.signIn=Logi sisse
 xbox.signin=Logi sisse
 store.xbl.signin=Logi sisse
+menu.profile=Profiil
 
 feedbackScreen.button=Tagasiside
 pauseScreen.invite=Kutsu mängu
@@ -316,11 +317,13 @@ options.xboxliveBroadcast.inviteOnly=Ainult kutsega
 options.xboxliveBroadcast.friendsOnly=Ainult sõbrad
 options.xboxliveBroadcast.friendsOfFriends=Sõprade sõbrad
 options.servervisible=Nähtav LANi mängijatele
+menu.store.addons=Sirvi lisasid!
 
 options.accessibility=Hõlbustus
 options.keyboardAndMouse=Klaviatuur ja hiir
 options.controller=Mängupult
 options.touch=Puudutus
+options.party=Pidu
 options.account=Konto
 options.creator=Looja
 options.profile=Profiil
