@@ -208,7 +208,7 @@ createWorld.customize.presets.select,createWorld.customize.presets.select
 createWorld.customize.presets.title,createWorld.customize.presets.title
 createWorldUpsell.button.world,mco.configure.world.buttons.newworld
 createWorldScreen.cheatSettings,selectWorld.cheats
-createWorldScreen.worldOptions,mco.configure.world.buttons.options
+createWorldScreen.worldOptions,options.worldOptions.title
 createWorldScreen.bonusChest,selectWorld.bonusItems
 createWorldScreen.bonusChest.name,selectWorld.bonusItems
 createWorldScreen.locatorBar,dataPack.locator_bar.name
@@ -2012,7 +2012,7 @@ menu.account.clearSignInData.popup.cancelLabel,dataPack.validation.back
 menu.account.signOutOfMicrosoft.popup.cancelLabel,dataPack.validation.back
 menu.account.deleteMicrosoftAccount.buttonLabel,selectWorld.deleteButton
 menu.game.tab.title,createWorld.tab.game.title
-menu.game.tab.worldOptions.title,mco.configure.world.buttons.options
+menu.game.tab.worldOptions.title,options.worldOptions.title
 menu.game.tab.experiments.title,selectWorld.experiments
 menu.game.tab.experiments.gameplay.title,key.categories.gameplay
 menu.game.tab.experiments.graphics.title,options.graphics
