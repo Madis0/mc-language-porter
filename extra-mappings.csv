@@ -83,3 +83,5 @@ item.spawn_egg.entity.evoker.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.tropical_fish.name,item.minecraft.tropical_fish_spawn_egg
 item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spawn_egg
 
+key.socialDrawer,gui.socialInteractions.title
+soundCategory.record,soundCategory.record

@@ -228,7 +228,7 @@ createWorldScreen.levelSeed,mco.backup.entry.seed
 createWorldScreen.worldType,mco.backup.entry.worldType
 createWorldScreen.serverSimDistance,options.simulationDistance
 createWorldScreen.serverSimDistanceFormat,options.chunks
-createWorldScreen.playerSleepPercentageFormat,optimizeWorld.progress.percentage
+createWorldScreen.playerSleepPercentageFormat,upgradeWorld.progress.percentage
 createWorldScreen.clearPlayerData.cancel,gui.cancel
 realmsInvitationScreen.continue,gui.continue
 realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
@@ -2060,6 +2060,7 @@ options.ao.max,options.ao.max
 options.ao.min,options.ao.min
 options.ao.off,options.ao.off
 options.showBlockSelectButton,key.pickItem
+options.showBlockSelectButton.name,key.pickItem
 options.category.game,createWorld.tab.game.title
 options.category.graphics,options.graphics
 options.category.input,controls.title
@@ -2197,8 +2198,11 @@ options.stream.chat.enabled.always,team.collision.always
 options.stream.chat.enabled.never,options.musicToast.never
 options.title,options.title
 options.toggle,options.key.toggle
+options.touch.resetSettings.name,dataPack.validation.reset
+options.touch.resetSettings.label,controls.reset
 options.toggleCrouch,key.sneak
 options.touchscreen,options.touchscreen
+options.customiseTouchControls.label,selectWorld.customizeType
 options.videoTitle,options.videoTitle
 options.viewBobbing,options.viewBobbing
 options.damageBobbing,options.damageTiltStrength
@@ -3802,6 +3806,7 @@ addServer.resourcePack.prompt,addServer.resourcePack.prompt
 addServer.title,addServer.title
 externalServerScreen.serverName,mco.configure.world.invite.profile.name
 externalServerScreen.serverNameInput,manageServer.enterName
+storage_migration.progress.title,upgradeWorld.progress.type.files
 storage_migration.button.continue,gui.continue
 trade.nameAndLevel,merchant.title
 trade.level.1,merchant.level.1
@@ -3921,6 +3926,7 @@ tile.waxed_weathered_copper_lantern.name,block.minecraft.waxed_weathered_copper_
 tile.waxed_oxidized_copper_lantern.name,block.minecraft.waxed_oxidized_copper_lantern
 tile.copper_torch.name,block.minecraft.copper_torch
 tile.iron_chain.name,block.minecraft.iron_chain
+tile.golden_dandelion.name,block.minecraft.golden_dandelion
 item.wooden_spear.name,item.minecraft.wooden_spear
 item.stone_spear.name,item.minecraft.stone_spear
 item.copper_spear.name,item.minecraft.copper_spear
