@@ -85,3 +85,6 @@ item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spaw
 
 key.socialDrawer,gui.socialInteractions.title
 soundCategory.record,soundCategory.record
+accessibility.emotes.unassigned,key.keyboard.unknown
+controllerLayoutScreen.unassigned,key.keyboard.unknown
+hudScreen.emote_unassigned,key.keyboard.unknown
