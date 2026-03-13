@@ -2377,6 +2377,7 @@ storageManager.contentType.world,selectWorld.world
 storageManager.contentType.worldTemplate,mco.template.default.name
 storageManager.contentType.worlds,mco.configure.worlds.title
 storageManager.contentType.worldTemplates,mco.reset.world.template
+storageManager.delete,selectWorld.delete
 storageManager.sync_legacy_worlds.conversion_complete.cancel_button,mco.selectServer.close
 storageManager.sync_legacy_worlds.conversion_explanation.cancel_button,gui.cancel
 tile.sculk_sensor.name,block.minecraft.sculk_sensor
