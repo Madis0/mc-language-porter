@@ -88,3 +88,4 @@ soundCategory.record,soundCategory.record
 accessibility.emotes.unassigned,key.keyboard.unknown
 controllerLayoutScreen.unassigned,key.keyboard.unknown
 hudScreen.emote_unassigned,key.keyboard.unknown
+item.spawn_egg.entity.sulfur_cube.name,item.minecraft.sulfur_cube_spawn_egg
