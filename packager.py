@@ -1,12 +1,12 @@
 import shutil
 import json
 import requests
+import sys
 
-packFolder = "Eesti keele pakk/"
-extraFile = "extra-et_EE.lang"
+packFolder = "Eesti keelte pakk/"
 
 langFolder = "texts/"
-langFile = "et_EE.lang"
+languages = ["et_EE", "vro"]
 
 manifest = "pack_manifest.json"
 packName = "eesti"
@@ -18,8 +18,17 @@ useVersionAsPrefix = True
 versionUrl = "https://api.github.com/repos/Mojang/bedrock-samples/releases/latest"
 versionHeaders = {"Accept": "application/vnd.github+json"}
 
-print("Copying language file to pack folder...")
-shutil.copyfile(langFile, packFolder + langFolder + langFile)
+# Accept an array of languages from command-line arguments
+if len(sys.argv) > 1:
+    languages = [arg for arg in sys.argv[1:]]
+
+# Generate langFiles and extraFiles from languages
+langFiles = [lang + ".lang" for lang in languages]
+extraFiles = ["extra-" + lang + ".lang" for lang in languages]
+
+print("Copying language file(s) to pack folder...")
+for langFile in langFiles:
+    shutil.copyfile(langFile, packFolder + langFolder + langFile)
 
 # Increase version number by one in manifest
 def iterate_manifest(manifestFile):

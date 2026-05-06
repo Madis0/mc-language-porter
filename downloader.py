@@ -10,11 +10,11 @@ import sys
 getJeOriginal = True            # ~24 MB
 getJeTranslation = True         # ~286 KB
 getBeOriginal = True            # ~500 KB
-translationLang = "et_ee"       # Used when launched without arguments
+jeLangs = ["et_ee", "vro"]    # Used when launched without arguments (can hold multiple languages)
 
 # Paths and variables -  https://wiki.vg/Game_files
-if len(sys.argv) > 1:  # Use the language provided as an argument if available
-    translationLang = sys.argv[1].lower()
+if len(sys.argv) > 1:  # Use the languages provided as arguments if available
+    jeLangs = [arg.lower() for arg in sys.argv[1:]]
 
 jeGlobalJsonUrl = "https://piston-meta.mojang.com/mc/game/version_manifest.json"
 jeGlobalJson = None
@@ -36,7 +36,6 @@ jeJarLangPath = "assets/minecraft/lang/" + jeLangFile
 beLatestLangUrl = "https://raw.githubusercontent.com/Mojang/bedrock-samples/preview/resource_pack/texts/en_US.lang";
 beLangFile = "en_US.lang"
 
-jeTranslationFile = translationLang + ".json"
 jeGlobalAssetUrl = "https://resources.download.minecraft.net/"
 
 # Get latest JE JSON url - https://stackoverflow.com/a/16130026
@@ -62,13 +61,20 @@ if getJeTranslation:
     jeLatestAssetJson = requests.get(jeLatestAssetUrl).json()
     print("Assets JSON obtained: " + jeLatestAssetUrl)
 
-# Get latest JE translation file URL
+# Get latest JE translation file URLs for all requested languages
+translation_files_to_download = []
 if getJeTranslation:
-    print("Finding JE translation file URL...")
-    jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
-    jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
-    jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
-    print("Translation file URL obtained: " + jeTranslationUrl)
+    print("Finding JE translation file URLs...")
+    for lang in jeLangs:
+        jeTranslationFile = lang + ".json"
+        try:
+            jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
+            jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
+            jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
+            translation_files_to_download.append((jeTranslationFile, jeTranslationUrl, jeTranslationSize))
+            print("Translation file URL obtained: " + jeTranslationUrl)
+        except Exception:
+            print("Translation file not found in assets: " + jeTranslationFile)
 
 # Obtaining functions
 # Unpack zips - https://stackoverflow.com/a/5711095
@@ -94,9 +100,10 @@ if getJeOriginal:
     print(jeLangFile + " has been saved in the current directory.")
 
 if getJeTranslation:
-    print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + size(jeTranslationSize, system=alternative) + " to download)")
-    download_text(jeTranslationUrl, jeTranslationFile)
-    print(jeTranslationFile + " has been saved in the current directory.")
+    for jeTranslationFile, jeTranslationUrl, jeTranslationSize in translation_files_to_download:
+        print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + size(jeTranslationSize, system=alternative) + " to download)")
+        download_text(jeTranslationUrl, jeTranslationFile)
+        print(jeTranslationFile + " has been saved in the current directory.")
 
 if getBeOriginal:
     print("Downloading and saving " + beLangFile + " from Bedrock Edition resources... (ca 500 KB to download)")
