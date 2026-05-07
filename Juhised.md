@@ -45,7 +45,7 @@ Antud pakk tõlgib hetkel järgnevat:
 
 Paki versiooni 26.20.2 seisuga tõlgib see pakk mängu 42.8% ulatuses eesti keelde. Java Editionis on eesti keel ametlikult toetatud, seega seal on mäng 100% tõlgitud 🙂 Kaasaegsetel Bedrocki versioonidel on mõned vaated uue liidesega, mille tõlkimine pole veel õnnestunud - [loe lähemalt postitusest #9](https://github.com/Madis0/mc-language-porter/issues/9).
 
-Võro keele tugi on Java Editionis veel arendusjärgus, seega Bedrock Editionis on väljendeid samuti vähem.
+Võru keele tugi on Java Editionis veel arendusjärgus, seega Bedrock Editionis on väljendeid samuti vähem.
 
 ## Kuidas tõlge on toetatud?
 
@@ -69,4 +69,4 @@ Eraldiseisev skript võimaldab muuhulgas:
 
 * tõlkeid kiiremini uuendada
 * võtta rohkem tõlkeid automaatselt üle
-* hoida paki mahtu minimaalsena (ainult eesti keel) 
+* hoida paki mahtu minimaalsena (ainult eesti ja võru keeled) 
