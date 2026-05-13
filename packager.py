@@ -54,7 +54,7 @@ def iterate_manifest(manifestFile):
 
             manifestEngine[0] = 1   # Hardcoded
             manifestEngine[1] = int(versionNumber.split(".")[0])
-            manifestEngine[2] = int(versionNumber.split(".")[1])
+            manifestEngine[2] = int(versionNumber.split(".")[1]) - 10 # Allow both latest stable and preview
             print("New minor version " + versionNumber + "!")
 
     else:
