@@ -219,7 +219,7 @@ createWorldScreen.cheatSettings,selectWorld.cheats
 createWorldScreen.worldOptions,options.worldOptions.title
 createWorldScreen.bonusChest,selectWorld.bonusItems
 createWorldScreen.bonusChest.name,selectWorld.bonusItems
-createWorldScreen.locatorBar,dataPack.locator_bar.name
+createWorldScreen.playerWaypointsOff,menu.multiplayerOptions.network.off
 createWorldScreen.experimentalgameplay,selectWorld.experiments
 createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
@@ -260,6 +260,7 @@ csbCreateScreen.goBack,dataPack.validation.back
 networkWorld.add_server,selectServer.add
 networkWorld.join_server,selectServer.select
 networkWorld.description,gui.abuseReport.reason.description
+networkWorld.servers_label,options.online.servers.header
 networkWorld.friends_label,gui.friends.tab_friends
 networkWorld.join,gui.friends.join
 realmsSlotsScreen.new,selectWorld.newWorld
@@ -314,9 +315,10 @@ realmsSettingsScreen.inviteLinkExpired,mco.configure.world.subscription.expired
 realmsSettingsScreen.inviteLinkSettingsGeneral,stat.generalButton
 realmsSettingsScreen.inviteLinkRemoveButton,mco.configure.world.invites.remove.tooltip
 realmsSettingsScreen.expiration.never,team.collision.never
+realmsSettingsScreen.allowlist_invite,gui.friends.multiplayer.invite
 realmsSettingsScreen.searchBox,gui.packSelection.search
 realmsSettingsScreen.extendConsumableButton,mco.configure.world.subscription.extend
-xblLogin.LoginMessageTitle,gui.friends.empty_state.link
+xblLogin.LoginMessageTitle,options.friendsList.confirm.message.link
 dayOneExperience.tab.realms,options.online.realms.header
 death.attack.anvil,death.attack.anvil
 death.attack.arrow,death.attack.arrow
@@ -351,6 +353,7 @@ death.attack.outOfWorld,death.attack.outOfWorld
 death.attack.player,death.attack.player
 death.attack.player.item,death.attack.player.item
 death.attack.starve,death.attack.starve
+death.attack.sulfurCube.hot,death.attack.sulfurCubeHot
 death.attack.sweetBerry,death.attack.sweetBerryBush
 death.attack.thrown,death.attack.thrown
 death.attack.thrown.item,death.attack.thrown.item
@@ -396,6 +399,7 @@ disconnect.lost,disconnect.lost
 disconnect.quitting,multiplayer.status.quitting
 disconnect.spam,disconnect.spam
 disconnect.timeout,disconnect.timeout
+edu.play_screen.servers,options.online.servers.header
 edu.worlds_screen.new_world,selectWorld.newWorld
 edu.worlds_screen.play,mco.brokenworld.play
 edu.worlds_screen.settings,mco.configure.world.buttons.edit
@@ -404,6 +408,7 @@ edu.worlds_screen.back,gui.back
 edu.worlds_screen.delete,key.keyboard.delete
 edu.templates.delete,key.keyboard.delete
 edu.templates.delete_confirm,key.keyboard.delete
+edu.servers_screen.title,options.online.servers.header
 edu.servers_screen.add_server,selectServer.add
 edu.servers_screen.play,mco.brokenworld.play
 edu.servers_screen.back,gui.back
@@ -2066,6 +2071,7 @@ menu.shareToLan,menu.shareToLan
 menu.singleplayer,menu.singleplayer
 menu.start,test_block.mode.start
 menu.realms,options.online.realms.header
+menu.servers,options.online.servers.header
 mount.onboard,mount.onboard
 multiplayer.player.joined,multiplayer.player.joined
 multiplayer.player.joined.renamed,multiplayer.player.joined.renamed
@@ -2689,6 +2695,7 @@ selectWorld.tab.worlds,mco.configure.worlds.title
 selectWorld.tab.realms,options.online.realms.header
 selectWorld.tab.friends,gui.friends.open
 selectWorld.tab.classmates,gui.friends.tab_friends
+selectWorld.tab.thirdParty,options.online.servers.header
 selectWorld.title,selectWorld.title
 selectWorld.world,selectWorld.world
 selectTemplate.generateRandom,selectWorld.create
@@ -3813,6 +3820,7 @@ writeThrottling.osDialog.confirm,gui.proceed
 trial.tabbed_upsell.minecraft.title,advancements.story.root.title
 trial.tabbed_upsell.xbl.title,gui.friends.empty_state.link
 trial.tabbed_upsell.multiplayer.title,key.categories.multiplayer
+trial.tabbed_upsell.server.title,options.online.servers.header
 trial.tabbed_upsell.creative.title,selectWorld.gameMode.creative
 trial.thanks_for_testing.xbl.title,gui.friends.empty_state.link
 trial.survival.mode.title,selectWorld.gameMode.survival
@@ -5008,6 +5016,7 @@ subtitles.entity.parrot.imitate.zombie_nautilus,subtitles.entity.parrot.imitate.
 subtitles.entity.zombie_nautilus.dash,subtitles.entity.zombie_nautilus.dash
 subtitles.entity.zombie_nautilus.dash_land,subtitles.entity.zombie_nautilus.dash_land
 subtitles.entity.zombie_nautilus.dash_ready_land,subtitles.entity.zombie_nautilus.dash_ready_land
+subtitles.entity.zombie_nautilus.swim,subtitles.entity.zombie_nautilus.swim
 subtitles.item.armor.equip_nautilus,subtitles.item.armor.equip_nautilus
 subtitles.item.armor.unequip_nautilus,subtitles.item.armor.unequip_nautilus
 subtitles.item.nautilus_saddle_underwater_equip,subtitles.item.nautilus_saddle_underwater_equip
