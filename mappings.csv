@@ -101,6 +101,7 @@ craftingScreen.tab.items,stat.itemsButton
 craftingScreen.tab.survival,key.category.minecraft.inventory
 craftingScreen.tab.armor,attribute.name.generic.armor
 craftingScreen.tts.tab.inventory,container.inventory
+accessibility.tts.toggle.inventory.layout,key.categories.inventory
 credits.skip,mco.create.world.skip
 cauldronScreen.header,item.minecraft.cauldron
 codeScreen.buttonTTS.restore,mco.backup.button.restore
@@ -617,10 +618,11 @@ feed.cancel,gui.cancel
 feed.delete,selectWorld.delete
 feed.clubdescription,mco.configure.world.description
 furnaceScreen.header,container.furnace
-furnaceScreen.tab.search,gui.socialInteractions.tab_all
 furnaceScreen.tab.blocks,soundCategory.block
 furnaceScreen.tab.items,stat.itemsButton
 furnaceScreen.tab.inventory,container.inventory
+furnaceScreen.tts.slot.empty,mco.configure.world.slot.empty
+furnaceScreen.tts.slot.fuel.burning,subtitles.entity.generic.burn
 gameMode.adventure,gameMode.adventure
 gameMode.changed,gameMode.changed
 gameMode.creative,gameMode.creative
@@ -2052,6 +2054,7 @@ menu.creator.contentLog.delete.goBack,dataPack.validation.back
 menu.creator.scriptDiagnostic.delete.buttonLabel,selectWorld.deleteButton
 menu.creator.scriptDiagnostic.delete.continue,gui.continue
 menu.creator.scriptDiagnostic.delete.goBack,dataPack.validation.back
+menu.video.group.general,stat.generalButton
 menu.video.mode,advMode.mode
 menu.language.tab.title,options.language.title
 menu.multiplayer.tab.title,menu.multiplayer
@@ -2122,7 +2125,7 @@ options.dev_chunk_map_mode_server_chunk_state,pack.source.server
 options.dev_enableDebugHudOverlay.off,menu.multiplayerOptions.network.off
 options.dev_nethernet_logging_verbosity.disabled,manageServer.resourcePack.disabled
 options.dev_render_attach_pos.none,menu.multiplayerOptions.network.off
-options.dev_render_attach_pos.all,options.sharePresence.all
+options.dev_render_attach_pos.all,options.particles.all
 options.dev_connection_quality.no_limit,options.framerateLimit.max
 options.discoveryEnvironment.local,pack.source.local
 options.dev_realms_environment.local,pack.source.local
@@ -2253,7 +2256,6 @@ options.goBack,dataPack.validation.back
 options.graphicsMode.fancy,options.graphics.fancy
 options.graphicsQualityPresetMode.name,options.video.preferences.header
 options.graphicsQualityPresetMode.custom,options.graphics.custom
-options.pointLightShadowQuality.off,menu.multiplayerOptions.network.off
 options.pointLightLODingQuality.off,menu.multiplayerOptions.network.off
 options.volumetricFogQuality.off,menu.multiplayerOptions.network.off
 options.reflectionsQuality.off,menu.multiplayerOptions.network.off
@@ -2264,6 +2266,7 @@ pauseScreen.header,menu.game
 pauseScreen.options,options.title
 pauseScreen.title,menu.paused
 pauseScreen.betaFeedback.dialog.close,mco.selectServer.close
+betaFeedback.qr.close,mco.selectServer.close
 hudScreen.tooltip.basic.back,gui.back
 hudScreen.tooltip.basic.chat,options.accessibility.text_background.chat
 hudScreen.tooltip.basic.jump,key.jump
@@ -2281,7 +2284,7 @@ hudScreen.controlCustomization.closeWithoutSavingCancel,gui.abuseReport.discard.
 playscreen.header.local,mco.brokenworld.play
 playscreen.header.realms,options.online.realms.header
 playscreen.realmExpired,mco.configure.world.subscription.expired
-playscreen.realmFull,item.minecraft.bundle.full
+playscreen.realmFull,options.sharePresence.all
 playscreen.realms,options.online.realms.header
 playscreen.worlds,mco.configure.worlds.title
 playscreen.delete.legacy.confirm,selectWorld.deleteButton
@@ -2717,7 +2720,7 @@ soundCategory.block,soundCategory.block
 soundCategory.hostile,soundCategory.hostile
 soundCategory.music,soundCategory.music
 soundCategory.neutral,soundCategory.neutral
-soundCategory.player,menu.multiplayerOptions.otherPlayers.header
+soundCategory.player,soundCategory.player
 soundCategory.weather,soundCategory.weather
 stat.animalsBred,stat.minecraft.animals_bred
 stat.armorCleaned,stat.minecraft.clean_armor
