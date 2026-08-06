@@ -4,7 +4,6 @@ accessibility.loading.done,narrator.loading.done
 accessibility.saving.done,narrator.loading.done
 accessibility.list.or.three_or_more.first,createWorld.customize.flat.layer
 accessibility.button.tts.title,mco.gui.button
-accessibility.tab.tts.title,key.keyboard.tab
 accessibility.toggle.tts.title,options.key.toggle
 accessibility.button.navigateLeft,key.keyboard.left
 accessibility.button.navigateRight,key.keyboard.right
@@ -105,7 +104,6 @@ accessibility.tts.toggle.inventory.layout,key.categories.inventory
 credits.skip,mco.create.world.skip
 cauldronScreen.header,item.minecraft.cauldron
 codeScreen.buttonTTS.restore,mco.backup.button.restore
-codeScreen.buttonTTS.home,key.keyboard.home
 codeScreen.deprecatedIDE.button.learnMore,mco.snapshotRealmsPopup.urlText
 codeScreen.deprecatedIDE.button.close,mco.selectServer.close
 color.black,color.minecraft.black
@@ -189,7 +187,6 @@ controller.buttonTip.pane.inventory,container.inventory
 controller.buttonTip.remove,gui.remove
 controller.buttonTip.confirmSearch,gui.friends.confirm_title
 controller.buttonTip.select,mco.template.button.select
-controller.buttonTip.tab,key.keyboard.tab
 controllerLayoutScreen.resetAllBindings,dataPack.validation.reset
 controllerLayoutScreen.button,mco.gui.button
 controllerLayoutScreen.cancel,gui.cancel
@@ -293,6 +290,7 @@ realmsSettingsScreen.preferredRegions.JapanWest,realms.configuration.region.japa
 realmsSettingsScreen.preferredRegions.KoreaCentral,realms.configuration.region.korea_central
 realmsSettingsScreen.preferredRegions.NorthCentralUs,realms.configuration.region.north_central_us
 realmsSettingsScreen.preferredRegions.NorthEurope,realms.configuration.region.north_europe
+realmsSettingsScreen.preferredRegions.SouthAfricaNorth,realms.configuration.region.south_africa_north
 realmsSettingsScreen.preferredRegions.SouthCentralUs,realms.configuration.region.south_central_us
 realmsSettingsScreen.preferredRegions.SoutheastAsia,realms.configuration.region.southeast_asia
 realmsSettingsScreen.preferredRegions.SwedenCentral,realms.configuration.region.sweden_central
@@ -313,7 +311,7 @@ realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
 realmsSettingsScreen.inviteLinkExpired,mco.configure.world.subscription.expired
-realmsSettingsScreen.inviteLinkSettingsGeneral,stat.generalButton
+realmsSettingsScreen.inviteLinkSettingsGeneral,options.worldOptions.general.title
 realmsSettingsScreen.inviteLinkRemoveButton,mco.configure.world.invites.remove.tooltip
 realmsSettingsScreen.expiration.never,team.collision.never
 realmsSettingsScreen.allowlist_invite,gui.friends.multiplayer.invite
@@ -406,9 +404,7 @@ edu.worlds_screen.play,mco.brokenworld.play
 edu.worlds_screen.settings,mco.configure.world.buttons.edit
 edu.worlds_screen.download,mco.brokenworld.download
 edu.worlds_screen.back,gui.back
-edu.worlds_screen.delete,key.keyboard.delete
-edu.templates.delete,key.keyboard.delete
-edu.templates.delete_confirm,key.keyboard.delete
+edu.templates.delete_confirm,selectWorld.deleteButton
 edu.servers_screen.title,options.online.servers.header
 edu.servers_screen.add_server,selectServer.add
 edu.servers_screen.play,mco.brokenworld.play
@@ -613,7 +609,6 @@ addExternalServerScreen.removeButtonLabel,mco.configure.world.invites.remove.too
 addExternalServerScreen.removeConfirmation,selectServer.deleteQuestion
 feed.comments,gui.abuseReport.comments
 feed.edit,selectWorld.edit
-feed.return,key.keyboard.menu
 feed.cancel,gui.cancel
 feed.delete,selectWorld.delete
 feed.clubdescription,mco.configure.world.description
@@ -657,7 +652,6 @@ gui.continue,gui.continue
 gui.select,mco.template.button.select
 gui.skip,mco.create.world.skip
 gui.stats,gui.stats
-gui.tab,key.keyboard.tab
 gui.toMenu,gui.toTitle
 gui.up,gui.up
 gui.yes,gui.yes
@@ -1970,24 +1964,18 @@ key.smoothCamera,key.smoothCamera
 key.sprint,key.sprint
 key.togglePerspective,key.togglePerspective
 key.inGameMenu,menu.game
-key.pause,key.keyboard.pause
 key.declineToast,gui.friends.decline
 key.cancelToast,gui.cancel
 keyboard.keyName.backspace,gui.back
-keyboard.keyName.tab,key.keyboard.tab
-keyboard.keyName.pause,key.keyboard.pause
 keyboard.keyName.escape,key.keyboard.escape
 keyboard.keyName.space,key.keyboard.space
 keyboard.keyName.pgDown,key.keyboard.page.down
 keyboard.keyName.pgUp,key.keyboard.page.up
 keyboard.keyName.end,key.keyboard.end
-keyboard.keyName.home,key.keyboard.home
 keyboard.keyName.left,options.mainHand.left
 keyboard.keyName.up,gui.up
 keyboard.keyName.right,options.mainHand.right
 keyboard.keyName.down,gui.down
-keyboard.keyName.insert,key.keyboard.insert
-keyboard.keyName.delete,key.keyboard.delete
 keyboard.keyName.i,enchantment.level.1
 keyboard.keyName.v,enchantment.level.5
 keyboard.keyName.x,enchantment.level.10
@@ -2005,11 +1993,8 @@ keyboard.keyName.f11,key.keyboard.f11
 keyboard.keyName.f12,key.keyboard.f12
 keyboard.keyName.f13,key.keyboard.f13
 keyboard.keyName.backspace.short,gui.back
-keyboard.keyName.tab.short,key.keyboard.tab
-keyboard.keyName.pause.short,key.keyboard.pause
 keyboard.keyName.space.short,key.keyboard.space
 keyboard.keyName.end.short,key.keyboard.end
-keyboard.keyName.home.short,key.keyboard.home
 keyboard.keyName.left.short,options.mainHand.left
 keyboard.keyName.up.short,gui.up
 keyboard.keyName.right.short,options.mainHand.right
@@ -2046,7 +2031,7 @@ menu.game.tab.experiments.title,selectWorld.experiments
 menu.game.tab.experiments.gameplay.title,key.categories.gameplay
 menu.game.tab.experiments.graphics.title,options.graphics
 menu.game.tab.cheats.title,selectWorld.cheats
-menu.general.tab.title,stat.generalButton
+menu.general.tab.title,options.worldOptions.general.title
 menu.general.tab.miscellaneous.title,key.category.minecraft.misc
 menu.creator.contentLog.delete.buttonLabel,selectWorld.deleteButton
 menu.creator.contentLog.delete.continue,gui.continue
@@ -2172,7 +2157,7 @@ options.group.graphics,options.graphics
 options.group.graphics.experimental,selectWorld.experimental
 options.group.input,controls.title
 options.group.server,pack.source.server
-options.group.multiplayer,menu.multiplayer
+options.group.multiplayer,options.worldOptions.multiplayer.title
 options.guiScale.auto,options.guiScale.auto
 options.guiScale.maximum,options.ao.max
 options.guiScale.minimum,options.ao.min
@@ -2205,7 +2190,7 @@ options.particles,options.particles
 options.particles.all,options.particles.all
 options.particles.decreased,options.particles.decreased
 options.particles.minimal,options.particles.minimal
-options.general,stat.generalButton
+options.general,options.worldOptions.general.title
 options.reducedDebugInfo,options.reducedDebugInfo
 options.renderDistance,options.renderDistance
 options.raytracing.renderDistanceFormat,options.chunks
@@ -2236,6 +2221,7 @@ options.glintStrength,options.glintStrength
 options.glintSpeed,options.glintSpeed
 options.stream.chat.enabled.always,team.collision.always
 options.stream.chat.enabled.never,options.musicToast.never
+options.stream.mic_toggle.mute,key.keyboard.mute
 options.title,options.title
 options.toggle,options.key.toggle
 options.touch.resetSettings.name,dataPack.validation.reset
@@ -2247,7 +2233,6 @@ options.videoTitle,options.videoTitle
 options.viewBobbing,options.viewBobbing
 options.damageBobbing,options.damageTiltStrength
 options.visible,options.visible
-options.pauseHeader,key.keyboard.pause
 options.autoUpdateMode.off,menu.multiplayerOptions.network.off
 options.openFeedbackPage.close,mco.selectServer.close
 options.continue,gui.continue
@@ -2277,7 +2262,6 @@ hudScreen.tooltip.crafting,container.crafting
 hudScreen.tooltip.inventory,container.inventory
 hudScreen.tooltip.empty,mco.configure.world.slot.empty
 hudScreen.tooltip.edit_sign,selectWorld.edit
-hudScreen.tooltip.insert,key.keyboard.insert
 hudScreen.controlCustomization.exit,mco.configure.world.buttons.done
 hudScreen.controlCustomization.scale,attribute.name.scale
 hudScreen.controlCustomization.closeWithoutSavingCancel,gui.abuseReport.discard.return
@@ -2771,7 +2755,6 @@ stat.trappedChestTriggered,stat.minecraft.trigger_trapped_chest
 stat.used,stat_type.minecraft.used
 stat.walkOneCm,stat.minecraft.walk_one_cm
 stat.workbenchInteraction,stat.minecraft.interact_with_crafting_table
-store.menu.home,key.keyboard.home
 store.itemDetail.back,selectWorld.experimental.details
 store.realmsPlus.purchase.warningDialog.button.back,dataPack.validation.back
 store.csb.purchase.warningDialog.button.back,dataPack.validation.back
@@ -3829,6 +3812,7 @@ trial.thanks_for_testing.xbl.title,gui.friends.empty_state.link
 trial.survival.mode.title,selectWorld.gameMode.survival
 trial.creative.mode.title,selectWorld.gameMode.creative
 xbox.signin.error.pocket.line2,selectWorld.gameMode.spectator.line2
+xbox.profile.mute,key.keyboard.mute
 xbox.profile.report,gui.socialInteractions.report
 xbox.report.area.skin,gui.abuseReport.type.skin
 xbox.report.area.gameplay,key.categories.gameplay
@@ -4058,7 +4042,6 @@ subtitles.block.blastfurnace.fire_crackle,subtitles.block.blastfurnace.fire_crac
 subtitles.block.brewing_stand.brew,subtitles.block.brewing_stand.brew
 subtitles.block.bubble_column.bubble_pop,subtitles.block.bubble_column.bubble_pop
 subtitles.block.bubble_column.upwards_ambient,subtitles.block.bubble_column.upwards_ambient
-subtitles.block.bubble_column.upwards_inside,subtitles.block.bubble_column.upwards_inside
 subtitles.block.bubble_column.whirlpool_ambient,subtitles.block.bubble_column.whirlpool_ambient
 subtitles.block.bubble_column.whirlpool_inside,subtitles.block.bubble_column.whirlpool_inside
 subtitles.block.button.click,subtitles.block.button.click
@@ -4337,8 +4320,6 @@ subtitles.entity.copper_golem.death,subtitles.entity.copper_golem.death
 subtitles.entity.copper_golem.hurt,subtitles.entity.copper_golem.hurt
 subtitles.entity.copper_golem.item_drop,subtitles.entity.copper_golem.item_drop
 subtitles.entity.copper_golem.item_no_drop,subtitles.entity.copper_golem.item_no_drop
-subtitles.entity.copper_golem.no_item_get,subtitles.entity.copper_golem.no_item_get
-subtitles.entity.copper_golem.no_item_no_get,subtitles.entity.copper_golem.no_item_no_get
 subtitles.entity.copper_golem.spawn,subtitles.entity.copper_golem.spawn
 subtitles.entity.copper_golem.spin,subtitles.entity.copper_golem.spin
 subtitles.entity.cow.ambient,subtitles.entity.cow.ambient

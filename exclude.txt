@@ -1,0 +1,13 @@
+key.keyboard.tab
+key.keyboard.undo
+key.keyboard.help
+key.keyboard.cut
+key.keyboard.copy
+key.keyboard.paste
+key.keyboard.home
+key.keyboard.insert
+key.keyboard.delete
+key.keyboard.menu
+key.keyboard.application
+key.keyboard.new
+key.keyboard.pause

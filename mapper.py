@@ -4,16 +4,19 @@ import json
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
 includeJe = True
 includeRealms = True
+excludeKnownJe = True
 
 # File names and -paths
 jePath = "en_us.json"
 bePath = "en_US.lang"
 realmsPath = "realms-" + jePath
 outputPath = "mappings.csv"
+excludeJePath = "exclude.txt"
 
 # Arrays to store data in (temporarily)
 jeDict = {}
 beDict = {}
+excludedKeys = set()
 mappings = []
 oldPercent = -1
 
@@ -44,6 +47,17 @@ def parse_lang(path, toDict):
     file.close()
 
 
+def parse_exclude(path, toSet):
+    file = open(path, 'r', encoding='utf-8')
+
+    for row in file:
+        key = row.strip()
+        if key:  # Only add non-empty lines
+            toSet.add(key)
+
+    file.close()
+
+
 # Show status in percents
 def count_percent(index, total):
     global oldPercent
@@ -66,6 +80,10 @@ if includeRealms:
 print("Opening Bedrock Edition strings..")
 parse_lang(bePath, beDict)
 
+if excludeKnownJe:
+    print("Opening excluded keys...")
+    parse_exclude(excludeJePath, excludedKeys)
+
 # Iterate over beList to find matches in jeList
 print("Finding equivalent keys...")
 for beKey, beValue in enumerate(list(beDict.values())):
@@ -84,16 +102,22 @@ for beKey, beValue in enumerate(list(beDict.values())):
 
     # If there are multiple key matches, use the best one (minimum 10% similarity)
     if len(valueMatchingKeys) > 1:
-        firstBestMatchingKey = difflib.get_close_matches(list(beDict.keys())[beKey], valueMatchingKeys, 1, 0.1)
-        if len(firstBestMatchingKey) > 0:
-            mappings.append((list(beDict.keys())[beKey], firstBestMatchingKey[0]))
-        # If there are no similar keys, just use the first one (randomly)
-        else:
-            mappings.append((list(beDict.keys())[beKey], valueMatchingKeys[0]))
+        # Filter out excluded keys
+        if excludeKnownJe:
+            valueMatchingKeys = [key for key in valueMatchingKeys if key not in excludedKeys]
+        
+        if len(valueMatchingKeys) > 0:
+            firstBestMatchingKey = difflib.get_close_matches(list(beDict.keys())[beKey], valueMatchingKeys, 1, 0.1)
+            if len(firstBestMatchingKey) > 0:
+                mappings.append((list(beDict.keys())[beKey], firstBestMatchingKey[0]))
+            # If there are no similar keys, just use the first one (randomly)
+            else:
+                mappings.append((list(beDict.keys())[beKey], valueMatchingKeys[0]))
 
     # If there is only one key match, use it (regardless of context)
     elif len(valueMatchingKeys) == 1:
-        mappings.append((list(beDict.keys())[beKey], valueMatchingKeys[0]))
+        if not excludeKnownJe or valueMatchingKeys[0] not in excludedKeys:
+            mappings.append((list(beDict.keys())[beKey], valueMatchingKeys[0]))
 
 # Write to file mappings.csv
 print("Writing to " + outputPath + "...")

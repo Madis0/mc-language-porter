@@ -3,7 +3,7 @@ import sys
 
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
 includeJe = True
-includeRealms = False
+includeRealms = True
 includeExtraMappings = True  # Whether to use user-provided extra mappings
 includeExtraTranslations = True  # Whether to use user-provided extra translated phrases
 

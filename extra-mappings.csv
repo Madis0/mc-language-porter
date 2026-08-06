@@ -150,3 +150,11 @@ attribution.goBack,gui.back
 craftingScreen.tab.allRecipes,gui.recipebook.toggleRecipes.all
 craftingScreen.tab.craftableRecipes,gui.recipebook.toggleRecipes.craftable
 
+keyboard.keyName.tab,key.keyboard.tab
+keyboard.keyName.pause,key.keyboard.pause
+keyboard.keyName.home,key.keyboard.home
+keyboard.keyName.insert,key.keyboard.insert
+keyboard.keyName.delete,key.keyboard.delete
+keyboard.keyName.tab.short,key.keyboard.tab
+keyboard.keyName.pause.short,key.keyboard.pause
+keyboard.keyName.home.short,key.keyboard.home
