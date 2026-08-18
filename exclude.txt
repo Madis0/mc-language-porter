@@ -11,3 +11,9 @@ key.keyboard.menu
 key.keyboard.application
 key.keyboard.new
 key.keyboard.pause
+key.keyboard.clear
+key.keyboard.cancel
+key.keyboard.select
+key.keyboard.media.eject
+key.keyboard.sleep
+key.keyboard.execute

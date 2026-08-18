@@ -218,6 +218,10 @@ createWorldScreen.create,mco.create.world
 createWorldScreen.delete,selectWorld.delete
 createWorldScreen.isHardcore,gameMode.hardcore
 createWorldScreen.gameMode,selectWorld.gameMode
+createWorldScreen.gameMode.default,options.worldOptions.game_mode
+createWorldScreen.gameMode.default.name,options.worldOptions.game_mode
+createWorldScreen.gameMode.personal,options.worldOptions.personal_game_mode
+createWorldScreen.gameMode.personal.name,options.worldOptions.personal_game_mode
 createWorldScreen.gameMode.adventure,selectWorld.gameMode.adventure
 createWorldScreen.gameMode.creative,selectWorld.gameMode.creative
 createWorldScreen.gameMode.survival,selectWorld.gameMode.survival
@@ -227,7 +231,7 @@ createWorldScreen.gameMode.description.survival,selectWorld.gameMode.survival.in
 createWorldScreen.levelName,mco.configure.world.invite.profile.name
 createWorldScreen.levelSeed,mco.backup.entry.seed
 createWorldScreen.worldType,mco.backup.entry.worldType
-createWorldScreen.serverSimDistance,options.simulationDistance
+createWorldScreen.serverSimDistance,mco.configure.world.simulationDistance
 createWorldScreen.serverSimDistanceFormat,options.chunks
 createWorldScreen.playerSleepPercentageFormat,upgradeWorld.progress.percentage
 createWorldScreen.clearPlayerData.cancel,gui.cancel
@@ -235,6 +239,7 @@ realmsPendingInvitationsScreen.decline,gui.friends.decline
 realmsInvitationScreen.continue,gui.continue
 realmsInvitationScreen.friends,gui.friends.open
 realmsInvitationScreen.blocked,gui.socialInteractions.tab_blocked
+realmsInvitationScreen.shareDialogCopyButton,mco.configure.world.invite_codes.copy
 realmsInvitationScreen.generate,jigsaw_block.generate
 realmsInvitationScreen.backup,mco.brokenworld.download
 realmsInvitationScreen.kick,mco.configure.world.invites.remove.tooltip
@@ -256,6 +261,7 @@ networkWorld.description,gui.abuseReport.reason.description
 networkWorld.servers_label,options.online.servers.header
 networkWorld.friends_label,gui.friends.tab_friends
 networkWorld.join,gui.friends.join
+networkWorld.joinByCode,mco.selectServer.joinRealm
 realmsSlotsScreen.new,selectWorld.newWorld
 realmsSlotsScreen.readyToPlay,narrator.ready_to_play
 realmsSlotsScreen.editWorld,selectWorld.edit.title
@@ -306,10 +312,17 @@ realmsSettingsScreen.gameModeOptionLabel,telemetry.property.game_mode.title
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
 realmsSettingsScreen.creativeRadioButton,selectWorld.gameMode.creative
 realmsSettingsScreen.reset,mco.brokenworld.reset
+realmsSettingsScreen.inviteLinkActive,mco.configure.world.invite_codes.edit.active
 realmsSettingsScreen.inviteLinkExpired,mco.configure.world.subscription.expired
 realmsSettingsScreen.inviteLinkSettingsGeneral,options.worldOptions.general.title
 realmsSettingsScreen.inviteLinkRemoveButton,mco.configure.world.invites.remove.tooltip
-realmsSettingsScreen.expiration.never,team.collision.never
+realmsSettingsScreen.inviteLinkExpirationLabel,mco.configure.world.invite_codes.edit.expiration_date
+realmsSettingsScreen.expiration.never,mco.configure.world.invite_codes.expiration.never
+realmsSettingsScreen.expiration.hour,mco.configure.world.invite_codes.expiration.1_hour
+realmsSettingsScreen.expiration.quarterDay,mco.configure.world.invite_codes.expiration.6_hours
+realmsSettingsScreen.expiration.halfDay,mco.configure.world.invite_codes.expiration.12_hours
+realmsSettingsScreen.expiration.day,mco.configure.world.invite_codes.expiration.1_day
+realmsSettingsScreen.expiration.week,mco.configure.world.invite_codes.expiration.7_days
 realmsSettingsScreen.allowlist_invite,gui.friends.multiplayer.invite
 realmsSettingsScreen.searchBox,gui.packSelection.search
 realmsSettingsScreen.extendConsumableButton,mco.configure.world.subscription.extend
@@ -1608,9 +1621,17 @@ item.map.exploration.village_taiga.name,filled_map.village_taiga
 item.map.exploration.village_plains.name,filled_map.village_plains
 item.map.exploration.village_savanna.name,filled_map.village_savanna
 item.map.exploration.village_desert.name,filled_map.village_desert
-item.map.exploration.jungle_temple.name,filled_map.explorer_jungle
+item.map.exploration.jungle_temple.name,item.minecraft.jungle_explorer_map
 item.map.exploration.swamp_hut.name,filled_map.explorer_swamp
 item.map.exploration.trial_chambers.name,filled_map.trial_chambers
+item.map.exploration.abandoned_camp_dappled_forest.name,filled_map.dappled_forest_camp_map
+item.map.exploration.abandoned_camp_bamboo_jungle.name,filled_map.bamboo_camp_map
+item.map.exploration.abandoned_camp_birch_forest.name,filled_map.birch_forest_camp_map
+item.map.exploration.abandoned_camp_cherry_grove.name,filled_map.cherry_grove_camp_map
+item.map.exploration.abandoned_camp_extreme_hills_plus_trees.name,filled_map.windswept_forest_camp_map
+item.map.exploration.abandoned_camp_flower_forest.name,filled_map.flower_forest_camp_map
+item.map.exploration.abandoned_camp_pale_garden.name,filled_map.pale_garden_camp_map
+item.map.exploration.abandoned_camp_swampland.name,filled_map.swamp_camp_map
 item.melon.name,item.minecraft.melon_slice
 item.milk.name,item.minecraft.milk_bucket
 item.minecart.name,item.minecraft.minecart
@@ -1911,6 +1932,7 @@ jigsaw.title.joint_type.aligned,jigsaw_block.joint.aligned
 jigsaw.joint_type.aligned,jigsaw_block.joint.aligned
 jigsaw.joint_type.rollable,jigsaw_block.joint.rollable
 jigsaw.exit.done,gui.done
+joincode.entry_popup.title,mco.selectServer.joinCode.title
 joincode.icon_text.null,mco.configure.world.slot.empty
 joincode.icon_text.1,item.minecraft.writable_book
 joincode.icon_text.3,block.minecraft.rail
@@ -2025,6 +2047,7 @@ menu.general.tab.miscellaneous.title,key.category.minecraft.misc
 menu.creator.contentLog.delete.buttonLabel,selectWorld.deleteButton
 menu.creator.contentLog.delete.continue,gui.continue
 menu.creator.contentLog.delete.goBack,dataPack.validation.back
+menu.creator.contentLog.location.copyPath,mco.configure.world.invite_codes.copy
 menu.creator.scriptDiagnostic.delete.buttonLabel,selectWorld.deleteButton
 menu.creator.scriptDiagnostic.delete.continue,gui.continue
 menu.creator.scriptDiagnostic.delete.goBack,dataPack.validation.back
@@ -2239,6 +2262,7 @@ pauseScreen.header,menu.game
 pauseScreen.options,options.title
 pauseScreen.title,menu.paused
 pauseScreen.betaFeedback.dialog.close,mco.selectServer.close
+pauseScreen.joinCode.Label,mco.selectServer.joinCode
 betaFeedback.qr.close,mco.selectServer.close
 hudScreen.tooltip.basic.back,gui.back
 hudScreen.tooltip.basic.chat,options.accessibility.text_background.chat
@@ -2249,7 +2273,7 @@ hudScreen.tooltip.basic.sneak,key.sneak
 hudScreen.tooltip.crafting,container.crafting
 hudScreen.tooltip.inventory,container.inventory
 hudScreen.tooltip.empty,mco.configure.world.slot.empty
-hudScreen.tooltip.edit_sign,selectWorld.edit
+hudScreen.tooltip.edit_sign,mco.configure.world.invite_codes.edit
 hudScreen.controlCustomization.exit,mco.configure.world.buttons.done
 hudScreen.controlCustomization.scale,attribute.name.scale
 hudScreen.controlCustomization.closeWithoutSavingCancel,gui.abuseReport.discard.return
@@ -2377,6 +2401,7 @@ raid.defeat,event.minecraft.raid.defeat
 recipeBook.setting.full,item.minecraft.bundle.full
 recipeBook.setting.off,menu.multiplayerOptions.network.off
 record.nowPlaying,record.nowPlaying
+resourcePack.selected.title.packs,mco.configure.world.invite_codes.edit.active
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
 resourcePack.editPackDone,mco.configure.world.buttons.done
