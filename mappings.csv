@@ -61,6 +61,7 @@ attribute.name.minecraft:movement,attribute.name.generic.movement_speed
 attribute.name.horse.jumpStrength,attribute.name.horse.jump_strength
 attribute.name.zombie.spawnReinforcements,attribute.name.zombie.spawn_reinforcements
 attribution.goBack,dataPack.validation.back
+authentication.trialMessageTitle,mco.selectServer.freeTrial
 authentication.store.confirm.button,gui.friends.confirm_title
 eula.acceptButton,test_block.mode.accept
 book.editTitle,book.editTitle
@@ -1632,6 +1633,10 @@ item.map.exploration.abandoned_camp_extreme_hills_plus_trees.name,filled_map.win
 item.map.exploration.abandoned_camp_flower_forest.name,filled_map.flower_forest_camp_map
 item.map.exploration.abandoned_camp_pale_garden.name,filled_map.pale_garden_camp_map
 item.map.exploration.abandoned_camp_swampland.name,filled_map.swamp_camp_map
+item.map.exploration.buried_ancient_city.name,item.minecraft.buried_ancient_city_map
+item.map.exploration.buried_mineshaft.name,item.minecraft.buried_mineshaft_map
+item.map.exploration.desert_pyramid.name,item.minecraft.desert_pyramid_map
+item.map.exploration.warm_ocean_ruins.name,item.minecraft.warm_ocean_ruins_map
 item.melon.name,item.minecraft.melon_slice
 item.milk.name,item.minecraft.milk_bucket
 item.minecart.name,item.minecraft.minecart
@@ -2118,7 +2123,8 @@ options.crouch,key.sneak
 options.debug,key.category.minecraft.debug
 options.delete_account.confirm.button,selectWorld.deleteButton
 options.dev_chunk_map_mode_off,menu.multiplayerOptions.network.off
-options.dev_chunk_map_mode_on,options.on
+options.dev_chunk_map_mode_full,options.sharePresence.all
+options.dev_chunk_map_mode_limited,options.sharePresence.limited
 options.dev_enableDebugHudOverlay.off,menu.multiplayerOptions.network.off
 options.dev_nethernet_logging_verbosity.disabled,manageServer.resourcePack.disabled
 options.dev_render_attach_pos.none,menu.multiplayerOptions.network.off
@@ -2146,7 +2152,7 @@ options.forceUnicodeFont,options.forceUnicodeFont
 options.fov,options.fov
 options.licenses,credits_and_attribution.button.licenses
 options.default.format,options.value
-options.percent.format,optimizeWorld.progress.percentage
+options.percent.format,mco.upload.percent
 options.fov.max,options.fov.max
 options.fov.min,options.fov.min
 options.hudOpacity.max,options.difficulty.normal
@@ -2241,6 +2247,7 @@ options.touch.resetSettings.label,controls.reset
 options.toggleCrouch,key.sneak
 options.touchscreen,options.touchscreen
 options.customiseTouchControls.label,selectWorld.customizeType
+options.viewSubscriptions.addRealmsServer.Body,mco.pdp.trial.title
 options.videoTitle,options.videoTitle
 options.viewBobbing,options.viewBobbing
 options.damageBobbing,options.damageTiltStrength
@@ -2744,6 +2751,7 @@ store.itemDetail.back,selectWorld.experimental.details
 store.realmsPlus.purchase.warningDialog.button.back,dataPack.validation.back
 store.csb.purchase.warningDialog.button.back,dataPack.validation.back
 store.csb.upsell.learnMore,mco.snapshotRealmsPopup.urlText
+store.csb.upsell.firstPeriodFree,mco.pdp.trial.description
 store.csb.purchaseErrorDialog.back,gui.back
 store.csb.purchase.amazonDeviceWarning.button.back,dataPack.validation.back
 store.csb.banner.learnMore,mco.snapshotRealmsPopup.urlText
@@ -4131,6 +4139,7 @@ subtitles.block.sniffer_egg.crack,subtitles.block.sniffer_egg.crack
 subtitles.block.sniffer_egg.hatch,subtitles.block.sniffer_egg.hatch
 subtitles.block.sniffer_egg.plop,subtitles.block.sniffer_egg.plop
 subtitles.block.sponge.absorb,subtitles.block.sponge.absorb
+subtitles.block.straw_bed.break_leave,subtitles.block.straw_bed.break_leave
 subtitles.block.sweet_berry_bush.pick_berries,subtitles.block.sweet_berry_bush.pick_berries
 subtitles.block.trapdoor.close,subtitles.block.trapdoor.close
 subtitles.block.trapdoor.open,subtitles.block.trapdoor.open
@@ -5024,7 +5033,7 @@ tile.poplar_wood.name,block.minecraft.poplar_wood
 tile.stripped_poplar_log.name,block.minecraft.stripped_poplar_log
 tile.stripped_poplar_wood.name,block.minecraft.stripped_poplar_wood
 tile.poplar_door.name,block.minecraft.poplar_door
-tile.poplar_hanging_sign.name,block.minecraft.poplar_sign
+tile.poplar_hanging_sign.name,block.minecraft.poplar_hanging_sign
 tile.poplar_standing_sign.name,block.minecraft.poplar_sign
 tile.poplar_wall_sign.name,block.minecraft.poplar_wall_sign
 tile.poplar_sapling.name,block.minecraft.poplar_sapling
