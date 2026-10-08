@@ -205,3 +205,4 @@ trim_pattern.wayfinder.name,trim_pattern.minecraft.wayfinder
 trim_pattern.wild.name,trim_pattern.minecraft.wild
 trim_pattern.bolt.name,trim_pattern.minecraft.bolt
 trim_pattern.flow.name,trim_pattern.minecraft.flow
+item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
