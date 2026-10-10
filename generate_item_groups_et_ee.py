@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
 """Generate Estonian itemGroup.name.* plural translations from existing et_ee.json translations.
 
-Requires: pip install pyvabamorf
+Requires: pip install estnltk
 """
 import json
 import re
 from pathlib import Path
 
-from pyvabamorf import analyze, synthesize
+from estnltk import Text
+from estnltk.vabamorf.morf import Vabamorf
+
+VABAMORF = Vabamorf.instance()
+
 
 # ---- Configuration -------------------------------------------------------
 EN_LANG_FILE = "en_US.lang"
@@ -74,22 +78,22 @@ def find_translation(translations, suffix):
     return None
 
 
-# ---- Morphology (pyvabamorf) --------------------------------------------
+# ---- Morphology (estnltk / vabamorf) -------------------------------------
 def last_word(text):
     words = text.split()
     return words[-1] if words else ""
 
 
 def last_compound(word):
-    """Return (last compound part, part of speech) for a word using vabamorf."""
-    analysis = analyze(word.lower(), guess=True, compound=True)[0]["analysis"][0]
-    tokens = analysis.get("root_tokens") or [analysis["root"]]
-    return tokens[-1], analysis.get("partofspeech", "S")
+    """Return (last compound part, part of speech) for a word using estnltk."""
+    span = Text(word.lower()).tag_layer(["morph_analysis"]).morph_analysis[0]
+    tokens = span.root_tokens[0]  # compound parts of the first analysis
+    return tokens[-1], span.partofspeech[0]
 
 
 def to_plural(lemma, pos="S"):
     """Nominative plural ('pl n') of a lemma, or None if synthesis fails."""
-    forms = synthesize(lemma, form="pl n", partofspeech=pos)
+    forms = VABAMORF.synthesize(lemma, "pl n", pos)
     return forms[0] if forms else None
 
 
