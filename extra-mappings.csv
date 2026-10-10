@@ -105,10 +105,19 @@ menu.accessibility.tab.tts.title,options.narrator
 options.maxFramerate,options.framerateLimit
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
-
+item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
 item.spawn_egg.entity.evoker.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.tropical_fish.name,item.minecraft.tropical_fish_spawn_egg
 item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spawn_egg
+
+recipeToast.newUnlock.title,recipe.toast.title
+recipeToast.newUnlock.descriptionCraftingTable,recipe.toast.description
+recipeToast.newUnlock.descriptionStonecutterTable,recipe.toast.description
+recipeToast.newUnlock.descriptionSmithingTable,recipe.toast.description
+recipeToast.newUnlock.descriptionCartographyTable,recipe.toast.description
+recipeToast.newUnlock.descriptionFurnace,recipe.toast.description
+recipeToast.newUnlock.descriptionBlastFurnace,recipe.toast.description
+recipeToast.newUnlock.descriptionSmoker,recipe.toast.description
 
 key.socialDrawer,key.friends
 options.social,gui.friends.open
@@ -149,6 +158,7 @@ attribution.goBack,gui.back
 
 craftingScreen.tab.allRecipes,gui.recipebook.toggleRecipes.all
 craftingScreen.tab.craftableRecipes,gui.recipebook.toggleRecipes.craftable
+craftingScreen.tab.allItems,gui.recipebook.toggleRecipes.all
 
 keyboard.keyName.tab,key.keyboard.tab
 keyboard.keyName.pause,key.keyboard.pause
@@ -205,4 +215,4 @@ trim_pattern.wayfinder.name,trim_pattern.minecraft.wayfinder
 trim_pattern.wild.name,trim_pattern.minecraft.wild
 trim_pattern.bolt.name,trim_pattern.minecraft.bolt
 trim_pattern.flow.name,trim_pattern.minecraft.flow
-item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
+

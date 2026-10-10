@@ -47,12 +47,14 @@ Paki versiooni 26.20.2 seisuga tõlgib see pakk mängu 42.8% ulatuses eesti keel
 
 Võru keele tugi on Java Editionis veel arendusjärgus, seega Bedrock Editionis on väljendeid samuti vähem.
 
+NB! Uute _game drop_'ide tõlked saabuvad alles siis, kui nende uuendused Bedrock Editioni beetas ei ole enam katsetusjärgu vahekaardi all, ehk on vaikimisi lubatud kõigis maailmades.
+
 ## Kuidas tõlge on toetatud?
 
 Plaanin uuendada ressursipakki tihti, kui Bedrock Editioni tuleb uus beeta, mille väljendeid saab viia vastavusse Java Editioni omadega.
 Parima tõlke saamiseks kasuta alati uusimat mängu ja pakki, mina toetan vaid neid.
 
-Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft-bedrock/addons/estonian-language-pack/filess), uuemad versioonid leiab [GitHubist](https://github.com/Madis0/mc-language-porter/releases).
+Uusimat pakki igale versioonile saab mugavalt alla laadida [Curseforgest](https://www.curseforge.com/minecraft-bedrock/addons/estonian-language-pack/filess), uuemad versioonid leiab ka [GitHubist](https://github.com/Madis0/mc-language-porter/releases).
 
 ## Kuidas saan kaasa aidata?
 
