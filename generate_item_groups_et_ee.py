@@ -78,6 +78,18 @@ def find_translation(translations, suffix):
     return None
 
 
+def find_translation_with_fallback(translations, suffix):
+    """Try the suffix as-is, then without a trailing 's' (e.g. 'candles' -> 'candle')."""
+    candidates = [suffix]
+    if suffix.endswith("s") and len(suffix) > 1:
+        candidates.append(suffix[:-1])
+    for candidate in candidates:
+        value = find_translation(translations, candidate)
+        if value is not None:
+            return value
+    return None
+
+
 # ---- Morphology (estnltk / vabamorf) -------------------------------------
 def last_word(text):
     words = text.split()
@@ -116,26 +128,26 @@ def main():
     translations = load_json(ET_JSON_FILE)
 
     new_lines, skipped = [], []
-    for key in groups:
+    for key, english in groups.items():
         if key in existing:
             continue
         suffix = key[len(GROUP_PREFIX):]
-        source = find_translation(translations, suffix)
+        source = find_translation_with_fallback(translations, suffix)
         if source is None:
-            skipped.append((key, "no matching key in JSON"))
+            skipped.append(f"Skipped {key}={english}: no matching key")
             continue
         result = make_group_translation(source)
         if result is None:
-            skipped.append((key, f"could not pluralise '{source}'"))
+            skipped.append(f"Skipped {key}={english}: could not pluralise '{source}'")
             continue
         new_lines.append(f"{key}={result}")
-        print(f"{key}={result}   (from '{source}')")
+        print(f'{key}={result} (from "{source}", original "{english}")')
 
     append_lines(EXTRA_LANG_FILE, new_lines)
 
     print(f"\nAdded {len(new_lines)} line(s) to {EXTRA_LANG_FILE}.")
-    for key, reason in skipped:
-        print(f"Skipped {key}: {reason}")
+    for message in skipped:
+        print(message)
 
 
 if __name__ == "__main__":
