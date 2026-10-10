@@ -13,6 +13,7 @@ An open set of scripts designed to semi-automate the task of porting languages f
 * `packager.py` - Packages the files to a proper MCPack.
 * `clean-extra-mappings.py` - Removes mappings from `extra-mappings.csv` that alrady exist in `mappings.csv`
 * `spawn-egg-adder.py` - Automatically adds new spawn egg names to `extra-mappings.csv`
+* `generate_item_groups_et_ee.py` - Semantically generates item group names from translated items to `extra-et_EE.lang`
 
 ## Files
 
