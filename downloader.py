@@ -1,111 +1,84 @@
-import requests
 from io import BytesIO
+from pathlib import Path
 from zipfile import ZipFile
-from hurry.filesize import size, alternative
-import urllib.request
-import sys
 
-# Choose what files to obtain with the script
-# Original files have much larger download sizes as they download the whole archive to extract files from.
-getJeOriginal = True            # ~24 MB
-getJeTranslation = True         # ~286 KB
-getBeOriginal = True            # ~500 KB
-jeLangs = ["et_ee", "vro"]    # Used when launched without arguments (can hold multiple languages)
-
-# Paths and variables -  https://wiki.vg/Game_files
-if len(sys.argv) > 1:  # Use the languages provided as arguments if available
-    jeLangs = [arg.lower() for arg in sys.argv[1:]]
-
-jeGlobalJsonUrl = "https://piston-meta.mojang.com/mc/game/version_manifest.json"
-jeGlobalJson = None
-
-jeLatestJsonUrl = ""
-jeLatestJson = None
-
-jeLatestJarUrl = ""
-
-jeLatestAssetUrl = ""
-jeLatestAssetJson = None
-
-jeTranslationHash = None
-jeTranslationUrl = None
-
-jeLangFile = "en_us.json"
-jeJarLangPath = "assets/minecraft/lang/" + jeLangFile
-
-beLatestLangUrl = "https://raw.githubusercontent.com/Mojang/bedrock-samples/preview/resource_pack/texts/en_US.lang";
-beLangFile = "en_US.lang"
-
-jeGlobalAssetUrl = "https://resources.download.minecraft.net/"
-
-# Get latest JE JSON url - https://stackoverflow.com/a/16130026
-if getJeOriginal or getJeTranslation:
-    print("Finding the Java Edition latest snapshot JSON...")
-    jeGlobalJson = requests.get(jeGlobalJsonUrl).json()
-    jeLatestJsonUrl = jeGlobalJson['versions'][0]['url']
-    jeLatestJson = requests.get(jeLatestJsonUrl).json()
-    print("Latest snapshot JSON obtained: " + jeLatestJsonUrl)
-
-# Get latest JE JAR url (includes Realms)
-if getJeOriginal:
-    print("Finding Java Edition JAR URL...")
-    jeLatestJarUrl = jeLatestJson['downloads']['client']['url']
-    jeLatestJarSize = jeLatestJson['downloads']['client']['size']
-    print("Java Edition JAR URL obtained: " + jeLatestJarUrl)
-
-# Get latest JE assets
-if getJeTranslation:
-    print("Finding JE assets JSON...")
-    jeLatestAssetUrl = jeLatestJson['assetIndex']['url']
-    jeLatestAssetSize = jeLatestJson['assetIndex']['size']
-    jeLatestAssetJson = requests.get(jeLatestAssetUrl).json()
-    print("Assets JSON obtained: " + jeLatestAssetUrl)
-
-# Get latest JE translation file URLs for all requested languages
-translation_files_to_download = []
-if getJeTranslation:
-    print("Finding JE translation file URLs...")
-    for lang in jeLangs:
-        jeTranslationFile = lang + ".json"
-        try:
-            jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
-            jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
-            jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
-            translation_files_to_download.append((jeTranslationFile, jeTranslationUrl, jeTranslationSize))
-            print("Translation file URL obtained: " + jeTranslationUrl)
-        except Exception:
-            print("Translation file not found in assets: " + jeTranslationFile)
-
-# Obtaining functions
-# Unpack zips - https://stackoverflow.com/a/5711095
-def unpack_zip(url, filepath, filename):
-    openUrl = urllib.request.urlopen(url)
-    with ZipFile(BytesIO(openUrl.read())) as zipFile:
-        with zipFile.open(filepath) as extractedFile:
-            with open(filename, 'w', encoding="utf-8") as savedFile:
-                for line in extractedFile:
-                    savedFile.write(line.decode('utf-8'))
+import requests
 
 
-def download_text(url, filename):
-    file = requests.get(url)
-    with open(filename, 'wb') as f:
-        f.write(file.content)
+inputPath = Path("Input")
+inputPath.mkdir(exist_ok=True)
+
+jeManifestUrl = "https://piston-meta.mojang.com/mc/game/version_manifest.json"
+bedrockTextsUrl = "https://api.github.com/repos/Mojang/bedrock-samples/contents/resource_pack/texts?ref=main"
+bedrockRawUrl = "https://raw.githubusercontent.com/Mojang/bedrock-samples/main/resource_pack/texts/"
+estonianReleaseUrl = "https://api.github.com/repos/Madis0/mc-language-porter/releases/latest"
+jeAssetUrl = "https://resources.download.minecraft.net/"
 
 
-# File obtaining
-if getJeOriginal:
-    print("Downloading and extracting " + jeLangFile + " (Minecraft) from Java Edition JAR... (" + size(jeLatestJarSize, system=alternative) + " to download)")
-    unpack_zip(jeLatestJarUrl, jeJarLangPath, jeLangFile)
-    print(jeLangFile + " has been saved in the current directory.")
+def get_json(url):
+    response = requests.get(url, timeout=30)
+    response.raise_for_status()
+    return response.json()
 
-if getJeTranslation:
-    for jeTranslationFile, jeTranslationUrl, jeTranslationSize in translation_files_to_download:
-        print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + size(jeTranslationSize, system=alternative) + " to download)")
-        download_text(jeTranslationUrl, jeTranslationFile)
-        print(jeTranslationFile + " has been saved in the current directory.")
 
-if getBeOriginal:
-    print("Downloading and saving " + beLangFile + " from Bedrock Edition resources... (ca 500 KB to download)")
-    download_text(beLatestLangUrl, beLangFile)
-    print(beLangFile + " has been saved in the current directory.")
+def download(url, path):
+    response = requests.get(url, timeout=60)
+    response.raise_for_status()
+    path.write_bytes(response.content)
+
+
+print("Finding the latest Java Edition release...")
+jeManifest = get_json(jeManifestUrl)
+releaseId = jeManifest["latest"]["release"]
+release = next(version for version in jeManifest["versions"] if version["id"] == releaseId)
+jeVersion = get_json(release["url"])
+jeAssets = get_json(jeVersion["assetIndex"]["url"])["objects"]
+jeClientUrl = jeVersion["downloads"]["client"]["url"]
+print("Latest Java Edition release: " + releaseId)
+
+print("Downloading stable Bedrock Edition language files...")
+bedrockEntries = get_json(bedrockTextsUrl)
+bedrockFiles = sorted(entry["name"] for entry in bedrockEntries if entry["name"].endswith(".lang"))
+for bedrockFile in bedrockFiles:
+    download(bedrockRawUrl + bedrockFile, inputPath / bedrockFile)
+    print("Downloaded " + bedrockFile)
+
+print("Downloading Estonian from the latest language-pack release...")
+estonianRelease = get_json(estonianReleaseUrl)
+packAsset = next(
+    (asset for asset in estonianRelease["assets"]
+     if Path(asset["name"]).suffix.lower() in {".mcpack", ".mrpack"}),
+    None,
+)
+if packAsset is None:
+    raise RuntimeError("No .mcpack or .mrpack asset found in the latest language-pack release.")
+response = requests.get(packAsset["browser_download_url"], timeout=60)
+response.raise_for_status()
+with ZipFile(BytesIO(response.content)) as archive:
+    estonianPath = next(
+        name for name in archive.namelist()
+        if name.replace("\\", "/").endswith("texts/et_EE.lang")
+    )
+    (inputPath / "et_EE.lang").write_bytes(archive.read(estonianPath))
+print("Downloaded et_EE.lang")
+
+print("Downloading matching Java Edition language files...")
+bedrockLanguages = {Path(filename).stem.lower() for filename in bedrockFiles}
+bedrockLanguages.add("et_ee")
+if "en_us" in bedrockLanguages:
+    response = requests.get(jeClientUrl, timeout=60)
+    response.raise_for_status()
+    with ZipFile(BytesIO(response.content)) as archive:
+        (inputPath / "en_us.json").write_bytes(archive.read("assets/minecraft/lang/en_us.json"))
+    print("Downloaded en_us.json from the Java Edition client JAR")
+
+for bedrockLang in sorted(bedrockLanguages):
+    jeLang = "no_no" if bedrockLang == "nb_no" else bedrockLang
+    jeFile = jeLang + ".json"
+    asset = jeAssets.get("minecraft/lang/" + jeFile)
+    if asset is None:
+        print("No matching Java Edition language file: " + jeFile)
+        continue
+    jeUrl = jeAssetUrl + asset["hash"][:2] + "/" + asset["hash"]
+    download(jeUrl, inputPath / jeFile)
+    print("Downloaded " + jeFile)

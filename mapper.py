@@ -1,16 +1,15 @@
 import difflib
 import json
 
-# Whether to include strings from main and Realms in mappings (don't disable both, though)
+# Whether to include strings from the main Java Edition language file
 includeJe = True
-includeRealms = True
 excludeKnownJe = True
 
 # File names and -paths
-jePath = "en_us.json"
-bePath = "en_US.lang"
-realmsPath = "realms-" + jePath
-outputPath = "mappings.csv"
+jePath = "Input/en_us.json"
+bePath = "Input/en_US.lang"
+extraJePath = "Input/extra-en_us.json"
+outputPath = "Input/mappings.csv"
 excludeJePath = "exclude.txt"
 
 # Arrays to store data in (temporarily)
@@ -37,12 +36,10 @@ def parse_lang(path, toDict):
     file = open(path, 'r', encoding='utf-8')
 
     for row in file:
-        if not row.strip().startswith("##"):
-            try:
-                key, value = row.strip().split("=")
-                toDict[key] = value
-            except:  # Parse the key even when value is None
-                pass
+        row = row.rstrip('\r\n')
+        if row and not row.startswith("##") and "=" in row:
+            key, value = row.split("=", 1)
+            toDict[key] = value
 
     file.close()
 
@@ -73,9 +70,8 @@ if includeJe:
     print("Opening Java Edition strings...")
     parse_json(jePath, jeDict)
 
-if includeRealms:
-    print("Opening Realms strings...")
-    parse_json(realmsPath, jeDict)
+print("Opening extra English strings...")
+parse_json(extraJePath, jeDict)
 
 print("Opening Bedrock Edition strings..")
 parse_lang(bePath, beDict)
