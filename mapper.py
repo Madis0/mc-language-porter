@@ -19,7 +19,6 @@ excludedKeys = set()
 mappings = []
 oldPercent = -1
 
-
 # Parsing functions
 
 def parse_json(path, toDict):

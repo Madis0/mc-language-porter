@@ -103,10 +103,6 @@ for jeLang, beLang in languagePairs:
         if beKey in beDict and jeKey in jeDict:
             outputDict[jeKey] = beDict[beKey]
 
-    for key, value in overrides.items():
-        targetKey = key if key in jeDict or key in outputDict else mapDict.get(key, key)
-        outputDict[targetKey] = value
-
     localeExtraPath = extraPath / ("extra-" + jeLang + ".json")
     if localeExtraPath.exists():
         outputDict.update(parse_json(localeExtraPath))
@@ -115,6 +111,10 @@ for jeLang, beLang in languagePairs:
         targetKey = key if key in outputDict else mapDict.get(key, key)
         if targetKey in outputDict:
             outputDict[targetKey] = prefix + outputDict[targetKey]
+
+    for key, value in overrides.items():
+        targetKey = key if key in jeDict or key in outputDict else mapDict.get(key, key)
+        outputDict[targetKey] = value
 
     outputDict = {
         key: value
