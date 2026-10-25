@@ -1,4 +1,5 @@
 import csv
+import difflib
 import json
 import re
 import sys
@@ -90,7 +91,14 @@ parse_csv(extraPath / "extra-mappings.csv", mapDict)
 
 overrides = parse_json(extraPath / "overrides.json")
 prefixes = parse_json(extraPath / "prefixes.json")
+sourceEnglish = parse_json(extraPath / "source-en_us.json")
 unicodeEscapes = parse_unicode_escapes(extraPath.glob("*.json"))
+sourceBedrockEnglish = parse_lang(inputPath / "en_US.lang")
+sourceKeysByValue = {}
+sourceKeysByCasefoldedValue = {}
+for beKey, value in sourceBedrockEnglish.items():
+    sourceKeysByValue.setdefault(value, []).append(beKey)
+    sourceKeysByCasefoldedValue.setdefault(value.casefold(), []).append(beKey)
 
 for jeLang, beLang in languagePairs:
     jeFile = inputPath / (jeLang + ".json")
@@ -103,6 +111,20 @@ for jeLang, beLang in languagePairs:
         if beKey in beDict and jeKey in jeDict:
             outputDict[jeKey] = beDict[beKey]
 
+    for sourceKey, sourceValue in sourceEnglish.items():
+        matchingKeys = sourceKeysByValue.get(sourceValue, [])
+        if not matchingKeys:
+            matchingKeys = sourceKeysByCasefoldedValue.get(sourceValue.casefold(), [])
+        matchingKeys = [key for key in matchingKeys if key in beDict]
+        if matchingKeys:
+            beKey = max(
+                matchingKeys,
+                key=lambda key: difflib.SequenceMatcher(
+                    None, sourceKey.casefold(), key.casefold()
+                ).ratio(),
+            )
+            outputDict[sourceKey] = beDict[beKey]
+
     localeExtraPath = extraPath / ("extra-" + jeLang + ".json")
     if localeExtraPath.exists():
         outputDict.update(parse_json(localeExtraPath))
@@ -110,7 +132,10 @@ for jeLang, beLang in languagePairs:
     for key, prefix in prefixes.items():
         targetKey = key if key in outputDict else mapDict.get(key, key)
         if targetKey in outputDict:
-            outputDict[targetKey] = prefix + outputDict[targetKey]
+            value = outputDict[targetKey]
+            while prefix and value.startswith(prefix):
+                value = value[len(prefix):]
+            outputDict[targetKey] = prefix + value
 
     for key, value in overrides.items():
         targetKey = key if key in jeDict or key in outputDict else mapDict.get(key, key)

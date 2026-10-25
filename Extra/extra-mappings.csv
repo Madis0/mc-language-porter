@@ -1,19 +1,7 @@
-key.drop,key.drop
-key.attack,key.attack
-key.use,key.use
-key.chat,key.chat
-key.back,key.back
-key.forward,key.forward
-options.autojump,options.autoJump
-options.autojump.name,options.autoJump
 options.guiScale.optionName,options.guiScale
 key.menuCancel,gui.cancel
-options.sensitivity,options.sensitivity
-options.sensitivity.name,options.sensitivity
 options.sensitivity.Mouse.name,options.sensitivity
-options.controller.sensitivity.name,options.sensitivity
 
-menu.returnToGame,menu.returnToGame
 deathScreen.quit,deathScreen.titleScreen
 
 potion.moveSpeed,effect.minecraft.speed
@@ -29,7 +17,6 @@ tile.monster_egg.mossybrick.name,block.minecraft.infested_mossy_stone_bricks
 
 options.enableChatTextToSpeech,options.narrator.chat
 options.enableUITextToSpeech,options.narrator.system
-options.darknessEffectModifier,options.darknessEffectScale
 options.darknessEffectModifier.message,options.darknessEffectScale.tooltip
 options.textBackgroundOpacity,options.accessibility.text_background_opacity
 options.glintStrength.message,options.glintStrength.tooltip
@@ -38,12 +25,7 @@ options.notificationDuration.Toast,options.notifications.display_time
 options.notificationDuration.ToastMessage,options.notifications.display_time.tooltip
 options.notificationDuration.ToastMessage.edu,options.notifications.display_time.tooltip
 
-options.sensitivity,options.sensitivity
-options.graphicsMode,options.graphics
-options.graphicsMode.simple,options.graphics.fast
-options.toggleclouds,options.renderClouds
 
-soundCategory.ambient,soundCategory.ambient
 
 howtoplay.eyeOfEnder,item.minecraft.ender_eye
 
@@ -60,21 +42,7 @@ commandBlockScreen.blockType.chain,advMode.mode.sequence
 
 createWorldScreen.fireSpreads,gamerule.doFireTick
 createWorldScreen.fireSpreads.name,gamerule.doFireTick
-createWorldScreen.tntexplodes,gamerule.tntExplodes
-createWorldScreen.tntexplodes.name,gamerule.tntExplodes
-createWorldScreen.mobLoot,gamerule.doMobLoot
-createWorldScreen.mobLoot.name,gamerule.doMobLoot
-createWorldScreen.naturalregeneration,gamerule.naturalRegeneration
-createWorldScreen.naturalregeneration.name,gamerule.naturalRegeneration
-createWorldScreen.tileDrops,gamerule.doTileDrops
-createWorldScreen.tileDrops.name,gamerule.doTileDrops
-createWorldScreen.immediaterespawn,gamerule.doImmediateRespawn
-createWorldScreen.immediaterespawn.name,gamerule.doImmediateRespawn
-createWorldScreen.respawnRadius,gamerule.spawnRadius
 createWorldScreen.respawnRadius.name,gamerule.spawnRadius
-createWorldScreen.keepInventory,gamerule.keepInventory
-createWorldScreen.keepInventory.name,gamerule.keepInventory
-createWorldScreen.randomtickspeed,gamerule.randomTickSpeed
 createWorldScreen.randomtickspeed.name,gamerule.randomTickSpeed
 options.loadWorldAnyway,selectWorld.backupJoinSkipButton
 
@@ -82,13 +50,7 @@ hbui.CreateNewWorld.cheats.title,selectWorld.allowCommands
 createWorldScreen.worldSettings,gamerule.category.updates
 createWorldScreen.daylightcycle,gamerule.doDaylightCycle
 createWorldScreen.daylightcycle.name,gamerule.doDaylightCycle
-createWorldScreen.mobSpawn,gamerule.doMobSpawning
 createWorldScreen.mobSpawn.name,gamerule.doMobSpawning
-createWorldScreen.mobgriefing,gamerule.mobGriefing
-createWorldScreen.mobgriefing.name,gamerule.mobGriefing
-createWorldScreen.entitiesdroploot,gamerule.doEntityDrops
-createWorldScreen.entitiesdroploot.name,gamerule.doEntityDrops
-createWorldScreen.weathercycle,gamerule.doWeatherCycle
 createWorldScreen.weathercycle.name,gamerule.doWeatherCycle
 createWorldScreen.commandblocksenabled,gamerule.commandBlocksEnabled
 createWorldScreen.commandblocksenabled.name,gamerule.commandBlocksEnabled
@@ -98,11 +60,8 @@ options.servervisible,menu.shareToLan
 onlinePlay.notRated,multiplayerWarning.header
 onlinePlay.message,multiplayerWarning.message
 
-soundCategory.main,soundCategory.master
 soundCategory.texttospeech,options.narrator
-menu.accessibility.tab.tts.title,options.narrator
 
-options.maxFramerate,options.framerateLimit
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
 item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
@@ -110,7 +69,6 @@ item.spawn_egg.entity.evoker.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.tropical_fish.name,item.minecraft.tropical_fish_spawn_egg
 item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spawn_egg
 
-recipeToast.newUnlock.title,recipe.toast.title
 recipeToast.newUnlock.descriptionCraftingTable,recipe.toast.description
 recipeToast.newUnlock.descriptionStonecutterTable,recipe.toast.description
 recipeToast.newUnlock.descriptionSmithingTable,recipe.toast.description
@@ -121,17 +79,10 @@ recipeToast.newUnlock.descriptionSmoker,recipe.toast.description
 
 key.socialDrawer,key.friends
 options.social,gui.friends.open
-soundCategory.record,soundCategory.record
-accessibility.emotes.unassigned,key.keyboard.unknown
-controllerLayoutScreen.unassigned,key.keyboard.unknown
-hudScreen.emote_unassigned,key.keyboard.unknown
 
-options.showautosaveicon,options.autosaveIndicator
-options.showautosaveicon.name,options.autosaveIndicator
 
 pauseScreen.betaFeedback,menu.feedback
 pauseScreen.betaFeedback.dialog.title,menu.feedback.title
-pauseScreen.gameIsPaused,menu.paused
 
 gui.goBack,gui.back
 attribution.goBack,gui.back
@@ -215,4 +166,3 @@ trim_pattern.wayfinder.name,trim_pattern.minecraft.wayfinder
 trim_pattern.wild.name,trim_pattern.minecraft.wild
 trim_pattern.bolt.name,trim_pattern.minecraft.bolt
 trim_pattern.flow.name,trim_pattern.minecraft.flow
-
