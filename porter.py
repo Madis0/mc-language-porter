@@ -4,25 +4,28 @@ import re
 import sys
 from pathlib import Path
 
-
 inputPath = Path("Input")
+extraPath = Path("Extra")
 outputPath = Path("Output")
 outputPath.mkdir(exist_ok=True)
 
-jeLangs = [
-    "bg_bg", "cs_cz", "da_dk", "de_de", "el_gr", "en_gb", "en_us",
-    "es_es", "es_mx", "et_ee", "fi_fi", "fr_ca", "fr_fr", "hu_hu",
-    "id_id", "it_it", "ja_jp", "ko_kr", "no_no", "nl_nl", "pl_pl",
-    "pt_br", "pt_pt", "ru_ru", "sk_sk", "sv_se", "tr_tr", "uk_ua",
-    "zh_cn", "zh_tw",
+jeLangs = [ 
+    "bg_bg", "cs_cz", "da_dk", "de_de", "el_gr", "en_gb", "en_au",
+    "en_ca", "en_nz", "en_us", "es_es", "es_mx", "et_ee", "fi_fi", 
+    "fr_ca", "fr_fr", "hu_hu", "id_id", "it_it", "ja_jp", "ko_kr", 
+    "no_no", "nl_nl", "pl_pl", "pt_br", "pt_pt", "ru_ru", "sk_sk", 
+    "sv_se", "tr_tr", "uk_ua", "zh_cn", "zh_tw",
 ]
 beLangs = [
-    "bg_BG", "cs_CZ", "da_DK", "de_DE", "el_GR", "en_GB", "en_US",
-    "es_ES", "es_MX", "et_EE", "fi_FI", "fr_CA", "fr_FR", "hu_HU",
-    "id_ID", "it_IT", "ja_JP", "ko_KR", "nb_NO", "nl_NL", "pl_PL",
-    "pt_BR", "pt_PT", "ru_RU", "sk_SK", "sv_SE", "tr_TR", "uk_UA",
-    "zh_CN", "zh_TW",
+    "bg_BG", "cs_CZ", "da_DK", "de_DE", "el_GR", "en_GB", "en_GB",
+    "en_GB", "en_GB", "en_US", "es_ES", "es_MX", "et_EE", "fi_FI", 
+    "fr_CA", "fr_FR", "hu_HU", "id_ID", "it_IT", "ja_JP", "ko_KR", 
+    "nb_NO", "nl_NL", "pl_PL", "pt_BR", "pt_PT", "ru_RU", "sk_SK", 
+    "sv_SE", "tr_TR", "uk_UA", "zh_CN", "zh_TW",
 ]
+
+# Expect exactly two separate arguments when provided:
+# python script.py "et_ee,fr_fr" "et_EE,fr_FR"
 if len(sys.argv) > 2:
     jeLangs = [lang.strip() for lang in sys.argv[1].split(",") if lang.strip()]
     beLangs = [lang.strip() for lang in sys.argv[2].split(",") if lang.strip()]
@@ -82,17 +85,12 @@ def parse_lang(path):
 
 
 print("Opening mapped strings...")
-parse_csv(inputPath / "mappings.csv", mapDict)
-parse_csv(inputPath / "extra-mappings.csv", mapDict)
+parse_csv(extraPath / "mappings.csv", mapDict)
+parse_csv(extraPath / "extra-mappings.csv", mapDict)
 
-extraEnglish = parse_json(inputPath / "extra-en_us.json")
-overrides = parse_json(inputPath / "overrides.json")
-prefixes = parse_json(inputPath / "prefixes.json")
-unicodeEscapes = parse_unicode_escapes([
-    inputPath / "extra-en_us.json",
-    inputPath / "overrides.json",
-    inputPath / "prefixes.json",
-])
+overrides = parse_json(extraPath / "overrides.json")
+prefixes = parse_json(extraPath / "prefixes.json")
+unicodeEscapes = parse_unicode_escapes(extraPath.glob("*.json"))
 
 for jeLang, beLang in languagePairs:
     jeFile = inputPath / (jeLang + ".json")
@@ -105,12 +103,13 @@ for jeLang, beLang in languagePairs:
         if beKey in beDict and jeKey in jeDict:
             outputDict[jeKey] = beDict[beKey]
 
-    if jeLang == "en_us":
-        outputDict.update(extraEnglish)
-
     for key, value in overrides.items():
         targetKey = key if key in jeDict or key in outputDict else mapDict.get(key, key)
         outputDict[targetKey] = value
+
+    localeExtraPath = extraPath / ("extra-" + jeLang + ".json")
+    if localeExtraPath.exists():
+        outputDict.update(parse_json(localeExtraPath))
 
     for key, prefix in prefixes.items():
         targetKey = key if key in outputDict else mapDict.get(key, key)

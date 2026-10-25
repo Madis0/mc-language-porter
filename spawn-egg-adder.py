@@ -1,8 +1,8 @@
 import json
 
 # File names
-en_us_json_file = 'en_us.json'
-extra_mappings_file = 'extra-mappings.csv'
+en_us_json_file = 'Input/en_us.json'
+extra_mappings_file = 'Extra/extra-mappings.csv'
 
 def read_json(file_name):
     with open(file_name, 'r', encoding='utf-8') as file:

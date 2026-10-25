@@ -8,8 +8,8 @@ excludeKnownJe = True
 # File names and -paths
 jePath = "Input/en_us.json"
 bePath = "Input/en_US.lang"
-extraJePath = "Input/extra-en_us.json"
-outputPath = "Input/mappings.csv"
+extraJePath = "Extra/source-en_us.json"
+outputPath = "Extra/mappings.csv"
 excludeJePath = "exclude.txt"
 
 # Arrays to store data in (temporarily)
