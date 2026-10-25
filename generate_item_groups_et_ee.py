@@ -14,9 +14,11 @@ VABAMORF = Vabamorf.instance()
 
 
 # ---- Configuration -------------------------------------------------------
-EN_LANG_FILE = "en_US.lang"
-ET_JSON_FILE = "et_ee.json"
-EXTRA_LANG_FILE = "extra-et_EE.lang"
+INPUT_FOLDER = "Input"
+EXTRA_FOLDER = "Extra"
+EN_LANG_FILE = Path(INPUT_FOLDER) / "en_US.lang"
+ET_JSON_FILE = Path(INPUT_FOLDER) / "et_ee.json"
+EXTRA_LANG_FILE = Path(EXTRA_FOLDER) / "extra-et_EE.lang"
 GROUP_PREFIX = "itemGroup.name."
 # Lookup order in the JSON file (item first, block as fallback)
 JSON_KEY_PREFIXES = ("item.minecraft", "block.minecraft")

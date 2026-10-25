@@ -2,8 +2,11 @@ import shutil
 import json
 import requests
 import sys
+from pathlib import Path
 
 packFolder = "Eesti keelte pakk/"
+outputFolder = Path("Output")
+extraFolder = Path("Extra")
 
 langFolder = "texts/"
 languages = ["et_EE", "vro_EE"]
@@ -24,11 +27,11 @@ if len(sys.argv) > 1:
 
 # Generate langFiles and extraFiles from languages
 langFiles = [lang + ".lang" for lang in languages]
-extraFiles = ["extra-" + lang + ".lang" for lang in languages]
+extraFiles = [extraFolder / ("extra-" + lang + ".lang") for lang in languages]
 
 print("Copying language file(s) to pack folder...")
 for langFile in langFiles:
-    shutil.copyfile(langFile, packFolder + langFolder + langFile)
+    shutil.copyfile(outputFolder / langFile, packFolder + langFolder + langFile)
 
 # Increase version number by one in manifest
 def iterate_manifest(manifestFile):

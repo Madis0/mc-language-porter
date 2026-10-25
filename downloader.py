@@ -4,9 +4,9 @@ from zipfile import ZipFile
 from hurry.filesize import size, alternative
 import urllib.request
 import sys
+from pathlib import Path
 
 # Choose what files to obtain with the script
-# Original files have much larger download sizes as they download the whole archive to extract files from.
 getJeOriginal = True            # ~24 MB
 getJeTranslation = True         # ~286 KB
 getBeOriginal = True            # ~500 KB
@@ -30,11 +30,12 @@ jeLatestAssetJson = None
 jeTranslationHash = None
 jeTranslationUrl = None
 
-jeLangFile = "en_us.json"
-jeJarLangPath = "assets/minecraft/lang/" + jeLangFile
+inputFolder = Path("Input")
+jeLangFile = inputFolder / "en_us.json"
+jeJarLangPath = "assets/minecraft/lang/en_us.json"
 
 beLatestLangUrl = "https://raw.githubusercontent.com/Mojang/bedrock-samples/preview/resource_pack/texts/en_US.lang";
-beLangFile = "en_US.lang"
+beLangFile = inputFolder / "en_US.lang"
 
 jeGlobalAssetUrl = "https://resources.download.minecraft.net/"
 
@@ -71,7 +72,7 @@ if getJeTranslation:
             jeTranslationHash = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['hash']
             jeTranslationSize = jeLatestAssetJson['objects']['minecraft/lang/' + jeTranslationFile]['size']
             jeTranslationUrl = jeGlobalAssetUrl + jeTranslationHash[0:2] + "/" + jeTranslationHash
-            translation_files_to_download.append((jeTranslationFile, jeTranslationUrl, jeTranslationSize))
+            translation_files_to_download.append((inputFolder / jeTranslationFile, jeTranslationUrl, jeTranslationSize))
             print("Translation file URL obtained: " + jeTranslationUrl)
         except Exception:
             print("Translation file not found in assets: " + jeTranslationFile)
@@ -94,18 +95,20 @@ def download_text(url, filename):
 
 
 # File obtaining
+inputFolder.mkdir(parents=True, exist_ok=True)
+
 if getJeOriginal:
-    print("Downloading and extracting " + jeLangFile + " (Minecraft) from Java Edition JAR... (" + size(jeLatestJarSize, system=alternative) + " to download)")
+    print(f"Downloading and extracting {jeLangFile} (Minecraft) from Java Edition JAR... ({size(jeLatestJarSize, system=alternative)} to download)")
     unpack_zip(jeLatestJarUrl, jeJarLangPath, jeLangFile)
-    print(jeLangFile + " has been saved in the current directory.")
+    print(f"{jeLangFile} has been saved.")
 
 if getJeTranslation:
     for jeTranslationFile, jeTranslationUrl, jeTranslationSize in translation_files_to_download:
-        print("Downloading and saving " + jeTranslationFile + " from Java Edition assets... (" + size(jeTranslationSize, system=alternative) + " to download)")
+        print(f"Downloading and saving {jeTranslationFile} from Java Edition assets... ({size(jeTranslationSize, system=alternative)} to download)")
         download_text(jeTranslationUrl, jeTranslationFile)
-        print(jeTranslationFile + " has been saved in the current directory.")
+        print(f"{jeTranslationFile} has been saved.")
 
 if getBeOriginal:
-    print("Downloading and saving " + beLangFile + " from Bedrock Edition resources... (ca 500 KB to download)")
+    print(f"Downloading and saving {beLangFile} from Bedrock Edition resources... (ca 500 KB to download)")
     download_text(beLatestLangUrl, beLangFile)
-    print(beLangFile + " has been saved in the current directory.")
+    print(f"{beLangFile} has been saved.")

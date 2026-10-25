@@ -1,9 +1,12 @@
+from pathlib import Path
+
 # Removes lines from extra-mappings.csv that already exist in mappings.csv
 
 # File names
-mappings_file = 'mappings.csv'
-extra_mappings_file = 'extra-mappings.csv'
-extra_specific_mappings = ['extra-et_EE.lang', 'extra-vro_EE.lang']
+extra_folder = Path('Extra')
+mappings_file = extra_folder / 'mappings.csv'
+extra_mappings_file = extra_folder / 'extra-mappings.csv'
+extra_specific_mappings = [extra_folder / name for name in ['extra-et_EE.lang', 'extra-vro_EE.lang']]
 
 def read_mappings(file_name):
     with open(file_name, 'r', encoding='utf-8') as file:

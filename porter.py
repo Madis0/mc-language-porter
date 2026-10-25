@@ -1,5 +1,6 @@
 import json
 import sys
+from pathlib import Path
 
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
 includeJe = True
@@ -11,8 +12,11 @@ jeLangs = ["et_ee", "vro"]   # Java Edition language codes (lowercase used for j
 beLangs = ["et_EE", "vro_EE"]   # Bedrock Edition language codes (used for .lang filenames)
 
 # File names and -paths
-mapPath = "mappings.csv"
-extraMapPath = "extra-" + mapPath
+inputFolder = Path("Input")
+outputFolder = Path("Output")
+extraFolder = Path("Extra")
+mapPath = extraFolder / "mappings.csv"
+extraMapPath = extraFolder / "extra-mappings.csv"
 
 # Expect exactly two separate arguments when provided:
 # python script.py "et_ee,fr_fr" "et_EE,fr_FR"
@@ -77,27 +81,30 @@ for i in range(len(jeLangs)):
     jeLang = jeLangs[i]
     beLang = beLangs[i]
 
-    jePath = jeLang + ".json"
-    realmsPath = "realms-" + jePath
+    jePath = inputFolder / (jeLang + ".json")
+    realmsPath = inputFolder / ("realms-" + jeLang + ".json")
 
     jeDict = {}
     if includeJe:
         print("Opening Java Edition strings for " + jeLang + "...")
         parse_json(jePath, jeDict)
 
-    if includeRealms:
+    if includeRealms and realmsPath.exists():
         print("Opening Realms strings for " + jeLang + "...")
         parse_json(realmsPath, jeDict)
+    elif includeRealms:
+        print("Realms strings not found for " + jeLang + "; skipping.")
 
-    bePath = beLang + ".lang"
-    extraLangPath = "extra-" + bePath
+    bePath = outputFolder / (beLang + ".lang")
+    extraLangPath = extraFolder / ("extra-" + beLang + ".lang")
     extraLangDict = {}
 
     if includeExtraTranslations:
         print("Opening extra translations for " + beLang + "...")
         parse_lang(extraLangPath, extraLangDict)
 
-    print("Writing to " + bePath + "...")
+    print(f"Writing to {bePath}...")
+    outputFolder.mkdir(parents=True, exist_ok=True)
     beFile = open(bePath, 'w', encoding='utf-8')
 
     for beKey, jeKey in mapDict.items():
@@ -114,4 +121,4 @@ for i in range(len(jeLangs)):
                 pass
 
     beFile.close()
-    print("Matching translations have been ported to Bedrock Edition in file " + bePath + ".")
+    print(f"Matching translations have been ported to Bedrock Edition in file {bePath}.")

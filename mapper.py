@@ -1,5 +1,6 @@
 import difflib
 import json
+from pathlib import Path
 
 # Whether to include strings from main and Realms in mappings (don't disable both, though)
 includeJe = True
@@ -7,11 +8,13 @@ includeRealms = True
 excludeKnownJe = True
 
 # File names and -paths
-jePath = "en_us.json"
-bePath = "en_US.lang"
-realmsPath = "realms-" + jePath
-outputPath = "mappings.csv"
-excludeJePath = "exclude.txt"
+inputFolder = Path("Input")
+extraFolder = Path("Extra")
+jePath = inputFolder / "en_us.json"
+bePath = inputFolder / "en_US.lang"
+realmsPath = inputFolder / "realms-en_us.json"
+outputPath = extraFolder / "mappings.csv"
+excludeJePath = extraFolder / "exclude.txt"
 
 # Arrays to store data in (temporarily)
 jeDict = {}
@@ -73,9 +76,11 @@ if includeJe:
     print("Opening Java Edition strings...")
     parse_json(jePath, jeDict)
 
-if includeRealms:
+if includeRealms and realmsPath.exists():
     print("Opening Realms strings...")
     parse_json(realmsPath, jeDict)
+elif includeRealms:
+    print("Realms strings not found; skipping.")
 
 print("Opening Bedrock Edition strings..")
 parse_lang(bePath, beDict)
@@ -120,11 +125,11 @@ for beKey, beValue in enumerate(list(beDict.values())):
             mappings.append((list(beDict.keys())[beKey], valueMatchingKeys[0]))
 
 # Write to file mappings.csv
-print("Writing to " + outputPath + "...")
+print(f"Writing to {outputPath}...")
 mapFile = open(outputPath, 'w', encoding='utf-8')
 
 for beKey, jeKey in mappings:
     mapFile.write(beKey + "," + jeKey + "\n")
 
 mapFile.close()
-print("Identical strings have been written to " + outputPath + ".")
+print(f"Identical strings have been written to {outputPath}.")

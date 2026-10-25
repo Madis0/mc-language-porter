@@ -252,8 +252,8 @@ realmsCreateScreen.purchaseConfirmation.cancel,gui.cancel
 realmsCreateScreen.nameHeader,mco.configure.world.name
 realmsConfigurationScreen.realmName,mco.configure.world.name
 realmsConfigurationScreen.realmDescription,mco.configure.world.description
-realmsConfigurationScreen.open,mco.configure.world.buttons.open
-realmsConfigurationScreen.close,mco.configure.world.buttons.close
+realmsConfigurationScreen.open,mco.selectServer.open
+realmsConfigurationScreen.close,mco.selectServer.closeserver
 csbCreateScreen.goBack,dataPack.validation.back
 networkWorld.add_server,selectServer.add
 networkWorld.join_server,selectServer.select
@@ -267,8 +267,8 @@ realmsSlotsScreen.readyToPlay,narrator.ready_to_play
 realmsSlotsScreen.editWorld,selectWorld.edit.title
 realmsSlotsScreen.createNewWorld,selectWorld.create
 realmsSettingsScreen.deleteRealmButton,mco.configure.world.delete.button
-realmsSettingsScreen.openRealmButton,mco.configure.world.buttons.open
-realmsSettingsScreen.closeRealmButton,mco.configure.world.buttons.close
+realmsSettingsScreen.openRealmButton,mco.selectServer.open
+realmsSettingsScreen.closeRealmButton,mco.selectServer.closeserver
 realmsSettingsScreen.playRealmButton,mco.selectServer.play
 realmsSettingsScreen.worldSectionTitle,createWorld.tab.world.title
 realmsSettingsScreen.playersSectionTitle,mco.configure.world.players.title
@@ -305,8 +305,8 @@ realmsSettingsScreen.preferredRegions.WestUs3,realms.configuration.region.west_u
 realmsSettingsScreen.backupVersion,mco.version
 realmsSettingsScreen.deleteRealm,mco.configure.world.delete.button
 realmsSettingsScreen.realmNameLabel,mco.configure.world.name
-realmsSettingsScreen.resetWorldButton,mco.backup.button.reset
-realmsSettingsScreen.uploadWorldButton,mco.backup.button.upload
+realmsSettingsScreen.resetWorldButton,mco.reset.world.title
+realmsSettingsScreen.uploadWorldButton,mco.upload.select.world.title
 realmsSettingsScreen.difficultyOptionLabelFormat,attribute.modifier.equals.0
 realmsSettingsScreen.gameModeOptionLabel,telemetry.property.game_mode.title
 realmsSettingsScreen.survivalRadioButton,selectWorld.gameMode.survival
@@ -4101,7 +4101,6 @@ subtitles.block.pointed_dripstone.drip_lava,subtitles.block.pointed_dripstone.dr
 subtitles.block.pointed_dripstone.drip_lava_into_cauldron,subtitles.block.pointed_dripstone.drip_lava_into_cauldron
 subtitles.block.pointed_dripstone.drip_water,subtitles.block.pointed_dripstone.drip_water
 subtitles.block.pointed_dripstone.drip_water_into_cauldron,subtitles.block.pointed_dripstone.drip_water_into_cauldron
-subtitles.block.pointed_dripstone.land,subtitles.block.pointed_dripstone.land
 subtitles.block.portal.ambient,subtitles.block.portal.ambient
 subtitles.block.portal.travel,subtitles.block.portal.travel
 subtitles.block.portal.trigger,subtitles.block.portal.trigger
