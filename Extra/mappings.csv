@@ -1936,7 +1936,6 @@ jigsaw.title.joint_type.aligned,jigsaw_block.joint.aligned
 jigsaw.joint_type.aligned,jigsaw_block.joint.aligned
 jigsaw.joint_type.rollable,jigsaw_block.joint.rollable
 jigsaw.exit.done,gui.done
-joincode.entry_popup.title,mco.selectServer.joinCode.title
 joincode.icon_text.null,mco.configure.world.slot.empty
 joincode.icon_text.1,item.minecraft.writable_book
 joincode.icon_text.3,block.minecraft.rail
@@ -2270,7 +2269,6 @@ pauseScreen.header,menu.game
 pauseScreen.options,options.title
 pauseScreen.title,menu.paused
 pauseScreen.betaFeedback.dialog.close,mco.selectServer.close
-pauseScreen.joinCode.Label,mco.selectServer.joinCode
 betaFeedback.qr.close,mco.selectServer.close
 hudScreen.tooltip.basic.back,gui.back
 hudScreen.tooltip.basic.chat,options.accessibility.text_background.chat

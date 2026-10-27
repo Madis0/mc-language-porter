@@ -4,7 +4,7 @@ import sys
 # defaults
 jeLangs = ["et_ee", "vro"]
 beLangs = ["et_EE", "vro_EE"]
-useDownloader = False
+useDownloader = True
 usePackager = True
 extraSteps = True
 
