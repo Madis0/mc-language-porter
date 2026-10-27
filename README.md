@@ -14,10 +14,11 @@
 
 ## How to use
 
-1) [Download Python](https://www.python.org/downloads/)
-2) Install the requirements with PIP.
-3) Run `python runall.py`.
-4) Find generated language files in `Output/`.
+1. [Download Python](https://www.python.org/downloads/)
+2. Install the requirements with PIP: `python -m pip install -r requirements.txt`
+3. Run `python runall.py`. 
+   * Optionally define `true` or `false` as parameters, to control the downloader part. E.g. `python runall.py true` will download latest Mojang files and `python runall.py false` will only use locally existing files
+4. Find generated language files in `Output/`.
 
 - `source-en_us.json` adjusts English strings before mapping.
 - `extra-*.json` adds or replaces specific strings in a specific language after generic mapping.

@@ -19,7 +19,7 @@ beLangs = [
     "sv_SE", "tr_TR", "uk_UA", "zh_CN", "zh_TW",
 ]
 
-# runall.py true or runall.py false; true means the downloader will be used, false means it will be skipped. 
+# "runall.py true" or "runall.py false"; "true" means the downloader will be used, "false" means it will be skipped. 
 # If no argument is provided, the downloader will be used by default.
 if len(sys.argv) > 1:
     downloaderArg = sys.argv[1].lower()
