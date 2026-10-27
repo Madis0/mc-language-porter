@@ -1,7 +1,9 @@
 import subprocess
 import sys
 
-# defaults
+useDownloader = True
+extraSteps = True
+
 jeLangs = [
     "bg_bg", "cs_cz", "da_dk", "de_de", "el_gr", "en_gb", "en_au",
     "en_ca", "en_nz", "en_us", "es_es", "es_mx", "et_ee", "fi_fi", 
@@ -16,14 +18,14 @@ beLangs = [
     "nb_NO", "nl_NL", "pl_PL", "pt_BR", "pt_PT", "ru_RU", "sk_SK", 
     "sv_SE", "tr_TR", "uk_UA", "zh_CN", "zh_TW",
 ]
-useDownloader = False
-extraSteps = True
 
-# Accept two separate arguments: first is comma-separated JE langs, second is comma-separated BE langs
-# Example: python run.py "et_ee,fr_fr" "et_EE,fr_FR"
-if len(sys.argv) > 2:
-    jeLangs = [l.strip() for l in sys.argv[1].split(",") if l.strip()]
-    beLangs = [l.strip() for l in sys.argv[2].split(",") if l.strip()]
+# runall.py true or runall.py false; true means the downloader will be used, false means it will be skipped. 
+# If no argument is provided, the downloader will be used by default.
+if len(sys.argv) > 1:
+    downloaderArg = sys.argv[1].lower()
+    if downloaderArg not in {"true", "false"}:
+        raise ValueError("The optional argument must be 'true' or 'false'.")
+    useDownloader = downloaderArg == "true"
 
 if useDownloader:
     print("Executing the downloader script...")

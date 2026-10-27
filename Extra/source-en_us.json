@@ -698,5 +698,19 @@
     "bedrockreloaded.itemGroup.name.goatHorn": "Goat Horns",
     "bedrockreloaded.itemGroup.name.compounds": "Compounds",
     "bedrockreloaded.itemGroup.name.products": "Products",
-    "bedrockreloaded.itemGroup.name.bundles": "Bundles"
+    "bedrockreloaded.itemGroup.name.bundles": "Bundles",
+    "bedrockreloaded.itemGroup.name.nautilus_armor": "Nautilus Armor",
+    "bedrockreloaded.itemGroup.name.potterySherds": "Pottery Sherds",
+    "bedrockreloaded.itemGroup.name.spear": "Spears",
+    "bedrockreloaded.itemGroup.name.copper_golem_statue": "Copper Golem Statues",
+    "bedrockreloaded.itemGroup.name.hanging_sign": "Hanging Signs",
+    "bedrockreloaded.itemGroup.name.sculk": "Sculk",
+    "bedrockreloaded.itemGroup.name.lanterns": "Lanterns",
+    "bedrockreloaded.itemGroup.name.chains": "Chains",
+    "bedrockreloaded.itemGroup.name.bars": "Bars",
+    "bedrockreloaded.itemGroup.name.shelf": "Shelves",
+    "bedrockreloaded.itemGroup.name.cushion": "Cushions",
+    "bedrockreloaded.itemGroup.name.copper": "Copper",
+    "bedrockreloaded.itemGroup.name.lightning_rod": "Lightning Rods",
+    "bedrockreloaded.itemGroup.name.harnesses": "Harnesses"
 }

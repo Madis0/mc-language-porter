@@ -2670,7 +2670,7 @@ tile.sculk_vein.name,block.minecraft.sculk_vein
 tile.sculk_catalyst.name,block.minecraft.sculk_catalyst
 tile.sculk_shrieker.name,block.minecraft.sculk_shrieker
 tile.reinforced_deepslate.name,block.minecraft.reinforced_deepslate
-itemGroup.name.sculk,block.minecraft.sculk
+itemGroup.name.sculk,bedrockreloaded.itemGroup.name.sculk
 effect.darkness,effect.minecraft.darkness
 entity.frog.name,entity.minecraft.frog
 entity.tadpole.name,entity.minecraft.tadpole
@@ -2808,6 +2808,8 @@ item.snort_pottery_sherd.name,item.minecraft.snort_pottery_sherd
 item.spawn_egg.entity.camel.name,item.minecraft.camel_spawn_egg
 item.spruce_hanging_sign.name,block.minecraft.spruce_hanging_sign
 item.warped_hanging_sign.name,block.minecraft.warped_hanging_sign
+itemGroup.name.hanging_sign,bedrockreloaded.itemGroup.name.hanging_sign
+itemGroup.name.potterySherds,bedrockreloaded.itemGroup.name.potterySherds
 tile.bamboo_block.name,block.minecraft.bamboo_block
 tile.bamboo_button.name,block.minecraft.bamboo_button
 tile.bamboo_door.name,block.minecraft.bamboo_door
@@ -2851,6 +2853,7 @@ tile.stripped_cherry_log.name,block.minecraft.stripped_cherry_log
 tile.stripped_cherry_wood.name,block.minecraft.stripped_cherry_wood
 tile.suspicious_gravel.name,block.minecraft.suspicious_gravel
 tile.suspicious_sand.name,block.minecraft.suspicious_sand
+trim_material.copper.name,bedrockreloaded.itemGroup.name.copper
 trim_material.diamond.name,item.minecraft.diamond
 trim_material.emerald.name,item.minecraft.emerald
 storageManager.unknownElements,item.canUse.unknown
@@ -3372,6 +3375,7 @@ tile.leaves.spruce.name,block.minecraft.spruce_leaves
 tile.lever.name,block.minecraft.lever
 tile.glowstone.name,block.minecraft.glowstone
 tile.glow_lichen.name,block.minecraft.glow_lichen
+itemGroup.name.lightning_rod,bedrockreloaded.itemGroup.name.lightning_rod
 tile.lightning_rod.name,block.minecraft.lightning_rod
 tile.exposed_lightning_rod.name,block.minecraft.exposed_lightning_rod
 tile.weathered_lightning_rod.name,block.minecraft.weathered_lightning_rod
@@ -3941,6 +3945,7 @@ tile.weathered_copper_trapdoor.name,block.minecraft.weathered_copper_trapdoor
 tile.raw_copper_block.name,block.minecraft.raw_copper_block
 tile.raw_iron_block.name,block.minecraft.raw_iron_block
 tile.raw_gold_block.name,block.minecraft.raw_gold_block
+itemGroup.name.copper,bedrockreloaded.itemGroup.name.copper
 hudScreen.tooltip.waxOn,advancements.husbandry.wax_on.title
 hudScreen.tooltip.waxOff,advancements.husbandry.wax_off.title
 hudScreen.emote_unassigned,key.keyboard.unknown
@@ -4133,6 +4138,7 @@ tile.tall_dry_grass.name,block.minecraft.tall_dry_grass
 entity.happy_ghast.name,entity.minecraft.happy_ghast
 item.spawn_egg.entity.happy_ghast.name,item.minecraft.happy_ghast_spawn_egg
 tile.dried_ghast.name,block.minecraft.dried_ghast
+itemGroup.name.harnesses,bedrockreloaded.itemGroup.name.harnesses
 item.black_harness.name,item.minecraft.black_harness
 item.blue_harness.name,item.minecraft.blue_harness
 item.brown_harness.name,item.minecraft.brown_harness
@@ -4181,6 +4187,7 @@ tile.oak_shelf.name,block.minecraft.oak_shelf
 tile.pale_oak_shelf.name,block.minecraft.pale_oak_shelf
 tile.spruce_shelf.name,block.minecraft.spruce_shelf
 tile.warped_shelf.name,block.minecraft.warped_shelf
+itemGroup.name.shelf,bedrockreloaded.itemGroup.name.shelf
 tile.copper_golem_statue.name,block.minecraft.copper_golem_statue
 tile.exposed_copper_golem_statue.name,block.minecraft.exposed_copper_golem_statue
 tile.weathered_copper_golem_statue.name,block.minecraft.weathered_copper_golem_statue
@@ -4189,6 +4196,10 @@ tile.waxed_copper_golem_statue.name,block.minecraft.waxed_copper_golem_statue
 tile.waxed_exposed_copper_golem_statue.name,block.minecraft.waxed_exposed_copper_golem_statue
 tile.waxed_weathered_copper_golem_statue.name,block.minecraft.waxed_weathered_copper_golem_statue
 tile.waxed_oxidized_copper_golem_statue.name,block.minecraft.waxed_oxidized_copper_golem_statue
+itemGroup.name.copper_golem_statue,bedrockreloaded.itemGroup.name.copper_golem_statue
+itemGroup.name.bars,bedrockreloaded.itemGroup.name.bars
+itemGroup.name.chains,bedrockreloaded.itemGroup.name.chains
+itemGroup.name.lanterns,bedrockreloaded.itemGroup.name.lanterns
 tile.copper_chain.name,block.minecraft.copper_chain
 tile.exposed_copper_chain.name,block.minecraft.exposed_copper_chain
 tile.weathered_copper_chain.name,block.minecraft.weathered_copper_chain
@@ -4247,6 +4258,8 @@ tile.cinnabar_brick_stairs.name,block.minecraft.cinnabar_brick_stairs
 tile.cinnabar_brick_wall.name,block.minecraft.cinnabar_brick_wall
 tile.chiseled_cinnabar.name,block.minecraft.chiseled_cinnabar
 tile.sulfur_spike.name,block.minecraft.sulfur_spike
+itemGroup.name.spear,bedrockreloaded.itemGroup.name.spear
+itemGroup.name.nautilus_armor,bedrockreloaded.itemGroup.name.nautilus_armor
 item.wooden_spear.name,item.minecraft.wooden_spear
 item.stone_spear.name,item.minecraft.stone_spear
 item.copper_spear.name,item.minecraft.copper_spear
@@ -5280,6 +5293,7 @@ item.cushion.yellow.name,item.minecraft.yellow_cushion
 item.poplar_door.name,block.minecraft.poplar_door
 item.poplar_hanging_sign.name,block.minecraft.poplar_hanging_sign
 item.poplar_sign.name,block.minecraft.poplar_sign
+itemGroup.name.cushion,bedrockreloaded.itemGroup.name.cushion
 tile.poplar_button.name,block.minecraft.poplar_button
 tile.poplar_fence.name,block.minecraft.poplar_fence
 tile.poplar_fence_gate.name,block.minecraft.poplar_fence_gate
