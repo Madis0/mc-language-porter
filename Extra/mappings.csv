@@ -40,7 +40,8 @@ achievement.snipeSkeleton,advancements.adventure.sniper_duel.title
 achievement.theEnd,advancements.story.enter_the_end.title
 achievement.unknown,flat_world_preset.unknown
 action.interact.edit,selectWorld.edit
-action.interact.saddle,item.minecraft.saddle
+action.interact.opencontainer,narration.button.state.open
+action.interact.saddle,narration.slot.name.saddle
 action.interact.name,mco.backup.entry.name
 action.interact.brush,item.minecraft.brush
 action.interact.wax_on,advancements.husbandry.wax_on.title
@@ -61,6 +62,16 @@ attribute.name.minecraft:movement,attribute.name.generic.movement_speed
 attribute.name.horse.jumpStrength,attribute.name.horse.jump_strength
 attribute.name.zombie.spawnReinforcements,attribute.name.zombie.spawn_reinforcements
 attribution.goBack,dataPack.validation.back
+tile.packed_ice_bricks.name,block.minecraft.packed_ice_bricks
+tile.packed_ice_brick_slab.name,block.minecraft.packed_ice_brick_slab
+tile.packed_ice_brick_stairs.name,block.minecraft.packed_ice_brick_stairs
+tile.chiseled_packed_ice.name,block.minecraft.chiseled_packed_ice
+tile.packed_ice_brick_wall.name,block.minecraft.packed_ice_brick_wall
+tile.chiseled_soulshale.name,block.minecraft.chiseled_soulshale
+tile.snow_bricks.name,block.minecraft.snow_bricks
+tile.snow_brick_slab.name,block.minecraft.snow_brick_slab
+tile.snow_brick_stairs.name,block.minecraft.snow_brick_stairs
+tile.snow_brick_wall.name,block.minecraft.snow_brick_wall
 authentication.trialMessageTitle,mco.selectServer.freeTrial
 authentication.store.confirm.button,gui.friends.confirm_title
 eula.acceptButton,test_block.mode.accept
@@ -92,10 +103,11 @@ chat.type.title.title,book.sign.titlebox
 chestScreen.header.large,container.chestDouble
 chestScreen.header.player,container.inventory
 chestScreen.header.small,container.chest
+craftingScreen.tab.equipment,narration.slot_group.equipment
 craftingScreen.tab.items,stat.itemsButton
 craftingScreen.tab.survival,key.category.minecraft.inventory
 craftingScreen.tab.armor,attribute.name.generic.armor
-craftingScreen.tts.tab.inventory,container.inventory
+craftingScreen.tts.tab.inventory,narration.slot_group.inventory
 accessibility.tts.toggle.inventory.layout,key.categories.inventory
 credits.skip,mco.create.world.skip
 cauldronScreen.header,item.minecraft.cauldron
@@ -179,6 +191,7 @@ controller.buttonTip.back,gui.back
 controller.buttonTip.cancel,gui.cancel
 controller.buttonTip.edit,selectWorld.edit
 controller.buttonTip.pane.inventory,container.inventory
+controller.buttonTip.pane.recipeBook,narrator.button.recipe_book
 controller.buttonTip.remove,gui.remove
 controller.buttonTip.confirmSearch,gui.friends.confirm_title
 controller.buttonTip.select,mco.template.button.select
@@ -326,6 +339,7 @@ realmsSettingsScreen.expiration.week,mco.configure.world.invite_codes.expiration
 realmsSettingsScreen.allowlist_invite,gui.friends.multiplayer.invite
 realmsSettingsScreen.searchBox,gui.friends.pending.search
 realmsSettingsScreen.extendConsumableButton,mco.configure.world.subscription.extend
+realmsSettingsScreen.dropdown.closed.tts,narration.button.state.closed
 xblLogin.LoginMessageTitle,options.friendsList.confirm.message.link
 dayOneExperience.tab.realms,options.online.realms.header
 death.attack.anvil,death.attack.anvil
@@ -516,6 +530,7 @@ entity.falling_block.name,entity.minecraft.falling_block
 entity.fireball.name,entity.minecraft.fireball
 entity.fireworks_rocket.name,entity.minecraft.firework_rocket
 entity.fish.clownfish.name,entity.minecraft.tropical_fish.predefined.5
+entity.frostbite.name,entity.minecraft.frostbite
 entity.fox.name,entity.minecraft.fox
 entity.cod.name,entity.minecraft.cod
 entity.pufferfish.name,entity.minecraft.pufferfish
@@ -532,6 +547,7 @@ entity.husk.name,entity.minecraft.husk
 entity.ravager.name,entity.minecraft.ravager
 entity.iron_golem.name,entity.minecraft.iron_golem
 entity.item.name,entity.minecraft.item
+entity.ice_ball.name,entity.minecraft.ice_ball
 entity.leash_knot.name,entity.minecraft.leash_knot
 entity.lightning_bolt.name,entity.minecraft.lightning_bolt
 entity.lingering_potion.name,entity.minecraft.lingering_potion
@@ -621,11 +637,14 @@ feed.edit,selectWorld.edit
 feed.cancel,gui.cancel
 feed.delete,selectWorld.delete
 feed.clubdescription,mco.configure.world.description
+furnaceScreen.fuel,narration.slot.name.fuel
 furnaceScreen.header,container.furnace
+furnaceScreen.input,narration.slot_group.input
+furnaceScreen.result,narration.slot.name.result
 furnaceScreen.tab.blocks,soundCategory.block
 furnaceScreen.tab.items,stat.itemsButton
 furnaceScreen.tab.inventory,container.inventory
-furnaceScreen.tts.slot.empty,mco.configure.world.slot.empty
+furnaceScreen.tts.slot.empty,narration.slot.empty
 furnaceScreen.tts.slot.fuel.burning,subtitles.entity.generic.burn
 gameMode.adventure,gameMode.adventure
 gameMode.changed,gameMode.changed
@@ -695,11 +714,13 @@ howtoplay.enderChest,container.enderchest
 howtoplay.eyeOfEnder,entity.minecraft.eye_of_ender
 howtoplay.fireworks.header.1,item.minecraft.firework_rocket
 howtoplay.furnace,container.furnace
+howtoplay.furnace.header.1,narration.slot.name.fuel
 howtoplay.inventory,container.inventory
 howtoplay.jukebox,block.minecraft.jukebox
 howtoplay.loom,container.loom
 howtoplay.loom.header.1,effect.minecraft.weaving
 howtoplay.netherPortals,block.minecraft.nether_portal
+howtoplay.recipeBook,narrator.button.recipe_book
 howtoplay.scaffolding,block.minecraft.scaffolding
 howtoplay.theEnd,biome.minecraft.the_end
 howtoplay.weapons.header.2,item.minecraft.bow
@@ -1480,7 +1501,6 @@ item.cookie.name,item.minecraft.cookie
 item.copper_door.name,block.minecraft.copper_door
 item.crossbow.name,item.minecraft.crossbow
 item.diamond.name,item.minecraft.diamond
-item.repeater.name,block.minecraft.repeater
 item.acacia_door.name,block.minecraft.acacia_door
 item.birch_door.name,block.minecraft.birch_door
 item.dark_oak_door.name,block.minecraft.dark_oak_door
@@ -1759,10 +1779,11 @@ item.rabbit_stew.name,item.minecraft.rabbit_stew
 item.record_11.desc,item.minecraft.music_disc_11.desc
 item.record_13.desc,item.minecraft.music_disc_13.desc
 item.record_blocks.desc,item.minecraft.music_disc_blocks.desc
-item.record_bounce.desc,item.minecraft.music_disc_bounce.desc
+item.record_bounce.desc,jukebox_song.minecraft.bounce
 item.record_cat.desc,item.minecraft.music_disc_cat.desc
 item.record_chirp.desc,item.minecraft.music_disc_chirp.desc
 item.record_far.desc,item.minecraft.music_disc_far.desc
+item.record_flurry.desc,jukebox_song.minecraft.flurry
 item.record_mall.desc,item.minecraft.music_disc_mall.desc
 item.record_mellohi.desc,item.minecraft.music_disc_mellohi.desc
 item.record.name,item.minecraft.music_disc_tears
@@ -1776,8 +1797,8 @@ item.record_relic.desc,item.minecraft.music_disc_relic.desc
 item.record_creator.desc,item.minecraft.music_disc_creator.desc
 item.record_creator_music_box.desc,item.minecraft.music_disc_creator_music_box.desc
 item.record_precipice.desc,item.minecraft.music_disc_precipice.desc
-item.record_tears.desc,item.minecraft.music_disc_tears.desc
-item.record_lava_chicken.desc,item.minecraft.music_disc_lava_chicken.desc
+item.record_tears.desc,jukebox_song.minecraft.tears
+item.record_lava_chicken.desc,jukebox_song.minecraft.lava_chicken
 item.redstone.name,item.minecraft.redstone
 item.reeds.name,block.minecraft.sugar_cane
 item.kelp.name,block.minecraft.kelp
@@ -1923,6 +1944,8 @@ itemGroup.name.sandstone,block.minecraft.sandstone
 itemGroup.name.stainedClay,block.minecraft.terracotta
 itemGroup.name.stone,block.minecraft.stone
 itemGroup.name.monsterStoneEgg,block.minecraft.infested_stone
+itemGroup.name.leggings,narration.slot.name.legs
+itemGroup.name.boots,narration.slot.name.feet
 itemGroup.name.bundles,dataPack.bundle.name
 jigsaw_block.title,block.minecraft.jigsaw
 jigsaw.title.target_pool,jigsaw_block.pool
@@ -1980,6 +2003,7 @@ key.togglePerspective,key.togglePerspective
 key.inGameMenu,menu.game
 key.declineToast,gui.friends.decline
 key.cancelToast,gui.cancel
+key.openToast,narration.button.state.open
 keyboard.keyName.backspace,gui.back
 keyboard.keyName.escape,key.keyboard.escape
 keyboard.keyName.space,key.keyboard.space
@@ -2036,6 +2060,9 @@ menu.game,menu.game
 menu.accessibility.tab.title,narrator.button.accessibility
 menu.accessibility.tab.gameplay.title,key.categories.gameplay
 menu.account.changeName.title,mco.backup.entry.name
+menu.account.changeGamertag.buttonLabel,narration.button.state.open
+menu.account.manageAccount.buttonLabel,narration.button.state.open
+menu.account.privacyAndSafety.buttonLabel,narration.button.state.open
 menu.account.clearSignInData.popup.cancelLabel,dataPack.validation.back
 menu.account.signOutOfMicrosoft.popup.cancelLabel,dataPack.validation.back
 menu.account.deleteMicrosoftAccount.buttonLabel,selectWorld.deleteButton
@@ -2058,6 +2085,7 @@ menu.video.group.general,stat.generalButton
 menu.video.mode,advMode.mode
 menu.language.tab.title,options.language.title
 menu.multiplayer.tab.title,menu.multiplayer
+menu.party.privacyAndSafety.buttonLabel,narration.button.state.open
 menu.multiplayer,menu.multiplayer
 menu.online,menu.online
 menu.moreOptions,mco.configure.world.buttons.moreoptions
@@ -2092,7 +2120,10 @@ npcscreen.name,mco.backup.entry.name
 npcscreen.npc,entity.minecraft.mannequin.label
 offer.category.worldtemplate,mco.configure.worlds.title
 offer.navigationTab.worlds,mco.configure.worlds.title
+offer.preview.open,narration.button.state.open
 options.attribution,credits_and_attribution.button.attribution
+options.attribution.buttonLabel,narration.button.state.open
+options.helpCenter.buttonLabel,narration.button.state.open
 options.ao,options.ao
 options.ao.max,options.ao.max
 options.ao.min,options.ao.min
@@ -2124,7 +2155,7 @@ options.dev_chunk_map_mode_off,menu.multiplayerOptions.network.off
 options.dev_chunk_map_mode_full,options.sharePresence.all
 options.dev_chunk_map_mode_limited,options.sharePresence.limited
 options.dev_enableDebugHudOverlay.off,menu.multiplayerOptions.network.off
-options.dev_nethernet_logging_verbosity.disabled,manageServer.resourcePack.disabled
+options.dev_nethernet_logging_verbosity.disabled,narration.crafter_slot.disabled
 options.dev_render_attach_pos.none,menu.multiplayerOptions.network.off
 options.dev_render_attach_pos.all,options.particles.all
 options.dev_connection_quality.no_limit,options.framerateLimit.max
@@ -2149,6 +2180,7 @@ options.entityShadows,options.entityShadows
 options.forceUnicodeFont,options.forceUnicodeFont
 options.fov,options.fov
 options.licenses,credits_and_attribution.button.licenses
+options.licensed_content.buttonLabel,narration.button.state.open
 options.default.format,options.value
 options.percent.format,mco.upload.percent
 options.fov.max,options.fov.max
@@ -2189,6 +2221,7 @@ options.keyboardAndMouse.resetSettings.buttonLabel,controls.reset
 options.keyboardAndMouse.resetMappings.buttonLabel,controls.reset
 options.controller.resetSettings.buttonLabel,controls.reset
 options.controller.resetMappings.buttonLabel,controls.reset
+options.joyconMouse.resetSettings.buttonLabel,controls.reset
 options.language,options.language.title
 options.languageGuiScaleCompatibility.cancel,dataPack.validation.back
 options.cancel,gui.cancel
@@ -2276,8 +2309,8 @@ hudScreen.tooltip.basic.jump,key.jump
 hudScreen.tooltip.basic.left,options.mainHand.left
 hudScreen.tooltip.basic.right,options.mainHand.right
 hudScreen.tooltip.basic.sneak,key.sneak
-hudScreen.tooltip.crafting,container.crafting
 hudScreen.tooltip.inventory,container.inventory
+hudScreen.tooltip.open,narration.button.state.open
 hudScreen.tooltip.empty,mco.configure.world.slot.empty
 hudScreen.tooltip.edit_sign,mco.configure.world.invite_codes.edit
 hudScreen.controlCustomization.exit,mco.configure.world.buttons.done
@@ -2313,6 +2346,10 @@ potion.fireResistance,effect.minecraft.fire_resistance
 potion.fireResistance.name,item.minecraft.potion.effect.fire_resistance
 potion.fireResistance.splash.name,item.minecraft.splash_potion.effect.fire_resistance
 potion.fireResistance.linger.name,item.minecraft.lingering_potion.effect.fire_resistance
+potion.freezing,effect.minecraft.freezing
+potion.freezing.name,item.minecraft.potion.effect.freezing
+potion.freezing.splash.name,item.minecraft.splash_potion.effect.freezing
+potion.freezing.linger.name,item.minecraft.lingering_potion.effect.freezing
 potion.harm,effect.minecraft.instant_damage
 potion.harm.name,item.minecraft.potion.effect.harming
 potion.harm.splash.name,item.minecraft.splash_potion.effect.harming
@@ -2407,6 +2444,7 @@ raid.defeat,event.minecraft.raid.defeat
 recipeBook.setting.full,item.minecraft.bundle.full
 recipeBook.setting.off,menu.multiplayerOptions.network.off
 record.nowPlaying,record.nowPlaying
+record.playingNext,record.playingNext
 resourcePack.selected.title.packs,mco.configure.world.invite_codes.edit.active
 resourcePack.realmsPlus.expired,mco.configure.world.subscription.expired
 resourcePack.title,resourcePack.title
@@ -2417,12 +2455,26 @@ sidebar.survival,selectWorld.gameMode.survival
 sidebar.worlds,mco.configure.worlds.title
 storageManager.contentType.world,selectWorld.world
 storageManager.contentType.worldTemplate,mco.template.default.name
+storageManager.contentType.music,soundCategory.music
 storageManager.contentType.worlds,mco.configure.worlds.title
 storageManager.contentType.worldTemplates,mco.reset.world.template
+storageManager.contentType.music.name,soundCategory.music
 storageManager.storageLocation.local,pack.source.local
 storageManager.delete,selectWorld.delete
 storageManager.sync_legacy_worlds.conversion_complete.cancel_button,mco.selectServer.close
 storageManager.sync_legacy_worlds.conversion_explanation.cancel_button,gui.cancel
+tile.calcite_pillar.name,block.minecraft.calcite_pillar
+tile.calcite_slab.name,block.minecraft.calcite_slab
+tile.calcite_stairs.name,block.minecraft.calcite_stairs
+tile.calcite_wall.name,block.minecraft.calcite_wall
+tile.polished_calcite.name,block.minecraft.polished_calcite
+tile.polished_calcite_slab.name,block.minecraft.polished_calcite_slab
+tile.polished_calcite_stairs.name,block.minecraft.polished_calcite_stairs
+tile.polished_calcite_wall.name,block.minecraft.polished_calcite_wall
+tile.polished_calcite_bricks.name,block.minecraft.polished_calcite_bricks
+tile.polished_calcite_brick_slab.name,block.minecraft.polished_calcite_brick_slab
+tile.polished_calcite_brick_stairs.name,block.minecraft.polished_calcite_brick_stairs
+tile.polished_calcite_brick_wall.name,block.minecraft.polished_calcite_brick_wall
 tile.sculk_sensor.name,block.minecraft.sculk_sensor
 tile.sculk.name,block.minecraft.sculk
 tile.sculk_vein.name,block.minecraft.sculk_vein
@@ -2431,6 +2483,7 @@ tile.sculk_shrieker.name,block.minecraft.sculk_shrieker
 tile.reinforced_deepslate.name,block.minecraft.reinforced_deepslate
 itemGroup.name.sculk,block.minecraft.sculk
 effect.darkness,effect.minecraft.darkness
+effect.freezing,effect.minecraft.freezing
 entity.frog.name,entity.minecraft.frog
 entity.tadpole.name,entity.minecraft.tadpole
 item.spawn_egg.entity.warden.name,item.minecraft.warden_spawn_egg
@@ -2440,6 +2493,7 @@ item.spawn_egg.entity.allay.name,item.minecraft.allay_spawn_egg
 item.bucketTadpole.name,item.minecraft.tadpole_bucket
 item.spawn_egg.entity.frog.name,item.minecraft.frog_spawn_egg
 item.spawn_egg.entity.tadpole.name,item.minecraft.tadpole_spawn_egg
+item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
 tile.frog_spawn.name,block.minecraft.frogspawn
 tile.pearlescent_froglight.name,block.minecraft.pearlescent_froglight
 tile.verdant_froglight.name,block.minecraft.verdant_froglight
@@ -2758,9 +2812,9 @@ store.inventory.dropdown.current,options.fullscreen.current
 store.incompatible,pack.incompatible
 store.unlocked,narrator.button.difficulty_lock.unlocked
 store.popup.goBack,dataPack.validation.back
-store.gifting.limitReached.message,disconnect.genericReason
-store.gifting.limitReached.learnMore,mco.snapshotRealmsPopup.urlText
-store.gifting.limitReached.goBack,dataPack.validation.back
+store.gifting.sender.ineligible.message,gui.experience.level
+store.gifting.sender.ineligible.learnMore,mco.snapshotRealmsPopup.urlText
+store.gifting.sender.ineligible.goBack,dataPack.validation.back
 store.popup.xblRequired.button2,gui.cancel
 store.popup.download.button1,mco.brokenworld.download
 store.popup.download.button2,mco.create.world.skip
@@ -2808,6 +2862,8 @@ tile.bed.respawnSet,block.minecraft.set_spawn
 tile.bedrock.name,block.minecraft.bedrock
 tile.bell.name,block.minecraft.bell
 tile.conduit.name,block.minecraft.conduit
+tile.icicle.name,block.minecraft.icicle
+tile.ice_crystal.name,block.minecraft.ice_crystal
 tile.beetroot.name,item.minecraft.beetroot
 tile.big_dripleaf.name,block.minecraft.big_dripleaf
 tile.small_dripleaf_block.name,block.minecraft.small_dripleaf
@@ -3444,6 +3500,7 @@ tile.carpet.green.name,block.minecraft.green_carpet
 tile.carpet.lightBlue.name,block.minecraft.light_blue_carpet
 tile.carpet.lime.name,block.minecraft.lime_carpet
 tile.carpet.magenta.name,block.minecraft.magenta_carpet
+tile.carpet.name,narration.slot.name.carpet
 tile.carpet.orange.name,block.minecraft.orange_carpet
 tile.carpet.pink.name,block.minecraft.pink_carpet
 tile.carpet.purple.name,block.minecraft.purple_carpet
@@ -3752,6 +3809,7 @@ tipped_arrow.effect.nightVision,item.minecraft.tipped_arrow.effect.night_vision
 tipped_arrow.effect.invisibility,item.minecraft.tipped_arrow.effect.invisibility
 tipped_arrow.effect.jump,item.minecraft.tipped_arrow.effect.leaping
 tipped_arrow.effect.fireResistance,item.minecraft.tipped_arrow.effect.fire_resistance
+tipped_arrow.effect.freezing,item.minecraft.tipped_arrow.effect.freezing
 tipped_arrow.effect.moveSpeed,item.minecraft.tipped_arrow.effect.swiftness
 tipped_arrow.effect.moveSlowdown,item.minecraft.tipped_arrow.effect.slowness
 tipped_arrow.effect.water,item.minecraft.tipped_arrow.effect.water
@@ -3993,6 +4051,7 @@ matchmaking.modal.goBack,dataPack.validation.back
 item.wooden_spear.name,item.minecraft.wooden_spear
 item.stone_spear.name,item.minecraft.stone_spear
 item.copper_spear.name,item.minecraft.copper_spear
+item.ice_ball.name,item.minecraft.ice_ball
 item.iron_spear.name,item.minecraft.iron_spear
 item.golden_spear.name,item.minecraft.golden_spear
 item.diamond_spear.name,item.minecraft.diamond_spear
@@ -4031,6 +4090,7 @@ subtitles.block.big_dripleaf.tilt_down,subtitles.block.big_dripleaf.tilt_down
 subtitles.block.big_dripleaf.tilt_up,subtitles.block.big_dripleaf.tilt_up
 subtitles.block.blastfurnace.fire_crackle,subtitles.block.blastfurnace.fire_crackle
 subtitles.block.brewing_stand.brew,subtitles.block.brewing_stand.brew
+subtitles.block.brittle_ice.crack,subtitles.block.brittle_ice.crack
 subtitles.block.bubble_column.bubble_pop,subtitles.block.bubble_column.bubble_pop
 subtitles.block.bubble_column.upwards_ambient,subtitles.block.bubble_column.upwards_ambient
 subtitles.block.bubble_column.whirlpool_ambient,subtitles.block.bubble_column.whirlpool_ambient
@@ -4087,6 +4147,8 @@ subtitles.block.generic.footsteps,subtitles.block.generic.footsteps
 subtitles.block.generic.hit,subtitles.block.generic.hit
 subtitles.block.hanging_sign.waxed_interact_fail,subtitles.block.hanging_sign.waxed_interact_fail
 subtitles.block.honey_block.slide,subtitles.block.honey_block.slide
+subtitles.block.ice.ambient,subtitles.block.ice.ambient
+subtitles.block.ice_crystal.ambient,subtitles.block.ice_crystal.ambient
 subtitles.block.iron_trapdoor.close,subtitles.block.iron_trapdoor.close
 subtitles.block.iron_trapdoor.open,subtitles.block.iron_trapdoor.open
 subtitles.block.lava.ambient,subtitles.block.lava.ambient
@@ -4303,6 +4365,7 @@ subtitles.entity.donkey.eat,subtitles.entity.donkey.eat
 subtitles.entity.donkey.jump,subtitles.entity.donkey.jump
 subtitles.entity.drowned.ambient,subtitles.entity.drowned.ambient
 subtitles.entity.drowned.ambient_water,subtitles.entity.drowned.ambient_water
+subtitles.entity.drowned.converted_to_zombie,subtitles.entity.drowned.converted_to_zombie
 subtitles.entity.drowned.death,subtitles.entity.drowned.death
 subtitles.entity.drowned.shoot,subtitles.entity.drowned.shoot
 subtitles.entity.drowned.step,subtitles.entity.drowned.step
@@ -4354,6 +4417,9 @@ subtitles.entity.frog.death,subtitles.entity.frog.death
 subtitles.entity.frog.eat,subtitles.entity.frog.eat
 subtitles.entity.frog.lay_spawn,subtitles.entity.frog.lay_spawn
 subtitles.entity.frog.long_jump,subtitles.entity.frog.long_jump
+subtitles.entity.frostbite.ambient,subtitles.entity.frostbite.ambient
+subtitles.entity.frostbite.converted_to_zombie,subtitles.entity.frostbite.converted_to_zombie
+subtitles.entity.frostbite.death,subtitles.entity.frostbite.death
 subtitles.entity.generic.burn,subtitles.entity.generic.burn
 subtitles.entity.generic.death,subtitles.entity.generic.death
 subtitles.entity.generic.drink,subtitles.entity.generic.drink
@@ -4411,6 +4477,8 @@ subtitles.entity.horse.jump,subtitles.entity.horse.jump
 subtitles.entity.husk.ambient,subtitles.entity.husk.ambient
 subtitles.entity.husk.converted_to_zombie,subtitles.entity.husk.converted_to_zombie
 subtitles.entity.husk.death,subtitles.entity.husk.death
+subtitles.entity.ice_ball.break,subtitles.entity.ice_ball.break
+subtitles.entity.ice_ball.throw,subtitles.entity.ice_ball.throw
 subtitles.entity.iron_golem.attack,subtitles.entity.iron_golem.attack
 subtitles.entity.iron_golem.damage,subtitles.entity.iron_golem.damage
 subtitles.entity.iron_golem.death,subtitles.entity.iron_golem.death
@@ -4473,6 +4541,7 @@ subtitles.entity.parrot.imitate.drowned,subtitles.entity.parrot.imitate.drowned
 subtitles.entity.parrot.imitate.elder_guardian,subtitles.entity.parrot.imitate.elder_guardian
 subtitles.entity.parrot.imitate.ender_dragon,subtitles.entity.parrot.imitate.ender_dragon
 subtitles.entity.parrot.imitate.endermite,subtitles.entity.parrot.imitate.endermite
+subtitles.entity.parrot.imitate.frostbite,subtitles.entity.parrot.imitate.frostbite
 subtitles.entity.parrot.imitate.evoker,subtitles.entity.parrot.imitate.evoker
 subtitles.entity.parrot.imitate.ghast,subtitles.entity.parrot.imitate.ghast
 subtitles.entity.parrot.imitate.guardian,subtitles.entity.parrot.imitate.guardian
@@ -4721,7 +4790,9 @@ subtitles.entity.zombie.ambient,subtitles.entity.zombie.ambient
 subtitles.entity.zombie.attack_wooden_door,subtitles.entity.zombie.attack_wooden_door
 subtitles.entity.zombie.break_wooden_door,subtitles.entity.zombie.break_wooden_door
 subtitles.entity.zombie.converted_to_drowned,subtitles.entity.zombie.converted_to_drowned
+subtitles.entity.zombie.converted_to_frostbite,subtitles.entity.zombie.converted_to_frostbite
 subtitles.entity.zombie.death,subtitles.entity.zombie.death
+subtitles.entity.zombie.destroy_egg,subtitles.entity.zombie.destroy_egg
 subtitles.entity.zombie.infect,subtitles.entity.zombie.infect
 subtitles.entity.zombified_piglin.ambient,subtitles.entity.zombified_piglin.ambient
 subtitles.entity.zombified_piglin.angry,subtitles.entity.zombified_piglin.angry
@@ -4883,6 +4954,7 @@ tile.cyan_wool_stairs.name,block.minecraft.cyan_wool_stairs
 tile.purple_wool_stairs.name,block.minecraft.purple_wool_stairs
 tile.green_wool_stairs.name,block.minecraft.green_wool_stairs
 tile.brown_wool_stairs.name,block.minecraft.brown_wool_stairs
+tile.brittle_ice.name,block.minecraft.brittle_ice
 tile.black_wool_stairs.name,block.minecraft.black_wool_stairs
 tile.white_wool_slab.name,block.minecraft.white_wool_slab
 tile.light_gray_wool_slab.name,block.minecraft.light_gray_wool_slab

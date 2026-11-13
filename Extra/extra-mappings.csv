@@ -105,7 +105,6 @@ menu.accessibility.tab.tts.title,options.narrator
 options.maxFramerate,options.framerateLimit
 
 itemGroup.name.mobEgg,itemGroup.spawnEggs
-item.spawn_egg.entity.frostbite.name,item.minecraft.frostbite_spawn_egg
 item.spawn_egg.entity.evoker.name,item.minecraft.evoker_spawn_egg
 item.spawn_egg.entity.tropical_fish.name,item.minecraft.tropical_fish_spawn_egg
 item.spawn_egg.entity.zombified_piglin.name,item.minecraft.zombified_piglin_spawn_egg
